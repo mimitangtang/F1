@@ -180,6 +180,11 @@ async function sync() {
     const info = CIRCUIT[race.Circuit.circuitId] || {};
     const round = Number(race.round);
     const results = resultsByRound.get(round) || [];
+    const enName = race.Circuit.circuitId === "sepang"
+      ? "Malaysian Grand Prix"
+      : race.Circuit.circuitId === "madring"
+        ? "Madrid Grand Prix"
+        : race.raceName;
     const podium = results.slice(0, 3).map((r) => ({
       name: driverName(r),
       team: teamInfo(r.Constructor).cn,
@@ -196,7 +201,7 @@ async function sync() {
     return {
       r: round,
       gp: info.cn || race.raceName.replace(" Grand Prix", ""),
-      en: race.raceName,
+      en: enName,
       date: race.date.slice(5).replace("-", "."),
       winner: winner?.name || null,
       team: winner?.team || null,
@@ -229,8 +234,8 @@ async function sync() {
   const driverStandings = driverJson.MRData.StandingsTable.StandingsLists[0].DriverStandings.map((d) => ({
     pos: Number(d.position),
     name: DRIVER_CN[d.Driver.driverId] || `${d.Driver.givenName} ${d.Driver.familyName}`,
-    team: teamInfo(d.Constructors[d.Constructors.length - 1]).cn,
-    color: teamInfo(d.Constructors[d.Constructors.length - 1]).color,
+    team: teamInfo(d.Constructors[0]).cn,
+    color: teamInfo(d.Constructors[0]).color,
     points: Number(d.points),
     wins: Number(d.wins)
   }));

@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-10-28T13:19:36.081Z",
+    "generatedAt": "2026-10-28T13:35:41.499Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -454,7 +454,7 @@
     {
       "r": 14,
       "gp": "西班牙·马德里",
-      "en": "Spanish Grand Prix",
+      "en": "Madrid Grand Prix",
       "date": "09.13",
       "winner": "安东内利",
       "team": "梅赛德斯",
@@ -512,7 +512,7 @@
     {
       "r": 16,
       "gp": "马来西亚",
-      "en": "Bahrain Grand Prix in Malaysia",
+      "en": "Malaysian Grand Prix",
       "date": "10.04",
       "winner": "维斯塔潘",
       "team": "红牛",
@@ -731,8 +731,8 @@
       {
         "pos": 9,
         "name": "劳森",
-        "team": "红牛",
-        "color": "#3671c6",
+        "team": "Racing Bulls",
+        "color": "#6692ff",
         "points": 77,
         "wins": 0
       },
