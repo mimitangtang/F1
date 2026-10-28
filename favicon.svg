@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="F1">
+  <rect width="64" height="64" rx="12" fill="#e10600"/>
+  <g fill="#ffffff" transform="matrix(1,0,-0.16,1,6.2,0)">
+    <!-- F -->
+    <path d="M12 17h7v30h-7z"/>
+    <path d="M12 17h23v8H12z"/>
+    <path d="M12 28h19v6H12z"/>
+    <!-- 1 -->
+    <path d="M44 17h7v30h-7z"/>
+    <path d="M38 27l6-10v8l-6 7z"/>
+    <path d="M38 41h17v7H38z"/>
+  </g>
+</svg>
