@@ -1,0 +1,1259 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>F1 2026 赛况 · 官方深色科技风</title>
+<style>
+  :root{
+    --bg:#0d0d11;
+    --panel:#15151c;
+    --panel-2:#1b1b23;
+    --line:#2a2a34;
+    --text:#f2f2f5;
+    --muted:#8f8f9c;
+    --red:#e10600;
+    --red-soft:#ff5347;
+    --max:1200px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);color:var(--text);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;line-height:1.6;
+  }
+  body.locked{overflow:hidden}
+  [hidden]{display:none!important}
+  .mono{font-family:"SF Mono","JetBrains Mono",ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--red);color:#fff}
+
+  .scrollbar{position:fixed;top:0;left:0;height:2px;width:0;background:var(--red);z-index:100}
+  .topbar{
+    position:fixed;inset:0 0 auto 0;height:56px;z-index:90;
+    display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 32px;
+    background:rgba(13,13,17,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
+  }
+  .brand{display:flex;align-items:baseline;gap:8px;font-weight:800;letter-spacing:-.02em}
+  .brand-f1{background:var(--red);color:#fff;padding:2px 9px;font-size:16px;clip-path:polygon(0 0,100% 0,92% 100%,0 100%)}
+  .brand-year{font-size:11px;color:var(--muted);letter-spacing:.18em}
+  .nav{display:flex;gap:4px}
+  .nav a{padding:6px 14px;font-size:12px;color:var(--muted);border:1px solid transparent;border-radius:2px;transition:color .2s,border-color .2s}
+  .nav a:hover{color:var(--text)}
+  .nav a.active{color:var(--text);border-color:var(--line);background:var(--panel)}
+  .nav-meta{font-size:9px;color:var(--muted);letter-spacing:.14em}
+
+  /* ---------- module shell ---------- */
+  .module{padding:30px 0;position:relative}
+  .module + .module{border-top:1px solid var(--line)}
+  .hero-module{padding-top:104px;overflow:hidden}
+  .hero-module::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      linear-gradient(rgba(255,255,255,.032) 1px,transparent 1px) 0 0/100% 72px,
+      linear-gradient(90deg,rgba(255,255,255,.032) 1px,transparent 1px) 0 0/72px 100%;
+    mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),transparent 62%);
+  }
+  .hero-module::after{
+    content:"";position:absolute;top:0;right:-120px;width:44%;height:560px;
+    background:linear-gradient(160deg,rgba(225,6,0,.16),rgba(225,6,0,0) 55%);
+    clip-path:polygon(38% 0,100% 0,100% 100%,0 100%);pointer-events:none;
+  }
+  .mod-label{display:flex;align-items:baseline;gap:12px;margin-bottom:20px;position:relative;z-index:1}
+  .mod-label .n{font-size:10px;color:var(--red-soft);letter-spacing:.12em}
+  .mod-label h2{font-size:22px;font-weight:700;letter-spacing:-.02em}
+  .mod-label .hint{margin-left:auto;font-size:9px;color:var(--muted);letter-spacing:.12em}
+
+  .sec-head{display:flex;align-items:flex-end;gap:18px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
+  .sec-num{font-size:11px;color:var(--red-soft);letter-spacing:.1em;padding-bottom:3px}
+  .sec-head h2{font-size:clamp(24px,3vw,32px);letter-spacing:-.02em;font-weight:700;line-height:1.1}
+  .sec-head p{margin-left:auto;color:var(--muted);font-size:11px;text-align:right;padding-bottom:3px}
+
+  .sub-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding-bottom:9px;margin:20px 0 12px}
+  .sub-head h3{font-size:14px;font-weight:600;letter-spacing:.02em}
+  .sub-head span{font-size:10px;color:var(--muted)}
+  .text-btn{
+    background:none;border:0;color:var(--muted);font-size:10px;letter-spacing:.04em;
+    cursor:pointer;font-family:inherit;padding:0;border-bottom:1px dashed #4a4a58;
+  }
+  .text-btn:hover{color:var(--red-soft);border-color:var(--red-soft)}
+
+  /* ---------- hero ---------- */
+  .hero-grid{
+    position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;
+    gap:32px;align-items:stretch;
+  }
+  .hero-copy{display:flex;flex-direction:column;min-width:0}
+  .kicker{display:inline-flex;align-items:center;gap:10px;font-size:10px;letter-spacing:.2em;color:var(--muted);margin-bottom:14px}
+  .kicker .dot{width:7px;height:7px;background:var(--red);border-radius:50%;box-shadow:0 0 0 4px rgba(225,6,0,.18)}
+  h1{font-size:clamp(40px,5.6vw,72px);line-height:1.04;letter-spacing:-.03em;font-weight:800}
+  h1 span{color:var(--red-soft)}
+  .hero-sub{margin-top:12px;color:var(--muted);font-size:13px}
+  .hero-progress{margin-top:6px;font-size:9px;color:#6f6f7a;letter-spacing:.14em}
+  .countdown{display:flex;gap:8px;margin-top:18px}
+  .cd{
+    background:var(--panel);border:1px solid var(--line);padding:9px 0 7px;min-width:74px;text-align:center;
+    clip-path:polygon(0 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%);
+  }
+  .cd b{display:block;font-size:26px;line-height:1.1;font-weight:600}
+  .cd span{font-size:9px;color:var(--muted);letter-spacing:.18em}
+
+  .schedule{margin-top:16px;border:1px solid var(--line);background:rgba(21,21,28,.55)}
+  .sch-head{display:flex;justify-content:space-between;padding:6px 11px;border-bottom:1px solid var(--line);font-size:9px;color:var(--muted);letter-spacing:.1em}
+  .sch-row{display:grid;grid-template-columns:84px 1fr;gap:10px;padding:6px 11px;border-bottom:1px solid rgba(42,42,52,.5);font-size:11px}
+  .sch-row:last-of-type{border-bottom:0}
+  .sch-row .day{font-size:9px;color:var(--muted);padding-top:2px}
+  .sch-row .ses{display:flex;gap:16px;flex-wrap:wrap}
+  .sch-row .ses span{display:inline-flex;gap:5px;align-items:baseline}
+  .sch-row .ses b{font-size:11px;font-weight:600}
+  .sch-row.hot{background:rgba(225,6,0,.09)}
+  .sch-row.hot .day{color:var(--red-soft)}
+  .sch-row.hot .ses b{color:var(--red-soft)}
+  .sch-note{font-size:9px;color:#6f6f7a;padding:5px 11px 7px;border-top:1px solid rgba(42,42,52,.5)}
+
+  .lines{margin-top:16px;display:grid;gap:6px;border-top:1px solid rgba(42,42,52,.55);padding-top:12px}
+  .line{display:grid;grid-template-columns:20px 1fr;gap:8px;font-size:12px;color:#cfcfd8}
+  .line i{font-style:normal;font-size:10px;color:var(--red-soft);padding-top:2px}
+  .hero-actions{margin-top:auto;padding-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{
+    display:inline-block;background:var(--red);color:#fff;padding:9px 20px;font-size:12px;font-weight:600;
+    clip-path:polygon(0 0,100% 0,94% 100%,0 100%);transition:background .2s;
+  }
+  .btn:hover{background:var(--red-soft)}
+
+  .hero-track{
+    background:linear-gradient(180deg,var(--panel-2),var(--panel));
+    border:1px solid var(--line);border-top:2px solid var(--red);
+    padding:16px 18px 14px;display:flex;flex-direction:column;
+  }
+  .ht-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+  .ht-head h3{font-size:17px;font-weight:700;line-height:1.3}
+  .ht-head h3 small{display:block;font-size:8px;letter-spacing:.12em;color:var(--muted);font-weight:400;margin-top:3px}
+  .ht-round{font-size:9px;color:var(--red-soft);letter-spacing:.1em;border:1px solid rgba(225,6,0,.4);padding:2px 6px;white-space:nowrap}
+  .ht-body{display:grid;grid-template-columns:1.02fr .98fr;gap:10px;flex:1;min-height:200px;margin-top:10px}
+  .ht-map{border:1px solid var(--line);background:var(--panel);display:grid;place-items:center;padding:8px 8px 78px;position:relative}
+  .ht-map svg{width:100%;height:auto;max-height:200px;display:block}
+  .sector-mark text{fill:#6f6f7a;font-size:13px;font-family:"SF Mono",ui-monospace,monospace;letter-spacing:1.4px;transition:fill .25s}
+  .sector-mark line{stroke:#6f6f7a;stroke-width:1.6;transition:stroke .25s}
+  .sector-mark.on text{fill:#ff5347}
+  .sector-mark.on line{stroke:#ff5347}
+  .map-hud{
+    position:absolute;left:8px;right:8px;bottom:8px;padding:7px 9px 8px;pointer-events:none;
+    background:linear-gradient(180deg,rgba(13,13,17,0),rgba(13,13,17,.94) 38%);
+    border-top:1px solid rgba(255,255,255,.07);
+  }
+  .hud-top{display:flex;justify-content:space-between;font-size:7px;color:#8f8f9c;letter-spacing:.12em}
+  .hud-live{display:inline-flex;align-items:center;gap:5px;color:#ff5347}
+  .hud-live i{width:5px;height:5px;border-radius:50%;background:#ff5347;animation:livePulse 1.8s infinite}
+  @keyframes livePulse{0%,100%{box-shadow:0 0 0 0 rgba(225,6,0,.55)}55%{box-shadow:0 0 0 4px rgba(225,6,0,0)}}
+  .hud-main{display:flex;align-items:flex-end;gap:14px;margin-top:3px}
+  .hud-speed b{font-size:24px;line-height:1;letter-spacing:-.03em}
+  .hud-speed span{font-size:7px;color:#8f8f9c;margin-left:3px;letter-spacing:.06em}
+  .hud-sector,.hud-gear{display:flex;flex-direction:column;gap:0;margin-bottom:2px}
+  .hud-sector span,.hud-gear span{font-size:6px;color:#6f6f7a;letter-spacing:.1em}
+  .hud-sector b,.hud-gear b{font-size:10px;color:#cfcfd8;line-height:1.3}
+  .hud-bars{display:grid;gap:3px;margin-top:5px}
+  .hb{display:grid;grid-template-columns:20px 1fr;gap:6px;align-items:center;font-size:6px;color:#6f6f7a;letter-spacing:.08em}
+  .hb i{display:block;height:3px;background:#26262f;position:relative}
+  .hb em{position:absolute;inset:0 auto 0 0;width:0;background:#27f4d2}
+  .hb.brk em{background:#ff5347}
+  .ht-stats{border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;justify-content:space-between}
+  .ht-stat{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:5px 9px;border-bottom:1px solid rgba(42,42,52,.55);font-size:9px;flex:1}
+  .ht-stat:last-child{border-bottom:0}
+  .ht-stat span{color:var(--muted)}
+  .ht-stat b{font-size:11px;font-weight:600}
+  .ht-foot{border-top:1px solid var(--line);margin-top:10px;padding-top:8px;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:9px;color:var(--muted)}
+  .ht-foot a{color:var(--red-soft);border-bottom:1px dashed rgba(255,83,71,.45)}
+  .ht-foot a:hover{border-bottom-style:solid}
+
+  /* ---------- intel ---------- */
+  .intel-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:16px;margin-top:26px}
+  .story-card,.voice-card{background:var(--panel);border:1px solid var(--line);padding:18px 20px}
+  .card-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
+  .card-head h3{font-size:12px;letter-spacing:.08em;color:var(--red-soft);font-weight:600}
+  .card-head span{font-size:8px;color:var(--muted);letter-spacing:.14em}
+  .story-list{list-style:none}
+  .story-list li{display:grid;grid-template-columns:42px 1fr;gap:10px;font-size:12px;line-height:1.65;padding:8px 0;border-bottom:1px solid rgba(42,42,52,.55)}
+  .story-list li:first-child{padding-top:0}
+  .story-list li:last-child{border-bottom:0;padding-bottom:0}
+  .story-list li b{font-size:10px;color:var(--muted);font-weight:500;padding-top:3px}
+  .story-list li span{color:#cfcfd8}
+  .jump{display:inline-block;margin-left:6px;font-size:10px;color:var(--red-soft);border-bottom:1px dashed rgba(255,83,71,.45);white-space:nowrap}
+  .jump:hover{border-bottom-style:solid}
+  .voice-list{display:grid;gap:10px}
+  .voice{border-left:2px solid var(--line);padding-left:12px}
+  .voice p{font-size:12px;line-height:1.65;color:#dcdce3}
+  .voice .meta{display:flex;gap:7px;align-items:center;margin-top:4px;font-size:9px;color:var(--muted);flex-wrap:wrap}
+  .voice .meta i{font-style:normal;border:1px solid var(--line);padding:1px 5px;letter-spacing:.06em}
+  .voice .meta em{font-style:normal;color:#6f6f7a}
+  .voice .meta a{color:var(--red-soft);margin-left:auto;border-bottom:1px dashed rgba(255,83,71,.45)}
+  .voice-note{margin-top:12px;font-size:9px;color:#6f6f7a;line-height:1.6;border-top:1px solid var(--line);padding-top:8px}
+
+  /* ---------- season: timeline ---------- */
+  .rail{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin;scrollbar-color:#333 transparent}
+  .rail::-webkit-scrollbar{height:4px}
+  .rail::-webkit-scrollbar-thumb{background:#333}
+  .round{
+    scroll-snap-align:start;flex:0 0 122px;background:var(--panel);border:1px solid var(--line);
+    padding:9px 10px 8px;position:relative;text-align:left;font-family:inherit;color:inherit;cursor:pointer;
+    transition:border-color .18s,background .18s;
+  }
+  .round:hover{border-color:#454552}
+  .round .rno{display:flex;justify-content:space-between;font-size:8px;color:var(--muted);letter-spacing:.1em}
+  .round .rname{font-size:12px;font-weight:600;margin-top:6px;line-height:1.3}
+  .round .rdate{font-size:9px;color:var(--muted);margin-top:1px}
+  .round .rwin{display:flex;align-items:center;gap:6px;font-size:9px;color:#cfcfd8;margin-top:7px;padding-top:6px;border-top:1px solid rgba(42,42,52,.6)}
+  .round .rwin i{width:5px;height:5px;border-radius:50%;background:var(--team,#666);flex:0 0 auto}
+  .round.upcoming{opacity:.55}
+  .round.next{opacity:1;border-color:rgba(225,6,0,.55)}
+  .round.next::before{content:"NEXT";position:absolute;top:-1px;right:-1px;background:var(--red);color:#fff;font-size:8px;letter-spacing:.12em;padding:2px 5px}
+  .round.active{border-color:var(--red);background:linear-gradient(180deg,rgba(225,6,0,.14),var(--panel) 75%);opacity:1}
+  .round.active::after{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--red)}
+  .legend{display:flex;gap:18px;margin-top:8px;font-size:9px;color:var(--muted)}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .legend i{width:7px;height:7px;border:1px solid var(--muted);display:inline-block}
+  .legend .done{background:var(--red);border-color:var(--red)}
+  .legend .cur{background:transparent;border-color:var(--red)}
+
+  /* ---------- season: selected race ---------- */
+  .selected{display:grid;grid-template-columns:1.35fr .65fr;gap:14px;margin-top:16px}
+  .sel-main,.sel-side{background:var(--panel);border:1px solid var(--line);padding:16px 18px}
+  .sel-main{display:flex;flex-direction:column}
+  .sel-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid var(--line);padding-bottom:9px;margin-bottom:10px}
+  .sel-head h3{font-size:15px;font-weight:600}
+  .sel-head span{font-size:9px;color:var(--muted);letter-spacing:.08em}
+  .sel-winner{display:flex;align-items:center;gap:12px}
+  .sel-winner i{width:4px;height:36px;background:var(--team,#666);flex:0 0 auto}
+  .sel-winner b{font-size:24px;font-weight:700;line-height:1.2}
+  .sel-winner small{display:block;font-size:9px;color:var(--muted);letter-spacing:.08em;margin-top:2px}
+  .sel-note{font-size:10px;color:var(--muted);margin-top:6px}
+  .podium-list{margin-top:10px}
+  .pod-row{display:grid;grid-template-columns:26px 1fr 90px 70px;gap:8px;padding:5px 0;border-top:1px solid rgba(42,42,52,.55);font-size:11px;align-items:baseline}
+  .pod-row:first-child{border-top:0;padding-top:0}
+  .pod-row b{color:var(--red-soft);font-size:9px}
+  .pod-row .who{font-weight:500}
+  .pod-row .who small{font-size:9px;color:var(--muted);font-weight:400;margin-left:6px}
+  .pod-row .tm{color:var(--muted);font-size:9px}
+  .pod-row .gp{text-align:right;font-size:9px;color:var(--muted)}
+  .sel-pending{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.7}
+  .sel-side{display:flex;flex-direction:column}
+  .sel-side h4{font-size:10px;color:var(--red-soft);letter-spacing:.12em;margin-bottom:8px}
+  .sel-side p{font-size:11px;color:#cfcfd8;line-height:1.7}
+  .sel-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+  .sel-tags span{font-size:9px;border:1px solid var(--line);padding:1px 6px;color:var(--muted)}
+  .sel-side a{margin-top:auto;padding-top:10px;font-size:9px;color:var(--red-soft);border-bottom:1px dashed rgba(255,83,71,.45);align-self:flex-start}
+  .sel-side a:hover{border-bottom-style:solid}
+
+  /* ---------- full results ---------- */
+  .full-results{margin-top:14px}
+  .results-board{border:1px solid var(--line);background:var(--panel)}
+  .rb-head,.rb-row{display:grid;grid-template-columns:58px minmax(0,1fr) 80px 140px 120px;align-items:center;gap:10px;padding:8px 14px}
+  .rb-head{font-size:9px;color:var(--muted);letter-spacing:.12em;border-bottom:1px solid var(--line);background:var(--panel-2)}
+  .rb-row{border-bottom:1px solid rgba(42,42,52,.55);font-size:12px}
+  .rb-row:last-child{border-bottom:0}
+  .rb-row:hover{background:rgba(255,255,255,.02)}
+  .rb-row .rno{color:var(--muted);font-size:9px}
+  .rb-row .gp{font-weight:500}
+  .rb-row .gp small{display:block;font-size:8px;color:var(--muted);font-weight:400;letter-spacing:.08em}
+  .rb-row .date{color:var(--muted);font-size:10px}
+  .rb-row .win{display:flex;align-items:center;gap:7px;font-weight:500}
+  .rb-row .win i{width:3px;height:18px;background:var(--team,#666)}
+  .rb-row .win small{display:block;font-size:9px;color:var(--muted);font-weight:400;margin-top:1px}
+  .rb-row .note{font-size:9px;color:var(--muted);text-align:right}
+  .rb-note{padding:9px 14px;font-size:9px;color:var(--muted);border-top:1px solid var(--line)}
+
+  /* ---------- moments ---------- */
+  .moments{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .moments.expanded{grid-template-columns:repeat(5,1fr)}
+  .moment{background:var(--panel);border:1px solid var(--line);border-top:2px solid var(--red);padding:14px 14px 12px;display:flex;flex-direction:column;min-height:180px}
+  .moment.extra{display:none}
+  .moments.expanded .moment.extra{display:flex}
+  .moment .mnum{font-size:30px;font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:1px #4a4a58;letter-spacing:-.02em}
+  .moment h3{font-size:13px;margin-top:8px;line-height:1.35}
+  .moment p{font-size:10.5px;color:var(--muted);margin-top:5px;line-height:1.6}
+  .m-foot{margin-top:auto;padding-top:10px;display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap}
+  .chip{font-size:9px;color:var(--red-soft);border:1px solid rgba(225,6,0,.4);padding:2px 6px;letter-spacing:.04em;white-space:nowrap}
+  .more{font-size:9px;color:#cfcfd8;border-bottom:1px dashed #4a4a58;white-space:nowrap}
+  .more:hover{color:var(--red-soft);border-color:var(--red-soft)}
+
+  /* news */
+  .news-list{display:grid;grid-template-columns:1fr 1fr;gap:0 26px}
+  .news-item{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:10px 0;border-bottom:1px solid rgba(42,42,52,.55);font-size:12px}
+  .news-item a{color:#dcdce3;line-height:1.55}
+  .news-item a:hover{color:var(--red-soft)}
+  .news-meta{font-size:9px;color:var(--muted);white-space:nowrap;text-align:right;flex:0 0 auto}
+  .news-empty{font-size:11px;color:var(--muted);padding:10px 0}
+
+  /* track map fallback */
+  .ht-map.map-off #trackSvg,.ht-map.map-off .map-hud{display:none}
+  .map-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:20px;color:var(--muted)}
+  .map-fallback b{font-size:14px;color:var(--text);font-weight:600}
+  .map-fallback span{font-size:10px;line-height:1.6}
+
+  /* ---------- standings ---------- */
+  .champ-note{border:1px solid rgba(225,6,0,.35);background:rgba(225,6,0,.07);padding:12px 16px;display:flex;gap:16px;align-items:center;font-size:12px;margin-bottom:16px}
+  .champ-note b{color:var(--red-soft)}
+  .champ-note span{color:var(--muted);font-size:9px;margin-left:auto;text-align:right;letter-spacing:.08em;white-space:nowrap}
+  .boards{display:grid;grid-template-columns:1.05fr .95fr;gap:20px}
+  .board{background:var(--panel);border:1px solid var(--line)}
+  .board header{display:flex;justify-content:space-between;align-items:baseline;padding:13px 16px;border-bottom:1px solid var(--line)}
+  .board header h3{font-size:14px;font-weight:600}
+  .board header span{font-size:9px;color:var(--muted);letter-spacing:.1em}
+  .board table{width:100%;border-collapse:collapse}
+  .board th{font-size:9px;color:var(--muted);font-weight:400;letter-spacing:.1em;text-align:left;padding:8px 16px;border-bottom:1px solid var(--line)}
+  .board th.r,.board td.r{text-align:right}
+  .board td{padding:8px 16px;font-size:12px;border-bottom:1px solid rgba(42,42,52,.5)}
+  .board tr:last-child td{border-bottom:0}
+  .board tbody tr:hover{background:rgba(255,255,255,.02)}
+  .board tr.extra{display:none}
+  .board.expanded tr.extra{display:table-row}
+  .pos{color:var(--muted);font-size:9px;width:30px}
+  .driver{display:flex;align-items:center;gap:8px}
+  .driver i{width:3px;height:14px;background:var(--team,#666);flex:0 0 auto}
+  .driver span{font-weight:500}
+  .driver small{display:block;color:var(--muted);font-size:8px;font-weight:400}
+  .pts{font-weight:600}
+  .gap{color:var(--muted);font-size:9px}
+  .board .foot{padding:9px 16px;border-top:1px solid var(--line);font-size:9px;color:var(--muted);line-height:1.6;display:flex;justify-content:space-between;gap:10px;align-items:center}
+  .team-bar{height:3px;background:var(--line);margin-top:4px;position:relative;min-width:50px}
+  .team-bar em{position:absolute;inset:0 auto 0 0;background:var(--team,#666)}
+
+  /* ---------- detail overlay ---------- */
+  .detail-overlay{position:fixed;inset:0;z-index:130;display:grid;place-items:center;padding:28px;background:rgba(5,5,8,.88);backdrop-filter:blur(8px)}
+  .detail-panel{width:min(720px,100%);max-height:86vh;overflow:auto;position:relative;background:var(--panel);border:1px solid var(--line);border-top:2px solid var(--red);padding:30px 34px 22px}
+  .detail-close{position:absolute;top:11px;right:13px;width:32px;height:32px;border:1px solid var(--line);background:transparent;color:var(--muted);font-size:19px;line-height:1;cursor:pointer}
+  .detail-close:hover{color:var(--text);border-color:var(--muted)}
+  .detail-kicker{font-size:9px;letter-spacing:.18em;color:var(--red-soft);margin-bottom:10px}
+  .detail-panel h2{font-size:clamp(22px,3.2vw,30px);line-height:1.25;letter-spacing:-.02em;font-weight:700;padding-right:28px}
+  .detail-meta{font-size:10px;color:var(--muted);letter-spacing:.08em;margin-top:8px}
+  .detail-chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+  .detail-chips span{font-size:9px;color:var(--red-soft);border:1px solid rgba(225,6,0,.4);padding:2px 8px;letter-spacing:.04em}
+  .detail-body{margin-top:16px;border-top:1px solid var(--line);padding-top:14px}
+  .detail-body p{font-size:13px;line-height:1.85;color:#d5d5de;margin-bottom:9px}
+  .detail-body p:last-child{margin-bottom:0}
+  .detail-foot{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:18px;border-top:1px solid var(--line);padding-top:12px;font-size:9px;color:var(--muted);flex-wrap:wrap}
+  .detail-back{background:var(--red);color:#fff;border:0;padding:7px 16px;font-size:11px;font-weight:600;cursor:pointer;clip-path:polygon(0 0,100% 0,94% 100%,0 100%)}
+  .detail-back:hover{background:var(--red-soft)}
+
+  footer{border-top:1px solid var(--line);padding:22px 0 34px;font-size:10px;color:var(--muted)}
+  .foot-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .foot-grid b{color:var(--text);font-weight:500}
+  .foot-tag{letter-spacing:.12em;color:#6c6c78}
+
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr;gap:24px}
+    .hero-track{max-width:640px}
+    .intel-grid{grid-template-columns:1fr}
+    .selected{grid-template-columns:1fr}
+    .boards{grid-template-columns:1fr}
+    .nav-meta{display:none}
+    .moments{grid-template-columns:repeat(2,1fr)}
+    .moments.expanded{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:640px){
+    .wrap{padding:0 18px}
+    .topbar{padding:0 18px}
+    .nav a{padding:5px 9px;font-size:11px}
+    .hero-module{padding-top:96px}
+    .mod-label h2{font-size:20px}
+    .mod-label .hint{display:none}
+    h1{font-size:clamp(38px,12vw,56px)}
+    .countdown{gap:6px}
+    .cd{min-width:0;flex:1;padding:7px 0 6px}
+    .cd b{font-size:23px}
+    .sch-row{grid-template-columns:72px 1fr;gap:6px}
+    .ht-body{grid-template-columns:1fr;min-height:0}
+    .ht-map{padding:8px}
+    .map-hud{position:static;justify-self:stretch;width:100%;background:none;border-top:1px solid var(--line);padding:6px 2px 0;margin-top:6px}
+    .ht-map svg{max-height:180px}
+    .ht-stats{display:grid;grid-template-columns:1fr 1fr}
+    .ht-stat{flex:none}
+    .moments{grid-template-columns:1fr}
+    .moments.expanded{grid-template-columns:1fr}
+    .news-list{grid-template-columns:1fr}
+    .rb-head{display:none}
+    .rb-row{grid-template-columns:40px 1fr 90px;padding:9px 12px;row-gap:2px}
+    .rb-row .date{display:none}
+    .rb-row .note{grid-column:2/4;text-align:left;font-size:8px}
+    .pod-row{grid-template-columns:24px 1fr 70px}
+    .pod-row .tm{display:none}
+    .board td,.board th{padding:8px 12px}
+    .champ-note{flex-direction:column;align-items:flex-start;gap:6px}
+    .champ-note span{margin-left:0;text-align:left}
+    .detail-overlay{padding:12px}
+    .detail-panel{padding:22px 18px 18px;max-height:90vh}
+    .detail-foot{align-items:flex-start;flex-direction:column}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+<div class="scrollbar" id="scrollbar"></div>
+
+<header class="topbar">
+  <a class="brand" href="#next"><span class="brand-f1">F1</span><span class="brand-year">2026</span></a>
+  <nav class="nav" id="nav">
+    <a href="#next" data-sec="next">下一站</a>
+    <a href="#season" data-sec="season">赛季进程</a>
+    <a href="#standings" data-sec="standings">积分榜</a>
+  </nav>
+  <div class="nav-meta mono">DATA · 2026-10-25</div>
+</header>
+
+<main>
+  <!-- ================= MODULE 01 ================= -->
+  <section class="module hero-module" id="next">
+    <div class="wrap">
+      <div class="mod-label">
+        <span class="n mono">01</span>
+        <h2 id="moduleNextLabel">下一站 · 墨西哥城</h2>
+        <span class="hint mono" id="nextRoundHint">NEXT RACE · ROUND 19 / 23</span>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="kicker"><span class="dot"></span><span id="nextKicker">11 月 1 日 · 罗德里格斯兄弟赛道</span></div>
+          <h1 id="nextTitle">墨西哥城<span>大奖赛</span></h1>
+          <p class="hero-sub" id="nextSub">北京时间 11.02 04:00 · 罗德里格斯兄弟赛道</p>
+          <p class="hero-progress mono" id="nextProgress">SEASON 18 / 23 · 5 RACES TO GO</p>
+
+          <div class="countdown" aria-label="距下一站开赛倒计时">
+            <div class="cd"><b id="cd-d">--</b><span>天</span></div>
+            <div class="cd"><b id="cd-h">--</b><span>时</span></div>
+            <div class="cd"><b id="cd-m">--</b><span>分</span></div>
+            <div class="cd"><b id="cd-s">--</b><span>秒</span></div>
+          </div>
+
+          <div class="schedule">
+            <div class="sch-head"><span>本周末赛程 · 北京时间</span><span class="mono" id="schRound">MEXICO CITY</span></div>
+            <div id="schRows">
+              <div class="sch-row"><span class="day">10.31 周六</span><span class="ses"><span>练习赛一 <b class="mono">02:30</b></span><span>练习赛二 <b class="mono">06:00</b></span></span></div>
+              <div class="sch-row"><span class="day">11.01 周日</span><span class="ses"><span>练习赛三 <b class="mono">01:30</b></span><span>排位赛 <b class="mono">05:00</b></span></span></div>
+              <div class="sch-row hot"><span class="day">11.02 周一</span><span class="ses"><span>正赛 <b class="mono">04:00</b></span></span></div>
+            </div>
+            <div class="sch-note">时间为北京时间，数据来自 Jolpica；以官方赛程为准。</div>
+          </div>
+
+          <div class="lines">
+            <div class="line"><i>01</i><span id="lineChampion">冠军点：本站第 9 名或更好，安东内利即可加冕</span></div>
+            <div class="line"><i>02</i><span id="lineTrack">赛道：罗德里格斯兄弟赛道 · 4.304 km / 71 圈</span></div>
+            <div class="line"><i>03</i><span id="lineTeam">车队积分：梅赛德斯领先 133 分</span></div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn" href="#intel">查看下一站情报</a>
+          </div>
+        </div>
+
+        <aside class="hero-track" aria-label="下一站赛道概况">
+          <div class="ht-head">
+            <h3><span id="trackName">罗德里格斯兄弟赛道</span><small id="trackSmall">AUTÓDROMO HERMANOS RODRÍGUEZ</small></h3>
+            <span class="ht-round mono" id="trackRound">R19 / 23</span>
+          </div>
+          <div class="ht-body">
+            <div class="ht-map" id="trackMap">
+              <svg id="trackSvg" viewBox="0 0 520 320" role="img" aria-label="墨西哥城赛道示意图">
+                <path d="M80 252 H318 C368 252 390 224 372 194 L330 126 C314 96 278 96 266 126 L248 170 C240 192 212 196 194 178 L170 152 C150 130 116 138 114 168 L110 212 C108 238 92 250 80 252 Z"
+                      fill="none" stroke="#33333e" stroke-width="16" stroke-linejoin="round"/>
+                <path id="trackLine" d="M80 252 H318 C368 252 390 224 372 194 L330 126 C314 96 278 96 266 126 L248 170 C240 192 212 196 194 178 L170 152 C150 130 116 138 114 168 L110 212 C108 238 92 250 80 252 Z"
+                      fill="none" stroke="#ff5347" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+                <line id="carTrail" x1="0" y1="0" x2="0" y2="0" stroke="#ff5347" stroke-width="2" stroke-linecap="round" opacity="0"/>
+                <g id="carGroup" opacity="0" style="filter:drop-shadow(0 0 6px rgba(255,83,71,.85))">
+                  <circle r="9" fill="rgba(225,6,0,.22)"/>
+                  <circle r="3.8" fill="#fff" stroke="#e10600" stroke-width="2"/>
+                </g>
+                <rect x="92" y="244" width="28" height="16" fill="#f2f2f5"/>
+                <text x="80" y="292" fill="#8f8f9c" font-size="11" font-family="system-ui">START / FINISH</text>
+                <text x="380" y="86" fill="#8f8f9c" font-size="11" font-family="system-ui">FORO SOL</text>
+              </svg>
+              <div class="map-fallback" id="mapFallback" hidden>
+                <b id="mapFallbackName">赛道图</b>
+                <span>当前分站的赛道示意图暂未收录</span>
+              </div>
+              <div class="map-hud" aria-hidden="true">
+                <div class="hud-top">
+                  <span class="hud-live"><i></i>LIVE TRACE</span>
+                  <span class="mono" id="telLap">LAP 01 / 71</span>
+                </div>
+                <div class="hud-main">
+                  <div class="hud-speed"><b class="mono" id="telSpeed">---</b><span>KM/H</span></div>
+                  <div class="hud-sector"><span>SECTOR</span><b class="mono" id="telSector">S1</b></div>
+                  <div class="hud-gear"><span>GEAR</span><b class="mono" id="telGear">–</b></div>
+                </div>
+                <div class="hud-bars">
+                  <div class="hb"><span>THR</span><i><em id="thrBar"></em></i></div>
+                  <div class="hb brk"><span>BRK</span><i><em id="brkBar"></em></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="ht-stats" id="trackStats">
+              <div class="ht-stat"><span>赛道长度</span><b class="mono">4.304 km</b></div>
+              <div class="ht-stat"><span>比赛圈数</span><b class="mono">71</b></div>
+              <div class="ht-stat"><span>弯道数量</span><b class="mono">17</b></div>
+              <div class="ht-stat"><span>比赛距离</span><b class="mono">305.354 km</b></div>
+              <div class="ht-stat"><span>海拔</span><b class="mono">2,285 m</b></div>
+              <div class="ht-stat"><span>单圈纪录</span><b class="mono">1:17.774</b></div>
+            </div>
+          </div>
+          <div class="ht-foot">
+            <span>冠军形势 · 详见积分榜</span>
+            <a href="#standings">完整规则见 03 →</a>
+          </div>
+        </aside>
+      </div>
+
+      <div class="intel-grid" id="intel">
+        <div class="story-card">
+          <div class="card-head"><h3>往届看点</h3><span class="mono">MEXICO CITY · 4 STORIES</span></div>
+          <ul class="story-list">
+            <li><b>2022</b><span>维斯塔潘拿下单赛季第 14 胜，刷新当时的单赛季胜场纪录。<a class="jump" href="#detail-2022">详情 →</a></span></li>
+            <li><b>2021</b><span>首圈与汉密尔顿正面交锋后夺冠，冠军争夺进入白热化。<a class="jump" href="#detail-2021">详情 →</a></span></li>
+            <li><b>2019</b><span>汉密尔顿夺冠，梅赛德斯在墨西哥锁定当年车队总冠军。<a class="jump" href="#detail-2019">详情 →</a></span></li>
+            <li><b>2016</b><span>维斯塔潘防守罗斯伯格被罚时 5 秒，领奖台归属赛后反转。<a class="jump" href="#detail-2016">详情 →</a></span></li>
+          </ul>
+        </div>
+
+        <div class="voice-card">
+          <div class="card-head"><h3>网友观点 · 精选</h3><span class="mono">COMMUNITY</span></div>
+          <div class="voice-list">
+            <div class="voice"><p>高海拔对所有车队都是公平的，但梅赛德斯在这里一直很舒服，真正的悬念在法拉利能不能追近。</p><div class="meta"><i>虎扑</i><em>10.26</em><a href="https://bbs.hupu.com/f1" target="_blank" rel="noopener">原帖 ↗</a></div></div>
+            <div class="voice"><p>只差一个第九名，希望别出幺蛾子，稳稳把冠军拿下。</p><div class="meta"><i>微博</i><em>10.26</em><a href="https://s.weibo.com/weibo?q=F1" target="_blank" rel="noopener">原帖 ↗</a></div></div>
+            <div class="voice"><p>体育场路段的声音，隔着转播都能感觉到震，今年一定要去现场。</p><div class="meta"><i>B站</i><em>10.25</em><a href="https://search.bilibili.com/all?keyword=F1" target="_blank" rel="noopener">原帖 ↗</a></div></div>
+          </div>
+          <p class="voice-note">观点为版式示例，上线前需替换为经核实、标注来源的真实评论。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MODULE 02 ================= -->
+  <section class="module" id="season">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num mono">02</span>
+        <h2>赛季进程</h2>
+        <p>18 / 23 完赛 · 安东内利 9 胜<br>点击时间轴查看分站战报</p>
+      </div>
+
+      <div class="sub-head">
+        <h3>赛程与战报</h3>
+        <button class="text-btn" id="toggleResults" aria-expanded="false" aria-controls="fullResults">查看全部 18 站 ↓</button>
+      </div>
+
+      <div class="rail" id="rail" role="list"></div>
+      <div class="legend">
+        <span><i class="done"></i>已完赛</span>
+        <span><i class="cur"></i>当前选中</span>
+        <span><i></i>未开始</span>
+        <span style="margin-left:auto">横向滑动 · 23 站</span>
+      </div>
+
+      <div class="selected" id="selected"></div>
+
+      <div class="full-results" id="fullResults" hidden>
+        <div class="results-board">
+          <div class="rb-head">
+            <span>R</span><span>分站</span><span>日期</span><span>冠军</span><span style="text-align:right">备注</span>
+          </div>
+          <div id="resultsBody"></div>
+          <div class="rb-note" id="resultsNote">成绩以分站冠军为主；数据来自 Jolpica。</div>
+        </div>
+      </div>
+
+      <div class="sub-head" style="margin-top:26px">
+        <h3>赛季名场面</h3>
+        <span>默认 3 张<button class="text-btn" id="toggleMoments" aria-expanded="false" style="margin-left:14px">展开全部 5 张 ↓</button></span>
+      </div>
+      <div class="moments" id="moments"></div>
+
+      <div class="sub-head" style="margin-top:26px">
+        <h3>围场快讯</h3>
+        <span>来源：Formula 1 / Motorsport</span>
+      </div>
+      <div class="news-list" id="newsList"></div>
+    </div>
+  </section>
+
+  <!-- ================= MODULE 03 ================= -->
+  <section class="module" id="standings">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num mono">03</span>
+        <h2>积分榜</h2>
+        <p id="standingsNote">截至 2026-10-25 · 美国站后</p>
+      </div>
+
+      <div class="champ-note">
+        <div><b>冠军形势：</b>领先者 <span id="champLeader">安东内利</span> 领先 <span id="champGap">123</span> 分；赛季剩余 <span id="champRemain">5</span> 站。</div>
+        <span class="mono" id="champStats">365 PTS · 9 WINS · 20 YRS</span>
+      </div>
+
+      <div class="boards">
+        <div class="board" id="driverBoard">
+          <header><h3>车手积分榜</h3><span class="mono">TOP 5 / 10</span></header>
+          <table>
+            <thead><tr><th>POS</th><th>车手</th><th class="r">积分</th><th class="r">差距</th></tr></thead>
+            <tbody id="driversBody"></tbody>
+          </table>
+          <div class="foot">
+            <span>11 林德布拉德 38 · 12 科拉平托 27 · 13 贝尔曼 23</span>
+            <button class="text-btn" data-expand="driverBoard">展开完整 10 名 ↓</button>
+          </div>
+        </div>
+
+        <div class="board" id="constructorBoard">
+          <header><h3>车队积分榜</h3><span class="mono">TOP 5 / 11</span></header>
+          <table>
+            <thead><tr><th>POS</th><th>车队</th><th class="r">积分</th><th class="r">差距</th></tr></thead>
+            <tbody id="constructorsBody"></tbody>
+          </table>
+          <div class="foot">
+            <span>红牛与迈凯伦同分，红牛凭最佳完赛成绩列前</span>
+            <button class="text-btn" data-expand="constructorBoard">展开完整 11 支 ↓</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div><b>数据来源</b> Jolpica F1 API（CC BY-NC-SA 4.0）· Formula 1 RSS · Motorsport RSS</div>
+    <div><b>说明</b> 课堂作业 · 非官方粉丝项目 · 与 Formula 1 无隶属关系</div>
+    <div class="foot-tag"><span id="dataUpdated">内置快照</span> · <button class="text-btn" id="refreshBtn" type="button">刷新数据</button></div>
+  </div>
+</footer>
+
+<div class="detail-overlay" id="detailOverlay" hidden>
+  <div class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+    <button class="detail-close" id="detailClose" aria-label="关闭详情">×</button>
+    <div class="detail-kicker mono" id="detailKicker"></div>
+    <h2 id="detailTitle"></h2>
+    <div class="detail-meta mono" id="detailMeta"></div>
+    <div class="detail-chips" id="detailChips"></div>
+    <div class="detail-body" id="detailBody"></div>
+    <div class="detail-foot">
+      <span>数据来源：formula1.com · FIA（演示内容，上线前复核）</span>
+      <button class="detail-back" id="detailBack">返回列表</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const TEAM_COLORS = {
+  "梅赛德斯":"#27f4d2","法拉利":"#e8002d","红牛":"#3671c6","迈凯伦":"#ff8000",
+  "Racing Bulls":"#6692ff","Alpine":"#ff87bc","哈斯":"#b6babd","奥迪":"#f50537",
+  "威廉姆斯":"#64c4ff","阿斯顿·马丁":"#229971","凯迪拉克":"#c8a24b"
+};
+
+const RACES = [
+  {r:1,gp:"澳大利亚",en:"AUSTRALIA",date:"03.08",winner:"拉塞尔",team:"梅赛德斯",note:"赛季揭幕战",tag:"揭幕战",podium:[["拉塞尔","梅赛德斯","—"],["安东内利","梅赛德斯",""],["勒克莱尔","法拉利",""]]},
+  {r:2,gp:"中国",en:"CHINA",date:"03.15",winner:"安东内利",team:"梅赛德斯",note:"冲刺周末",tag:"冲刺周末",podium:[["安东内利","梅赛德斯","—"],["拉塞尔","梅赛德斯",""],["汉密尔顿","法拉利",""]]},
+  {r:3,gp:"日本",en:"JAPAN",date:"03.29",winner:"安东内利",team:"梅赛德斯",note:"铃鹿",tag:"铃鹿",podium:[["安东内利","梅赛德斯","—"],["皮亚斯特里","迈凯伦",""],["勒克莱尔","法拉利",""]]},
+  {r:4,gp:"迈阿密",en:"MIAMI",date:"05.03",winner:"安东内利",team:"梅赛德斯",note:"",tag:"迈阿密",podium:[["安东内利","梅赛德斯","—"],["诺里斯","迈凯伦",""],["皮亚斯特里","迈凯伦",""]]},
+  {r:5,gp:"加拿大",en:"CANADA",date:"05.24",winner:"安东内利",team:"梅赛德斯",note:"",tag:"蒙特利尔",podium:[["安东内利","梅赛德斯","—"],["汉密尔顿","法拉利",""],["维斯塔潘","红牛",""]]},
+  {r:6,gp:"摩纳哥",en:"MONACO",date:"06.07",winner:"安东内利",team:"梅赛德斯",note:"五连冠达成",tag:"五连冠",podium:[["安东内利","梅赛德斯","—"],["汉密尔顿","法拉利",""],["哈贾尔","红牛",""]]},
+  {r:7,gp:"西班牙",en:"BARCELONA",date:"06.14",winner:"汉密尔顿",team:"法拉利",note:"巴塞罗那",tag:"巴塞罗那",podium:[["汉密尔顿","法拉利","—"],["拉塞尔","梅赛德斯",""],["诺里斯","迈凯伦",""]]},
+  {r:8,gp:"奥地利",en:"AUSTRIA",date:"06.28",winner:"拉塞尔",team:"梅赛德斯",note:"",tag:"红牛环"},
+  {r:9,gp:"英国",en:"BRITAIN",date:"07.05",winner:"勒克莱尔",team:"法拉利",note:"银石",tag:"银石"},
+  {r:10,gp:"比利时",en:"BELGIUM",date:"07.19",winner:"安东内利",team:"梅赛德斯",note:"斯帕",tag:"斯帕"},
+  {r:11,gp:"匈牙利",en:"HUNGARY",date:"07.26",winner:"诺里斯",team:"迈凯伦",note:"",tag:"匈牙利"},
+  {r:12,gp:"荷兰",en:"DUTCH",date:"08.23",winner:"诺里斯",team:"迈凯伦",note:"赞德沃特",tag:"赞德沃特"},
+  {r:13,gp:"意大利",en:"ITALY",date:"09.06",winner:"安东内利",team:"梅赛德斯",note:"P19 起步夺冠",tag:"P19 → P1"},
+  {r:14,gp:"西班牙·马德里",en:"MADRID",date:"09.13",winner:"安东内利",team:"梅赛德斯",note:"首届马德里站",tag:"首届马德里"},
+  {r:15,gp:"阿塞拜疆",en:"AZERBAIJAN",date:"09.26",winner:"拉塞尔",team:"梅赛德斯",note:"巴库",tag:"巴库"},
+  {r:16,gp:"马来西亚",en:"MALAYSIA",date:"10.04",winner:"维斯塔潘",team:"红牛",note:"雪邦",tag:"雪邦"},
+  {r:17,gp:"新加坡",en:"SINGAPORE",date:"10.11",winner:"维斯塔潘",team:"红牛",note:"滨海湾",tag:"滨海湾"},
+  {r:18,gp:"美国",en:"USA",date:"10.25",winner:"安东内利",team:"梅赛德斯",note:"奥斯汀 · 第 9 胜",tag:"第 9 胜",podium:[["安东内利","梅赛德斯","1:34:21.407"],["勒克莱尔","法拉利","+13.078"],["维斯塔潘","红牛","+21.665"]]},
+  {r:19,gp:"墨西哥城",en:"MEXICO CITY",date:"11.01",winner:null,team:null,note:"下一站",tag:"下一站"},
+  {r:20,gp:"圣保罗",en:"SÃO PAULO",date:"11.08",winner:null,team:null,note:"",tag:"待赛"},
+  {r:21,gp:"拉斯维加斯",en:"LAS VEGAS",date:"11.21",winner:null,team:null,note:"",tag:"待赛"},
+  {r:22,gp:"卡塔尔",en:"QATAR",date:"11.29",winner:null,team:null,note:"",tag:"待赛"},
+  {r:23,gp:"阿布扎比",en:"ABU DHABI",date:"12.06",winner:null,team:null,note:"收官战",tag:"收官战"}
+];
+
+const DRIVERS = [
+  ["安东内利","梅赛德斯",365],["拉塞尔","梅赛德斯",242],["汉密尔顿","法拉利",241],
+  ["维斯塔潘","红牛",236],["勒克莱尔","法拉利",233],["诺里斯","迈凯伦",211],
+  ["皮亚斯特里","迈凯伦",144],["哈贾尔","红牛",105],["劳森","Racing Bulls",77],["加斯利","Alpine",42]
+];
+
+const CONSTRUCTORS = [
+  ["梅赛德斯",607],["法拉利",474],["红牛",355],["迈凯伦",355],["Racing Bulls",102],
+  ["Alpine",69],["哈斯",30],["奥迪",23],["威廉姆斯",12],["阿斯顿·马丁",7],["凯迪拉克",0]
+];
+
+const MOMENTS = [
+  {id:"five-wins",n:"01",t:"五连冠",d:"从上海到蒙特卡洛，安东内利连赢五站，把赛季变成自己的主场。",c:"5 连胜"},
+  {id:"monza",n:"02",t:"蒙扎奇迹",d:"意大利站第 19 位发车，第 1 位冲线。",c:"P19 → P1"},
+  {id:"madrid",n:"03",t:"马德里首秀",d:"首届马德里站，顶住维斯塔潘的整场追击拿下首冠。",c:"新赛道首冠"},
+  {id:"norris",n:"04",t:"诺里斯双胜",d:"匈牙利与赞德沃特背靠背夺冠，迈凯伦找回速度。",c:"背靠背",extra:true},
+  {id:"asia",n:"05",t:"亚洲连胜",d:"雪邦与滨海湾连续登顶，维斯塔潘把悬念拖进美洲。",c:"2 连胜",extra:true}
+];
+
+const DETAILS = {
+  "five-wins":{k:"名场面 · 2026 赛季",t:"五连冠：从上海到蒙特卡洛",m:"第 2–6 站 · 2026.03.15 – 06.07",chips:["5 连胜","6 站 5 胜"],body:["中国站开始，安东内利连续拿下中国、日本、迈阿密、加拿大与摩纳哥五站冠军。","这五站覆盖高速永久赛道、美洲混合赛道与摩纳哥街道赛，连胜的成色因此更受认可。","连胜让梅赛德斯在赛季前段同时建立了车手榜领先与车队积分基础，赛季基调由此确定。"]},
+  "monza":{k:"名场面 · 2026 赛季",t:"蒙扎：第 19 位发车，第 1 位冲线",m:"第 13 站 · 2026.09.06 · 意大利大奖赛",chips:["P19 → P1","蒙扎"],body:["意大利站在蒙扎进行，安东内利排位仅列第 19 位。","正赛中他一路推进，在比赛后段完成对领先集团的超越，最终第一个冲线。","在长直道为主的蒙扎完成这样的逆转，对极速与轮胎管理的平衡提出了很高要求。"]},
+  "madrid":{k:"名场面 · 2026 赛季",t:"马德里首秀：新赛道的第一座奖杯",m:"第 14 站 · 2026.09.13 · 马德里大奖赛",chips:["首届马德里站","新赛道首冠"],body:["2026 赛季新增马德里站，首届比赛在 9 月中旬进行。","维斯塔潘整场施压，安东内利守住位置，成为这条新赛道的首位冠军。","首届分站的冠军会被写进赛道历史的第一页。"]},
+  "norris":{k:"名场面 · 2026 赛季",t:"诺里斯双胜：迈凯伦的中段反击",m:"第 11–12 站 · 2026.07.26 / 08.23",chips:["背靠背","匈牙利 + 荷兰"],body:["诺里斯在匈牙利与赞德沃特背靠背夺冠，这是迈凯伦本赛季最完整的一段表现。","两站赛道特性差异明显，连续取胜说明赛车在不同类型的赛道上都有竞争力。","在梅赛德斯主导的赛季里，这两场胜利是迈凯伦为数不多的高光时刻。"]},
+  "asia":{k:"名场面 · 2026 赛季",t:"亚洲连胜：维斯塔潘把悬念拖进美洲",m:"第 16–17 站 · 2026.10.04 / 10.11",chips:["2 连胜","雪邦 + 滨海湾"],body:["雪邦与新加坡背靠背进行，维斯塔潘连续两站登顶。","两站分别是高速永久赛道与夜间街道赛，连胜的含金量在于对赛车调校的适应。","进入美洲赛季前，冠军悬念因此延续。"]},
+  "2022":{k:"往届看点 · 墨西哥城",t:"2022：单赛季第 14 胜",m:"墨西哥大奖赛 · 2022",chips:["单季 14 胜","维斯塔潘"],body:["维斯塔潘在墨西哥城拿下个人当赛季第 14 场胜利，刷新当时的单赛季胜场纪录。","这场比赛也巩固了他在罗德里格斯兄弟赛道上的统治印象。"]},
+  "2021":{k:"往届看点 · 墨西哥城",t:"2021：首圈的交锋",m:"墨西哥大奖赛 · 2021",chips:["冠军争夺","汉密尔顿 vs 维斯塔潘"],body:["维斯塔潘在首圈与汉密尔顿正面交锋后取得领先。","他最终赢下比赛，把当年的冠军争夺推向最后几站。","这场首圈攻防至今仍是墨西哥站最常被回放的画面之一。"]},
+  "2019":{k:"往届看点 · 墨西哥城",t:"2019：梅赛德斯的车队冠军点",m:"墨西哥大奖赛 · 2019",chips:["车队总冠军","汉密尔顿"],body:["汉密尔顿在墨西哥夺冠，梅赛德斯在本站锁定当年的车队总冠军。","这条赛道因此与梅赛德斯的一段统治期绑定在一起。"]},
+  "2016":{k:"往届看点 · 墨西哥城",t:"2016：罚时改变领奖台",m:"墨西哥大奖赛 · 2016",chips:["罚时 5 秒","领奖台反转"],body:["维斯塔潘在防守罗斯伯格时切弯，被赛会罚时 5 秒。","罚时执行后，领奖台席位在赛后发生反转，这场比赛成为判罚讨论的经典案例。"]}
+};
+
+const RACE_NOTES = {
+  1:"赛季揭幕战",2:"冲刺周末",3:"铃鹿",4:"迈阿密",5:"蒙特利尔",6:"五连冠达成",
+  7:"巴塞罗那",8:"红牛环",9:"银石",10:"斯帕",11:"匈牙利",12:"赞德沃特",
+  13:"P19 起步夺冠",14:"首届马德里站",15:"巴库",16:"雪邦",17:"滨海湾",
+  18:"奥斯汀 · 第 9 胜",19:"下一站",20:"",21:"",22:"",23:"收官战"
+};
+
+let races = RACES;
+let driverRows = DRIVERS.map(([name, team, points]) => ({ name, team, points }));
+let constructorRows = CONSTRUCTORS.map(([name, points]) => ({ name, points }));
+let nextRound = 19;
+let selectedRound = 18;
+let target = Date.parse("2026-11-01T20:00:00Z");
+
+function el(html){const t=document.createElement("template");t.innerHTML=html.trim();return t.content.firstElementChild;}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function pad2(n){return String(n).padStart(2,"0");}
+function formatDateCN(dateStr){
+  const [,m,d] = dateStr.split("-");
+  return `${Number(m)} 月 ${Number(d)} 日`;
+}
+function formatBJ(iso){
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "—";
+  const bj = new Date(d.getTime() + 8*3600*1000);
+  return `${pad2(bj.getUTCMonth()+1)}.${pad2(bj.getUTCDate())} ${pad2(bj.getUTCHours())}:${pad2(bj.getUTCMinutes())}`;
+}
+function formatUpdated(iso){
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "—";
+  const bj = new Date(d.getTime() + 8*3600*1000);
+  return `${pad2(bj.getUTCMonth()+1)}-${pad2(bj.getUTCDate())} ${pad2(bj.getUTCHours())}:${pad2(bj.getUTCMinutes())}`;
+}
+
+/* ---------- timeline ---------- */
+const rail=document.getElementById("rail");
+
+function renderRail(){
+  rail.innerHTML="";
+  races.forEach(r=>{
+    const color=r.team?TEAM_COLORS[r.team]:"#666";
+    const cls=r.winner===null?(r.r===nextRound?"round next":"round upcoming"):"round";
+    const btn=el(`<button class="${cls}" role="listitem" data-round="${r.r}" style="--team:${color}">
+        <div class="rno"><span>R${String(r.r).padStart(2,"0")}</span><span class="mono">${r.date}</span></div>
+        <div class="rname">${esc(r.gp)}</div>
+        <div class="rdate">${esc(r.en)}</div>
+        <div class="rwin"><i></i>${r.winner?esc(r.winner):"待赛"}</div>
+      </button>`);
+    btn.addEventListener("click",()=>selectRound(r.r));
+    rail.appendChild(btn);
+  });
+}
+
+function selectRound(n){
+  selectedRound=n;
+  document.querySelectorAll(".round").forEach(b=>{
+    b.classList.toggle("active",Number(b.dataset.round)===n);
+  });
+  renderSelected();
+  requestAnimationFrame(()=>centerRail(n));
+}
+
+function centerRail(n){
+  const node=rail.querySelector(`[data-round="${n}"]`);
+  if(!node) return;
+  const railRect=rail.getBoundingClientRect();
+  const nodeRect=node.getBoundingClientRect();
+  rail.scrollLeft += nodeRect.left - railRect.left - rail.clientWidth/2 + nodeRect.width/2;
+}
+window.addEventListener("load",()=>centerRail(selectedRound));
+
+/* ---------- selected race panel ---------- */
+function renderSelected(){
+  const r=races.find(x=>x.r===selectedRound) || races[0];
+  const wrap=document.getElementById("selected");
+  const color=r.team?TEAM_COLORS[r.team]:"#666";
+
+  if(!r.winner){
+    wrap.innerHTML=`
+      <div class="sel-main">
+        <div class="sel-head"><h3>R${String(r.r).padStart(2,"0")} · ${esc(r.gp)}大奖赛</h3><span class="mono">${r.date} · ${esc(r.en)}</span></div>
+        <div class="sel-winner"><i style="background:${color}"></i><div><b>尚未开赛</b><small>${esc(r.note||r.tag||"待赛")}</small></div></div>
+        <p class="sel-pending">本站前瞻、赛道信息与往届看点，请看首屏「下一站」模块。</p>
+      </div>
+      <div class="sel-side">
+        <h4>本站前瞻</h4>
+        <p>比赛周末开始前，这里会切换为该站的赛道档案与看点。</p>
+        <div class="sel-tags"><span>${esc(r.tag||"待赛")}</span><span>${r.date}</span></div>
+        <a href="#next">回到下一站 ↑</a>
+      </div>`;
+    return;
+  }
+
+  const podium=(r.podium||[]).map((p,i)=>`
+    <div class="pod-row">
+      <b>P${i+1}</b>
+      <span class="who">${esc(p.name)}<small>${esc(p.team)}</small></span>
+      <span class="tm">${esc(p.time||"")}</span>
+      <span class="gp"></span>
+    </div>`).join("");
+
+  wrap.innerHTML=`
+    <div class="sel-main">
+      <div class="sel-head"><h3>R${String(r.r).padStart(2,"0")} · ${esc(r.gp)}大奖赛</h3><span class="mono">${r.date} · ${esc(r.en)}</span></div>
+      <div class="sel-winner" style="--team:${color}"><i></i><div><b>${esc(r.winner)}</b><small>${esc(r.team)} · 分站冠军</small></div></div>
+      ${r.podium&&r.podium.length?`<div class="podium-list">${podium}</div>`:`<p class="sel-pending">领奖台完整数据以官方成绩为准；该站冠军为 ${esc(r.winner)}。</p>`}
+    </div>
+    <div class="sel-side">
+      <h4>本站速记</h4>
+      <p>${esc(r.note ? r.note+"。" : "该站冠军由 "+r.winner+" 拿下。")}</p>
+      <div class="sel-tags"><span>${esc(r.tag||r.team||"分站")}</span><span>${esc(r.team||"")}</span></div>
+      <a href="https://www.formula1.com/en/results" target="_blank" rel="noopener">完整成绩见官方 →</a>
+    </div>`;
+}
+
+/* ---------- full results ---------- */
+const resultsBody=document.getElementById("resultsBody");
+
+function renderResults(){
+  resultsBody.innerHTML="";
+  races.filter(r=>r.winner).forEach(r=>{
+    resultsBody.appendChild(el(`<div class="rb-row" style="--team:${TEAM_COLORS[r.team]||"#666"}">
+        <span class="rno mono">R${String(r.r).padStart(2,"0")}</span>
+        <span class="gp">${esc(r.gp)}<small>${esc(r.en)}</small></span>
+        <span class="date mono">${r.date}</span>
+        <span class="win"><i></i><span>${esc(r.winner)}<small>${esc(r.team)}</small></span></span>
+        <span class="note">${esc(r.note)}</span>
+      </div>`));
+  });
+}
+
+const toggleResults=document.getElementById("toggleResults");
+const fullResults=document.getElementById("fullResults");
+toggleResults.addEventListener("click",()=>{
+  fullResults.hidden=!fullResults.hidden;
+  toggleResults.textContent=fullResults.hidden?"查看全部 18 站 ↓":"收起完整战报 ↑";
+  toggleResults.setAttribute("aria-expanded",String(!fullResults.hidden));
+});
+
+/* ---------- moments ---------- */
+const momentsWrap=document.getElementById("moments");
+MOMENTS.forEach(m=>{
+  momentsWrap.appendChild(el(`<article class="moment ${m.extra?"extra":""}">
+      <div class="mnum mono">${m.n}</div>
+      <h3>${m.t}</h3>
+      <p>${m.d}</p>
+      <div class="m-foot"><span class="chip">${m.c}</span><a class="more" href="#detail-${m.id}">查看详情 →</a></div>
+    </article>`));
+});
+const toggleMoments=document.getElementById("toggleMoments");
+let momentsOpen=false;
+toggleMoments.addEventListener("click",()=>{
+  momentsOpen=!momentsOpen;
+  momentsWrap.classList.toggle("expanded",momentsOpen);
+  toggleMoments.textContent=momentsOpen?"收起名场面 ↑":"展开全部 5 张 ↓";
+  toggleMoments.setAttribute("aria-expanded",String(momentsOpen));
+});
+
+/* ---------- standings ---------- */
+const driversBody=document.getElementById("driversBody");
+const constructorsBody=document.getElementById("constructorsBody");
+
+function renderStandings(){
+  driversBody.innerHTML="";
+  const leadPts=driverRows[0]?.points||365;
+  driverRows.forEach((d,i)=>{
+    const pos=i+1;
+    driversBody.appendChild(el(`<tr class="${pos>5?"extra":""}" style="--team:${TEAM_COLORS[d.team]||"#666"}">
+        <td class="pos mono">${String(pos).padStart(2,"0")}</td>
+        <td><div class="driver"><i></i><span>${esc(d.name)}<small>${esc(d.team)}</small></span></div></td>
+        <td class="r pts mono">${d.points}</td>
+        <td class="r gap mono">${pos===1?"—":"−"+(leadPts-d.points)}</td>
+      </tr>`));
+  });
+
+  constructorsBody.innerHTML="";
+  const leadTeam=constructorRows[0]?.points||607;
+  constructorRows.forEach((c,i)=>{
+    const pos=i+1;
+    constructorsBody.appendChild(el(`<tr class="${pos>5?"extra":""}" style="--team:${TEAM_COLORS[c.name]||"#666"}">
+        <td class="pos mono">${String(pos).padStart(2,"0")}</td>
+        <td><div class="driver"><i></i><span>${esc(c.name)}<div class="team-bar"><em style="width:${leadTeam?c.points/leadTeam*100:0}%"></em></div></span></div></td>
+        <td class="r pts mono">${c.points}</td>
+        <td class="r gap mono">${pos===1?"—":"−"+(leadTeam-c.points)}</td>
+      </tr>`));
+  });
+}
+
+document.querySelectorAll("[data-expand]").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const board=document.getElementById(btn.dataset.expand);
+    const open=board.classList.toggle("expanded");
+    const total=btn.dataset.expand==="driverBoard"?"10 名":"11 支";
+    btn.textContent=open?`收起 ↑`:`展开完整 ${total} ↓`;
+    btn.setAttribute("aria-expanded",String(open));
+    const label=board.querySelector("header span");
+    if(label){
+      label.textContent=open
+        ? (btn.dataset.expand==="driverBoard"?"ALL 10":"ALL 11")
+        : (btn.dataset.expand==="driverBoard"?"TOP 5 / 10":"TOP 5 / 11");
+    }
+  });
+});
+
+/* ---------- data loading ---------- */
+const newsList=document.getElementById("newsList");
+
+function formatNewsDate(iso){
+  const d=new Date(iso);
+  if(Number.isNaN(d.getTime())) return "";
+  const bj=new Date(d.getTime()+8*3600*1000);
+  return `${pad2(bj.getUTCMonth()+1)}.${pad2(bj.getUTCDate())}`;
+}
+
+function renderNews(news){
+  if(!newsList) return;
+  if(!news || !news.length){
+    newsList.innerHTML='<div class="news-empty">暂无新闻，稍后再试。</div>';
+    return;
+  }
+  newsList.innerHTML=news.map(n=>{
+    const date=n.source==="Motorsport"&&n.publishedAt?` · ${formatNewsDate(n.publishedAt)}`:"";
+    return `<div class="news-item"><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a><span class="news-meta">${esc(n.source)}${date}</span></div>`;
+  }).join("");
+}
+
+function applyData(d){
+  if(!d || !d.nextRace || !Array.isArray(d.races)) return;
+
+  races=d.races.map(r=>({...r,note:RACE_NOTES[r.r]||"",tag:RACE_NOTES[r.r]||""}));
+  driverRows=(d.standings?.drivers||[]).map(x=>({name:x.name,team:x.team,points:x.points,wins:x.wins||0}));
+  constructorRows=(d.standings?.constructors||[]).map(x=>({name:x.name,points:x.points}));
+  nextRound=d.season?.nextRound || 19;
+  target=Date.parse(d.nextRace.utc);
+  if(Number.isNaN(target)) target=Date.now();
+
+  const n=d.nextRace;
+  document.getElementById("moduleNextLabel").textContent=`下一站 · ${n.name}`;
+  document.getElementById("nextRoundHint").textContent=`NEXT RACE · ROUND ${n.round} / ${d.season.rounds}`;
+  document.getElementById("nextKicker").textContent=`${formatDateCN(n.date)} · ${n.circuit}`;
+  document.getElementById("nextTitle").innerHTML=`${esc(n.name)}<span>大奖赛</span>`;
+  document.getElementById("nextSub").textContent=`北京时间 ${formatBJ(n.utc)} · ${n.circuit}`;
+  document.getElementById("nextProgress").textContent=`SEASON ${d.season.completed} / ${d.season.rounds} · ${d.season.remaining} RACES TO GO`;
+
+  document.getElementById("schRound").textContent=(n.nameEn||"").replace(" Grand Prix","").toUpperCase();
+  const groups=new Map();
+  (n.sessions||[]).forEach(s=>{
+    const key=`${s.date} ${s.weekday}`;
+    if(!groups.has(key)) groups.set(key,{items:[],hot:false});
+    groups.get(key).items.push(s);
+    if(s.key==="race") groups.get(key).hot=true;
+  });
+  document.getElementById("schRows").innerHTML=[...groups.values()].map(g=>`
+    <div class="sch-row ${g.hot?"hot":""}"><span class="day">${g.items[0].date} ${g.items[0].weekday}</span>
+      <span class="ses">${g.items.map(s=>`<span>${esc(s.label)} <b class="mono">${s.time}</b></span>`).join("")}</span>
+    </div>`).join("");
+
+  document.getElementById("trackName").textContent=n.circuit;
+  document.getElementById("trackSmall").textContent=(n.nameEn||"").toUpperCase();
+  document.getElementById("trackRound").textContent=`R${n.round} / ${d.season.rounds}`;
+
+  const t=n.track||{};
+  const stats=[
+    ["赛道长度",t.length?`${Number(t.length).toFixed(3)} km`:"—"],
+    ["比赛圈数",t.laps?`${t.laps} 圈`:"—"],
+    ["弯道数量",t.turns?`${t.turns} 个`:"—"],
+    ["海拔",t.altitude?`${Number(t.altitude).toLocaleString()} m`:"—"],
+    ["单圈纪录",t.record||"—"],
+    ["国家",n.country||"—"]
+  ];
+  document.getElementById("trackStats").innerHTML=stats.map(([k,v])=>`<div class="ht-stat"><span>${k}</span><b class="mono">${esc(v)}</b></div>`).join("");
+
+  const teamLead=constructorRows[0], teamSecond=constructorRows[1];
+  document.getElementById("lineTrack").textContent=`赛道：${n.circuit} · ${t.length?Number(t.length).toFixed(3)+" km":"—"} / ${t.laps?t.laps+" 圈":"—"}`;
+  if(teamLead&&teamSecond) document.getElementById("lineTeam").textContent=`车队积分：${teamLead.name} 领先 ${teamLead.points-teamSecond.points} 分`;
+
+  const map=document.getElementById("trackMap");
+  const fallback=document.getElementById("mapFallback");
+  const hasMap=n.circuitId==="rodriguez";
+  map.classList.toggle("map-off",!hasMap);
+  fallback.hidden=hasMap;
+  if(!hasMap) document.getElementById("mapFallbackName").textContent=n.circuit;
+
+  selectedRound=d.season.completed || selectedRound;
+  renderRail();
+  selectRound(selectedRound);
+  renderResults();
+  renderStandings();
+  renderNews(d.news||[]);
+
+  const leader=driverRows[0], second=driverRows[1];
+  if(leader && second){
+    document.getElementById("lineChampion").textContent=`冠军争夺：${leader.name} 领先 ${leader.points-second.points} 分`;
+    document.getElementById("champLeader").textContent=leader.name;
+    document.getElementById("champGap").textContent=leader.points-second.points;
+    document.getElementById("champRemain").textContent=d.season.remaining;
+    document.getElementById("champStats").textContent=`${leader.points} PTS · ${leader.wins} WINS`;
+  }
+
+  const lastCompleted=races.filter(r=>r.winner).slice(-1)[0];
+  document.getElementById("standingsNote").textContent=`截至 ${lastCompleted?lastCompleted.date:"—"} · 第 ${d.season.completed} 站后`;
+  document.getElementById("resultsNote").textContent=`成绩以分站冠军为主；数据来自 Jolpica（第 ${d.season.completed} 站后）。`;
+  document.getElementById("toggleResults").textContent=`查看全部 ${d.season.completed} 站 ↓`;
+  document.getElementById("dataUpdated").textContent=`更新于 ${formatUpdated(d.meta.generatedAt)}`;
+}
+
+async function loadData(){
+  const stamp=document.getElementById("dataUpdated");
+  try{
+    const res=await fetch(`data.json?t=${Date.now()}`,{cache:"no-store"});
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const d=await res.json();
+    applyData(d);
+  }catch(err){
+    console.warn("data.json 加载失败，使用内置快照：",err.message);
+    if(stamp) stamp.textContent="内置快照 · 更新失败";
+  }
+}
+
+document.getElementById("refreshBtn")?.addEventListener("click",loadData);
+
+renderRail();
+renderResults();
+renderStandings();
+selectRound(18);
+renderNews([]);
+loadData();
+setInterval(()=>{if(!document.hidden) loadData();},5*60*1000);
+
+/* ---------- countdown ---------- */
+function tick(){
+  const diff=target-Date.now();
+  const box=["cd-d","cd-h","cd-m","cd-s"].map(id=>document.getElementById(id));
+  if(diff<=0){box.forEach(b=>b.textContent="00");return;}
+  const d=Math.floor(diff/864e5),h=Math.floor(diff%864e5/36e5),m=Math.floor(diff%36e5/6e4),s=Math.floor(diff%6e4/1e3);
+  box[0].textContent=String(d).padStart(2,"0");
+  box[1].textContent=String(h).padStart(2,"0");
+  box[2].textContent=String(m).padStart(2,"0");
+  box[3].textContent=String(s).padStart(2,"0");
+}
+tick();setInterval(tick,1000);
+
+/* ---------- track animation ---------- */
+(function(){
+  const svg=document.querySelector(".ht-map svg");
+  const path=document.getElementById("trackLine");
+  const car=document.getElementById("carGroup");
+  const trail=document.getElementById("carTrail");
+  if(!svg||!path||!car||!trail) return;
+
+  const telSpeed=document.getElementById("telSpeed");
+  const telGear=document.getElementById("telGear");
+  const telSector=document.getElementById("telSector");
+  const telLap=document.getElementById("telLap");
+  const thrBar=document.getElementById("thrBar");
+  const brkBar=document.getElementById("brkBar");
+
+  const len=path.getTotalLength();
+
+  function buildSectorMarks(){
+    const NS="http://www.w3.org/2000/svg";
+    const g=document.createElementNS(NS,"g");
+    g.setAttribute("class","sector-marks");
+    g.setAttribute("aria-hidden","true");
+    [[0.12,"S1"],[0.45,"S2"],[0.78,"S3"]].forEach(([p,label])=>{
+      const pos=p*len;
+      const pt=path.getPointAtLength(pos);
+      const a=path.getPointAtLength(Math.max(0,pos-6));
+      const b=path.getPointAtLength(Math.min(len,pos+6));
+      let nx=-(b.y-a.y), ny=(b.x-a.x);
+      const nl=Math.hypot(nx,ny)||1;
+      nx/=nl; ny/=nl;
+      if((pt.x-260)*nx+(pt.y-160)*ny<0){nx=-nx;ny=-ny;}
+      const mark=document.createElementNS(NS,"g");
+      mark.setAttribute("class","sector-mark");
+      mark.setAttribute("data-sector",label);
+      const line=document.createElementNS(NS,"line");
+      line.setAttribute("x1",String(pt.x-nx*7));
+      line.setAttribute("y1",String(pt.y-ny*7));
+      line.setAttribute("x2",String(pt.x+nx*7));
+      line.setAttribute("y2",String(pt.y+ny*7));
+      const text=document.createElementNS(NS,"text");
+      text.setAttribute("x",String(pt.x+nx*22));
+      text.setAttribute("y",String(pt.y+ny*22+4));
+      text.textContent=label;
+      mark.appendChild(line);
+      mark.appendChild(text);
+      g.appendChild(mark);
+    });
+    svg.insertBefore(g,car);
+  }
+  buildSectorMarks();
+
+  const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(reduce){
+    path.style.strokeDasharray="none";
+    path.style.strokeDashoffset="0";
+    if(telSpeed) telSpeed.textContent="312";
+    if(telGear) telGear.textContent="7";
+    if(telSector) telSector.textContent="S1";
+    if(telLap) telLap.textContent="LAP 01 / 71";
+    if(thrBar) thrBar.style.width="68%";
+    if(brkBar) brkBar.style.width="6%";
+    svg.querySelectorAll(".sector-mark").forEach(g=>g.classList.toggle("on",g.dataset.sector==="S1"));
+    return;
+  }
+
+  path.style.strokeDasharray=len+" "+len;
+  path.style.strokeDashoffset=len;
+
+  const DRAW=2800,LAP=8500,PAUSE=2200,TOTAL=LAP+PAUSE,TOTAL_LAPS=71;
+  let visible=true,last=null,elapsed=0,thr=0,brk=0,lastLapText="",lastSector="";
+
+  function curvatureAt(p){
+    const d=12;
+    const a=path.getPointAtLength(Math.max(0,p*len-d));
+    const b=path.getPointAtLength(p*len);
+    const c=path.getPointAtLength(Math.min(len,p*len+d));
+    const v1x=b.x-a.x,v1y=b.y-a.y,v2x=c.x-b.x,v2y=c.y-b.y;
+    let ang=Math.abs(Math.atan2(v1x*v2y-v1y*v2x,v1x*v2x+v1y*v2y));
+    if(ang>Math.PI) ang=2*Math.PI-ang;
+    return Math.min(1,ang/0.55);
+  }
+
+  if("IntersectionObserver" in window){
+    new IntersectionObserver(es=>{visible=es[0].isIntersecting;},{threshold:.15}).observe(svg);
+  }
+
+  function frame(ts){
+    if(last===null){last=ts;requestAnimationFrame(frame);return;}
+    const dt=Math.min(64,ts-last);
+    last=ts;
+    if(visible&&!document.hidden) elapsed+=dt;
+
+    const dp=Math.min(1,elapsed/DRAW);
+    const eased=1-Math.pow(1-dp,3);
+    path.style.strokeDashoffset=String(len*(1-eased));
+
+    if(elapsed>DRAW){
+      const t=(elapsed-DRAW)%TOTAL;
+      const lapNo=(Math.floor((elapsed-DRAW)/TOTAL)%TOTAL_LAPS)+1;
+      const lapText="LAP "+String(lapNo).padStart(2,"0")+" / 71";
+      if(lapText!==lastLapText&&telLap){telLap.textContent=lapText;lastLapText=lapText;}
+
+      if(t<LAP){
+        const p=t/LAP;
+        const pt=path.getPointAtLength(p*len);
+        const back=path.getPointAtLength(Math.max(0,p*len-16));
+        car.setAttribute("transform",`translate(${pt.x},${pt.y})`);
+        trail.setAttribute("x1",String(back.x));
+        trail.setAttribute("y1",String(back.y));
+        trail.setAttribute("x2",String(pt.x));
+        trail.setAttribute("y2",String(pt.y));
+        const fade=Math.min(1,t/350)*Math.min(1,(LAP-t)/500);
+        car.style.opacity=String(fade);
+        trail.style.opacity=String(fade*.65);
+
+        if(telSpeed){
+          const curv=curvatureAt(p);
+          const speed=Math.round(330-curv*240);
+          const gear=Math.max(2,Math.min(8,Math.round(speed/45)));
+          const sector=p<1/3?"S1":p<2/3?"S2":"S3";
+          thr+=(Math.min(100,Math.max(0,100-curv*105))-thr)*0.18;
+          brk+=(Math.min(100,curv*100)-brk)*0.18;
+          telSpeed.textContent=String(speed);
+          if(telGear) telGear.textContent=String(gear);
+          if(sector!==lastSector){
+            lastSector=sector;
+            if(telSector) telSector.textContent=sector;
+            svg.querySelectorAll(".sector-mark").forEach(g=>{
+              g.classList.toggle("on",g.dataset.sector===sector);
+            });
+          }
+          if(thrBar) thrBar.style.width=thr.toFixed(0)+"%";
+          if(brkBar) brkBar.style.width=brk.toFixed(0)+"%";
+        }
+      }else{
+        car.style.opacity="0";
+        trail.style.opacity="0";
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+
+/* ---------- detail overlay ---------- */
+const overlay=document.getElementById("detailOverlay");
+const closeBtn=document.getElementById("detailClose");
+const backBtn=document.getElementById("detailBack");
+let lastFocus=null;
+
+function openDetail(id,href){
+  const d=DETAILS[id];
+  if(!d) return;
+  document.getElementById("detailKicker").textContent=d.k;
+  document.getElementById("detailTitle").textContent=d.t;
+  document.getElementById("detailMeta").textContent=d.m;
+  document.getElementById("detailChips").innerHTML=d.chips.map(c=>`<span>${c}</span>`).join("");
+  document.getElementById("detailBody").innerHTML=d.body.map(p=>`<p>${p}</p>`).join("");
+  overlay.hidden=false;
+  document.body.classList.add("locked");
+  if(href){try{history.replaceState(null,"",href);}catch(e){}}
+  closeBtn.focus();
+}
+function closeDetail(){
+  overlay.hidden=true;
+  document.body.classList.remove("locked");
+  if(location.hash.indexOf("#detail-")===0){
+    try{history.replaceState(null,"",location.pathname+location.search);}catch(e){}
+  }
+  if(lastFocus){lastFocus.focus();lastFocus=null;}
+}
+document.addEventListener("click",e=>{
+  const a=e.target.closest('a[href^="#detail-"]');
+  if(!a) return;
+  e.preventDefault();
+  lastFocus=a;
+  openDetail(a.getAttribute("href").slice(8),a.getAttribute("href"));
+});
+closeBtn.addEventListener("click",closeDetail);
+backBtn.addEventListener("click",closeDetail);
+overlay.addEventListener("click",e=>{if(e.target===overlay) closeDetail();});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!overlay.hidden) closeDetail();});
+const initial=location.hash.match(/^#detail-(.+)$/);
+if(initial) openDetail(initial[1]);
+
+/* ---------- scrollbar + spy ---------- */
+const bar=document.getElementById("scrollbar");
+function onScroll(){
+  const h=document.documentElement;
+  bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+"%";
+}
+document.addEventListener("scroll",onScroll,{passive:true});onScroll();
+
+const navLinks=[...document.querySelectorAll("#nav a")];
+const secs=navLinks.map(a=>document.getElementById(a.dataset.sec)).filter(Boolean);
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      navLinks.forEach(a=>a.classList.toggle("active",a.dataset.sec===e.target.id));
+    }
+  });
+},{rootMargin:"-40% 0px -55% 0px"});
+secs.forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
