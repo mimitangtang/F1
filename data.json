@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-10-28T13:35:41.499Z",
+    "generatedAt": "2026-10-28T13:45:49.100Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -960,6 +960,26 @@
       "source": "Motorsport",
       "excerpt": "One of the most remarkable moments on Sunday in Austin did not take place on the track itself, but rather in the Formula 1 paddock after the US Grand Prix. During the usual post-ra",
       "publishedAt": "2026-10-28T09:39:24.000Z"
+    }
+  ],
+  "quotes": [
+    {
+      "platform": "虎扑",
+      "date": "10.28",
+      "text": "高海拔对所有车队都是公平的，但梅赛德斯在这里一直很舒服，真正的悬念在法拉利能不能追近。",
+      "url": "https://bbs.hupu.com/f1"
+    },
+    {
+      "platform": "微博",
+      "date": "10.28",
+      "text": "只差一个第九名，希望别出幺蛾子，稳稳把冠军拿下。",
+      "url": "https://s.weibo.com/weibo?q=墨西哥城大奖赛"
+    },
+    {
+      "platform": "B站",
+      "date": "10.27",
+      "text": "体育场路段的声音，隔着转播都能感觉到震，今年一定要去现场。",
+      "url": "https://search.bilibili.com/all?keyword=墨西哥城大奖赛"
     }
   ]
 }

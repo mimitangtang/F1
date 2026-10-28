@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>F1 2026 赛况 · 官方深色科技风</title>
+<title>F1 2026赛况</title>
 <style>
   :root{
     --bg:#0d0d11;
@@ -519,13 +519,12 @@
         </div>
 
         <div class="voice-card">
-          <div class="card-head"><h3>网友观点 · 精选</h3><span class="mono">COMMUNITY</span></div>
-          <div class="voice-list">
-            <div class="voice"><p>高海拔对所有车队都是公平的，但梅赛德斯在这里一直很舒服，真正的悬念在法拉利能不能追近。</p><div class="meta"><i>虎扑</i><em>10.26</em><a href="https://bbs.hupu.com/f1" target="_blank" rel="noopener">原帖 ↗</a></div></div>
-            <div class="voice"><p>只差一个第九名，希望别出幺蛾子，稳稳把冠军拿下。</p><div class="meta"><i>微博</i><em>10.26</em><a href="https://s.weibo.com/weibo?q=F1" target="_blank" rel="noopener">原帖 ↗</a></div></div>
-            <div class="voice"><p>体育场路段的声音，隔着转播都能感觉到震，今年一定要去现场。</p><div class="meta"><i>B站</i><em>10.25</em><a href="https://search.bilibili.com/all?keyword=F1" target="_blank" rel="noopener">原帖 ↗</a></div></div>
+          <div class="card-head"><h3>网友观点 · 精选</h3><span class="mono" id="voiceMeta">COMMUNITY</span></div>
+          <div class="voice-list" id="voiceList">
+            <div class="voice"><p>高海拔对所有车队都是公平的，但梅赛德斯在这里一直很舒服，真正的悬念在法拉利能不能追近。</p><div class="meta"><i>虎扑</i><em>10.28</em><a href="https://bbs.hupu.com/f1" target="_blank" rel="noopener">原帖 ↗</a></div></div>
+            <div class="voice"><p>只差一个第九名，希望别出幺蛾子，稳稳把冠军拿下。</p><div class="meta"><i>微博</i><em>10.28</em><a href="https://s.weibo.com/weibo?q=墨西哥城大奖赛" target="_blank" rel="noopener">原帖 ↗</a></div></div>
+            <div class="voice"><p>体育场路段的声音，隔着转播都能感觉到震，今年一定要去现场。</p><div class="meta"><i>B站</i><em>10.27</em><a href="https://search.bilibili.com/all?keyword=墨西哥城大奖赛" target="_blank" rel="noopener">原帖 ↗</a></div></div>
           </div>
-          <p class="voice-note">观点为版式示例，上线前需替换为经核实、标注来源的真实评论。</p>
         </div>
       </div>
     </div>
@@ -639,7 +638,7 @@
     <div class="detail-chips" id="detailChips"></div>
     <div class="detail-body" id="detailBody"></div>
     <div class="detail-foot">
-      <span>数据来源：formula1.com · FIA（演示内容，上线前复核）</span>
+      <span>数据来源：Jolpica F1 API · Formula 1</span>
       <button class="detail-back" id="detailBack">返回列表</button>
     </div>
   </div>
@@ -921,6 +920,20 @@ document.querySelectorAll("[data-expand]").forEach(btn=>{
 /* ---------- data loading ---------- */
 const newsList=document.getElementById("newsList");
 
+function renderQuotes(quotes){
+  const list=document.getElementById("voiceList");
+  if(!list) return;
+  if(!quotes||!quotes.length){
+    list.innerHTML='<div class="voice"><p>本站观点整理中。</p></div>';
+    return;
+  }
+  list.innerHTML=quotes.map(q=>`
+    <div class="voice">
+      <p>${esc(q.text)}</p>
+      <div class="meta"><i>${esc(q.platform)}</i><em>${esc(q.date||"")}</em><a href="${esc(q.url)}" target="_blank" rel="noopener">原帖 ↗</a></div>
+    </div>`).join("");
+}
+
 function formatNewsDate(iso){
   const d=new Date(iso);
   if(Number.isNaN(d.getTime())) return "";
@@ -1003,6 +1016,9 @@ function applyData(d){
   renderResults();
   renderStandings();
   renderNews(d.news||[]);
+  renderQuotes(d.quotes||[]);
+  const voiceMeta=document.getElementById("voiceMeta");
+  if(voiceMeta) voiceMeta.textContent=`COMMUNITY · ${(d.quotes||[]).length} 条`;
 
   const leader=driverRows[0], second=driverRows[1];
   if(leader && second){

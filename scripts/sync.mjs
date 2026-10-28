@@ -156,6 +156,20 @@ function driverName(d) {
   return DRIVER_CN[d.Driver.driverId] || `${d.Driver.givenName} ${d.Driver.familyName}`;
 }
 
+async function loadQuotes(round) {
+  try {
+    const all = JSON.parse(await readFile("quotes.json", "utf8"));
+    if (Array.isArray(all[String(round)]) && all[String(round)].length) {
+      return all[String(round)];
+    }
+    const keys = Object.keys(all).map(Number).filter(Number.isFinite).sort((a, b) => a - b);
+    const fallbackKey = keys.filter((k) => k <= round).pop() ?? keys[0];
+    return fallbackKey ? all[String(fallbackKey)] || [] : [];
+  } catch {
+    return [];
+  }
+}
+
 function teamInfo(c) {
   return TEAM[c.constructorId] || { cn: c.name, color: "#999999" };
 }
@@ -264,6 +278,7 @@ async function sync() {
     }
   }
   const uniqueNews = [...new Map(news.map((n) => [n.title, n])).values()].slice(0, 6);
+  const quotes = await loadQuotes(next.round);
 
   if (races.length < 10) throw new Error("赛程数据异常");
   if (driverStandings.length < 10) throw new Error("车手积分榜数据异常");
@@ -301,7 +316,8 @@ async function sync() {
     },
     races,
     standings: { drivers: driverStandings, constructors: constructorStandings },
-    news: uniqueNews
+    news: uniqueNews,
+    quotes
   };
 
   const withoutTimestamp = (obj) => JSON.stringify({ ...obj, meta: { ...obj.meta, generatedAt: null } });
