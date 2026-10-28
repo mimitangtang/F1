@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-10-28T13:14:48.696Z",
+    "generatedAt": "2026-10-28T13:19:36.081Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -924,7 +924,7 @@
       "url": "https://www.formula1.com/en/latest/article/ricciardo-explains-how-he-converted-humiliation-into-feeling-proud-following-his-f1-exit.10kNySRo1gU5H2e59aN8qR",
       "source": "Formula 1",
       "excerpt": "In the latest episode of official podcast F1 Beyond the Grid, Daniel Ricciardo reflects on how he’s handled his retirement from the sport.",
-      "publishedAt": "2026-10-28T13:14:47.091Z"
+      "publishedAt": null
     },
     {
       "title": "Oliver Bearman explains why Haas’ 2026 F1 car is ‘hitting its ceiling’",
@@ -938,7 +938,7 @@
       "url": "https://www.formula1.com/en/latest/article/the-5-drivers-who-are-most-likely-to-qualify-fastest-in-mexico-city.1t7oVE9TBWLG7srsEAA0Bh",
       "source": "Formula 1",
       "excerpt": "We have looked at the betting markets for Qualifying at the Autodromo Hermanos Rodriguez and assessed the chances of the leading contenders for pole.",
-      "publishedAt": "2026-10-28T13:14:47.091Z"
+      "publishedAt": null
     },
     {
       "title": "Yet another DNF for Cadillac’s Valtteri Bottas: ‘Sometimes we don’t quite understand it’",
@@ -952,7 +952,7 @@
       "url": "https://www.formula1.com/en/latest/article/what-went-into-ferraris-latest-upgrade-package-in-the-united-states.3I72X1Dos3Nty2sNxMfDD4",
       "source": "Formula 1",
       "excerpt": "Mark Hughes and Giorgio Piola delve into the upgrades Ferrari introduced at the United States Grand Prix.",
-      "publishedAt": "2026-10-28T13:14:47.091Z"
+      "publishedAt": null
     },
     {
       "title": "Why Aston Martin and Red Bull were asked about an unlikely F1 engine partnership",

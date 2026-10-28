@@ -802,13 +802,18 @@ function renderSelected(){
     return;
   }
 
-  const podium=(r.podium||[]).map((p,i)=>`
+  const podium=(r.podium||[]).map((p,i)=>{
+    const name=Array.isArray(p)?p[0]:p.name;
+    const team=Array.isArray(p)?p[1]:p.team;
+    const time=Array.isArray(p)?p[2]:p.time;
+    return `
     <div class="pod-row">
       <b>P${i+1}</b>
-      <span class="who">${esc(p.name)}<small>${esc(p.team)}</small></span>
-      <span class="tm">${esc(p.time||"")}</span>
+      <span class="who">${esc(name)}<small>${esc(team)}</small></span>
+      <span class="tm">${esc(time||"")}</span>
       <span class="gp"></span>
-    </div>`).join("");
+    </div>`;
+  }).join("");
 
   wrap.innerHTML=`
     <div class="sel-main">

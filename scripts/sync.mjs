@@ -2,7 +2,7 @@
 // 运行：node scripts/sync.mjs
 // 输出：data.json（页面读取）；抓取失败时不会覆盖旧文件
 
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 
 const BASE = "https://api.jolpi.ca/ergast/f1/2026";
 const NEWS_FEEDS = [
@@ -135,7 +135,7 @@ function tag(block, name) {
   return m ? m[1] : "";
 }
 
-function parseFeed(xml, source, fallbackDate) {
+function parseFeed(xml, source) {
   const items = [...xml.matchAll(/<item\b[\s\S]*?<\/item>/gi)].map((m) => m[0]);
   return items.map((it) => {
     const pub = tag(it, "pubDate");
@@ -147,7 +147,7 @@ function parseFeed(xml, source, fallbackDate) {
       excerpt: plainText(tag(it, "description")).slice(0, 180),
       publishedAt: published && !Number.isNaN(published.getTime())
         ? published.toISOString()
-        : fallbackDate
+        : null
     };
   }).filter((n) => n.title && n.url);
 }
@@ -246,7 +246,7 @@ async function sync() {
   for (const feed of NEWS_FEEDS) {
     try {
       const xml = await get(feed.url);
-      perFeed.push(parseFeed(xml, feed.source, new Date().toISOString()).slice(0, 3));
+      perFeed.push(parseFeed(xml, feed.source).slice(0, 3));
     } catch (err) {
       console.warn(`新闻源失败 ${feed.source}: ${err.message}`);
       perFeed.push([]);
@@ -298,6 +298,18 @@ async function sync() {
     standings: { drivers: driverStandings, constructors: constructorStandings },
     news: uniqueNews
   };
+
+  const withoutTimestamp = (obj) => JSON.stringify({ ...obj, meta: { ...obj.meta, generatedAt: null } });
+  let previous = null;
+  try {
+    previous = JSON.parse(await readFile("data.json", "utf8"));
+  } catch {
+    previous = null;
+  }
+  if (previous && withoutTimestamp(previous) === withoutTimestamp(data)) {
+    console.log("数据无实质变化，保留原 data.json");
+    return;
+  }
 
   await writeFile("data.json", JSON.stringify(data, null, 2) + "\n", "utf8");
   console.log(`data.json 已更新：${races.length} 站 / 已完成 ${resultsByRound.size} 站 / 下一站 ${data.nextRace.name} / 新闻 ${uniqueNews.length} 条`);
