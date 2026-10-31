@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-10-31T13:59:17.159Z",
+    "generatedAt": "2026-10-31T18:14:37.247Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -920,6 +920,34 @@
   },
   "news": [
     {
+      "title": "LIVE COVERAGE: FP3 for the Mexico City Grand Prix",
+      "url": "https://www.formula1.com/en/latest/article/live-coverage-third-practice-in-mexico-city-2026.3Ud38VpRJjlYJc5Gae4PGd",
+      "source": "Formula 1",
+      "excerpt": "Live coverage of the third Formula 1 practice session for the 2026 Mexico City Grand Prix.",
+      "publishedAt": null
+    },
+    {
+      "title": "When Red Bull expects to start using its long-awaited new F1 wind tunnel",
+      "url": "https://www.motorsport.com/f1/news/when-red-bull-expects-to-start-using-its-long-awaited-new-f1-wind-tunnel/10870210/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Although Red Bull has turned its 2026 Formula 1 season around in impressive fashion, the technical team led by Pierre Wache is still dealing with several limitations behind the sce",
+      "publishedAt": "2026-10-31T18:00:06.000Z"
+    },
+    {
+      "title": "Hirakawa to replace Ocon at Haas for Mexico City Grand Prix",
+      "url": "https://www.formula1.com/en/latest/article/hirakawa-to-replace-ocon-at-haas-for-remainder-of-mexico-city-grand-prix-weekend.2cl5jN0g3rZ2pIYQvc00xM",
+      "source": "Formula 1",
+      "excerpt": "Haas have announced Ryo Hirakawa will replace Esteban Ocon for the remainder of the Grand Prix weekend in Mexico City.",
+      "publishedAt": null
+    },
+    {
+      "title": "Isack Hadjar formally warned for fan incident in F1 Mexico GP paddock",
+      "url": "https://www.motorsport.com/f1/news/isack-hadjar-warned-for-fan-incident-in-f1-mexico-gp-paddock/10870033/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Isack Hadjar has been given a formal warning by the Mexico Grand Prix stewards for shoving a fan in the Formula 1 paddock ahead of opening practice. The Red Bull driver was initial",
+      "publishedAt": "2026-10-31T17:17:48.000Z"
+    },
+    {
       "title": "Best Qualifying bets before the Mexico City GP",
       "url": "https://www.formula1.com/en/latest/article/best-qualifying-bets-available-on-the-markets-before-the-mexico-city-grand-prix.6vo71zRrlBile9GdUI3W8y",
       "source": "Formula 1",
@@ -927,39 +955,11 @@
       "publishedAt": null
     },
     {
-      "title": "George Russell tips Frederik Vesti for F1 2027 Cadillac seat",
-      "url": "https://www.motorsport.com/f1/news/george-russell-frederik-vesti-deserves-cadillac-seat-for-f1-2027/10870111/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Mercedes out of performance window at Mexico GP - George Russell",
+      "url": "https://www.motorsport.com/f1/news/george-russell-mercedes-out-of-performance-window-at-mexico-gp/10870173/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "George Russell has labelled Mercedes reserve driver Frederik Vesti as a shock contender to join Cadillac for the 2027 Formula 1 campaign. The American outfit is yet to confirm Valt",
-      "publishedAt": "2026-10-31T13:00:03.000Z"
-    },
-    {
-      "title": "Mekies predicts ‘one-off’ Mexico order in wind tunnel update",
-      "url": "https://www.formula1.com/en/latest/article/mekies-predicts-one-off-mexico-pecking-order-as-he-gives-red-bull-wind-tunnel-update.xu23RRtyMHXYDzeyZ2Q7f",
-      "source": "Formula 1",
-      "excerpt": "Laurent Mekies believes the unique challenges of the Mexico City Grand Prix could shake up the competitive order, whilst also revealing when the team’s new wind tunnel is expected ",
-      "publishedAt": null
-    },
-    {
-      "title": "Red Bull finds ‘disconnect’ in RB22 in F1 Mexico GP practice",
-      "url": "https://www.motorsport.com/f1/news/red-bull-finds-disconnect-in-rb22-in-f1-mexico-gp-practice/10870035/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Red Bull admits it still has work to do after Friday's Formula 1 practice sessions in Mexico City. Max Verstappen ended the day fifth, three tenths off the pace, but that was despi",
-      "publishedAt": "2026-10-31T12:00:04.000Z"
-    },
-    {
-      "title": "Alonso cautiously upbeat after strong Friday in Mexico",
-      "url": "https://www.formula1.com/en/latest/article/alonso-cautiously-upbeat-after-strong-friday-in-mexico-for-aston-martin.4vekgCuq0xUq8VaOuuxWAt",
-      "source": "Formula 1",
-      "excerpt": "Fernando Alonso admits Aston Martin's Friday performance in Mexico City has beaten expectations, with the AMR26 coping well with the challenges of altitude.",
-      "publishedAt": null
-    },
-    {
-      "title": "Lewis Hamilton \"praying\" for Ferrari power unit after Mexico FP2 failure",
-      "url": "https://www.motorsport.com/f1/news/lewis-hamilton-praying-for-ferrari-power-unit-after-mexico-fp2-failure/10870069/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Lewis Hamilton has been left “praying” for his Ferrari power unit after it caused an early retirement in second practice for the Formula 1 Mexico Grand Prix. The seven-time world c",
-      "publishedAt": "2026-10-31T10:41:19.000Z"
+      "excerpt": "George Russell is enduring further difficulties with the upgraded Mercedes Formula 1 car, as it was outside the optimum set-up in Friday practice at the Mexico Grand Prix. The cham",
+      "publishedAt": "2026-10-31T15:52:10.000Z"
     }
   ],
   "quotes": [
