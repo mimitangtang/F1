@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-10-31T18:14:37.247Z",
+    "generatedAt": "2026-10-31T21:45:42.661Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -920,7 +920,35 @@
   },
   "news": [
     {
-      "title": "LIVE COVERAGE: FP3 for the Mexico City Grand Prix",
+      "title": "LIVE COVERAGE: Q2 underway in Mexico City",
+      "url": "https://www.formula1.com/en/latest/article/live-coverage-qualifying-in-mexico-city-2026.7rsM0FXrllMkwPI44GSR58",
+      "source": "Formula 1",
+      "excerpt": "Live coverage of the Formula 1 Qualifying session for the 2026 Mexico City Grand Prix.",
+      "publishedAt": null
+    },
+    {
+      "title": "Max Verstappen will have no say in 2027 Racing Bulls driver line-up, says Red Bull boss",
+      "url": "https://www.motorsport.com/f1/news/max-verstappen-will-have-no-say-in-2027-racing-bulls-driver-line-up-says-red-bull-boss/10870282/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Red Bull Racing CEO and team principal Laurent Mekies has explained that Racing Bulls alone will decide its Formula 1 driver line-up for 2027 and that Max Verstappen will not have ",
+      "publishedAt": "2026-10-31T21:24:15.000Z"
+    },
+    {
+      "title": "Norris pips Antonelli to top spot in Mexico City FP3",
+      "url": "https://www.formula1.com/en/latest/article/fp3-norris-pips-antonelli-and-leclerc-to-top-spot-in-final-practice-for-mexico-city-gp.1s5lDqpwmCBl5aqSGq4Ffn",
+      "source": "Formula 1",
+      "excerpt": "Lando Norris finished fastest in Free Practice 3 ahead of the Mexico City Grand Prix, the McLaren driver just beating Kimi Antonelli and Charles Leclerc to the top spot.",
+      "publishedAt": null
+    },
+    {
+      "title": "F1 Mexico GP: Lando Norris tops final practice by 0.001s from Kimi Antonelli",
+      "url": "https://www.motorsport.com/f1/news/f1-mexico-gp-fp3-report/10870217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Reigning world champion Lando Norris has topped third and final practice at Formula 1's Mexico Grand Prix, beating championship leader Kimi Antonelli in a tight session at the Auto",
+      "publishedAt": "2026-10-31T18:42:30.000Z"
+    },
+    {
+      "title": "AS IT HAPPENED: FP3 for the Mexico City Grand Prix",
       "url": "https://www.formula1.com/en/latest/article/live-coverage-third-practice-in-mexico-city-2026.3Ud38VpRJjlYJc5Gae4PGd",
       "source": "Formula 1",
       "excerpt": "Live coverage of the third Formula 1 practice session for the 2026 Mexico City Grand Prix.",
@@ -932,34 +960,6 @@
       "source": "Motorsport",
       "excerpt": "Although Red Bull has turned its 2026 Formula 1 season around in impressive fashion, the technical team led by Pierre Wache is still dealing with several limitations behind the sce",
       "publishedAt": "2026-10-31T18:00:06.000Z"
-    },
-    {
-      "title": "Hirakawa to replace Ocon at Haas for Mexico City Grand Prix",
-      "url": "https://www.formula1.com/en/latest/article/hirakawa-to-replace-ocon-at-haas-for-remainder-of-mexico-city-grand-prix-weekend.2cl5jN0g3rZ2pIYQvc00xM",
-      "source": "Formula 1",
-      "excerpt": "Haas have announced Ryo Hirakawa will replace Esteban Ocon for the remainder of the Grand Prix weekend in Mexico City.",
-      "publishedAt": null
-    },
-    {
-      "title": "Isack Hadjar formally warned for fan incident in F1 Mexico GP paddock",
-      "url": "https://www.motorsport.com/f1/news/isack-hadjar-warned-for-fan-incident-in-f1-mexico-gp-paddock/10870033/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Isack Hadjar has been given a formal warning by the Mexico Grand Prix stewards for shoving a fan in the Formula 1 paddock ahead of opening practice. The Red Bull driver was initial",
-      "publishedAt": "2026-10-31T17:17:48.000Z"
-    },
-    {
-      "title": "Best Qualifying bets before the Mexico City GP",
-      "url": "https://www.formula1.com/en/latest/article/best-qualifying-bets-available-on-the-markets-before-the-mexico-city-grand-prix.6vo71zRrlBile9GdUI3W8y",
-      "source": "Formula 1",
-      "excerpt": "Our expert betting writers share their top picks for Qualifying at the Autodromo Hermanos Rodriguez in Mexico City.",
-      "publishedAt": null
-    },
-    {
-      "title": "Mercedes out of performance window at Mexico GP - George Russell",
-      "url": "https://www.motorsport.com/f1/news/george-russell-mercedes-out-of-performance-window-at-mexico-gp/10870173/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "George Russell is enduring further difficulties with the upgraded Mercedes Formula 1 car, as it was outside the optimum set-up in Friday practice at the Mexico Grand Prix. The cham",
-      "publishedAt": "2026-10-31T15:52:10.000Z"
     }
   ],
   "quotes": [
