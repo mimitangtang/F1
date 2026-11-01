@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-10-31T21:45:42.661Z",
+    "generatedAt": "2026-11-01T00:32:35.697Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -847,6 +847,14 @@
         "color": "#c8a24b",
         "points": 0,
         "wins": 0
+      },
+      {
+        "pos": 24,
+        "name": "Ryo Hirakawa",
+        "team": "哈斯",
+        "color": "#b6babd",
+        "points": 0,
+        "wins": 0
       }
     ],
     "constructors": [
@@ -920,46 +928,46 @@
   },
   "news": [
     {
-      "title": "LIVE COVERAGE: Q2 underway in Mexico City",
-      "url": "https://www.formula1.com/en/latest/article/live-coverage-qualifying-in-mexico-city-2026.7rsM0FXrllMkwPI44GSR58",
+      "title": "Russell details 'frustration I have' despite qualifying in P2",
+      "url": "https://www.formula1.com/en/latest/article/russell-details-the-frustration-i-have-despite-securing-p2-qualifying-result-for-mexico-city-gp.7DMElgRPmwTePfGOfGiUu9",
       "source": "Formula 1",
-      "excerpt": "Live coverage of the Formula 1 Qualifying session for the 2026 Mexico City Grand Prix.",
+      "excerpt": "George Russell will start on the front row in Mexico after a close Qualifying battle with polesitter Lewis Hamilton.",
       "publishedAt": null
     },
     {
-      "title": "Max Verstappen will have no say in 2027 Racing Bulls driver line-up, says Red Bull boss",
-      "url": "https://www.motorsport.com/f1/news/max-verstappen-will-have-no-say-in-2027-racing-bulls-driver-line-up-says-red-bull-boss/10870282/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Ferrari reveals luxury $4,300 fountain pen inspired by its bespoke supercars",
+      "url": "https://www.motorsport.com/f1/news/ferrari-reveals-luxury-4300-fountain-pen-inspired-by-its-bespoke-supercars/10870386/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Red Bull Racing CEO and team principal Laurent Mekies has explained that Racing Bulls alone will decide its Formula 1 driver line-up for 2027 and that Max Verstappen will not have ",
-      "publishedAt": "2026-10-31T21:24:15.000Z"
+      "excerpt": "You do not need to buy a Ferrari to spend serious money on the Prancing Horse. Montblanc’s latest collaboration with Maranello has come in the shape of a fountain pen, and it costs",
+      "publishedAt": "2026-11-01T00:28:32.000Z"
     },
     {
-      "title": "Norris pips Antonelli to top spot in Mexico City FP3",
-      "url": "https://www.formula1.com/en/latest/article/fp3-norris-pips-antonelli-and-leclerc-to-top-spot-in-final-practice-for-mexico-city-gp.1s5lDqpwmCBl5aqSGq4Ffn",
+      "title": "Hamilton reacts to ‘special’ maiden pole with Ferrari",
+      "url": "https://www.formula1.com/en/latest/article/wow-hamilton-reacts-to-special-maiden-pole-with-ferrari-at-mexico-city-gp.1S7nqyX2uIPgZomeRkneq4",
       "source": "Formula 1",
-      "excerpt": "Lando Norris finished fastest in Free Practice 3 ahead of the Mexico City Grand Prix, the McLaren driver just beating Kimi Antonelli and Charles Leclerc to the top spot.",
+      "excerpt": "Lewis Hamilton claimed his first pole position since 2023 during Qualifying at the Mexico City Grand Prix.",
       "publishedAt": null
     },
     {
-      "title": "F1 Mexico GP: Lando Norris tops final practice by 0.001s from Kimi Antonelli",
-      "url": "https://www.motorsport.com/f1/news/f1-mexico-gp-fp3-report/10870217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Max Verstappen clears the air with Liam Lawson, but stays tight-lipped on Racing Bulls F1 seat",
+      "url": "https://www.motorsport.com/f1/news/max-verstappen-clears-the-air-with-liam-lawson-but-stays-tight-lipped-on-racing-bulls-f1-seat/10870381/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Reigning world champion Lando Norris has topped third and final practice at Formula 1's Mexico Grand Prix, beating championship leader Kimi Antonelli in a tight session at the Auto",
-      "publishedAt": "2026-10-31T18:42:30.000Z"
+      "excerpt": "Max Verstappen qualified fourth for the Formula 1 Mexico City Grand Prix, but will have to drop one place on the starting grid, meaning he will start from the third row. The reason",
+      "publishedAt": "2026-11-01T00:26:35.000Z"
     },
     {
-      "title": "AS IT HAPPENED: FP3 for the Mexico City Grand Prix",
-      "url": "https://www.formula1.com/en/latest/article/live-coverage-third-practice-in-mexico-city-2026.3Ud38VpRJjlYJc5Gae4PGd",
+      "title": "Piastri reflects on 'bizarre' Q2 exit in Mexico",
+      "url": "https://www.formula1.com/en/latest/article/not-sure-what-happened-piastri-reflects-on-bizarre-q2-exit-in-mexico-city-gp-qualifying.7FPexiMg5O7poV0hFEoCxe",
       "source": "Formula 1",
-      "excerpt": "Live coverage of the third Formula 1 practice session for the 2026 Mexico City Grand Prix.",
+      "excerpt": "Oscar Piastri admits he is \"not sure what happened\" as the McLaren driver was eliminated in Q2 ahead of the Mexico City Grand Prix.",
       "publishedAt": null
     },
     {
-      "title": "When Red Bull expects to start using its long-awaited new F1 wind tunnel",
-      "url": "https://www.motorsport.com/f1/news/when-red-bull-expects-to-start-using-its-long-awaited-new-f1-wind-tunnel/10870210/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Charles Leclerc reveals Mexican GP overtaking fears after missing out on pole",
+      "url": "https://www.motorsport.com/f1/news/charles-leclerc-reveals-mexican-gp-overtaking-fears-after-missing-out-on-pole/10870384/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Although Red Bull has turned its 2026 Formula 1 season around in impressive fashion, the technical team led by Pierre Wache is still dealing with several limitations behind the sce",
-      "publishedAt": "2026-10-31T18:00:06.000Z"
+      "excerpt": "Charles Leclerc doubts there will be any overtaking in the Mexican Grand Prix, warning the race order will likely be set in the first few corners at the Autodromo Hermanos Rodrigue",
+      "publishedAt": "2026-11-01T00:24:47.000Z"
     }
   ],
   "quotes": [
