@@ -156,15 +156,33 @@ function driverName(d) {
   return DRIVER_CN[d.Driver.driverId] || `${d.Driver.givenName} ${d.Driver.familyName}`;
 }
 
+function isDetailUrl(url) {
+  try {
+    const u = new URL(url);
+    if (u.hostname === "bbs.hupu.com") return /^\/\d+\.html$/.test(u.pathname);
+    if (u.hostname === "www.bilibili.com" || u.hostname === "bilibili.com") {
+      return /^\/(zh-Hans\/)?video\/BV[\w]+/.test(u.pathname);
+    }
+    if (u.hostname === "weibo.com" || u.hostname === "m.weibo.cn") {
+      return /^\/\d+\/\w+/.test(u.pathname) || /^\/detail\/\d+/.test(u.pathname);
+    }
+    if (u.hostname.endsWith("reddit.com")) return /\/comments\//.test(u.pathname);
+    return false;
+  } catch {
+    return false;
+  }
+}
+
 async function loadQuotes(round) {
   try {
     const all = JSON.parse(await readFile("quotes.json", "utf8"));
+    const pick = (list) => (Array.isArray(list) ? list.filter((q) => q && q.text && isDetailUrl(q.url)) : []);
     if (Array.isArray(all[String(round)]) && all[String(round)].length) {
-      return all[String(round)];
+      return pick(all[String(round)]);
     }
     const keys = Object.keys(all).map(Number).filter(Number.isFinite).sort((a, b) => a - b);
     const fallbackKey = keys.filter((k) => k <= round).pop() ?? keys[0];
-    return fallbackKey ? all[String(fallbackKey)] || [] : [];
+    return fallbackKey ? pick(all[String(fallbackKey)]) : [];
   } catch {
     return [];
   }

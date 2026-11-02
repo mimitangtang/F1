@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-02T13:07:39.029Z",
+    "generatedAt": "2026-11-02T13:14:50.646Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -989,21 +989,21 @@
   "quotes": [
     {
       "platform": "虎扑",
-      "date": "11.05",
-      "text": "英特拉格斯一旦下雨，策略组就要开始赌博了，这里的比赛从来不看排位顺序。",
-      "url": "https://bbs.hupu.com/f1"
+      "date": "11.07",
+      "text": "维斯塔潘对雨战保持谨慎：风险很大，但我不会感到压力。",
+      "url": "https://bbs.hupu.com/635606846.html"
     },
     {
-      "platform": "微博",
-      "date": "11.05",
-      "text": "上坡起跑加上第一弯的混战，巴西站永远不缺故事。",
-      "url": "https://s.weibo.com/weibo?q=圣保罗大奖赛"
+      "platform": "虎扑",
+      "date": "11.07",
+      "text": "阿隆索：巴西对我有特殊情感，英特拉格斯总能带来不一样的比赛。",
+      "url": "https://bbs.hupu.com/635616491.html"
     },
     {
       "platform": "B站",
-      "date": "11.04",
-      "text": "如果冠军在巴西就提前产生，收官几站的看点会变成车队第二的争夺。",
-      "url": "https://search.bilibili.com/all?keyword=圣保罗大奖赛"
+      "date": "11.06",
+      "text": "圣保罗的雨夜总能改写比赛，2024 年维斯塔潘从第 17 位发车夺冠就是例子。",
+      "url": "https://www.bilibili.com/video/BV1XCDuBkE2g/"
     }
   ],
   "highlights": [

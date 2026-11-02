@@ -512,9 +512,9 @@
         <div class="voice-card">
           <div class="card-head"><h3>网友观点 · 精选</h3><span class="mono" id="voiceMeta">COMMUNITY</span></div>
           <div class="voice-list" id="voiceList">
-            <div class="voice"><p>高海拔对所有车队都是公平的，但梅赛德斯在这里一直很舒服，真正的悬念在法拉利能不能追近。</p><div class="meta"><i>虎扑</i><em>10.28</em><a href="https://bbs.hupu.com/f1" target="_blank" rel="noopener">原帖 ↗</a></div></div>
-            <div class="voice"><p>只差一个第九名，希望别出幺蛾子，稳稳把冠军拿下。</p><div class="meta"><i>微博</i><em>10.28</em><a href="https://s.weibo.com/weibo?q=墨西哥城大奖赛" target="_blank" rel="noopener">原帖 ↗</a></div></div>
-            <div class="voice"><p>体育场路段的声音，隔着转播都能感觉到震，今年一定要去现场。</p><div class="meta"><i>B站</i><em>10.27</em><a href="https://search.bilibili.com/all?keyword=墨西哥城大奖赛" target="_blank" rel="noopener">原帖 ↗</a></div></div>
+            <div class="voice"><p>瓦塞尔：墨西哥站挑战将截然不同，高海拔让一切变得不确定。</p><div class="meta"><i>虎扑</i><em>10.24</em><a href="https://bbs.hupu.com/635338812.html" target="_blank" rel="noopener">原帖 ↗</a></div></div>
+            <div class="voice"><p>诺里斯：墨西哥站杆位夺冠，正是我想要的胜利。</p><div class="meta"><i>虎扑</i><em>10.27</em><a href="https://bbs.hupu.com/635400206.html" target="_blank" rel="noopener">原帖 ↗</a></div></div>
+            <div class="voice"><p>马尔科对维斯塔潘的墨西哥站表现惊叹：这就是马克斯。</p><div class="meta"><i>虎扑</i><em>10.28</em><a href="https://bbs.hupu.com/635420041.html" target="_blank" rel="noopener">原帖 ↗</a></div></div>
           </div>
         </div>
       </div>
@@ -921,11 +921,14 @@ function renderQuotes(quotes){
     list.innerHTML='<div class="voice"><p>本站观点整理中。</p></div>';
     return;
   }
-  list.innerHTML=quotes.map(q=>`
+  list.innerHTML=quotes.map(q=>{
+    const isVideo=/bilibili\.com/.test(q.url||"");
+    return `
     <div class="voice">
       <p>${esc(q.text)}</p>
-      <div class="meta"><i>${esc(q.platform)}</i><em>${esc(q.date||"")}</em><a href="${esc(q.url)}" target="_blank" rel="noopener">原帖 ↗</a></div>
-    </div>`).join("");
+      <div class="meta"><i>${esc(q.platform)}</i><em>${esc(q.date||"")}</em><a href="${esc(q.url)}" target="_blank" rel="noopener">${isVideo?"视频 ↗":"原帖 ↗"}</a></div>
+    </div>`;
+  }).join("");
 }
 
 function renderHighlights(items,circuitName){
