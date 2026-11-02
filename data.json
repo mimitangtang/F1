@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-10-28T13:45:49.100Z",
+    "generatedAt": "2026-11-02T09:00:49.630Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -10,67 +10,67 @@
   },
   "season": {
     "rounds": 23,
-    "completed": 18,
-    "remaining": 5,
-    "nextRound": 19
+    "completed": 19,
+    "remaining": 4,
+    "nextRound": 20
   },
   "nextRace": {
-    "round": 19,
-    "name": "墨西哥城",
-    "nameEn": "Mexico City Grand Prix",
-    "circuit": "罗德里格斯兄弟赛道",
-    "circuitId": "rodriguez",
-    "country": "Mexico",
-    "date": "2026-11-01",
-    "utc": "2026-11-01T20:00:00Z",
+    "round": 20,
+    "name": "圣保罗",
+    "nameEn": "Brazilian Grand Prix",
+    "circuit": "英特拉格斯赛道",
+    "circuitId": "interlagos",
+    "country": "Brazil",
+    "date": "2026-11-08",
+    "utc": "2026-11-08T17:00:00Z",
     "sessions": [
       {
         "key": "FirstPractice",
         "label": "练习赛一",
-        "date": "10.31",
-        "weekday": "周六",
-        "time": "02:30",
-        "iso": "2026-10-30T18:30:00Z"
+        "date": "11.06",
+        "weekday": "周五",
+        "time": "23:30",
+        "iso": "2026-11-06T15:30:00Z"
       },
       {
         "key": "SecondPractice",
         "label": "练习赛二",
-        "date": "10.31",
+        "date": "11.07",
         "weekday": "周六",
-        "time": "06:00",
-        "iso": "2026-10-30T22:00:00Z"
+        "time": "03:00",
+        "iso": "2026-11-06T19:00:00Z"
       },
       {
         "key": "ThirdPractice",
         "label": "练习赛三",
-        "date": "11.01",
-        "weekday": "周日",
-        "time": "01:30",
-        "iso": "2026-10-31T17:30:00Z"
+        "date": "11.07",
+        "weekday": "周六",
+        "time": "22:30",
+        "iso": "2026-11-07T14:30:00Z"
       },
       {
         "key": "Qualifying",
         "label": "排位赛",
-        "date": "11.01",
+        "date": "11.08",
         "weekday": "周日",
-        "time": "05:00",
-        "iso": "2026-10-31T21:00:00Z"
+        "time": "02:00",
+        "iso": "2026-11-07T18:00:00Z"
       },
       {
         "key": "race",
         "label": "正赛",
-        "date": "11.02",
+        "date": "11.09",
         "weekday": "周一",
-        "time": "04:00",
-        "iso": "2026-11-01T20:00:00Z"
+        "time": "01:00",
+        "iso": "2026-11-08T17:00:00Z"
       }
     ],
     "track": {
-      "length": 4.304,
+      "length": 4.309,
       "laps": 71,
-      "turns": 17,
-      "altitude": 2285,
-      "record": "1:17.774"
+      "turns": 15,
+      "altitude": null,
+      "record": null
     }
   },
   "races": [
@@ -601,9 +601,25 @@
       "gp": "墨西哥城",
       "en": "Mexico City Grand Prix",
       "date": "11.01",
-      "winner": null,
-      "team": null,
-      "podium": [],
+      "winner": "维斯塔潘",
+      "team": "红牛",
+      "podium": [
+        {
+          "name": "维斯塔潘",
+          "team": "红牛",
+          "time": "2:20:28.772"
+        },
+        {
+          "name": "汉密尔顿",
+          "team": "法拉利",
+          "time": "+0.799"
+        },
+        {
+          "name": "安东内利",
+          "team": "梅赛德斯",
+          "time": "+4.006"
+        }
+      ],
       "note": "",
       "circuitId": "rodriguez",
       "circuit": "罗德里格斯兄弟赛道",
@@ -669,15 +685,15 @@
         "name": "安东内利",
         "team": "梅赛德斯",
         "color": "#27f4d2",
-        "points": 365,
+        "points": 380,
         "wins": 9
       },
       {
         "pos": 2,
-        "name": "拉塞尔",
-        "team": "梅赛德斯",
-        "color": "#27f4d2",
-        "points": 242,
+        "name": "维斯塔潘",
+        "team": "红牛",
+        "color": "#3671c6",
+        "points": 261,
         "wins": 3
       },
       {
@@ -685,23 +701,23 @@
         "name": "汉密尔顿",
         "team": "法拉利",
         "color": "#e8002d",
-        "points": 241,
+        "points": 259,
         "wins": 1
       },
       {
         "pos": 4,
-        "name": "维斯塔潘",
-        "team": "红牛",
-        "color": "#3671c6",
-        "points": 236,
-        "wins": 2
+        "name": "拉塞尔",
+        "team": "梅赛德斯",
+        "color": "#27f4d2",
+        "points": 250,
+        "wins": 3
       },
       {
         "pos": 5,
         "name": "勒克莱尔",
         "team": "法拉利",
         "color": "#e8002d",
-        "points": 233,
+        "points": 245,
         "wins": 1
       },
       {
@@ -709,7 +725,7 @@
         "name": "诺里斯",
         "team": "迈凯伦",
         "color": "#ff8000",
-        "points": 211,
+        "points": 221,
         "wins": 2
       },
       {
@@ -717,7 +733,7 @@
         "name": "皮亚斯特里",
         "team": "迈凯伦",
         "color": "#ff8000",
-        "points": 144,
+        "points": 150,
         "wins": 0
       },
       {
@@ -733,7 +749,7 @@
         "name": "劳森",
         "team": "Racing Bulls",
         "color": "#6692ff",
-        "points": 77,
+        "points": 79,
         "wins": 0
       },
       {
@@ -741,7 +757,7 @@
         "name": "加斯利",
         "team": "Alpine",
         "color": "#ff87bc",
-        "points": 42,
+        "points": 43,
         "wins": 0
       },
       {
@@ -757,7 +773,7 @@
         "name": "科拉平托",
         "team": "Alpine",
         "color": "#ff87bc",
-        "points": 27,
+        "points": 31,
         "wins": 0
       },
       {
@@ -842,6 +858,14 @@
       },
       {
         "pos": 23,
+        "name": "Ryo Hirakawa",
+        "team": "哈斯",
+        "color": "#b6babd",
+        "points": 0,
+        "wins": 0
+      },
+      {
+        "pos": 24,
         "name": "佩雷兹",
         "team": "凯迪拉克",
         "color": "#c8a24b",
@@ -854,37 +878,37 @@
         "pos": 1,
         "name": "梅赛德斯",
         "color": "#27f4d2",
-        "points": 607
+        "points": 630
       },
       {
         "pos": 2,
         "name": "法拉利",
         "color": "#e8002d",
-        "points": 474
+        "points": 504
       },
       {
         "pos": 3,
         "name": "红牛",
         "color": "#3671c6",
-        "points": 355
+        "points": 380
       },
       {
         "pos": 4,
         "name": "迈凯伦",
         "color": "#ff8000",
-        "points": 355
+        "points": 371
       },
       {
         "pos": 5,
         "name": "Racing Bulls",
         "color": "#6692ff",
-        "points": 102
+        "points": 104
       },
       {
         "pos": 6,
         "name": "Alpine",
         "color": "#ff87bc",
-        "points": 69
+        "points": 74
       },
       {
         "pos": 7,
@@ -920,66 +944,66 @@
   },
   "news": [
     {
-      "title": "Ricciardo opens up on the ‘humiliation’ he felt amid F1 exit",
-      "url": "https://www.formula1.com/en/latest/article/ricciardo-explains-how-he-converted-humiliation-into-feeling-proud-following-his-f1-exit.10kNySRo1gU5H2e59aN8qR",
+      "title": "All the key moments from the 2026 Mexico City Grand Prix",
+      "url": "https://www.formula1.com/en/latest/article/mexico-city-lowdown-all-the-key-moments-as-antonelli-secures-maiden-title-and-verstappen-denies-ferrari-victory.3mPqECWFPlJsdg4jUOZUXz",
       "source": "Formula 1",
-      "excerpt": "In the latest episode of official podcast F1 Beyond the Grid, Daniel Ricciardo reflects on how he’s handled his retirement from the sport.",
+      "excerpt": "The Mexico City Grand Prix once again delivered a memorable weekend, culminating in Kimi Antonelli being crowned F1’s youngest World Champion.",
       "publishedAt": null
     },
     {
-      "title": "Oliver Bearman explains why Haas’ 2026 F1 car is ‘hitting its ceiling’",
-      "url": "https://www.motorsport.com/f1/news/oliver-bearman-explains-why-haas-2026-f1-car-is-hitting-its-ceiling/10868899/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Kimi Antonelli wants special photo with Lewis Hamilton and Max Verstappen on his wall after F1 title",
+      "url": "https://www.motorsport.com/f1/news/kimi-antonelli-wants-special-photo-with-lewis-hamilton-and-max-verstappen-on-his-wall-after-f1-title/10870868/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Oliver Bearman believes Haas cannot extract much more performance from its 2026 Formula 1 car, following the United States Grand Prix. Bearman displayed encouraging Friday pace at ",
-      "publishedAt": "2026-10-28T12:57:38.000Z"
+      "excerpt": "The 2026 Mexico City Grand Prix is one for the history books: Kimi Antonelli has been crowned the youngest world champion of all time, and partly because of the superlicence rules,",
+      "publishedAt": "2026-11-02T06:56:14.000Z"
     },
     {
-      "title": "The 5 drivers most likely to qualify fastest in Mexico",
-      "url": "https://www.formula1.com/en/latest/article/the-5-drivers-who-are-most-likely-to-qualify-fastest-in-mexico-city.1t7oVE9TBWLG7srsEAA0Bh",
+      "title": "What the teams said – Race day in Mexico City",
+      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-mexico-city-2026.5jvq4rkRMEYHkdIE7IXwxK",
       "source": "Formula 1",
-      "excerpt": "We have looked at the betting markets for Qualifying at the Autodromo Hermanos Rodriguez and assessed the chances of the leading contenders for pole.",
+      "excerpt": "The drivers and teams report back on all the action at the Autodromo Hermanos Rodriguez for the 2026 Mexico City Grand Prix.",
       "publishedAt": null
     },
     {
-      "title": "Yet another DNF for Cadillac’s Valtteri Bottas: ‘Sometimes we don’t quite understand it’",
-      "url": "https://www.motorsport.com/f1/news/yet-another-dnf-for-cadillacs-valtteri-bottas-sometimes-we-dont-quite-understand-it/10868669/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Who slept worst last night: Frederic Vasseur",
+      "url": "https://www.motorsport.com/f1/news/who-slept-worst-last-night-frederic-vasseur-10870909/10870909/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Valtteri Bottas described the Cadillac Formula 1 team as struggling to understand its issues, after he retired from Sunday’s United States Grand Prix. Bottas suffered his ninth ret",
-      "publishedAt": "2026-10-28T11:33:56.000Z"
+      "excerpt": "There was at least one moment during Frederic Vasseur's post-Mexican Grand Prix media briefing when the Ferrari team principal burst into laughter. Motorsport Network journalist Ro",
+      "publishedAt": "2026-11-02T06:32:08.000Z"
     },
     {
-      "title": "What went into Ferrari's upgrade package in the US?",
-      "url": "https://www.formula1.com/en/latest/article/what-went-into-ferraris-latest-upgrade-package-in-the-united-states.3I72X1Dos3Nty2sNxMfDD4",
+      "title": "'Unbelievable' – The F1 grid praise new champion Antonelli",
+      "url": "https://www.formula1.com/en/latest/article/hes-made-everyone-else-look-silly-the-f1-grid-praise-new-world-champion-kimi-antonelli.4wWSNrdtuPYOnmQSLB78dt",
       "source": "Formula 1",
-      "excerpt": "Mark Hughes and Giorgio Piola delve into the upgrades Ferrari introduced at the United States Grand Prix.",
+      "excerpt": "Drivers across the Formula 1 grid gave their reactions to Kimi Antonelli becoming the youngest ever World Champion.",
       "publishedAt": null
     },
     {
-      "title": "Why Aston Martin and Red Bull were asked about an unlikely F1 engine partnership",
-      "url": "https://www.motorsport.com/f1/news/why-aston-martin-and-red-bull-were-asked-about-an-unlikely-f1-engine-partnership/10869014/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Penalty drops Oscar Piastri out of F1 Mexico GP points",
+      "url": "https://www.motorsport.com/f1/news/penalty-drops-oscar-piastri-out-of-f1-mexico-gp-points/10870856/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "One of the most remarkable moments on Sunday in Austin did not take place on the track itself, but rather in the Formula 1 paddock after the US Grand Prix. During the usual post-ra",
-      "publishedAt": "2026-10-28T09:39:24.000Z"
+      "excerpt": "Oscar Piastri’s tough Mexico Grand Prix weekend has ended in point-less fashion, after the McLaren Formula 1 driver copped a penalty for his collision with Arvid Lindblad. Piastri’",
+      "publishedAt": "2026-11-02T02:17:39.000Z"
     }
   ],
   "quotes": [
     {
       "platform": "虎扑",
-      "date": "10.28",
-      "text": "高海拔对所有车队都是公平的，但梅赛德斯在这里一直很舒服，真正的悬念在法拉利能不能追近。",
+      "date": "11.05",
+      "text": "英特拉格斯一旦下雨，策略组就要开始赌博了，这里的比赛从来不看排位顺序。",
       "url": "https://bbs.hupu.com/f1"
     },
     {
       "platform": "微博",
-      "date": "10.28",
-      "text": "只差一个第九名，希望别出幺蛾子，稳稳把冠军拿下。",
-      "url": "https://s.weibo.com/weibo?q=墨西哥城大奖赛"
+      "date": "11.05",
+      "text": "上坡起跑加上第一弯的混战，巴西站永远不缺故事。",
+      "url": "https://s.weibo.com/weibo?q=圣保罗大奖赛"
     },
     {
       "platform": "B站",
-      "date": "10.27",
-      "text": "体育场路段的声音，隔着转播都能感觉到震，今年一定要去现场。",
-      "url": "https://search.bilibili.com/all?keyword=墨西哥城大奖赛"
+      "date": "11.04",
+      "text": "如果冠军在巴西就提前产生，收官几站的看点会变成车队第二的争夺。",
+      "url": "https://search.bilibili.com/all?keyword=圣保罗大奖赛"
     }
   ]
 }
