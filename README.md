@@ -53,6 +53,7 @@ node scripts/sync.mjs
 index.html                  单页（设计、交互、数据加载）
 data.json                   Action 生成的比赛数据（自动提交）
 quotes.json                 网友观点库，按分站编号维护
+highlights.json             往届看点库，按赛道 ID 维护
 tracks.js                   23 条赛道的 SVG 路径（由开源赛道数据生成）
 favicon.svg                 红底 F1 页签图标
 scripts/sync.mjs            数据抓取与转换脚本
@@ -62,8 +63,10 @@ scripts/sync.mjs            数据抓取与转换脚本
 ## 说明与限制
 
 - 网友观点按下一站从 `quotes.json` 自动选取；每条观点带平台、日期与平台原帖/搜索页链接，后续可替换为具体帖子地址。
+- 往届看点按下一站从 `highlights.json` 自动选取并切换；墨西哥站保留站内详情，其他分站目前链接到 Wikipedia 资料页。
 - 赛道图由 `tracks.js` 中的 23 条路径动态渲染，随下一站自动切换；路径来自开源项目 [bacinger/f1-circuits](https://github.com/bacinger/f1-circuits)（MIT License），本项目做了缩放与样式处理。
-- 名场面、往届看点为人工撰写的编辑内容，目前按墨西哥站整理；后续分站需要人工替换。
+- 围场快讯是「最新资讯」，不是「下一站专属资讯」：每次同步会优先展示与下一站相关的条目，如果新闻源暂时没有下一站内容，就显示最新的 F1 新闻（例如刚结束的分站赛后报道）。
+- 名场面为赛季级编辑内容，不随下一站切换。
 - 新闻保留英文标题与来源，点击跳转原文，不复制全文与图片。
 - 本项目为课堂作业、非商业用途；F1 及相关商标归 Formula One Licensing 所有，本项目与 Formula 1 无隶属关系。
 - 比赛数据来自 Jolpica，许可为 CC BY-NC-SA 4.0（署名、非商业、相同方式共享）。

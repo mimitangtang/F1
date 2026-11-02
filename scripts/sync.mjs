@@ -170,6 +170,15 @@ async function loadQuotes(round) {
   }
 }
 
+async function loadHighlights(circuitId) {
+  try {
+    const all = JSON.parse(await readFile("highlights.json", "utf8"));
+    return Array.isArray(all[circuitId]) ? all[circuitId] : [];
+  } catch {
+    return [];
+  }
+}
+
 function teamInfo(c) {
   return TEAM[c.constructorId] || { cn: c.name, color: "#999999" };
 }
@@ -265,20 +274,34 @@ async function sync() {
   for (const feed of NEWS_FEEDS) {
     try {
       const xml = await get(feed.url);
-      perFeed.push(parseFeed(xml, feed.source).slice(0, 3));
+      perFeed.push(parseFeed(xml, feed.source).slice(0, 5));
     } catch (err) {
       console.warn(`新闻源失败 ${feed.source}: ${err.message}`);
       perFeed.push([]);
     }
   }
   const news = [];
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 5; i++) {
     for (const list of perFeed) {
       if (list[i]) news.push(list[i]);
     }
   }
-  const uniqueNews = [...new Map(news.map((n) => [n.title, n])).values()].slice(0, 6);
+  const uniqueNews = [...new Map(news.map((n) => [n.title, n])).values()];
+  const nextKeys = [
+    nextRace.raceName,
+    nextRace.Circuit.circuitName,
+    nextRace.Circuit.Location.locality,
+    nextRace.Circuit.Location.country
+  ].map((s) => String(s).toLowerCase());
+  const score = (n) => {
+    const text = `${n.title} ${n.excerpt}`.toLowerCase();
+    return nextKeys.some((k) => text.includes(k)) ? 1 : 0;
+  };
+  const rankedNews = uniqueNews
+    .sort((a, b) => score(b) - score(a))
+    .slice(0, 6);
   const quotes = await loadQuotes(next.round);
+  const highlights = await loadHighlights(nextRace.Circuit.circuitId);
 
   if (races.length < 10) throw new Error("赛程数据异常");
   if (driverStandings.length < 10) throw new Error("车手积分榜数据异常");
@@ -316,8 +339,9 @@ async function sync() {
     },
     races,
     standings: { drivers: driverStandings, constructors: constructorStandings },
-    news: uniqueNews,
-    quotes
+    news: rankedNews,
+    quotes,
+    highlights
   };
 
   const withoutTimestamp = (obj) => JSON.stringify({ ...obj, meta: { ...obj.meta, generatedAt: null } });

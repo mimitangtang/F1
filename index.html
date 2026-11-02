@@ -500,8 +500,8 @@
 
       <div class="intel-grid" id="intel">
         <div class="story-card">
-          <div class="card-head"><h3>往届看点</h3><span class="mono">MEXICO CITY · 4 STORIES</span></div>
-          <ul class="story-list">
+          <div class="card-head"><h3>往届看点</h3><span class="mono" id="highlightMeta">MEXICO CITY · 4 STORIES</span></div>
+          <ul class="story-list" id="highlightList">
             <li><b>2022</b><span>维斯塔潘拿下单赛季第 14 胜，刷新当时的单赛季胜场纪录。<a class="jump" href="#detail-2022">详情 →</a></span></li>
             <li><b>2021</b><span>首圈与汉密尔顿正面交锋后夺冠，冠军争夺进入白热化。<a class="jump" href="#detail-2021">详情 →</a></span></li>
             <li><b>2019</b><span>汉密尔顿夺冠，梅赛德斯在墨西哥锁定当年车队总冠军。<a class="jump" href="#detail-2019">详情 →</a></span></li>
@@ -928,6 +928,24 @@ function renderQuotes(quotes){
     </div>`).join("");
 }
 
+function renderHighlights(items,circuitName){
+  const list=document.getElementById("highlightList");
+  const meta=document.getElementById("highlightMeta");
+  if(!list) return;
+  if(!items||!items.length){
+    list.innerHTML='<li><b>—</b><span>本站往届看点整理中。</span></li>';
+    if(meta) meta.textContent=`${circuitName||""} · 0 STORIES`;
+    return;
+  }
+  list.innerHTML=items.map(h=>{
+    const action=h.detail
+      ? `<a class="jump" href="#detail-${esc(h.detail)}">详情 →</a>`
+      : (h.url ? `<a class="jump" href="${esc(h.url)}" target="_blank" rel="noopener">资料 ↗</a>` : "");
+    return `<li><b>${esc(h.year)}</b><span>${esc(h.text)}${action}</span></li>`;
+  }).join("");
+  if(meta) meta.textContent=`${circuitName||""} · ${items.length} STORIES`;
+}
+
 function formatNewsDate(iso){
   const d=new Date(iso);
   if(Number.isNaN(d.getTime())) return "";
@@ -1014,6 +1032,7 @@ function applyData(d){
   renderStandings();
   renderNews(d.news||[]);
   renderQuotes(d.quotes||[]);
+  renderHighlights(d.highlights||[],n.circuit);
   const voiceMeta=document.getElementById("voiceMeta");
   if(voiceMeta) voiceMeta.textContent=`COMMUNITY · ${(d.quotes||[]).length} 条`;
 

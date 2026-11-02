@@ -1,0 +1,32 @@
+{
+  "rodriguez": [
+    { "year": "2022", "text": "维斯塔潘拿下单赛季第 14 胜，刷新当时的单赛季胜场纪录。", "detail": "2022" },
+    { "year": "2021", "text": "首圈与汉密尔顿正面交锋后夺冠，冠军争夺进入白热化。", "detail": "2021" },
+    { "year": "2019", "text": "汉密尔顿夺冠，梅赛德斯在墨西哥锁定当年车队总冠军。", "detail": "2019" },
+    { "year": "2016", "text": "维斯塔潘防守罗斯伯格被罚时 5 秒，领奖台归属赛后反转。", "detail": "2016" }
+  ],
+  "interlagos": [
+    { "year": "2021", "text": "汉密尔顿从第 10 位发车夺冠，冲刺周末上演经典逆转。", "url": "https://en.wikipedia.org/wiki/2021_Brazilian_Grand_Prix" },
+    { "year": "2012", "text": "维特尔在雨中以第 6 名完赛，拿下个人第三座世界冠军。", "url": "https://en.wikipedia.org/wiki/2012_Brazilian_Grand_Prix" },
+    { "year": "2008", "text": "汉密尔顿最后一圈超越格洛克，夺得首个世界冠军。", "url": "https://en.wikipedia.org/wiki/2008_Brazilian_Grand_Prix" },
+    { "year": "2003", "text": "费斯切拉在混乱雨战中获胜，赛果因计时错误赛后改判。", "url": "https://en.wikipedia.org/wiki/2003_Brazilian_Grand_Prix" }
+  ],
+  "vegas": [
+    { "year": "2024", "text": "拉塞尔夺冠，梅赛德斯包揽前二。", "url": "https://en.wikipedia.org/wiki/2024_Las_Vegas_Grand_Prix" },
+    { "year": "2023", "text": "首届拉斯维加斯大奖赛，维斯塔潘夺冠。", "url": "https://en.wikipedia.org/wiki/2023_Las_Vegas_Grand_Prix" },
+    { "year": "2023", "text": "勒克莱尔最后一圈超越佩雷兹，抢下亚军。", "url": "https://en.wikipedia.org/wiki/2023_Las_Vegas_Grand_Prix" },
+    { "year": "2023", "text": "夜赛低温，轮胎升温成为策略焦点。", "url": "https://en.wikipedia.org/wiki/2023_Las_Vegas_Grand_Prix" }
+  ],
+  "losail": [
+    { "year": "2021", "text": "首届卡塔尔大奖赛，汉密尔顿夺冠。", "url": "https://en.wikipedia.org/wiki/2021_Qatar_Grand_Prix" },
+    { "year": "2023", "text": "维斯塔潘在冲刺赛锁定第三个世界冠军。", "url": "https://en.wikipedia.org/wiki/2023_Qatar_Grand_Prix" },
+    { "year": "2024", "text": "维斯塔潘夺冠，迈凯伦在卢赛尔锁定车队总冠军。", "url": "https://en.wikipedia.org/wiki/2024_Qatar_Grand_Prix" },
+    { "year": "2021", "text": "卢赛尔首秀，高速弯对轮胎提出考验。", "url": "https://en.wikipedia.org/wiki/2021_Qatar_Grand_Prix" }
+  ],
+  "yas_marina": [
+    { "year": "2021", "text": "维斯塔潘最后一圈超越汉密尔顿，夺得首个世界冠军。", "url": "https://en.wikipedia.org/wiki/2021_Abu_Dhabi_Grand_Prix" },
+    { "year": "2016", "text": "罗斯伯格以第 2 名完赛加冕，随后宣布退役。", "url": "https://en.wikipedia.org/wiki/2016_Abu_Dhabi_Grand_Prix" },
+    { "year": "2010", "text": "维特尔夺冠，成为当时最年轻的世界冠军。", "url": "https://en.wikipedia.org/wiki/2010_Abu_Dhabi_Grand_Prix" },
+    { "year": "2021", "text": "安全车重启的争议，让这场比赛成为近年最被讨论的收官战。", "url": "https://en.wikipedia.org/wiki/2021_Abu_Dhabi_Grand_Prix" }
+  ]
+}
