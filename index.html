@@ -704,7 +704,7 @@ const RACE_NOTES = {
   1:"赛季揭幕战",2:"冲刺周末",3:"铃鹿",4:"迈阿密",5:"蒙特利尔",6:"五连冠达成",
   7:"巴塞罗那",8:"红牛环",9:"银石",10:"斯帕",11:"匈牙利",12:"赞德沃特",
   13:"P19 起步夺冠",14:"首届马德里站",15:"巴库",16:"雪邦",17:"滨海湾",
-  18:"奥斯汀 · 第 9 胜",19:"下一站",20:"",21:"",22:"",23:"收官战"
+  18:"奥斯汀 · 第 9 胜",19:"维斯塔潘夺冠 · 安东内利加冕",20:"",21:"",22:"",23:"收官战"
 };
 
 let races = RACES;
@@ -950,7 +950,12 @@ function renderNews(news){
 function applyData(d){
   if(!d || !d.nextRace || !Array.isArray(d.races)) return;
 
-  races=d.races.map(r=>({...r,note:RACE_NOTES[r.r]||"",tag:RACE_NOTES[r.r]||""}));
+  races=d.races.map(r=>{
+    const curated=RACE_NOTES[r.r];
+    const usable=curated && curated!=="下一站" && curated!=="待赛";
+    const note=usable ? curated : (r.winner ? `${r.winner} 夺冠` : "");
+    return {...r,note,tag:note || (r.winner ? "分站冠军" : "待赛")};
+  });
   driverRows=(d.standings?.drivers||[]).map(x=>({name:x.name,team:x.team,points:x.points,wins:x.wins||0}));
   constructorRows=(d.standings?.constructors||[]).map(x=>({name:x.name,points:x.points}));
   nextRound=d.season?.nextRound || 19;
