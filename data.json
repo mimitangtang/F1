@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-03T16:42:43.699Z",
+    "generatedAt": "2026-11-03T22:08:29.940Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -944,46 +944,46 @@
   },
   "news": [
     {
-      "title": "'The moments that impressed me most in Antonelli’s title year'",
-      "url": "https://www.formula1.com/en/latest/article/the-key-moments-that-impressed-me-most-in-antonellis-title-campaign.37DKCZ2ntXn8PNuOtMFv8q",
+      "title": "Rafa Camara to debut in F1 Brazil GP as Esteban Ocon out at Haas",
+      "url": "https://www.motorsport.com/f1/news/camara-to-debut-in-f1-brazil-gp-as-ocon-out-at-haas/10871372/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "The Haas F1 team has decided Esteban Ocon will not race again for the squad, with 2027 debutant Rafa Camara getting an early debut this weekend on home soil. Following increasingly",
+      "publishedAt": "2026-11-03T20:43:22.000Z"
+    },
+    {
+      "title": "McLaren to introduce 2027 F1 front wing at Brazil GP",
+      "url": "https://www.motorsport.com/f1/news/mclaren-to-introduce-2027-f1-front-wing-at-brazil-gp/10871326/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "McLaren will introduce upgrades to its MCL40 Formula 1 car at this weekend’s Brazil Grand Prix, featuring a front wing concept which is expected to feature on its 2027 challenger. ",
+      "publishedAt": "2026-11-03T16:43:26.000Z"
+    },
+    {
+      "title": "What time is the 2026 Sao Paulo GP and how can I watch it?",
+      "url": "https://www.formula1.com/en/latest/article/what-time-is-the-formula-1-2026-sao-paulo-grand-prix-and-how-can-i-watch-it.6hpbTPt6gucIHBH8QztPjb",
       "source": "Formula 1",
-      "excerpt": "F1 TV analyst and former Renault F1 driver Jolyon Palmer dissects Kimi Antonelli's record-breaking championship campaign.",
+      "excerpt": "Here are all the timings – along with all the additional information you need – for the 20th Grand Prix weekend of the 2026 season from Brazil.",
       "publishedAt": null
     },
     {
-      "title": "Red Bull's rumoured €27million deal takes shape in leaked Max Verstappen shoot",
-      "url": "https://www.motorsport.com/f1/news/leaked-photos-reveal-max-verstappen-sporting-adidas-gear-as-27m-red-bull-rumors-erupt/10871317/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "A commercial production shoot just accidentally poured gasoline on one of the biggest off-track rumours in the Formula 1 paddock right now. Leaked photographs circulating across so",
-      "publishedAt": "2026-11-03T16:25:39.000Z"
-    },
-    {
-      "title": "Who impressed our Power Rankings judges in Mexico City?",
-      "url": "https://www.formula1.com/en/latest/article/power-rankings-who-impressed-our-judges-at-the-mexico-city-grand-prix.2qjwPGUEuzu27Gnq24ggBU",
+      "title": "The inside story of Lewis Hamilton’s first F1 test",
+      "url": "https://www.formula1.com/en/latest/article/20-years-on-the-inside-story-of-lewis-hamiltons-first-f1-test-with-mclaren.52SbO6oNunu7mGcpWMV8U1",
       "source": "Formula 1",
-      "excerpt": "Find out who featured at the top of the Power Rankings table after the Mexico City Grand Prix weekend.",
+      "excerpt": "As Lewis Hamilton gears up for this Sunday's Sao Paulo Grand Prix, he will be preparing to make his 400th Grand Prix start in Formula. To mark the milestone, F1.com revisits his fi",
       "publishedAt": null
     },
     {
-      "title": "Isack Hadjar rues missed opportunity after George Russell clash at Mexico GP",
-      "url": "https://www.motorsport.com/f1/news/isack-hadjar-rues-lost-mexico-city-pace-after-russells-turn-6-torpedo/10871234/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Nailing the launch of your life only to get pushed off the track a few corners later is a surefire way to ruin a Sunday. Just ask Isack Hadjar. Starting seventh on the grid at the ",
-      "publishedAt": "2026-11-03T16:08:34.000Z"
-    },
-    {
-      "title": "Lindblad offers verdict on Piastri collision in Mexico",
-      "url": "https://www.formula1.com/en/latest/article/we-were-in-a-genuine-fight-lindblad-offers-verdict-on-piastri-collision-in-mexico-city-grand-prix.30FzCcOAR3jR8jti3SjN2e",
+      "title": "Camara to make F1 debut for Haas in Sao Paulo",
+      "url": "https://www.formula1.com/en/latest/article/f2-racer-camara-to-make-f1-debut-at-sao-paulo-grand-prix-as-haas-confirm-ocon-will-not-return.12Qa0tpaMZ9kgnEuGJBKFp",
       "source": "Formula 1",
-      "excerpt": "Arvid Lindblad has stated he and Oscar Piastri \"were in a genuine fight\" in the closing stages of the Mexico City Grand Prix, with the Racing Bulls driver ultimately crashing out o",
+      "excerpt": "Rafael Camara’s F1 debut with Haas has been brought forward to the Sao Paulo Grand Prix.",
       "publishedAt": null
     },
     {
-      "title": "Marco Antonelli: \"I saw the champion in Kimi after his Australia crash\"",
-      "url": "https://www.motorsport.com/f1/news/marco-antonelli-i-saw-the-champion-in-kimi-after-his-australia-crash/10871229/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "The 'difference' between Kimi Antonelli's F1 title and Lewis Hamilton's according to Toto Wolff",
+      "url": "https://www.motorsport.com/f1/news/the-difference-between-kimi-antonellis-f1-title-and-lewis-hamiltons-according-to-toto-wolff/10871082/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Kimi Antonelli became Formula 1's youngest-ever world champion at the Mexico City Grand Prix, becoming the first Italian to win the title since Alberto Ascari in 1953. In an exclus",
-      "publishedAt": "2026-11-03T14:22:11.000Z"
+      "excerpt": "Mercedes boss Toto Wolff has explained how “different” it felt watching Kimi Antonelli become Formula 1 world champion compared to his record-breaking years with Lewis Hamilton. An",
+      "publishedAt": "2026-11-03T19:14:39.000Z"
     }
   ],
   "quotes": [
