@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-02T19:02:23.811Z",
+    "generatedAt": "2026-11-03T01:41:31.379Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -733,7 +733,7 @@
         "name": "皮亚斯特里",
         "team": "迈凯伦",
         "color": "#ff8000",
-        "points": 150,
+        "points": 144,
         "wins": 0
       },
       {
@@ -741,7 +741,7 @@
         "name": "哈贾尔",
         "team": "红牛",
         "color": "#3671c6",
-        "points": 105,
+        "points": 107,
         "wins": 0
       },
       {
@@ -749,7 +749,7 @@
         "name": "劳森",
         "team": "Racing Bulls",
         "color": "#6692ff",
-        "points": 79,
+        "points": 83,
         "wins": 0
       },
       {
@@ -757,7 +757,7 @@
         "name": "加斯利",
         "team": "Alpine",
         "color": "#ff87bc",
-        "points": 43,
+        "points": 42,
         "wins": 0
       },
       {
@@ -773,7 +773,7 @@
         "name": "科拉平托",
         "team": "Alpine",
         "color": "#ff87bc",
-        "points": 31,
+        "points": 27,
         "wins": 0
       },
       {
@@ -786,18 +786,18 @@
       },
       {
         "pos": 14,
-        "name": "霍肯伯格",
+        "name": "博托莱托",
         "team": "奥迪",
         "color": "#f50537",
-        "points": 13,
+        "points": 14,
         "wins": 0
       },
       {
         "pos": 15,
-        "name": "博托莱托",
+        "name": "霍肯伯格",
         "team": "奥迪",
         "color": "#f50537",
-        "points": 10,
+        "points": 13,
         "wins": 0
       },
       {
@@ -842,6 +842,14 @@
       },
       {
         "pos": 21,
+        "name": "Ryo Hirakawa",
+        "team": "哈斯",
+        "color": "#b6babd",
+        "points": 1,
+        "wins": 0
+      },
+      {
+        "pos": 22,
         "name": "斯特罗尔",
         "team": "阿斯顿·马丁",
         "color": "#229971",
@@ -849,18 +857,10 @@
         "wins": 0
       },
       {
-        "pos": 22,
+        "pos": 23,
         "name": "博塔斯",
         "team": "凯迪拉克",
         "color": "#c8a24b",
-        "points": 0,
-        "wins": 0
-      },
-      {
-        "pos": 23,
-        "name": "Ryo Hirakawa",
-        "team": "哈斯",
-        "color": "#b6babd",
         "points": 0,
         "wins": 0
       },
@@ -890,37 +890,37 @@
         "pos": 3,
         "name": "红牛",
         "color": "#3671c6",
-        "points": 380
+        "points": 382
       },
       {
         "pos": 4,
         "name": "迈凯伦",
         "color": "#ff8000",
-        "points": 371
+        "points": 365
       },
       {
         "pos": 5,
         "name": "Racing Bulls",
         "color": "#6692ff",
-        "points": 104
+        "points": 108
       },
       {
         "pos": 6,
         "name": "Alpine",
         "color": "#ff87bc",
-        "points": 74
+        "points": 69
       },
       {
         "pos": 7,
         "name": "哈斯",
         "color": "#b6babd",
-        "points": 30
+        "points": 31
       },
       {
         "pos": 8,
         "name": "奥迪",
         "color": "#f50537",
-        "points": 23
+        "points": 27
       },
       {
         "pos": 9,
@@ -944,11 +944,32 @@
   },
   "news": [
     {
-      "title": "How Mercedes can win the 2026 F1 constructors' championship at the Brazilian GP",
-      "url": "https://www.motorsport.com/f1/news/how-mercedes-can-win-the-2026-f1-constructors-championship-at-the-brazilian-gp/10871090/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Antonelli makes history as Verstappen eyes 2027 glory",
+      "url": "https://www.formula1.com/en/latest/article/max-verstappen-named-early-favourite-for-2027-title-despite-kimi-antonellis-record-breaking-season.2f4lCLl3YobQIzZd6CEiCu",
+      "source": "Formula 1",
+      "excerpt": "Antonelli may have become F1’s youngest-ever World Champion in Mexico, but the betting markets are already predicting something different for 2027.",
+      "publishedAt": null
+    },
+    {
+      "title": "Lewis Hamilton goes viral after emotional moment with Peter Bonnington in Mexico",
+      "url": "https://www.motorsport.com/f1/news/lewis-hamilton-goes-viral-after-emotional-moment-with-peter-bonnington-in-mexico/10871136/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Mercedes has the opportunity to claim the Formula 1 constructors' championship at this weekend's Brazilian Grand Prix, one week after Kimi Antonelli clinched the drivers' title in ",
-      "publishedAt": "2026-11-02T17:13:41.000Z"
+      "excerpt": "Formula 1 fans have praised seven-time champion Lewis Hamilton after footage of him congratulating his former Mercedes race engineer Peter 'Bono' Bonnington at the Mexican Grand Pr",
+      "publishedAt": "2026-11-03T00:02:11.000Z"
+    },
+    {
+      "title": "5 betting lessons from Antonelli's Mexico title win",
+      "url": "https://www.formula1.com/en/latest/article/5-betting-lessons-after-kimi-antonelli-secures-his-first-world-championship-title-in-mexico.52HXp4dLOvtTso5l9xUYhF",
+      "source": "Formula 1",
+      "excerpt": "The 20-year-old is now the youngest-ever World Champion in F1 history.",
+      "publishedAt": null
+    },
+    {
+      "title": "George Russell breaks silence with heartfelt message after Kimi Antonelli's F1 title win",
+      "url": "https://www.motorsport.com/f1/news/george-russell-breaks-silence-with-heartfelt-message-after-kimi-antonellis-f1-title-win/10871112/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "George Russell has shared a heartfelt message after missing media duties following the Mexican Grand Prix. The Briton admitted that \"2026 was not meant to be my year\" in a long mes",
+      "publishedAt": "2026-11-02T20:26:53.000Z"
     },
     {
       "title": "Antonelli reveals race number he will use to defend title in 2027",
@@ -963,27 +984,6 @@
       "source": "Motorsport",
       "excerpt": "Kimi Antonelli's race engineer Peter 'Bono' Bonnington has revealed that a \"really stern conversation\" helped turn around the Italian driver's rookie Formula 1 season, a year befor",
       "publishedAt": "2026-11-02T18:30:56.000Z"
-    },
-    {
-      "title": "Hirakawa assesses 'dream' F1 debut in Mexico City",
-      "url": "https://www.formula1.com/en/latest/article/today-was-my-dream-hirakawa-really-happy-with-f1-debut-in-mexico-city.2JU1Knkff6nSnfmyb6cCId",
-      "source": "Formula 1",
-      "excerpt": "Ryo Hirakawa admits that making his Formula 1 debut \"was my dream\" after the Japanese driver finished the Mexico City Grand Prix last weekend, eventually being promoted into the po",
-      "publishedAt": null
-    },
-    {
-      "title": "Toto Wolff: Two sponsors left Mercedes after promoting Kimi Antonelli into F1",
-      "url": "https://www.motorsport.com/f1/news/toto-wolff-two-sponsors-left-mercedes-after-promoting-kimi-antonelli-into-f1/10871088/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "At the Mexico Grand Prix, Mercedes reaped the reward for the courage it showed in putting the then 18-year-old Kimi Antonelli in the cockpit from 2025 with his world championship t",
-      "publishedAt": "2026-11-02T17:43:35.000Z"
-    },
-    {
-      "title": "5 Winners and 5 Losers from Mexico City",
-      "url": "https://www.formula1.com/en/latest/article/5-winners-and-5-losers-from-mexico-city.2bWgqftvDBHiqIs0dXUL3F",
-      "source": "Formula 1",
-      "excerpt": "Lawrence Barretto selects his winners and losers at the Autodromo Hermanos Rodriguez.",
-      "publishedAt": null
     }
   ],
   "quotes": [
