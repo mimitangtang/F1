@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-04T17:38:26.981Z",
+    "generatedAt": "2026-11-04T22:58:04.858Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -944,6 +944,13 @@
   },
   "news": [
     {
+      "title": "Our early Bet Builder picks for Brazil",
+      "url": "https://www.formula1.com/en/latest/article/our-early-bet-builder-selections-for-the-sao-paulo-grand-prix.2muJoFsivUdZaVn0ujetRf",
+      "source": "Formula 1",
+      "excerpt": "Our expert betting writers have picked a four-leg Bet Builder for the Sao Paulo Grand Prix, two podium finishes, a top six selection and a driver with points potential.",
+      "publishedAt": null
+    },
+    {
       "title": "When could Mercedes win the 2026 Teams' Championship?",
       "url": "https://www.formula1.com/en/latest/article/points-permutations-when-could-mercedes-win-the-2026-f1-teams-championship.73hdGVkJl9FHxEvDNlNZKq",
       "source": "Formula 1",
@@ -958,11 +965,11 @@
       "publishedAt": "2026-11-04T16:27:53.000Z"
     },
     {
-      "title": "The 5 drivers most likely to qualify fastest in Brazil",
-      "url": "https://www.formula1.com/en/latest/article/the-5-drivers-who-are-most-likely-to-qualify-fastest-in-sao-paulo.632xqUGo5Z3N5BvznKa5CD",
-      "source": "Formula 1",
-      "excerpt": "We have looked at the betting markets for Qualifying at the Autodromo Jose Carlos Pace and assessed the chances of the leading contenders for pole position.",
-      "publishedAt": null
+      "title": "Liam Lawson’s remarkable form is giving Red Bull a headache for 2027",
+      "url": "https://www.motorsport.com/f1/news/liam-lawsons-remarkable-form-is-giving-red-bull-a-headache-for-2027/10871541/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "So far in 2026, Liam Lawson has been a clear standout performer in Formula 1’s midfield. Lawson has scored 83 points so far, nearly twice as many as second-best Pierre Gasly’s 42 –",
+      "publishedAt": "2026-11-04T18:24:31.000Z"
     },
     {
       "title": "Where did it go wrong for Russell – and can he regroup for 2027?",
@@ -977,13 +984,6 @@
       "source": "Motorsport",
       "excerpt": "Charles Leclerc has received messages of congratulations from across the Formula 1 sphere after he and his wife Alexandra announced the birth of their first child, a daughter named",
       "publishedAt": "2026-11-04T17:01:14.000Z"
-    },
-    {
-      "title": "Toto Wolff reveals how Kimi Antonelli came to his office with title pressure “on his chest”",
-      "url": "https://www.motorsport.com/f1/news/toto-wolff-reveals-how-kimi-antonelli-came-to-his-office-with-title-pressure-on-his-chest/10871272/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Premature celebrations are a dangerous distraction in Formula 1. Long before the lights went out for the Mexico City Grand Prix, the paddock had already mentally crowned Kimi Anton",
-      "publishedAt": "2026-11-04T16:33:53.000Z"
     }
   ],
   "quotes": [
