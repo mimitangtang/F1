@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-03T22:08:29.940Z",
+    "generatedAt": "2026-11-04T02:29:32.006Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -944,18 +944,11 @@
   },
   "news": [
     {
-      "title": "Rafa Camara to debut in F1 Brazil GP as Esteban Ocon out at Haas",
-      "url": "https://www.motorsport.com/f1/news/camara-to-debut-in-f1-brazil-gp-as-ocon-out-at-haas/10871372/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Colton Herta to run Cadillac FP1 in Brazil as FIA superlicense quest continues",
+      "url": "https://www.motorsport.com/f1/news/colton-herta-to-run-cadillac-fp1-in-brazil-as-fia-superlicense-quest-continues/10871403/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "The Haas F1 team has decided Esteban Ocon will not race again for the squad, with 2027 debutant Rafa Camara getting an early debut this weekend on home soil. Following increasingly",
-      "publishedAt": "2026-11-03T20:43:22.000Z"
-    },
-    {
-      "title": "McLaren to introduce 2027 F1 front wing at Brazil GP",
-      "url": "https://www.motorsport.com/f1/news/mclaren-to-introduce-2027-f1-front-wing-at-brazil-gp/10871326/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "McLaren will introduce upgrades to its MCL40 Formula 1 car at this weekend’s Brazil Grand Prix, featuring a front wing concept which is expected to feature on its 2027 challenger. ",
-      "publishedAt": "2026-11-03T16:43:26.000Z"
+      "excerpt": "Cadillac test driver Colton Herta will conduct his sixth Friday practice session of the F1 season at this weekend's Sao Paulo GP to collect his missing FIA superlicense point requi",
+      "publishedAt": "2026-11-03T23:01:56.000Z"
     },
     {
       "title": "What time is the 2026 Sao Paulo GP and how can I watch it?",
@@ -965,6 +958,13 @@
       "publishedAt": null
     },
     {
+      "title": "Rafa Camara to debut in F1 Brazil GP as Esteban Ocon out at Haas",
+      "url": "https://www.motorsport.com/f1/news/camara-to-debut-in-f1-brazil-gp-as-ocon-out-at-haas/10871372/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "The Haas F1 team has decided Esteban Ocon will not race again for the squad, with 2027 debutant Rafa Camara getting an early debut this weekend on home soil. Following increasingly",
+      "publishedAt": "2026-11-03T20:43:22.000Z"
+    },
+    {
       "title": "The inside story of Lewis Hamilton’s first F1 test",
       "url": "https://www.formula1.com/en/latest/article/20-years-on-the-inside-story-of-lewis-hamiltons-first-f1-test-with-mclaren.52SbO6oNunu7mGcpWMV8U1",
       "source": "Formula 1",
@@ -972,18 +972,18 @@
       "publishedAt": null
     },
     {
-      "title": "Camara to make F1 debut for Haas in Sao Paulo",
-      "url": "https://www.formula1.com/en/latest/article/f2-racer-camara-to-make-f1-debut-at-sao-paulo-grand-prix-as-haas-confirm-ocon-will-not-return.12Qa0tpaMZ9kgnEuGJBKFp",
-      "source": "Formula 1",
-      "excerpt": "Rafael Camara’s F1 debut with Haas has been brought forward to the Sao Paulo Grand Prix.",
-      "publishedAt": null
+      "title": "Andrea Stella explains how qualifying destroyed McLaren’s Mexico GP: “We paid the price”",
+      "url": "https://www.motorsport.com/f1/news/stella-explains-how-a-nightmare-qualifying-destroyed-mclarens-mexico-gp-we-paid-the-price/10871257/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Having a podium-capable car means much less if you spend 71 laps hopelessly trapped in dirty air. That was the reality for McLaren at the Mexico City Grand Prix. A difficult Saturd",
+      "publishedAt": "2026-11-03T23:50:58.000Z"
     },
     {
-      "title": "The 'difference' between Kimi Antonelli's F1 title and Lewis Hamilton's according to Toto Wolff",
-      "url": "https://www.motorsport.com/f1/news/the-difference-between-kimi-antonellis-f1-title-and-lewis-hamiltons-according-to-toto-wolff/10871082/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Mercedes boss Toto Wolff has explained how “different” it felt watching Kimi Antonelli become Formula 1 world champion compared to his record-breaking years with Lewis Hamilton. An",
-      "publishedAt": "2026-11-03T19:14:39.000Z"
+      "title": "The 5 drivers most likely to win in Sao Paulo",
+      "url": "https://www.formula1.com/en/latest/article/the-5-drivers-most-likely-to-win-the-sao-paulo-grand-prix-according-to-the-betting-markets.4bzkRPAjDqrOZ9EH6cwwoB",
+      "source": "Formula 1",
+      "excerpt": "We look at the betting odds and analyse the chances of the five drivers most likely to win at the Autodromo Jose Carlos Pace.",
+      "publishedAt": null
     }
   ],
   "quotes": [
