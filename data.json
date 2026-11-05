@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-05T03:06:49.102Z",
+    "generatedAt": "2026-11-05T11:16:46.147Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -951,18 +951,11 @@
       "publishedAt": null
     },
     {
-      "title": "Max Verstappen brings “some samba” to Sao Paulo with Brazil-themed F1 helmet",
-      "url": "https://www.motorsport.com/f1/news/max-verstappen-brings-some-samba-to-sao-paulo-with-brazil-themed-f1-helmet/10871580/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "How Mercedes can win F1’s world constructors’ title at Brazil GP",
+      "url": "https://www.motorsport.com/f1/news/how-mercedes-can-win-f1s-world-constructors-title-at-brazil-gp/10871496/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Max Verstappen will race in the colours of Brazil at this weekend’s Sao Paulo Grand Prix after revealing a special helmet for the race. The Red Bull driver has replaced his usual r",
-      "publishedAt": "2026-11-05T00:20:58.000Z"
-    },
-    {
-      "title": "Kimi Antonelli to honour Ayrton Senna with special helmet at Brazilian GP",
-      "url": "https://www.motorsport.com/f1/news/kimi-antonelli-to-honour-ayrton-senna-with-special-helmet-at-brazilian-gp/10871582/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Kimi Antonelli will arrive at Interlagos as the 2026 world champion this weekend, and he plans to use the occasion to pay tribute to his racing hero, Ayrton Senna. The Mercedes dri",
-      "publishedAt": "2026-11-05T00:19:06.000Z"
+      "excerpt": "After Kimi Antonelli earned his maiden Formula 1 world title at the Mexico Grand Prix, Mercedes can add a ninth constructors’ trophy to its record in Brazil. The Silver Arrows have",
+      "publishedAt": "2026-11-05T09:49:47.000Z"
     },
     {
       "title": "When could Mercedes win the 2026 Teams' Championship?",
@@ -972,18 +965,25 @@
       "publishedAt": null
     },
     {
-      "title": "Mercedes to race in new suits at Brazil GP in nod to legendary era",
-      "url": "https://www.motorsport.com/f1/news/mercedes-to-race-in-new-suits-at-brazil-gp-in-nod-to-legendary-era/10871575/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Max Verstappen brings “some samba” to Sao Paulo with Brazil-themed F1 helmet",
+      "url": "https://www.motorsport.com/f1/news/max-verstappen-brings-some-samba-to-sao-paulo-with-brazil-themed-f1-helmet/10871580/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "The Mercedes team will look a little different at this weekend’s Sao Paulo Grand Prix, with world champion Kimi Antonelli and George Russell switching to purple race suits instead ",
-      "publishedAt": "2026-11-04T23:55:57.000Z"
+      "excerpt": "Max Verstappen will race in the colours of Brazil at this weekend’s Sao Paulo Grand Prix after revealing a special helmet for the race. The Red Bull driver has replaced his usual r",
+      "publishedAt": "2026-11-05T00:20:58.000Z"
     },
     {
-      "title": "Where did it go wrong for Russell – and can he regroup for 2027?",
-      "url": "https://www.formula1.com/en/latest/article/where-did-it-go-wrong-for-russell-and-can-he-regroup-for-2027.2CNIpJmJWuYCp6J4UbzNPB",
+      "title": "F1 champion Alan Jones passes away, aged 80",
+      "url": "https://www.formula1.com/en/latest/article/f1-champion-alan-jones-passes-away-aged-80.47VhlGhEpLtaMwCOlLAB3Y",
       "source": "Formula 1",
-      "excerpt": "F1 TV lead commentator Alex Jacques dissects a season in which Russell has been comprehensively beaten to the title by a less experienced team mate – and looks at what he must do n",
+      "excerpt": "1980 champion Alan Jones has passed away at the age of 80.",
       "publishedAt": null
+    },
+    {
+      "title": "Max Verstappen jokes about key difference with Kimi Antonelli at 20: “He speaks Italian!”",
+      "url": "https://www.motorsport.com/f1/news/max-verstappen-jokes-about-key-difference-with-kimi-antonelli-at-20-he-speaks-italian/10871670/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Following the Mexico Grand Prix, Kimi Antonelli has entered the history books as Formula 1’s youngest-ever world champion. The Italian has taken the record from Sebastian Vettel, w",
+      "publishedAt": "2026-11-05T11:00:03.000Z"
     }
   ],
   "quotes": [
