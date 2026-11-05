@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-04T22:58:04.858Z",
+    "generatedAt": "2026-11-05T03:06:49.102Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -951,6 +951,20 @@
       "publishedAt": null
     },
     {
+      "title": "Max Verstappen brings “some samba” to Sao Paulo with Brazil-themed F1 helmet",
+      "url": "https://www.motorsport.com/f1/news/max-verstappen-brings-some-samba-to-sao-paulo-with-brazil-themed-f1-helmet/10871580/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Max Verstappen will race in the colours of Brazil at this weekend’s Sao Paulo Grand Prix after revealing a special helmet for the race. The Red Bull driver has replaced his usual r",
+      "publishedAt": "2026-11-05T00:20:58.000Z"
+    },
+    {
+      "title": "Kimi Antonelli to honour Ayrton Senna with special helmet at Brazilian GP",
+      "url": "https://www.motorsport.com/f1/news/kimi-antonelli-to-honour-ayrton-senna-with-special-helmet-at-brazilian-gp/10871582/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Kimi Antonelli will arrive at Interlagos as the 2026 world champion this weekend, and he plans to use the occasion to pay tribute to his racing hero, Ayrton Senna. The Mercedes dri",
+      "publishedAt": "2026-11-05T00:19:06.000Z"
+    },
+    {
       "title": "When could Mercedes win the 2026 Teams' Championship?",
       "url": "https://www.formula1.com/en/latest/article/points-permutations-when-could-mercedes-win-the-2026-f1-teams-championship.73hdGVkJl9FHxEvDNlNZKq",
       "source": "Formula 1",
@@ -958,18 +972,11 @@
       "publishedAt": null
     },
     {
-      "title": "Five things to look out for at F1 Brazil GP",
-      "url": "https://www.motorsport.com/f1/news/five-things-to-look-out-for-at-f1-brazil-gp/10871528/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Mercedes to race in new suits at Brazil GP in nod to legendary era",
+      "url": "https://www.motorsport.com/f1/news/mercedes-to-race-in-new-suits-at-brazil-gp-in-nod-to-legendary-era/10871575/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "The 2026 Formula 1 season is now very much in its final stretch with this weekend’s Brazil Grand Prix marking the fourth-to-last round of the year. There is only one title up for g",
-      "publishedAt": "2026-11-04T16:27:53.000Z"
-    },
-    {
-      "title": "Liam Lawson’s remarkable form is giving Red Bull a headache for 2027",
-      "url": "https://www.motorsport.com/f1/news/liam-lawsons-remarkable-form-is-giving-red-bull-a-headache-for-2027/10871541/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "So far in 2026, Liam Lawson has been a clear standout performer in Formula 1’s midfield. Lawson has scored 83 points so far, nearly twice as many as second-best Pierre Gasly’s 42 –",
-      "publishedAt": "2026-11-04T18:24:31.000Z"
+      "excerpt": "The Mercedes team will look a little different at this weekend’s Sao Paulo Grand Prix, with world champion Kimi Antonelli and George Russell switching to purple race suits instead ",
+      "publishedAt": "2026-11-04T23:55:57.000Z"
     },
     {
       "title": "Where did it go wrong for Russell – and can he regroup for 2027?",
@@ -977,13 +984,6 @@
       "source": "Formula 1",
       "excerpt": "F1 TV lead commentator Alex Jacques dissects a season in which Russell has been comprehensively beaten to the title by a less experienced team mate – and looks at what he must do n",
       "publishedAt": null
-    },
-    {
-      "title": "How the F1 world reacted to Charles Leclerc becoming a father",
-      "url": "https://www.motorsport.com/f1/news/how-the-f1-world-reacted-to-charles-leclerc-becoming-a-father/10871549/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Charles Leclerc has received messages of congratulations from across the Formula 1 sphere after he and his wife Alexandra announced the birth of their first child, a daughter named",
-      "publishedAt": "2026-11-04T17:01:14.000Z"
     }
   ],
   "quotes": [
