@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-06T11:51:32.820Z",
+    "generatedAt": "2026-11-06T18:39:00.194Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -944,46 +944,46 @@
   },
   "news": [
     {
-      "title": "Ferrari set for crunch meeting as Lewis Hamilton and Charles Leclerc tension reaches Brazil",
-      "url": "https://www.motorsport.com/f1/news/ferrari-set-for-crunch-meeting-as-lewis-hamilton-and-charles-leclerc-tension-reaches-brazil/10872021/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "AS IT HAPPENED: First practice for the Sao Paulo GP",
+      "url": "https://www.formula1.com/en/latest/article/live-coverage-first-practice-in-brazil-2026.CYzUtCJCISC6hBcDRrctB",
+      "source": "Formula 1",
+      "excerpt": "Live coverage of the first Formula 1 practice session for the 2026 Sao Paulo Grand Prix in Brazil.",
+      "publishedAt": null
+    },
+    {
+      "title": "F1 Brazilian GP: Lando Norris tops FP1 as Colton Herta clinches superlicence",
+      "url": "https://www.motorsport.com/f1/news/f1-brazilian-gp-fp1-report-10872160/10872160/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Ferrari arrived at Interlagos facing a problem that, until just a few weeks ago, would have been difficult to imagine in quite this form. After a long season spent chasing competit",
-      "publishedAt": "2026-11-06T11:05:33.000Z"
+      "excerpt": "Lando Norris was fastest in Free Practice 1 at Formula 1’s Brazilian Grand Prix, leading Kimi Antonelli, Max Verstappen and Lewis Hamilton. Norris outpaced Antonelli by 0.082s on t",
+      "publishedAt": "2026-11-06T16:43:42.000Z"
     },
     {
-      "title": "Which rookies are getting FP1 outings in Brazil?",
-      "url": "https://www.formula1.com/en/latest/article/which-rookie-drivers-are-getting-fp1-outings-at-the-sao-paulo-grand-prix.3DAnL1BS38Gu5KKzU70aBJ",
+      "title": "Camara looking to learn from Bearman on surprise F1 debut",
+      "url": "https://www.formula1.com/en/latest/article/camara-looking-to-learn-from-bearman-on-surprise-f1-debut-in-brazil.5d47nAelIarNkqGhVsTedK",
       "source": "Formula 1",
-      "excerpt": "Six full-time drivers will make way for junior, test and reserve drivers during FP1 at the Autodromo Jose Carlos Pace, whilst another rookie makes his debut",
+      "excerpt": "Rafael Camara will be watching his fellow Ferrari Driver Academy colleague Ollie Bearman closely as the two team up at Haas for the first time this weekend.",
       "publishedAt": null
     },
     {
-      "title": "Alan Permane handed Racing Bulls Team Principal renewal",
-      "url": "https://www.formula1.com/en/latest/article/alan-permane-signs-deal-to-stay-as-racing-bulls-team-principal-through-to-2031.cuuzgpmUrpg3TLeF14TRy",
-      "source": "Formula 1",
-      "excerpt": "Alan Permane has signed a long-term contract extension that will see him remain Team Principal and Co-CEO Sporting of Racing Bulls through to the end of 2031.",
-      "publishedAt": null
-    },
-    {
-      "title": "All the stories that got the Sao Paulo paddock talking",
-      "url": "https://www.formula1.com/en/latest/article/all-the-stories-that-got-the-sao-paulo-paddock-talking.1TWHXxrs4N9xUspvYpgb3H",
-      "source": "Formula 1",
-      "excerpt": "F1.com's Mike Seymour rounds up all the big talking points ahead of the 2026 Sao Paulo Grand Prix.",
-      "publishedAt": null
-    },
-    {
-      "title": "Kimi Antonelli: “My 2027 preparation starts now” after F1 title triumph",
-      "url": "https://www.motorsport.com/f1/news/kimi-antonelli-my-2027-preparation-starts-now-after-f1-title-triumph/10871954/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "\"Unacceptable downshifts\" – Max Verstappen explains what's behind a recurring F1 radio complaint",
+      "url": "https://www.motorsport.com/f1/news/unacceptable-downshifts-max-verstappen-explains-whats-behind-a-recurring-f1-radio-complaint/10872196/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "It has been quite the week for Kimi Antonelli. After celebrating his record-breaking world title on the Mexico Grand Prix podium, where he was hoisted aloft by Lewis Hamilton and M",
-      "publishedAt": "2026-11-06T09:42:17.000Z"
+      "excerpt": "Verstappen finished the opening practice session of the Formula 1 weekend in Sao Paulo in third place, just over two tenths behind fastest man Lando Norris in the upgraded McLaren,",
+      "publishedAt": "2026-11-06T17:26:25.000Z"
     },
     {
-      "title": "Norris wary of new McLaren upgrades in Sao Paulo",
-      "url": "https://www.formula1.com/en/latest/article/want-to-believe-that-we-can-still-make-improvements-norris-wary-of-new-mclaren-upgrades-in-sao-paulo.6NvdXqDIqBz1Mw1xveJv0k",
+      "title": "Norris leads Antonelli and Verstappen in Sao Paulo FP1",
+      "url": "https://www.formula1.com/en/latest/article/fp1-norris-leads-antonelli-and-verstappen-in-opening-sao-paulo-gp-practice-session.3GXL3rAROwHsLxnxn9hReY",
       "source": "Formula 1",
-      "excerpt": "McLaren will introduce new upgrades for the Sao Paulo Grand Prix this weekend, with Lando Norris stating he wants \"to believe that we can still make improvements\" to this year's ca",
+      "excerpt": "Lando Norris finished fastest in Free Practice 1 ahead of the Sao Paulo Grand Prix, the McLaren driver beating Kimi Antonelli and Max Verstappen to top spot.",
       "publishedAt": null
+    },
+    {
+      "title": "F1 champion Kimi Antonelli plans special purchase after historic title win",
+      "url": "https://www.motorsport.com/f1/news/f1-champion-kimi-antonelli-plans-special-purchase-after-historic-title-win/10872187/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Kimi Antonelli has revealed how he plans to reward himself for winning the 2026 Formula 1 world championship. Despite his parents keeping a close eye on how he spends his money, th",
+      "publishedAt": "2026-11-06T17:06:13.000Z"
     }
   ],
   "quotes": [
