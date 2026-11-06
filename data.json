@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-06T18:39:00.194Z",
+    "generatedAt": "2026-11-06T23:35:18.602Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -944,46 +944,46 @@
   },
   "news": [
     {
-      "title": "AS IT HAPPENED: First practice for the Sao Paulo GP",
-      "url": "https://www.formula1.com/en/latest/article/live-coverage-first-practice-in-brazil-2026.CYzUtCJCISC6hBcDRrctB",
+      "title": "Why Max Verstappen ended F1 practice early in Brazil – Red Bull explains",
+      "url": "https://www.motorsport.com/f1/news/why-max-verstappen-ended-f1-practice-early-in-brazil-red-bull-explains/10872364/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Max Verstappen finished Friday's Formula 1 practice sessions in Sao Paulo in third place. The Dutchman occupied that position in both sessions, in fact, and was also around two and",
+      "publishedAt": "2026-11-06T22:32:59.000Z"
+    },
+    {
+      "title": "What the teams said – Friday in Brazil",
+      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-friday-in-brazil-2026.4WPgQlfi6v476KUJTYZeFM",
       "source": "Formula 1",
-      "excerpt": "Live coverage of the first Formula 1 practice session for the 2026 Sao Paulo Grand Prix in Brazil.",
+      "excerpt": "The drivers and teams report back from Friday practice at the Autodromo Jose Carlos Pace ahead of the 2026 Sao Paulo Grand Prix in Brazil.",
       "publishedAt": null
     },
     {
-      "title": "F1 Brazilian GP: Lando Norris tops FP1 as Colton Herta clinches superlicence",
-      "url": "https://www.motorsport.com/f1/news/f1-brazilian-gp-fp1-report-10872160/10872160/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Lando Norris was fastest in Free Practice 1 at Formula 1’s Brazilian Grand Prix, leading Kimi Antonelli, Max Verstappen and Lewis Hamilton. Norris outpaced Antonelli by 0.082s on t",
-      "publishedAt": "2026-11-06T16:43:42.000Z"
-    },
-    {
-      "title": "Camara looking to learn from Bearman on surprise F1 debut",
-      "url": "https://www.formula1.com/en/latest/article/camara-looking-to-learn-from-bearman-on-surprise-f1-debut-in-brazil.5d47nAelIarNkqGhVsTedK",
+      "title": "Ferrari have 'plenty to work on' in Brazil – Leclerc",
+      "url": "https://www.formula1.com/en/latest/article/leclerc-concedes-theres-plenty-to-work-on-for-ferrari-ahead-of-sao-paulo-gp.2cWYwXJTouoM7r1LMyyhKr",
       "source": "Formula 1",
-      "excerpt": "Rafael Camara will be watching his fellow Ferrari Driver Academy colleague Ollie Bearman closely as the two team up at Haas for the first time this weekend.",
+      "excerpt": "Charles Leclerc believes Ferrari has \"plenty to work on\" as the team tries to find performance after Friday practice ahead of the Sao Paulo Grand Prix.",
       "publishedAt": null
     },
     {
-      "title": "\"Unacceptable downshifts\" – Max Verstappen explains what's behind a recurring F1 radio complaint",
-      "url": "https://www.motorsport.com/f1/news/unacceptable-downshifts-max-verstappen-explains-whats-behind-a-recurring-f1-radio-complaint/10872196/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "F1 Brazil GP: Saturday schedule, weather forecast and how to watch",
+      "url": "https://www.motorsport.com/f1/news/f1-brazil-gp-saturday-schedule-weather-forecast-and-how-to-watch/10872353/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Verstappen finished the opening practice session of the Formula 1 weekend in Sao Paulo in third place, just over two tenths behind fastest man Lando Norris in the upgraded McLaren,",
-      "publishedAt": "2026-11-06T17:26:25.000Z"
+      "excerpt": "Formula 1 heads into Saturday at Interlagos with Kimi Antonelli fastest after second practice for the Brazil Grand Prix. The newly crowned world champion set a 1m10.763s to lead La",
+      "publishedAt": "2026-11-06T22:05:41.000Z"
     },
     {
-      "title": "Norris leads Antonelli and Verstappen in Sao Paulo FP1",
-      "url": "https://www.formula1.com/en/latest/article/fp1-norris-leads-antonelli-and-verstappen-in-opening-sao-paulo-gp-practice-session.3GXL3rAROwHsLxnxn9hReY",
+      "title": "McLaren’s upgrade is \"a pleasant surprise\" – but will it stay on the car in Brazil?",
+      "url": "https://www.motorsport.com/f1/news/mclarens-upgrade-is-a-pleasant-surprise-but-will-it-stay-on-the-car-in-brazil/10872338/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "After one of the most turbulent world championship defences since Jenson Button in 2010, Lando Norris gave McLaren’s latest batch of car upgrades a cautious thumbs-up on the Friday",
+      "publishedAt": "2026-11-06T21:49:40.000Z"
+    },
+    {
+      "title": "Camara reflects on 'very special' F1 weekend debut",
+      "url": "https://www.formula1.com/en/latest/article/camara-reflects-on-very-special-first-f1-outing-as-he-gears-up-for-haas-debut-in-sao-paulo.7FQp0PWMq4lsDsDAoosi4t",
       "source": "Formula 1",
-      "excerpt": "Lando Norris finished fastest in Free Practice 1 ahead of the Sao Paulo Grand Prix, the McLaren driver beating Kimi Antonelli and Max Verstappen to top spot.",
+      "excerpt": "Rafael Camara got his first taste behind the wheel of a 2026 F1 car as he gears up for his debut Grand Prix with Haas.",
       "publishedAt": null
-    },
-    {
-      "title": "F1 champion Kimi Antonelli plans special purchase after historic title win",
-      "url": "https://www.motorsport.com/f1/news/f1-champion-kimi-antonelli-plans-special-purchase-after-historic-title-win/10872187/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Kimi Antonelli has revealed how he plans to reward himself for winning the 2026 Formula 1 world championship. Despite his parents keeping a close eye on how he spends his money, th",
-      "publishedAt": "2026-11-06T17:06:13.000Z"
     }
   ],
   "quotes": [
