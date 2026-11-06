@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-05T23:53:04.157Z",
+    "generatedAt": "2026-11-06T11:51:32.820Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -944,17 +944,24 @@
   },
   "news": [
     {
-      "title": "Kimi Antonelli opens up on \"very emotional\" visit to Ayrton Senna's family estate",
-      "url": "https://www.motorsport.com/f1/news/kimi-antonelli-opens-up-on-very-emotional-visit-to-ayrton-sennas-family-estate/10871927/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Ferrari set for crunch meeting as Lewis Hamilton and Charles Leclerc tension reaches Brazil",
+      "url": "https://www.motorsport.com/f1/news/ferrari-set-for-crunch-meeting-as-lewis-hamilton-and-charles-leclerc-tension-reaches-brazil/10872021/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "2026 Formula 1 champion Kimi Antonelli has opened up about his recent visit to Ayrton Senna's family home ahead of this weekend's Brazilian Grand Prix. The Mercedes driver went to ",
-      "publishedAt": "2026-11-05T21:43:40.000Z"
+      "excerpt": "Ferrari arrived at Interlagos facing a problem that, until just a few weeks ago, would have been difficult to imagine in quite this form. After a long season spent chasing competit",
+      "publishedAt": "2026-11-06T11:05:33.000Z"
     },
     {
-      "title": "Hamilton wants Ferrari talks in Brazil after Mexico battle",
-      "url": "https://www.formula1.com/en/latest/article/hamilton-wants-ferrari-talks-ahead-of-sao-paulo-grand-prix-after-intra-team-battle-with-leclerc.3JXGpQWTdOA2a9PiH7NL8X",
+      "title": "Which rookies are getting FP1 outings in Brazil?",
+      "url": "https://www.formula1.com/en/latest/article/which-rookie-drivers-are-getting-fp1-outings-at-the-sao-paulo-grand-prix.3DAnL1BS38Gu5KKzU70aBJ",
       "source": "Formula 1",
-      "excerpt": "Lewis Hamilton admits that face-to-face talks between himself and Ferrari team mate Charles Leclerc need to take place at the Sao Paulo Grand Prix this weekend after their on-track",
+      "excerpt": "Six full-time drivers will make way for junior, test and reserve drivers during FP1 at the Autodromo Jose Carlos Pace, whilst another rookie makes his debut",
+      "publishedAt": null
+    },
+    {
+      "title": "Alan Permane handed Racing Bulls Team Principal renewal",
+      "url": "https://www.formula1.com/en/latest/article/alan-permane-signs-deal-to-stay-as-racing-bulls-team-principal-through-to-2031.cuuzgpmUrpg3TLeF14TRy",
+      "source": "Formula 1",
+      "excerpt": "Alan Permane has signed a long-term contract extension that will see him remain Team Principal and Co-CEO Sporting of Racing Bulls through to the end of 2031.",
       "publishedAt": null
     },
     {
@@ -965,11 +972,11 @@
       "publishedAt": null
     },
     {
-      "title": "Mercedes held its breath over Kimi Antonelli’s title-winning move on Charles Leclerc",
-      "url": "https://www.motorsport.com/f1/news/kimi-antonelli-reveals-the-dark-2025-slump-that-built-a-champion-i-questioned-myself-over-and-over/10871786/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Kimi Antonelli: “My 2027 preparation starts now” after F1 title triumph",
+      "url": "https://www.motorsport.com/f1/news/kimi-antonelli-my-2027-preparation-starts-now-after-f1-title-triumph/10871954/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "All Kimi Antonelli needed to do at the Mexico City Grand Prix was finish ninth. Instead, the new world champion chose to clinch the title with a late-braking lunge on Charles Lecle",
-      "publishedAt": "2026-11-05T23:28:33.000Z"
+      "excerpt": "It has been quite the week for Kimi Antonelli. After celebrating his record-breaking world title on the Mexico Grand Prix podium, where he was hoisted aloft by Lewis Hamilton and M",
+      "publishedAt": "2026-11-06T09:42:17.000Z"
     },
     {
       "title": "Norris wary of new McLaren upgrades in Sao Paulo",
@@ -977,13 +984,6 @@
       "source": "Formula 1",
       "excerpt": "McLaren will introduce new upgrades for the Sao Paulo Grand Prix this weekend, with Lando Norris stating he wants \"to believe that we can still make improvements\" to this year's ca",
       "publishedAt": null
-    },
-    {
-      "title": "George Russell opens up on mental exhaustion after frustrating 2026 F1 season",
-      "url": "https://www.motorsport.com/f1/news/george-russell-opens-up-on-mental-exhaustion-after-frustrating-2026-f1-season/10871940/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "George Russell has admitted he is mentally exhausted after a season in which he has repeatedly had to overcome challenges. The Mercedes driver started 2026 as the favourite for the",
-      "publishedAt": "2026-11-05T23:14:24.000Z"
     }
   ],
   "quotes": [
