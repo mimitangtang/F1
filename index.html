@@ -442,7 +442,7 @@
           </div>
 
           <div class="lines">
-            <div class="line"><i>01</i><span id="lineChampion">冠军点：本站第 9 名或更好，安东内利即可加冕</span></div>
+            <div class="line"><i>01</i><span id="lineChampion">冠军已定：安东内利已加冕 · 领先 119 分</span></div>
             <div class="line"><i>02</i><span id="lineTrack">赛道：罗德里格斯兄弟赛道 · 4.304 km / 71 圈</span></div>
             <div class="line"><i>03</i><span id="lineTeam">车队积分：梅赛德斯领先 133 分</span></div>
           </div>
@@ -579,8 +579,9 @@
       </div>
 
       <div class="champ-note">
-        <div><b>冠军形势：</b>领先者 <span id="champLeader">安东内利</span> 领先 <span id="champGap">123</span> 分；赛季剩余 <span id="champRemain">5</span> 站。</div>
-        <span class="mono" id="champStats">365 PTS · 9 WINS · 20 YRS</span>
+        <div id="champNoteFight" hidden><b>冠军形势：</b>领先者 <span id="champLeader">安东内利</span> 领先 <span id="champGap">119</span> 分；赛季剩余 <span id="champRemain">4</span> 站。</div>
+        <div id="champNoteDone"><b>冠军已定：</b><span id="champName">安东内利</span>已加冕<span id="champClinchDetail">（墨西哥城站后锁定）</span>；剩余 <span id="champLeft">4</span> 站不再影响冠军归属。</div>
+        <span class="mono" id="champStats">380 PTS · 9 WINS</span>
       </div>
 
       <div class="boards">
@@ -968,6 +969,18 @@ function renderNews(news){
   }).join("");
 }
 
+function isChampionClinched(d,rows){
+  const champ=d.standings?.champion;
+  if(champ && typeof champ.clinched==="boolean") return champ.clinched;
+  if(!rows.length) return false;
+  if(!rows[1]) return true;
+  if((d.season?.remaining??1)<=0) return true;
+  const maxRemain=(d.races||[])
+    .filter(r=>r.winner==null)
+    .reduce((s,r)=>s+25+(r.sprint?8:0),0);
+  return rows[0].points-rows[1].points > maxRemain;
+}
+
 function applyData(d){
   if(!d || !d.nextRace || !Array.isArray(d.races)) return;
 
@@ -1041,10 +1054,25 @@ function applyData(d){
 
   const leader=driverRows[0], second=driverRows[1];
   if(leader && second){
-    document.getElementById("lineChampion").textContent=`冠军争夺：${leader.name} 领先 ${leader.points-second.points} 分`;
-    document.getElementById("champLeader").textContent=leader.name;
-    document.getElementById("champGap").textContent=leader.points-second.points;
-    document.getElementById("champRemain").textContent=d.season.remaining;
+    const gap=leader.points-second.points;
+    const clinched=isChampionClinched(d,driverRows);
+    const fight=document.getElementById("champNoteFight");
+    const done=document.getElementById("champNoteDone");
+    if(fight) fight.hidden=clinched;
+    if(done) done.hidden=!clinched;
+    if(clinched){
+      const round=Number(d.standings?.champion?.clinchedRound)||0;
+      const gp=round?races.find(r=>r.r===round)?.gp:null;
+      document.getElementById("lineChampion").textContent=`冠军已定：${leader.name}已加冕 · 领先 ${gap} 分`;
+      document.getElementById("champName").textContent=leader.name;
+      document.getElementById("champClinchDetail").textContent=gp?`（${gp}站后锁定）`:"";
+      document.getElementById("champLeft").textContent=d.season.remaining;
+    }else{
+      document.getElementById("lineChampion").textContent=`冠军争夺：${leader.name} 领先 ${gap} 分`;
+      document.getElementById("champLeader").textContent=leader.name;
+      document.getElementById("champGap").textContent=gap;
+      document.getElementById("champRemain").textContent=d.season.remaining;
+    }
     document.getElementById("champStats").textContent=`${leader.points} PTS · ${leader.wins} WINS`;
   }
 

@@ -250,7 +250,8 @@ async function sync() {
       note: "",
       circuitId: race.Circuit.circuitId,
       circuit: info.name || race.Circuit.circuitName,
-      country: race.Circuit.Location.country
+      country: race.Circuit.Location.country,
+      sprint: Boolean(race.Sprint?.date)
     };
   });
 
@@ -325,6 +326,42 @@ async function sync() {
   if (driverStandings.length < 10) throw new Error("车手积分榜数据异常");
   if (!nextRace) throw new Error("无法确定下一站");
 
+  let previous = null;
+  try {
+    previous = JSON.parse(await readFile("data.json", "utf8"));
+  } catch {
+    previous = null;
+  }
+
+  // 车手冠军判定：领先优势大于追赶者在剩余分站的理论最高得分（正赛 25 + 冲刺赛 8）
+  const remainingSchedule = schedule.filter(
+    (race) => !(resultsByRound.get(Number(race.round)) || []).length
+  );
+  const maxRemainingPoints = remainingSchedule.reduce(
+    (sum, race) => sum + 25 + (race.Sprint?.date ? 8 : 0), 0
+  );
+  const leader = driverStandings[0];
+  const second = driverStandings[1];
+  const clinched = Boolean(leader) && (
+    remainingSchedule.length === 0 ||
+    !second ||
+    leader.points - second.points > maxRemainingPoints
+  );
+  const previousChampion = previous?.standings?.champion;
+  const champion = {
+    clinched,
+    name: leader?.name || null,
+    clinchedRound: null
+  };
+  if (clinched) {
+    // 加冕轮次一旦记录就不再后移：沿用上次生成结果，否则以当前完赛站数为准
+    champion.clinchedRound = previousChampion?.clinched
+      && previousChampion.name === champion.name
+      && previousChampion.clinchedRound
+      ? previousChampion.clinchedRound
+      : resultsByRound.size;
+  }
+
   const data = {
     meta: {
       season: 2026,
@@ -356,19 +393,13 @@ async function sync() {
       }
     },
     races,
-    standings: { drivers: driverStandings, constructors: constructorStandings },
+    standings: { drivers: driverStandings, constructors: constructorStandings, champion },
     news: rankedNews,
     quotes,
     highlights
   };
 
   const withoutTimestamp = (obj) => JSON.stringify({ ...obj, meta: { ...obj.meta, generatedAt: null } });
-  let previous = null;
-  try {
-    previous = JSON.parse(await readFile("data.json", "utf8"));
-  } catch {
-    previous = null;
-  }
   if (previous && withoutTimestamp(previous) === withoutTimestamp(data)) {
     console.log("数据无实质变化，保留原 data.json");
     return;
