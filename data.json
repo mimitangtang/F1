@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-07T16:40:24.809Z",
+    "generatedAt": "2026-11-07T20:36:01.716Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1054,25 +1054,32 @@
   },
   "news": [
     {
-      "title": "F1 Brazilian GP: Max Verstappen edges out Kimi Antonelli in FP3",
-      "url": "https://www.motorsport.com/f1/news/f1-brazilian-gp-fp3-report/10872574/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Max Verstappen set the fastest time in Free Practice 3 at Formula 1’s Brazilian Grand Prix, narrowly edging out Kimi Antonelli as Lewis Hamilton’s Ferrari suffered a mechanical iss",
-      "publishedAt": "2026-11-07T15:35:48.000Z"
+      "title": "LIVE COVERAGE: Norris takes pole in wet Sao Paulo Qualifying",
+      "url": "https://www.formula1.com/en/latest/article/live-coverage-qualifying-in-brazil-2026.3f1u3JidkKoZ1jnhWOuAi8",
+      "source": "Formula 1",
+      "excerpt": "Live coverage of the Formula 1 Qualifying session for the 2026 Sao Paulo Grand Prix in Brazil.",
+      "publishedAt": null
     },
     {
-      "title": "Hamilton, Leclerc and Verstappen set for Brazil grid drops",
+      "title": "F1 Brazilian GP: Lando Norris takes pole in soaking wet qualifying",
+      "url": "https://www.motorsport.com/f1/news/f1-brazilian-gp-lando-norris-takes-pole-in-soaking-wet-qualifying/10872707/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "McLaren's Lando Norris has claimed pole in a wet qualifying session at Formula 1's Brazilian Grand Prix, beating George Russell on a treacherous Interlagos circuit. In a challengin",
+      "publishedAt": "2026-11-07T20:31:58.000Z"
+    },
+    {
+      "title": "Hamilton, Leclerc and Verstappen take Brazil grid drops",
       "url": "https://www.formula1.com/en/latest/article/hamilton-leclerc-and-verstappen-set-for-sao-paulo-grand-prix-penalties-after-power-unit-changes.7B5CuFFCN1F6Txc8YwcEhd",
       "source": "Formula 1",
       "excerpt": "Lewis Hamilton, Charles Leclerc and Max Verstappen will take grid drops at this weekend’s Sao Paulo Grand Prix after Ferrari and Red Bull changed power unit components within their",
       "publishedAt": null
     },
     {
-      "title": "Lewis Hamilton, Charles Leclerc and Max Verstappen hit with F1 grid penalties for Brazilian GP",
-      "url": "https://www.motorsport.com/f1/news/lewis-hamilton-charles-leclerc-and-max-verstappen-hit-with-f1-grid-penalties-for-brazilian-gp/10872560/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Lewis Hamilton set for new penalty, will start F1 Brazilian GP from back of grid",
+      "url": "https://www.motorsport.com/f1/news/lewis-hamilton-set-for-new-penalty-will-start-f1-brazilian-gp-from-back-of-grid/10872640/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Lewis Hamilton, Charles Leclerc and Max Verstappen will all serve grid penalties for engine changes at Formula 1's Brazilian Grand Prix. Following a tough set of Friday practice se",
-      "publishedAt": "2026-11-07T15:04:02.000Z"
+      "excerpt": "Lewis Hamilton will have to start Formula 1’s Brazilian Grand Prix from the back of the grid, Ferrari has announced. Hamilton was given his fifth internal combustion engine of the ",
+      "publishedAt": "2026-11-07T17:30:52.000Z"
     },
     {
       "title": "F1 to race in Sao Paulo through to 2035 following new deal",
@@ -1082,18 +1089,11 @@
       "publishedAt": null
     },
     {
-      "title": "Haas justifies picking Rafael Camara over Ryo Hirakawa for F1 Brazilian GP",
-      "url": "https://www.motorsport.com/f1/news/haas-justifies-picking-rafael-camara-over-ryo-hirakawa-for-f1-brazilian-gp/10872474/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Toto Wolff explains the emotional Mercedes factory email leaked online",
+      "url": "https://www.motorsport.com/f1/news/toto-wolff-explains-the-emotional-mercedes-factory-email-that-got-leaked-online/10872607/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Haas team principal Ayao Komatsu says his decision to hand Rafael Camara his Formula 1 debut at the Brazilian Grand Prix, instead of keeping Ryo Hirakawa in the car, was “purely ba",
-      "publishedAt": "2026-11-07T14:40:27.000Z"
-    },
-    {
-      "title": "Best Qualifying bets before the Sao Paulo GP",
-      "url": "https://www.formula1.com/en/latest/article/best-qualifying-bets-available-before-the-sao-paulo-grand-prix-in-brazil.3En9aemw37NmvZWqLBL1TM",
-      "source": "Formula 1",
-      "excerpt": "Our expert betting writers share their top picks for Qualifying at the Autódromo José Carlos Pace.",
-      "publishedAt": null
+      "excerpt": "Securing a Formula 1 world championship triggers a lot of emotions, and, usually, a lot of champagne. But for Mercedes team principal Toto Wolff, Kimi Antonelli's historic title wi",
+      "publishedAt": "2026-11-07T20:32:28.000Z"
     }
   ],
   "quotes": [
