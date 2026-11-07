@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-06T06:26:20.525Z",
+    "generatedAt": "2026-11-07T01:56:52.564Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -701,6 +701,64 @@
       "sprint": false
     }
   ],
+  "lastRace": {
+    "round": 19,
+    "gp": "墨西哥城",
+    "nameEn": "Mexico City Grand Prix",
+    "date": "11.01",
+    "circuitId": "rodriguez",
+    "circuit": "罗德里格斯兄弟赛道",
+    "winner": {
+      "name": "维斯塔潘",
+      "team": "红牛",
+      "color": "#3671c6"
+    },
+    "runnerUp": {
+      "name": "汉密尔顿",
+      "team": "法拉利"
+    },
+    "gapToSecond": 0.799,
+    "fastestLap": {
+      "name": "汉密尔顿",
+      "team": "法拉利",
+      "lap": 50,
+      "time": "1:19.268"
+    },
+    "dnf": [
+      {
+        "name": "林德布拉德",
+        "team": "Racing Bulls",
+        "reason": "Retired"
+      },
+      {
+        "name": "贝尔曼",
+        "team": "哈斯",
+        "reason": "Retired"
+      },
+      {
+        "name": "博塔斯",
+        "team": "凯迪拉克",
+        "reason": "Retired"
+      },
+      {
+        "name": "斯特罗尔",
+        "team": "阿斯顿·马丁",
+        "reason": "Retired"
+      },
+      {
+        "name": "阿隆索",
+        "team": "阿斯顿·马丁",
+        "reason": "Retired"
+      }
+    ],
+    "biggestGain": {
+      "name": "劳森",
+      "team": "Racing Bulls",
+      "from": 22,
+      "to": 7,
+      "delta": 15
+    }
+  },
   "standings": {
     "drivers": [
       {
@@ -865,7 +923,7 @@
       },
       {
         "pos": 21,
-        "name": "Ryo Hirakawa",
+        "name": "平川亮",
         "team": "哈斯",
         "color": "#b6babd",
         "points": 1,
@@ -972,46 +1030,46 @@
   },
   "news": [
     {
-      "title": "Kimi Antonelli opens up on \"very emotional\" visit to Ayrton Senna's family estate",
-      "url": "https://www.motorsport.com/f1/news/kimi-antonelli-opens-up-on-very-emotional-visit-to-ayrton-sennas-family-estate/10871927/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Why Max Verstappen ended F1 practice early in Brazil – Red Bull explains",
+      "url": "https://www.motorsport.com/f1/news/why-max-verstappen-ended-f1-practice-early-in-brazil-red-bull-explains/10872364/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "2026 Formula 1 champion Kimi Antonelli has opened up about his recent visit to Ayrton Senna's family home ahead of this weekend's Brazilian Grand Prix. The Mercedes driver went to ",
-      "publishedAt": "2026-11-05T21:43:40.000Z"
+      "excerpt": "Max Verstappen finished Friday's Formula 1 practice sessions in Sao Paulo in third place. The Dutchman occupied that position in both sessions, in fact, and was also around two and",
+      "publishedAt": "2026-11-06T22:32:59.000Z"
     },
     {
-      "title": "Hamilton wants Ferrari talks in Brazil after Mexico battle",
-      "url": "https://www.formula1.com/en/latest/article/hamilton-wants-ferrari-talks-ahead-of-sao-paulo-grand-prix-after-intra-team-battle-with-leclerc.3JXGpQWTdOA2a9PiH7NL8X",
+      "title": "What the teams said – Friday in Brazil",
+      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-friday-in-brazil-2026.4WPgQlfi6v476KUJTYZeFM",
       "source": "Formula 1",
-      "excerpt": "Lewis Hamilton admits that face-to-face talks between himself and Ferrari team mate Charles Leclerc need to take place at the Sao Paulo Grand Prix this weekend after their on-track",
+      "excerpt": "The drivers and teams report back from Friday practice at the Autodromo Jose Carlos Pace ahead of the 2026 Sao Paulo Grand Prix in Brazil.",
       "publishedAt": null
     },
     {
-      "title": "All the stories that got the Sao Paulo paddock talking",
-      "url": "https://www.formula1.com/en/latest/article/all-the-stories-that-got-the-sao-paulo-paddock-talking.1TWHXxrs4N9xUspvYpgb3H",
+      "title": "Ferrari have 'plenty to work on' in Brazil – Leclerc",
+      "url": "https://www.formula1.com/en/latest/article/leclerc-concedes-theres-plenty-to-work-on-for-ferrari-ahead-of-sao-paulo-gp.2cWYwXJTouoM7r1LMyyhKr",
       "source": "Formula 1",
-      "excerpt": "F1.com's Mike Seymour rounds up all the big talking points ahead of the 2026 Sao Paulo Grand Prix.",
+      "excerpt": "Charles Leclerc believes Ferrari has \"plenty to work on\" as the team tries to find performance after Friday practice ahead of the Sao Paulo Grand Prix.",
       "publishedAt": null
     },
     {
-      "title": "Mercedes held its breath over Kimi Antonelli’s title-winning move on Charles Leclerc",
-      "url": "https://www.motorsport.com/f1/news/kimi-antonelli-reveals-the-dark-2025-slump-that-built-a-champion-i-questioned-myself-over-and-over/10871786/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "F1 Brazil GP: Saturday schedule, weather forecast and how to watch",
+      "url": "https://www.motorsport.com/f1/news/f1-brazil-gp-saturday-schedule-weather-forecast-and-how-to-watch/10872353/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "All Kimi Antonelli needed to do at the Mexico City Grand Prix was finish ninth. Instead, the new world champion chose to clinch the title with a late-braking lunge on Charles Lecle",
-      "publishedAt": "2026-11-05T23:28:33.000Z"
+      "excerpt": "Formula 1 heads into Saturday at Interlagos with Kimi Antonelli fastest after second practice for the Brazil Grand Prix. The newly crowned world champion set a 1m10.763s to lead La",
+      "publishedAt": "2026-11-06T22:05:41.000Z"
     },
     {
-      "title": "Norris wary of new McLaren upgrades in Sao Paulo",
-      "url": "https://www.formula1.com/en/latest/article/want-to-believe-that-we-can-still-make-improvements-norris-wary-of-new-mclaren-upgrades-in-sao-paulo.6NvdXqDIqBz1Mw1xveJv0k",
+      "title": "McLaren’s upgrade is \"a pleasant surprise\" – but will it stay on the car in Brazil?",
+      "url": "https://www.motorsport.com/f1/news/mclarens-upgrade-is-a-pleasant-surprise-but-will-it-stay-on-the-car-in-brazil/10872338/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "After one of the most turbulent world championship defences since Jenson Button in 2010, Lando Norris gave McLaren’s latest batch of car upgrades a cautious thumbs-up on the Friday",
+      "publishedAt": "2026-11-06T21:49:40.000Z"
+    },
+    {
+      "title": "Camara reflects on 'very special' F1 weekend debut",
+      "url": "https://www.formula1.com/en/latest/article/camara-reflects-on-very-special-first-f1-outing-as-he-gears-up-for-haas-debut-in-sao-paulo.7FQp0PWMq4lsDsDAoosi4t",
       "source": "Formula 1",
-      "excerpt": "McLaren will introduce new upgrades for the Sao Paulo Grand Prix this weekend, with Lando Norris stating he wants \"to believe that we can still make improvements\" to this year's ca",
+      "excerpt": "Rafael Camara got his first taste behind the wheel of a 2026 F1 car as he gears up for his debut Grand Prix with Haas.",
       "publishedAt": null
-    },
-    {
-      "title": "George Russell opens up on mental exhaustion after frustrating 2026 F1 season",
-      "url": "https://www.motorsport.com/f1/news/george-russell-opens-up-on-mental-exhaustion-after-frustrating-2026-f1-season/10871940/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "George Russell has admitted he is mentally exhausted after a season in which he has repeatedly had to overcome challenges. The Mercedes driver started 2026 as the favourite for the",
-      "publishedAt": "2026-11-05T23:14:24.000Z"
     }
   ],
   "quotes": [

@@ -16,7 +16,7 @@ const DRIVER_CN = {
   lawson: "劳森", gasly: "加斯利", arvid_lindblad: "林德布拉德", colapinto: "科拉平托",
   bearman: "贝尔曼", hulkenberg: "霍肯伯格", bortoleto: "博托莱托", ocon: "奥康",
   alonso: "阿隆索", sainz: "塞恩斯", albon: "阿尔本", tsunoda: "角田裕毅",
-  stroll: "斯特罗尔", bottas: "博塔斯", perez: "佩雷兹"
+  stroll: "斯特罗尔", bottas: "博塔斯", perez: "佩雷兹", ryo_hirakawa: "平川亮"
 };
 
 const TEAM = {
@@ -362,6 +362,66 @@ async function sync() {
       : resultsByRound.size;
   }
 
+  // 上一站结构化速览：全量结果已在内存中，补充差距 / 最快圈 / 退赛 / 最大进步
+  const lastRound = resultsByRound.size ? Math.max(...resultsByRound.keys()) : null;
+  const summarizeRace = (round) => {
+    const results = resultsByRound.get(round);
+    if (!results || !results.length) return null;
+    const sorted = [...results].sort((a, b) => Number(a.position) - Number(b.position));
+    const isClassified = (r) => /^\d+$/.test(String(r.positionText));
+    const finishers = sorted.filter(isClassified);
+    const raceWinner = finishers[0];
+    if (!raceWinner) return null;
+
+    const runnerUp = finishers[1];
+    const gapMatch = runnerUp?.Time?.time?.match(/^\+([\d.]+)$/);
+    const flRow = sorted.find((r) => String(r.FastestLap?.rank) === "1");
+
+    let biggestGain = null;
+    for (const r of finishers) {
+      const pos = Number(r.position);
+      const grid = Number(r.grid);
+      if (!Number.isFinite(pos) || !Number.isFinite(grid) || grid < 1) continue;
+      const delta = grid - pos;
+      if (delta > 0 && (!biggestGain || delta > biggestGain.delta)) {
+        biggestGain = { name: driverName(r), team: teamInfo(r.Constructor).cn, from: grid, to: pos, delta };
+      }
+    }
+
+    const raceRow = races.find((r) => r.r === round) || {};
+    const raceMeta = schedule.find((r) => Number(r.round) === round);
+    return {
+      round,
+      gp: raceRow.gp || "",
+      nameEn: raceMeta?.raceName || "",
+      date: raceRow.date || "",
+      circuitId: raceRow.circuitId || raceMeta?.Circuit.circuitId || "",
+      circuit: raceRow.circuit || raceMeta?.Circuit.circuitName || "",
+      winner: {
+        name: driverName(raceWinner),
+        team: teamInfo(raceWinner.Constructor).cn,
+        color: teamInfo(raceWinner.Constructor).color
+      },
+      runnerUp: runnerUp
+        ? { name: driverName(runnerUp), team: teamInfo(runnerUp.Constructor).cn }
+        : null,
+      gapToSecond: gapMatch ? Number(gapMatch[1]) : null,
+      fastestLap: flRow
+        ? {
+            name: driverName(flRow),
+            team: teamInfo(flRow.Constructor).cn,
+            lap: Number(flRow.FastestLap.lap) || null,
+            time: flRow.FastestLap.Time?.time || ""
+          }
+        : null,
+      dnf: sorted
+        .filter((r) => !isClassified(r))
+        .map((r) => ({ name: driverName(r), team: teamInfo(r.Constructor).cn, reason: r.status || "" })),
+      biggestGain
+    };
+  };
+  const lastRace = lastRound ? summarizeRace(lastRound) : null;
+
   const data = {
     meta: {
       season: 2026,
@@ -393,6 +453,7 @@ async function sync() {
       }
     },
     races,
+    lastRace,
     standings: { drivers: driverStandings, constructors: constructorStandings, champion },
     news: rankedNews,
     quotes,

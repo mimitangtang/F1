@@ -125,6 +125,31 @@
   }
   .btn:hover{background:var(--red-soft)}
 
+  /* ---------- last race recap ---------- */
+  .recap-band{
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,rgba(27,27,35,.65),rgba(21,21,28,.35));
+    padding:18px 0;position:relative;z-index:1;
+  }
+  .recap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1.95fr);gap:26px;align-items:center}
+  .recap-head{min-width:0}
+  .recap-tag{font-size:9px;color:var(--red-soft);letter-spacing:.16em}
+  .recap-head h2{margin-top:5px;font-size:18px;font-weight:700;letter-spacing:-.01em;line-height:1.3}
+  .recap-head h2 small{display:block;font-size:9px;color:var(--muted);font-weight:400;letter-spacing:.06em;margin-top:3px}
+  .recap-win{display:inline-flex;align-items:center;gap:9px;margin-top:9px}
+  .recap-win i{width:3px;height:28px;background:var(--team,#666);flex:0 0 auto}
+  .recap-win b{display:block;font-size:13px;font-weight:600;line-height:1.25}
+  .recap-win small{display:block;font-size:9px;color:var(--muted);margin-top:1px}
+  .recap-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+  .rs{
+    background:var(--panel);border:1px solid var(--line);border-top:2px solid var(--red);
+    padding:9px 12px 8px;min-width:0;
+    clip-path:polygon(0 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%);
+  }
+  .rs span{display:block;font-size:9px;color:var(--muted);letter-spacing:.12em}
+  .rs b{display:block;font-size:19px;margin-top:2px;line-height:1.25;letter-spacing:-.02em}
+  .rs i{display:block;font-style:normal;font-size:9px;color:var(--muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
   .hero-track{
     background:linear-gradient(180deg,var(--panel-2),var(--panel));
     border:1px solid var(--line);border-top:2px solid var(--red);
@@ -353,6 +378,8 @@
     .nav-meta{display:none}
     .moments{grid-template-columns:repeat(2,1fr)}
     .moments.expanded{grid-template-columns:repeat(2,1fr)}
+    .recap{grid-template-columns:1fr;gap:14px}
+    .recap-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
   }
   @media (max-width:640px){
     .wrap{padding:0 18px}
@@ -516,6 +543,28 @@
             <div class="voice"><p>诺里斯：墨西哥站杆位夺冠，正是我想要的胜利。</p><div class="meta"><i>虎扑</i><em>10.27</em><a href="https://bbs.hupu.com/635400206.html" target="_blank" rel="noopener">原帖 ↗</a></div></div>
             <div class="voice"><p>马尔科对维斯塔潘的墨西哥站表现惊叹：这就是马克斯。</p><div class="meta"><i>虎扑</i><em>10.28</em><a href="https://bbs.hupu.com/635420041.html" target="_blank" rel="noopener">原帖 ↗</a></div></div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LAST RACE RECAP ================= -->
+  <section class="recap-band" id="last-race" aria-label="上一站速览">
+    <div class="wrap">
+      <div class="recap" id="lastRaceCard">
+        <div class="recap-head">
+          <span class="recap-tag mono" id="lrTag">R19 · 刚刚结束</span>
+          <h2><span id="lrTitle">墨西哥城大奖赛</span><small id="lrSub">2026.11.01 · 罗德里格斯兄弟赛道</small></h2>
+          <div class="recap-win">
+            <i id="lrWinBar" style="--team:#3671c6"></i>
+            <div><b id="lrWinner">维斯塔潘</b><small id="lrWinnerTeam">红牛 · 分站冠军</small></div>
+          </div>
+        </div>
+        <div class="recap-stats">
+          <div class="rs"><span>冠亚军差距</span><b class="mono" id="lrGap">+0.799s</b><i id="lrGapSub">vs 亚军 汉密尔顿</i></div>
+          <div class="rs"><span>最快圈</span><b class="mono" id="lrFL">1:19.268</b><i id="lrFLSub">汉密尔顿 · 第 50 圈</i></div>
+          <div class="rs"><span>退赛</span><b class="mono" id="lrDnf">5 人</b><i id="lrDnfSub">林德布拉德、贝尔曼、博塔斯、斯特罗尔、阿隆索</i></div>
+          <div class="rs"><span>最大进步</span><b class="mono" id="lrGain">+15 位</b><i id="lrGainSub">劳森 P22 → P7</i></div>
         </div>
       </div>
     </div>
@@ -969,6 +1018,35 @@ function renderNews(news){
   }).join("");
 }
 
+function renderLastRace(lr){
+  const band=document.getElementById("last-race");
+  if(!band) return;
+  if(!lr){ band.hidden=true; return; }
+  band.hidden=false;
+  document.getElementById("lrTag").textContent=`R${lr.round} · 刚刚结束`;
+  document.getElementById("lrTitle").textContent=`${lr.gp}大奖赛`;
+  document.getElementById("lrSub").textContent=`2026.${lr.date} · ${lr.circuit}`;
+  const win=lr.winner||{};
+  const bar=document.getElementById("lrWinBar");
+  if(bar) bar.style.setProperty("--team",win.color||"#666");
+  document.getElementById("lrWinner").textContent=win.name||"—";
+  document.getElementById("lrWinnerTeam").textContent=win.team?`${win.team} · 分站冠军`:"分站冠军";
+  const gapEl=document.getElementById("lrGap");
+  gapEl.textContent=Number.isFinite(lr.gapToSecond)?`+${lr.gapToSecond.toFixed(3)}s`:"—";
+  document.getElementById("lrGapSub").textContent=lr.runnerUp?`vs 亚军 ${lr.runnerUp.name}`:"";
+  const fl=lr.fastestLap;
+  document.getElementById("lrFL").textContent=fl?.time||"—";
+  document.getElementById("lrFLSub").textContent=fl?`${fl.name}${fl.lap?` · 第 ${fl.lap} 圈`:""}`:"";
+  const dnf=lr.dnf||[];
+  document.getElementById("lrDnf").textContent=`${dnf.length} 人`;
+  const dnfSub=document.getElementById("lrDnfSub");
+  dnfSub.textContent=dnf.length?dnf.map(d=>d.name).join("、"):"全员完赛";
+  dnfSub.title=dnf.map(d=>`${d.name}（${d.team}）`).join("、");
+  const gain=lr.biggestGain;
+  document.getElementById("lrGain").textContent=gain?`+${gain.delta} 位`:"—";
+  document.getElementById("lrGainSub").textContent=gain?`${gain.name} P${gain.from} → P${gain.to}`:"";
+}
+
 function isChampionClinched(d,rows){
   const champ=d.standings?.champion;
   if(champ && typeof champ.clinched==="boolean") return champ.clinched;
@@ -1051,6 +1129,8 @@ function applyData(d){
   renderHighlights(d.highlights||[],n.circuit);
   const voiceMeta=document.getElementById("voiceMeta");
   if(voiceMeta) voiceMeta.textContent=`COMMUNITY · ${(d.quotes||[]).length} 条`;
+
+  renderLastRace(d.lastRace);
 
   const leader=driverRows[0], second=driverRows[1];
   if(leader && second){
