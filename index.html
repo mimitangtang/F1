@@ -110,6 +110,7 @@
   .sch-row .ses{display:flex;gap:16px;flex-wrap:wrap}
   .sch-row .ses span{display:inline-flex;gap:5px;align-items:baseline}
   .sch-row .ses b{font-size:11px;font-weight:600}
+  .sch-res{font-style:normal;font-size:9px;color:#b9b9c6;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);padding:0 6px;margin-left:2px;white-space:nowrap}
   .sch-row.hot{background:rgba(225,6,0,.09)}
   .sch-row.hot .day{color:var(--red-soft)}
   .sch-row.hot .ses b{color:var(--red-soft)}
@@ -466,9 +467,10 @@
           <div class="schedule">
             <div class="sch-head"><span>本周末赛程 · 北京时间</span><span class="mono" id="schRound">MEXICO CITY</span></div>
             <div id="schRows">
-              <div class="sch-row"><span class="day">10.31 周六</span><span class="ses"><span>练习赛一 <b class="mono">02:30</b></span><span>练习赛二 <b class="mono">06:00</b></span></span></div>
-              <div class="sch-row"><span class="day">11.01 周日</span><span class="ses"><span>练习赛三 <b class="mono">01:30</b></span><span>排位赛 <b class="mono">05:00</b></span></span></div>
-              <div class="sch-row hot"><span class="day">11.02 周一</span><span class="ses"><span>正赛 <b class="mono">04:00</b></span></span></div>
+              <div class="sch-row"><span class="day">11.06 周五</span><span class="ses"><span>练习赛一 <b class="mono">23:30</b><em class="sch-res">最快 诺里斯 · 1:11.717</em></span></span></div>
+              <div class="sch-row"><span class="day">11.07 周六</span><span class="ses"><span>练习赛二 <b class="mono">03:00</b><em class="sch-res">最快 安东内利 · 1:10.763</em></span><span>练习赛三 <b class="mono">22:30</b></span></span></div>
+              <div class="sch-row"><span class="day">11.08 周日</span><span class="ses"><span>排位赛 <b class="mono">02:00</b></span></span></div>
+              <div class="sch-row hot"><span class="day">11.09 周一</span><span class="ses"><span>正赛 <b class="mono">01:00</b></span></span></div>
             </div>
             <div class="sch-note">时间为北京时间，数据来自 Jolpica；以官方赛程为准。</div>
           </div>
@@ -671,7 +673,7 @@
 
 <footer>
   <div class="wrap foot-grid">
-    <div><b>数据来源</b> Jolpica F1 API（CC BY-NC-SA 4.0）· Formula 1 RSS · Motorsport RSS</div>
+    <div><b>数据来源</b> Jolpica F1 API（CC BY-NC-SA 4.0）· OpenF1（非商业）· Formula 1 RSS · Motorsport RSS</div>
     <div><b>说明</b> 课堂作业 · 非官方粉丝项目 · 与 Formula 1 无隶属关系</div>
     <div class="foot-tag"><span id="dataUpdated">内置快照</span> · <button class="text-btn" id="refreshBtn" type="button">刷新数据</button></div>
   </div>
@@ -1110,7 +1112,7 @@ function applyData(d){
   });
   document.getElementById("schRows").innerHTML=[...groups.values()].map(g=>`
     <div class="sch-row ${g.hot?"hot":""}"><span class="day">${g.items[0].date} ${g.items[0].weekday}</span>
-      <span class="ses">${g.items.map(s=>`<span>${esc(s.label)} <b class="mono">${s.time}</b></span>`).join("")}</span>
+      <span class="ses">${g.items.map(s=>`<span>${esc(s.label)} <b class="mono">${s.time}</b>${s.result?`<em class="sch-res">${esc(s.result.label)} ${esc(s.result.name)}${s.result.time?` · ${esc(s.result.time)}`:""}</em>`:""}</span>`).join("")}</span>
     </div>`).join("");
 
   document.getElementById("trackName").textContent=n.circuit;

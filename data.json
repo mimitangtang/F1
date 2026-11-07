@@ -1,11 +1,12 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-07T02:43:25.213Z",
+    "generatedAt": "2026-11-07T03:02:48.267Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
-      "Motorsport RSS"
+      "Motorsport RSS",
+      "OpenF1"
     ]
   },
   "season": {
@@ -30,7 +31,12 @@
         "date": "11.06",
         "weekday": "周五",
         "time": "23:30",
-        "iso": "2026-11-06T15:30:00Z"
+        "iso": "2026-11-06T15:30:00Z",
+        "result": {
+          "label": "最快",
+          "name": "诺里斯",
+          "time": "1:11.717"
+        }
       },
       {
         "key": "SecondPractice",
@@ -38,7 +44,12 @@
         "date": "11.07",
         "weekday": "周六",
         "time": "03:00",
-        "iso": "2026-11-06T19:00:00Z"
+        "iso": "2026-11-06T19:00:00Z",
+        "result": {
+          "label": "最快",
+          "name": "安东内利",
+          "time": "1:10.763"
+        }
       },
       {
         "key": "ThirdPractice",

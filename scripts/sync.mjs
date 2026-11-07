@@ -5,6 +5,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 const BASE = "https://api.jolpi.ca/ergast/f1/2026";
+const OPENF1 = "https://api.openf1.org/v1";
 const NEWS_FEEDS = [
   { url: "https://www.formula1.com/en/latest/all.xml", source: "Formula 1" },
   { url: "https://www.motorsport.com/rss/f1/news", source: "Motorsport" }
@@ -31,6 +32,15 @@ const TEAM = {
   williams: { cn: "威廉姆斯", color: "#64c4ff" },
   aston_martin: { cn: "阿斯顿·马丁", color: "#229971" },
   cadillac: { cn: "凯迪拉克", color: "#c8a24b" }
+};
+
+// OpenF1 车号 → Jolpica driverId；未覆盖的车手（如练习赛代班新秀）回退 OpenF1 英文名
+const DRIVER_NO = {
+  1: "norris", 3: "max_verstappen", 5: "bortoleto", 6: "hadjar", 10: "gasly",
+  11: "perez", 12: "antonelli", 14: "alonso", 16: "leclerc", 18: "stroll",
+  22: "tsunoda", 23: "albon", 27: "hulkenberg", 30: "lawson", 31: "ocon",
+  41: "arvid_lindblad", 43: "colapinto", 44: "hamilton", 50: "ryo_hirakawa",
+  55: "sainz", 63: "russell", 77: "bottas", 81: "piastri", 87: "bearman"
 };
 
 // 赛道静态资料：长度(km)/圈数/弯道/海拔/单圈纪录；未知项留空，页面显示“—”
@@ -257,6 +267,13 @@ async function sync() {
 
   if (!next) next = { race: schedule[schedule.length - 1], info: CIRCUIT[schedule[schedule.length - 1]?.Circuit.circuitId] || {}, round: Number(schedule[schedule.length - 1]?.round) };
 
+  let previous = null;
+  try {
+    previous = JSON.parse(await readFile("data.json", "utf8"));
+  } catch {
+    previous = null;
+  }
+
   const sessionList = [];
   const { race: nextRace, info: nextInfo } = next;
   for (const [key, session] of Object.entries({
@@ -272,6 +289,94 @@ async function sync() {
     if (bj) sessionList.push({ key, label: SESSION_LABEL[key], ...bj });
   }
   sessionList.push({ key: "race", label: "正赛", ...beijing(`${nextRace.date}T${nextRace.time || "00:00:00Z"}`) });
+
+  // 已完成会话的结果展示（练习赛/排位赛/冲刺排位/冲刺赛），带缓存避免重复抓取
+  const SESSION_DURATION = {
+    FirstPractice: 60, SecondPractice: 60, ThirdPractice: 60,
+    SprintQualifying: 45, Sprint: 60, Qualifying: 60
+  };
+  const fmtLapTime = (sec) => {
+    if (!Number.isFinite(sec) || sec <= 0) return "";
+    const m = Math.floor(sec / 60);
+    const s = sec - m * 60;
+    return `${m}:${s.toFixed(3).padStart(6, "0")}`;
+  };
+  const prevSessionResults = new Map(
+    (previous?.nextRace?.sessions || [])
+      .filter((s) => s.result)
+      .map((s) => [`${s.key}|${s.iso}`, s.result])
+  );
+  let openf1Sessions = null;
+  const loadOpenF1Sessions = async () => {
+    if (!openf1Sessions) {
+      try {
+        openf1Sessions = await getJson(`${OPENF1}/sessions?year=2026`);
+      } catch (err) {
+        console.warn(`OpenF1 会话列表获取失败: ${err.message}`);
+        openf1Sessions = [];
+      }
+    }
+    return openf1Sessions;
+  };
+  const openf1DriverName = async (match, driverNumber) => {
+    try {
+      const drivers = await getJson(`${OPENF1}/drivers?session_key=${match.session_key}`);
+      const row = drivers.find((d) => d.driver_number === driverNumber);
+      if (row) return `${row.first_name} ${row.last_name}`;
+    } catch {
+      // 名字获取失败时退到车号
+    }
+    return `#${driverNumber}`;
+  };
+  const fetchSessionResult = async (session) => {
+    if (session.key === "Qualifying") {
+      const q = await getJson(`${BASE}/${next.round}/qualifying.json`);
+      const rows = q.MRData.RaceTable.Races[0]?.QualifyingResults || [];
+      const p1 = rows.find((r) => Number(r.position) === 1) || rows[0];
+      if (!p1) return null;
+      return { label: "杆位", name: driverName(p1), time: p1.Q3 || p1.Q2 || p1.Q1 || "" };
+    }
+    if (session.key === "Sprint") {
+      const s = await getJson(`${BASE}/${next.round}/sprint.json`);
+      const rows = s.MRData.RaceTable.Races[0]?.SprintResults || [];
+      const p1 = rows.find((r) => Number(r.position) === 1) || rows[0];
+      if (!p1) return null;
+      return { label: "冠军", name: driverName(p1), time: "" };
+    }
+    // 练习赛与冲刺排位：OpenF1（Jolpica 无对应端点），按会话开始时间匹配场次
+    const sessionsList = await loadOpenF1Sessions();
+    const startMs = Date.parse(session.iso);
+    const match = sessionsList.find(
+      (o) => o.session_name !== "Race" && Math.abs(Date.parse(o.date_start) - startMs) <= 5 * 60000
+    );
+    if (!match) return null;
+    const rows = await getJson(`${OPENF1}/session_result?session_key=${match.session_key}`);
+    if (!Array.isArray(rows) || !rows.length) return null;
+    const p1 = rows.find((r) => r.position === 1) || rows[0];
+    const driverId = DRIVER_NO[p1.driver_number];
+    const name = (driverId && DRIVER_CN[driverId]) || (await openf1DriverName(match, p1.driver_number));
+    return {
+      label: session.key === "SprintQualifying" ? "杆位" : "最快",
+      name,
+      time: fmtLapTime(p1.duration)
+    };
+  };
+  for (const session of sessionList) {
+    if (session.key === "race") continue;
+    const cached = prevSessionResults.get(`${session.key}|${session.iso}`);
+    if (cached) {
+      session.result = cached;
+      continue;
+    }
+    const dur = SESSION_DURATION[session.key] || 60;
+    if (Date.now() < Date.parse(session.iso) + (dur + 15) * 60000) continue;
+    try {
+      const result = await fetchSessionResult(session);
+      if (result) session.result = result;
+    } catch (err) {
+      console.warn(`会话结果获取失败 ${session.key}: ${err.message}`);
+    }
+  }
 
   const driverStandings = driverJson.MRData.StandingsTable.StandingsLists[0].DriverStandings.map((d) => ({
     pos: Number(d.position),
@@ -325,13 +430,6 @@ async function sync() {
   if (races.length < 10) throw new Error("赛程数据异常");
   if (driverStandings.length < 10) throw new Error("车手积分榜数据异常");
   if (!nextRace) throw new Error("无法确定下一站");
-
-  let previous = null;
-  try {
-    previous = JSON.parse(await readFile("data.json", "utf8"));
-  } catch {
-    previous = null;
-  }
 
   // 车手冠军判定：领先优势大于追赶者在剩余分站的理论最高得分（正赛 25 + 冲刺赛 8）
   const remainingSchedule = schedule.filter(
@@ -463,7 +561,7 @@ async function sync() {
     meta: {
       season: 2026,
       generatedAt: new Date().toISOString(),
-      sources: ["Jolpica F1 API", "Formula 1 RSS", "Motorsport RSS"]
+      sources: ["Jolpica F1 API", "Formula 1 RSS", "Motorsport RSS", "OpenF1"]
     },
     season: {
       rounds: races.length,
