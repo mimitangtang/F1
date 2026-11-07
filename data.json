@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-07T10:45:38.867Z",
+    "generatedAt": "2026-11-07T16:40:24.809Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -57,7 +57,12 @@
         "date": "11.07",
         "weekday": "周六",
         "time": "22:30",
-        "iso": "2026-11-07T14:30:00Z"
+        "iso": "2026-11-07T14:30:00Z",
+        "result": {
+          "label": "最快",
+          "name": "维斯塔潘",
+          "time": "1:11.622"
+        }
       },
       {
         "key": "Qualifying",
@@ -1049,45 +1054,45 @@
   },
   "news": [
     {
-      "title": "Ferrari slow on straights, struggling in corners: ‘One of the worst feelings’ for Charles Leclerc",
-      "url": "https://www.motorsport.com/f1/news/ferrari-slow-on-straights-struggling-in-corners-one-of-the-worst-feelings-for-charles-leclerc/10872444/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "F1 Brazilian GP: Max Verstappen edges out Kimi Antonelli in FP3",
+      "url": "https://www.motorsport.com/f1/news/f1-brazilian-gp-fp3-report/10872574/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Charles Leclerc has described his Ferrari SF-26 as slow on straights with a terrible feeling in corners following Friday practice at Formula 1’s Brazilian Grand Prix. Lewis Hamilto",
-      "publishedAt": "2026-11-07T10:14:35.000Z"
+      "excerpt": "Max Verstappen set the fastest time in Free Practice 3 at Formula 1’s Brazilian Grand Prix, narrowly edging out Kimi Antonelli as Lewis Hamilton’s Ferrari suffered a mechanical iss",
+      "publishedAt": "2026-11-07T15:35:48.000Z"
     },
     {
-      "title": "Why Max Verstappen ended F1 practice early in Brazil – Red Bull explains",
-      "url": "https://www.motorsport.com/f1/news/why-max-verstappen-ended-f1-practice-early-in-brazil-red-bull-explains/10872364/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Max Verstappen finished Friday's Formula 1 practice sessions in Sao Paulo in third place. The Dutchman occupied that position in both sessions, in fact, and was also around two and",
-      "publishedAt": "2026-11-06T22:32:59.000Z"
-    },
-    {
-      "title": "What could shake-up the Interlagos betting markets?",
-      "url": "https://www.formula1.com/en/latest/article/what-could-turn-the-race-on-its-head-during-the-sao-paulo-grand-prix.6KujQenlA32et55AiQrTyB",
+      "title": "Hamilton, Leclerc and Verstappen set for Brazil grid drops",
+      "url": "https://www.formula1.com/en/latest/article/hamilton-leclerc-and-verstappen-set-for-sao-paulo-grand-prix-penalties-after-power-unit-changes.7B5CuFFCN1F6Txc8YwcEhd",
       "source": "Formula 1",
-      "excerpt": "After the lights go out in Sao Paulo, clued-up bettors will be poised to make smart betting decisions in real time markets.",
+      "excerpt": "Lewis Hamilton, Charles Leclerc and Max Verstappen will take grid drops at this weekend’s Sao Paulo Grand Prix after Ferrari and Red Bull changed power unit components within their",
       "publishedAt": null
     },
     {
-      "title": "Permane gives update on Racing Bulls driver decision process",
-      "url": "https://www.formula1.com/en/latest/article/the-right-decision-will-be-made-permane-gives-update-on-driver-decision-process-at-racing-bulls.2kgfMJB54MrzV3I94KJHrG",
+      "title": "Lewis Hamilton, Charles Leclerc and Max Verstappen hit with F1 grid penalties for Brazilian GP",
+      "url": "https://www.motorsport.com/f1/news/lewis-hamilton-charles-leclerc-and-max-verstappen-hit-with-f1-grid-penalties-for-brazilian-gp/10872560/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Lewis Hamilton, Charles Leclerc and Max Verstappen will all serve grid penalties for engine changes at Formula 1's Brazilian Grand Prix. Following a tough set of Friday practice se",
+      "publishedAt": "2026-11-07T15:04:02.000Z"
+    },
+    {
+      "title": "F1 to race in Sao Paulo through to 2035 following new deal",
+      "url": "https://www.formula1.com/en/latest/article/formula-1-to-race-in-sao-paulo-through-to-2035-following-new-five-year-contract-extension.3RBVXeLDp6NMDUQSAIX8TL",
       "source": "Formula 1",
-      "excerpt": "Alan Permane believes that \"the right decision will be made\" when Racing Bulls finally confirms its 2027 driver line-up, with the team \"trying to apply a little bit of science\" bef",
+      "excerpt": "A new agreement will see Brazil’s renowned Interlagos circuit remain on the Formula 1 calendar through 2035.",
       "publishedAt": null
     },
     {
-      "title": "Racing Bulls promises \"right decision\" as Liam Lawson's F1 future remains in doubt",
-      "url": "https://www.motorsport.com/f1/news/racing-bulls-boss-understands-frustration-over-driver-decision-delay/10872425/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Haas justifies picking Rafael Camara over Ryo Hirakawa for F1 Brazilian GP",
+      "url": "https://www.motorsport.com/f1/news/haas-justifies-picking-rafael-camara-over-ryo-hirakawa-for-f1-brazilian-gp/10872474/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Racing Bulls boss Alan Permane says he \"understands the frustration\" over the delay in his team's decision on whether to retain Liam Lawson or promote reserve driver and F2 frontru",
-      "publishedAt": "2026-11-07T08:51:50.000Z"
+      "excerpt": "Haas team principal Ayao Komatsu says his decision to hand Rafael Camara his Formula 1 debut at the Brazilian Grand Prix, instead of keeping Ryo Hirakawa in the car, was “purely ba",
+      "publishedAt": "2026-11-07T14:40:27.000Z"
     },
     {
-      "title": "Can Mercedes keep their rivals at bay in Sao Paulo?",
-      "url": "https://www.formula1.com/en/latest/article/can-mercedes-keep-their-rivals-at-bay-in-sao-paulo.7eVy5I4aTwZqm4N1WE2rBX",
+      "title": "Best Qualifying bets before the Sao Paulo GP",
+      "url": "https://www.formula1.com/en/latest/article/best-qualifying-bets-available-before-the-sao-paulo-grand-prix-in-brazil.3En9aemw37NmvZWqLBL1TM",
       "source": "Formula 1",
-      "excerpt": "F1.com assesses the data to find out who looks to be the favourites after the first day on track at the Sao Paulo Grand Prix.",
+      "excerpt": "Our expert betting writers share their top picks for Qualifying at the Autódromo José Carlos Pace.",
       "publishedAt": null
     }
   ],
