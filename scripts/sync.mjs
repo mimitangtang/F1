@@ -400,7 +400,9 @@ async function sync() {
       winner: {
         name: driverName(raceWinner),
         team: teamInfo(raceWinner.Constructor).cn,
-        color: teamInfo(raceWinner.Constructor).color
+        color: teamInfo(raceWinner.Constructor).color,
+        grid: Number(raceWinner.grid) || null,
+        fromPole: Number(raceWinner.grid) === 1
       },
       runnerUp: runnerUp
         ? { name: driverName(runnerUp), team: teamInfo(runnerUp.Constructor).cn }

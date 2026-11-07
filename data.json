@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-07T01:56:52.564Z",
+    "generatedAt": "2026-11-07T02:30:39.994Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -711,7 +711,9 @@
     "winner": {
       "name": "维斯塔潘",
       "team": "红牛",
-      "color": "#3671c6"
+      "color": "#3671c6",
+      "grid": 5,
+      "fromPole": false
     },
     "runnerUp": {
       "name": "汉密尔顿",
