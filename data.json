@@ -101,7 +101,8 @@
       "note": "",
       "circuitId": "albert_park",
       "circuit": "阿尔伯特公园赛道",
-      "country": "Australia"
+      "country": "Australia",
+      "sprint": false
     },
     {
       "r": 2,
@@ -130,7 +131,8 @@
       "note": "",
       "circuitId": "shanghai",
       "circuit": "上海国际赛车场",
-      "country": "China"
+      "country": "China",
+      "sprint": true
     },
     {
       "r": 3,
@@ -159,7 +161,8 @@
       "note": "",
       "circuitId": "suzuka",
       "circuit": "铃鹿赛道",
-      "country": "Japan"
+      "country": "Japan",
+      "sprint": false
     },
     {
       "r": 4,
@@ -188,7 +191,8 @@
       "note": "",
       "circuitId": "miami",
       "circuit": "迈阿密国际赛车场",
-      "country": "USA"
+      "country": "USA",
+      "sprint": true
     },
     {
       "r": 5,
@@ -217,7 +221,8 @@
       "note": "",
       "circuitId": "villeneuve",
       "circuit": "吉勒·维伦纽夫赛道",
-      "country": "Canada"
+      "country": "Canada",
+      "sprint": true
     },
     {
       "r": 6,
@@ -246,7 +251,8 @@
       "note": "",
       "circuitId": "monaco",
       "circuit": "摩纳哥赛道",
-      "country": "Monaco"
+      "country": "Monaco",
+      "sprint": false
     },
     {
       "r": 7,
@@ -275,7 +281,8 @@
       "note": "",
       "circuitId": "catalunya",
       "circuit": "巴塞罗那-加泰罗尼亚赛道",
-      "country": "Spain"
+      "country": "Spain",
+      "sprint": false
     },
     {
       "r": 8,
@@ -304,7 +311,8 @@
       "note": "",
       "circuitId": "red_bull_ring",
       "circuit": "红牛环",
-      "country": "Austria"
+      "country": "Austria",
+      "sprint": false
     },
     {
       "r": 9,
@@ -333,7 +341,8 @@
       "note": "",
       "circuitId": "silverstone",
       "circuit": "银石赛道",
-      "country": "UK"
+      "country": "UK",
+      "sprint": true
     },
     {
       "r": 10,
@@ -362,7 +371,8 @@
       "note": "",
       "circuitId": "spa",
       "circuit": "斯帕-弗朗科尔尚赛道",
-      "country": "Belgium"
+      "country": "Belgium",
+      "sprint": false
     },
     {
       "r": 11,
@@ -391,7 +401,8 @@
       "note": "",
       "circuitId": "hungaroring",
       "circuit": "亨格罗林赛道",
-      "country": "Hungary"
+      "country": "Hungary",
+      "sprint": false
     },
     {
       "r": 12,
@@ -420,7 +431,8 @@
       "note": "",
       "circuitId": "zandvoort",
       "circuit": "赞德沃特赛道",
-      "country": "Netherlands"
+      "country": "Netherlands",
+      "sprint": true
     },
     {
       "r": 13,
@@ -449,7 +461,8 @@
       "note": "",
       "circuitId": "monza",
       "circuit": "蒙扎国家赛车场",
-      "country": "Italy"
+      "country": "Italy",
+      "sprint": false
     },
     {
       "r": 14,
@@ -478,7 +491,8 @@
       "note": "",
       "circuitId": "madring",
       "circuit": "马德里赛道",
-      "country": "Spain"
+      "country": "Spain",
+      "sprint": false
     },
     {
       "r": 15,
@@ -507,7 +521,8 @@
       "note": "",
       "circuitId": "baku",
       "circuit": "巴库城市赛道",
-      "country": "Azerbaijan"
+      "country": "Azerbaijan",
+      "sprint": false
     },
     {
       "r": 16,
@@ -536,7 +551,8 @@
       "note": "",
       "circuitId": "sepang",
       "circuit": "雪邦国际赛车场",
-      "country": "Malaysia"
+      "country": "Malaysia",
+      "sprint": false
     },
     {
       "r": 17,
@@ -565,7 +581,8 @@
       "note": "",
       "circuitId": "marina_bay",
       "circuit": "滨海湾街道赛道",
-      "country": "Singapore"
+      "country": "Singapore",
+      "sprint": true
     },
     {
       "r": 18,
@@ -594,7 +611,8 @@
       "note": "",
       "circuitId": "americas",
       "circuit": "美洲赛道",
-      "country": "USA"
+      "country": "USA",
+      "sprint": false
     },
     {
       "r": 19,
@@ -623,7 +641,8 @@
       "note": "",
       "circuitId": "rodriguez",
       "circuit": "罗德里格斯兄弟赛道",
-      "country": "Mexico"
+      "country": "Mexico",
+      "sprint": false
     },
     {
       "r": 20,
@@ -636,7 +655,8 @@
       "note": "",
       "circuitId": "interlagos",
       "circuit": "英特拉格斯赛道",
-      "country": "Brazil"
+      "country": "Brazil",
+      "sprint": false
     },
     {
       "r": 21,
@@ -649,7 +669,8 @@
       "note": "",
       "circuitId": "vegas",
       "circuit": "拉斯维加斯街道赛道",
-      "country": "USA"
+      "country": "USA",
+      "sprint": false
     },
     {
       "r": 22,
@@ -662,7 +683,8 @@
       "note": "",
       "circuitId": "losail",
       "circuit": "卢赛尔国际赛车场",
-      "country": "Qatar"
+      "country": "Qatar",
+      "sprint": false
     },
     {
       "r": 23,
@@ -675,9 +697,70 @@
       "note": "",
       "circuitId": "yas_marina",
       "circuit": "亚斯码头赛道",
-      "country": "UAE"
+      "country": "UAE",
+      "sprint": false
     }
   ],
+  "lastRace": {
+    "round": 19,
+    "gp": "墨西哥城",
+    "nameEn": "Mexico City Grand Prix",
+    "date": "11.01",
+    "circuitId": "rodriguez",
+    "circuit": "罗德里格斯兄弟赛道",
+    "winner": {
+      "name": "维斯塔潘",
+      "team": "红牛",
+      "color": "#3671c6",
+      "grid": 5,
+      "fromPole": false
+    },
+    "runnerUp": {
+      "name": "汉密尔顿",
+      "team": "法拉利"
+    },
+    "gapToSecond": 0.799,
+    "fastestLap": {
+      "name": "汉密尔顿",
+      "team": "法拉利",
+      "lap": 50,
+      "time": "1:19.268"
+    },
+    "dnf": [
+      {
+        "name": "林德布拉德",
+        "team": "Racing Bulls",
+        "reason": "Retired"
+      },
+      {
+        "name": "贝尔曼",
+        "team": "哈斯",
+        "reason": "Retired"
+      },
+      {
+        "name": "博塔斯",
+        "team": "凯迪拉克",
+        "reason": "Retired"
+      },
+      {
+        "name": "斯特罗尔",
+        "team": "阿斯顿·马丁",
+        "reason": "Retired"
+      },
+      {
+        "name": "阿隆索",
+        "team": "阿斯顿·马丁",
+        "reason": "Retired"
+      }
+    ],
+    "biggestGain": {
+      "name": "劳森",
+      "team": "Racing Bulls",
+      "from": 22,
+      "to": 7,
+      "delta": 15
+    }
+  },
   "standings": {
     "drivers": [
       {
@@ -842,7 +925,7 @@
       },
       {
         "pos": 21,
-        "name": "Ryo Hirakawa",
+        "name": "平川亮",
         "team": "哈斯",
         "color": "#b6babd",
         "points": 1,
@@ -940,7 +1023,12 @@
         "color": "#c8a24b",
         "points": 0
       }
-    ]
+    ],
+    "champion": {
+      "clinched": true,
+      "name": "安东内利",
+      "clinchedRound": 19
+    }
   },
   "news": [
     {

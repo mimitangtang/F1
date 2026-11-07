@@ -16,7 +16,7 @@ const DRIVER_CN = {
   lawson: "劳森", gasly: "加斯利", arvid_lindblad: "林德布拉德", colapinto: "科拉平托",
   bearman: "贝尔曼", hulkenberg: "霍肯伯格", bortoleto: "博托莱托", ocon: "奥康",
   alonso: "阿隆索", sainz: "塞恩斯", albon: "阿尔本", tsunoda: "角田裕毅",
-  stroll: "斯特罗尔", bottas: "博塔斯", perez: "佩雷兹"
+  stroll: "斯特罗尔", bottas: "博塔斯", perez: "佩雷兹", ryo_hirakawa: "平川亮"
 };
 
 const TEAM = {
@@ -250,7 +250,8 @@ async function sync() {
       note: "",
       circuitId: race.Circuit.circuitId,
       circuit: info.name || race.Circuit.circuitName,
-      country: race.Circuit.Location.country
+      country: race.Circuit.Location.country,
+      sprint: Boolean(race.Sprint?.date)
     };
   });
 
@@ -325,6 +326,104 @@ async function sync() {
   if (driverStandings.length < 10) throw new Error("车手积分榜数据异常");
   if (!nextRace) throw new Error("无法确定下一站");
 
+  let previous = null;
+  try {
+    previous = JSON.parse(await readFile("data.json", "utf8"));
+  } catch {
+    previous = null;
+  }
+
+  // 车手冠军判定：领先优势大于追赶者在剩余分站的理论最高得分（正赛 25 + 冲刺赛 8）
+  const remainingSchedule = schedule.filter(
+    (race) => !(resultsByRound.get(Number(race.round)) || []).length
+  );
+  const maxRemainingPoints = remainingSchedule.reduce(
+    (sum, race) => sum + 25 + (race.Sprint?.date ? 8 : 0), 0
+  );
+  const leader = driverStandings[0];
+  const second = driverStandings[1];
+  const clinched = Boolean(leader) && (
+    remainingSchedule.length === 0 ||
+    !second ||
+    leader.points - second.points > maxRemainingPoints
+  );
+  const previousChampion = previous?.standings?.champion;
+  const champion = {
+    clinched,
+    name: leader?.name || null,
+    clinchedRound: null
+  };
+  if (clinched) {
+    // 加冕轮次一旦记录就不再后移：沿用上次生成结果，否则以当前完赛站数为准
+    champion.clinchedRound = previousChampion?.clinched
+      && previousChampion.name === champion.name
+      && previousChampion.clinchedRound
+      ? previousChampion.clinchedRound
+      : resultsByRound.size;
+  }
+
+  // 上一站结构化速览：全量结果已在内存中，补充差距 / 最快圈 / 退赛 / 最大进步
+  const lastRound = resultsByRound.size ? Math.max(...resultsByRound.keys()) : null;
+  const summarizeRace = (round) => {
+    const results = resultsByRound.get(round);
+    if (!results || !results.length) return null;
+    const sorted = [...results].sort((a, b) => Number(a.position) - Number(b.position));
+    const isClassified = (r) => /^\d+$/.test(String(r.positionText));
+    const finishers = sorted.filter(isClassified);
+    const raceWinner = finishers[0];
+    if (!raceWinner) return null;
+
+    const runnerUp = finishers[1];
+    const gapMatch = runnerUp?.Time?.time?.match(/^\+([\d.]+)$/);
+    const flRow = sorted.find((r) => String(r.FastestLap?.rank) === "1");
+
+    let biggestGain = null;
+    for (const r of finishers) {
+      const pos = Number(r.position);
+      const grid = Number(r.grid);
+      if (!Number.isFinite(pos) || !Number.isFinite(grid) || grid < 1) continue;
+      const delta = grid - pos;
+      if (delta > 0 && (!biggestGain || delta > biggestGain.delta)) {
+        biggestGain = { name: driverName(r), team: teamInfo(r.Constructor).cn, from: grid, to: pos, delta };
+      }
+    }
+
+    const raceRow = races.find((r) => r.r === round) || {};
+    const raceMeta = schedule.find((r) => Number(r.round) === round);
+    return {
+      round,
+      gp: raceRow.gp || "",
+      nameEn: raceMeta?.raceName || "",
+      date: raceRow.date || "",
+      circuitId: raceRow.circuitId || raceMeta?.Circuit.circuitId || "",
+      circuit: raceRow.circuit || raceMeta?.Circuit.circuitName || "",
+      winner: {
+        name: driverName(raceWinner),
+        team: teamInfo(raceWinner.Constructor).cn,
+        color: teamInfo(raceWinner.Constructor).color,
+        grid: Number(raceWinner.grid) || null,
+        fromPole: Number(raceWinner.grid) === 1
+      },
+      runnerUp: runnerUp
+        ? { name: driverName(runnerUp), team: teamInfo(runnerUp.Constructor).cn }
+        : null,
+      gapToSecond: gapMatch ? Number(gapMatch[1]) : null,
+      fastestLap: flRow
+        ? {
+            name: driverName(flRow),
+            team: teamInfo(flRow.Constructor).cn,
+            lap: Number(flRow.FastestLap.lap) || null,
+            time: flRow.FastestLap.Time?.time || ""
+          }
+        : null,
+      dnf: sorted
+        .filter((r) => !isClassified(r))
+        .map((r) => ({ name: driverName(r), team: teamInfo(r.Constructor).cn, reason: r.status || "" })),
+      biggestGain
+    };
+  };
+  const lastRace = lastRound ? summarizeRace(lastRound) : null;
+
   const data = {
     meta: {
       season: 2026,
@@ -356,19 +455,14 @@ async function sync() {
       }
     },
     races,
-    standings: { drivers: driverStandings, constructors: constructorStandings },
+    lastRace,
+    standings: { drivers: driverStandings, constructors: constructorStandings, champion },
     news: rankedNews,
     quotes,
     highlights
   };
 
   const withoutTimestamp = (obj) => JSON.stringify({ ...obj, meta: { ...obj.meta, generatedAt: null } });
-  let previous = null;
-  try {
-    previous = JSON.parse(await readFile("data.json", "utf8"));
-  } catch {
-    previous = null;
-  }
   if (previous && withoutTimestamp(previous) === withoutTimestamp(data)) {
     console.log("数据无实质变化，保留原 data.json");
     return;
