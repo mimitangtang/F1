@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-06T23:35:18.602Z",
+    "generatedAt": "2026-11-07T02:43:25.213Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -759,7 +759,13 @@
       "from": 22,
       "to": 7,
       "delta": 15
-    }
+    },
+    "pole": {
+      "name": "汉密尔顿",
+      "team": "法拉利",
+      "time": "1:16.514"
+    },
+    "sprint": null
   },
   "standings": {
     "drivers": [

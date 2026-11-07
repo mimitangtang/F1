@@ -141,7 +141,7 @@
   .recap-win b{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;line-height:1.25}
   .recap-win small{display:block;font-size:9px;color:var(--muted);margin-top:1px}
   .ptw{font-size:8px;font-weight:600;color:var(--red-soft);border:1px solid rgba(225,6,0,.45);padding:1px 5px;letter-spacing:.08em;white-space:nowrap}
-  .recap-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+  .recap-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
   .rs{
     background:var(--panel);border:1px solid var(--line);border-top:2px solid var(--red);
     padding:9px 12px 8px;min-width:0;
@@ -149,7 +149,10 @@
   }
   .rs span{display:block;font-size:9px;color:var(--muted);letter-spacing:.12em}
   .rs b{display:block;font-size:19px;margin-top:2px;line-height:1.25;letter-spacing:-.02em}
+  .rs b.rs-name{font-size:15px;margin-top:5px;line-height:1.45}
   .rs i{display:block;font-style:normal;font-size:9px;color:var(--muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .recap-sprint{display:flex;align-items:baseline;gap:8px;margin-top:8px;font-size:10px;color:#cfcfd8}
+  .recap-sprint b{color:var(--red-soft);font-size:9px;letter-spacing:.12em;font-weight:600;white-space:nowrap}
 
   .hero-track{
     background:linear-gradient(180deg,var(--panel-2),var(--panel));
@@ -381,6 +384,7 @@
     .moments.expanded{grid-template-columns:repeat(2,1fr)}
     .recap{grid-template-columns:1fr;gap:14px}
     .recap-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .recap-stats .rs:last-child:nth-child(odd){grid-column:1 / -1}
   }
   @media (max-width:640px){
     .wrap{padding:0 18px}
@@ -558,10 +562,12 @@
           <h2><span id="lrTitle">墨西哥城大奖赛</span><small id="lrSub">2026.11.01 · 罗德里格斯兄弟赛道</small></h2>
           <div class="recap-win">
             <i id="lrWinBar" style="--team:#3671c6"></i>
-            <div><b><span id="lrWinner">维斯塔潘</span><span class="ptw" id="lrPoleTag" hidden>POLE TO WIN</span></b><small id="lrWinnerTeam">红牛 · 分站冠军</small></div>
+            <div><b><span id="lrWinner">维斯塔潘</span><span class="ptw" id="lrPoleTag" hidden>POLE TO WIN</span></b><small id="lrWinnerTeam">红牛 · 分站冠军 · P5 起步</small></div>
           </div>
+          <div class="recap-sprint" id="lrSprint" hidden><b>冲刺赛</b><span id="lrSprintWin">—</span></div>
         </div>
         <div class="recap-stats">
+          <div class="rs"><span>杆位</span><b class="mono rs-name" id="lrPole">汉密尔顿</b><i id="lrPoleSub">Q3 1:16.514</i></div>
           <div class="rs"><span>冠亚军差距</span><b class="mono" id="lrGap">+0.799s</b><i id="lrGapSub">vs 亚军 汉密尔顿</i></div>
           <div class="rs"><span>最快圈</span><b class="mono" id="lrFL">1:19.268</b><i id="lrFLSub">汉密尔顿 · 第 50 圈</i></div>
           <div class="rs"><span>退赛</span><b class="mono" id="lrDnf">5 人</b><i id="lrDnfSub">林德布拉德、贝尔曼、博塔斯、斯特罗尔、阿隆索</i></div>
@@ -1031,9 +1037,18 @@ function renderLastRace(lr){
   const bar=document.getElementById("lrWinBar");
   if(bar) bar.style.setProperty("--team",win.color||"#666");
   document.getElementById("lrWinner").textContent=win.name||"—";
-  document.getElementById("lrWinnerTeam").textContent=win.team?`${win.team} · 分站冠军`:"分站冠军";
+  const gridText=win.fromPole?" · 杆位起步":(Number(win.grid)>1?` · P${win.grid} 起步`:"");
+  document.getElementById("lrWinnerTeam").textContent=win.team?`${win.team} · 分站冠军${gridText}`:`分站冠军${gridText}`;
   const poleTag=document.getElementById("lrPoleTag");
   if(poleTag) poleTag.hidden=!win.fromPole;
+  const pole=lr.pole;
+  document.getElementById("lrPole").textContent=pole?pole.name:"—";
+  document.getElementById("lrPoleSub").textContent=pole?(pole.time?`Q3 ${pole.time}`:"杆位"):"暂无排位数据";
+  const sprintRow=document.getElementById("lrSprint");
+  if(sprintRow){
+    sprintRow.hidden=!lr.sprint;
+    if(lr.sprint) document.getElementById("lrSprintWin").textContent=`${lr.sprint.winner.name}夺冠 · ${lr.sprint.winner.team}`;
+  }
   const gapEl=document.getElementById("lrGap");
   gapEl.textContent=Number.isFinite(lr.gapToSecond)?`+${lr.gapToSecond.toFixed(3)}s`:"—";
   document.getElementById("lrGapSub").textContent=lr.runnerUp?`vs 亚军 ${lr.runnerUp.name}`:"";

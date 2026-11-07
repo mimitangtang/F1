@@ -424,6 +424,41 @@ async function sync() {
   };
   const lastRace = lastRound ? summarizeRace(lastRound) : null;
 
+  // 上一站排位杆位与冲刺赛结果（可选信息，获取失败不影响主流程）
+  if (lastRace) {
+    lastRace.pole = null;
+    lastRace.sprint = null;
+    try {
+      const qJson = await getJson(`${BASE}/${lastRace.round}/qualifying.json`);
+      const qResults = qJson.MRData.RaceTable.Races[0]?.QualifyingResults || [];
+      const poleRow = qResults.find((r) => Number(r.position) === 1) || qResults[0];
+      if (poleRow) {
+        lastRace.pole = {
+          name: driverName(poleRow),
+          team: teamInfo(poleRow.Constructor).cn,
+          time: poleRow.Q3 || poleRow.Q2 || poleRow.Q1 || ""
+        };
+      }
+    } catch (err) {
+      console.warn(`排位数据获取失败 R${lastRace.round}: ${err.message}`);
+    }
+    const lastRaceMeta = schedule.find((r) => Number(r.round) === lastRace.round);
+    if (lastRaceMeta?.Sprint?.date) {
+      try {
+        const sJson = await getJson(`${BASE}/${lastRace.round}/sprint.json`);
+        const sResults = sJson.MRData.RaceTable.Races[0]?.SprintResults || [];
+        const sprintWinner = sResults.find((r) => Number(r.position) === 1) || sResults[0];
+        if (sprintWinner) {
+          lastRace.sprint = {
+            winner: { name: driverName(sprintWinner), team: teamInfo(sprintWinner.Constructor).cn }
+          };
+        }
+      } catch (err) {
+        console.warn(`冲刺赛数据获取失败 R${lastRace.round}: ${err.message}`);
+      }
+    }
+  }
+
   const data = {
     meta: {
       season: 2026,
