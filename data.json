@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-07T20:36:01.716Z",
+    "generatedAt": "2026-11-08T00:03:58.533Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1054,46 +1054,46 @@
   },
   "news": [
     {
-      "title": "LIVE COVERAGE: Norris takes pole in wet Sao Paulo Qualifying",
-      "url": "https://www.formula1.com/en/latest/article/live-coverage-qualifying-in-brazil-2026.3f1u3JidkKoZ1jnhWOuAi8",
+      "title": "Liam Lawson rues Brazilian GP qualifying mistake despite third-place grid start",
+      "url": "https://www.motorsport.com/f1/news/despite-p3-on-the-grid-lawson-rues-qualifying-mistake-and-believes-front-row-was-possible/10872792/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Liam Lawson reckons he had enough pace to earn a front-row grid spot in Sao Paulo – but rues his own \"mistake\" in qualifying, which meant he'll have to start from P3. The New Zeala",
+      "publishedAt": "2026-11-07T22:32:01.000Z"
+    },
+    {
+      "title": "George Russell's Brazilian GP qualifying fury explained: \"Pole was there for the taking\"",
+      "url": "https://www.motorsport.com/f1/news/george-russells-brazilian-gp-qualifying-fury-explained-pole-was-there-for-the-taking/10872782/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "In keeping with the theme of the Brazilian Grand Prix's weather-hit qualifying, George Russell had a thunderous look on his face when he faced the Formula 1 media in the post-sessi",
+      "publishedAt": "2026-11-07T22:12:17.000Z"
+    },
+    {
+      "title": "Lewis Hamilton and Max Verstappen warn of difficult F1 Brazilian GP comebacks",
+      "url": "https://www.motorsport.com/f1/news/lewis-hamilton-and-max-verstappen-warn-of-difficult-brazilian-gp-comebacks/10872784/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Lewis Hamilton and Max Verstappen both expect overtaking to be much harder at Interlagos than in previous seasons, as they prepare to start Sunday's Brazilian Grand Prix from the b",
+      "publishedAt": "2026-11-07T22:06:47.000Z"
+    },
+    {
+      "title": "Hamilton reflects on grid penalties and PU changes in Brazil",
+      "url": "https://www.formula1.com/en/latest/article/using-the-qualifying-session-as-a-test-hamilton-reflects-on-grid-penalties-and-power-unit-changes-in-brazil.52oCsyQ0TZyrWtZKbnuEWx",
       "source": "Formula 1",
-      "excerpt": "Live coverage of the Formula 1 Qualifying session for the 2026 Sao Paulo Grand Prix in Brazil.",
+      "excerpt": "Lewis Hamilton admits that he was \"using the Qualifying session as a test\", with the Ferrari driver set to start at the back of the grid for the Sao Paulo Grand Prix.",
       "publishedAt": null
     },
     {
-      "title": "F1 Brazilian GP: Lando Norris takes pole in soaking wet qualifying",
-      "url": "https://www.motorsport.com/f1/news/f1-brazilian-gp-lando-norris-takes-pole-in-soaking-wet-qualifying/10872707/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "F1 Brazilian GP: Sunday schedule, weather forecast and how to watch",
+      "url": "https://www.motorsport.com/f1/news/f1-brazil-gp-sunday-schedule-weather-forecast-and-how-to-watch/10872772/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "McLaren's Lando Norris has claimed pole in a wet qualifying session at Formula 1's Brazilian Grand Prix, beating George Russell on a treacherous Interlagos circuit. In a challengin",
-      "publishedAt": "2026-11-07T20:31:58.000Z"
+      "excerpt": "Formula 1 heads into Sunday at Interlagos with Lando Norris on pole after a rain-soaked qualifying session dramatically reshaped the grid. The McLaren driver beat George Russell by",
+      "publishedAt": "2026-11-07T21:59:47.000Z"
     },
     {
-      "title": "Hamilton, Leclerc and Verstappen take Brazil grid drops",
-      "url": "https://www.formula1.com/en/latest/article/hamilton-leclerc-and-verstappen-set-for-sao-paulo-grand-prix-penalties-after-power-unit-changes.7B5CuFFCN1F6Txc8YwcEhd",
+      "title": "Camara disappointed after crash in debut Qualifying",
+      "url": "https://www.formula1.com/en/latest/article/camara-disappointed-after-crashing-in-debut-qualifying-session-at-interlagos.43LN93l0g5l5n6VMNHSV7F",
       "source": "Formula 1",
-      "excerpt": "Lewis Hamilton, Charles Leclerc and Max Verstappen will take grid drops at this weekend’s Sao Paulo Grand Prix after Ferrari and Red Bull changed power unit components within their",
+      "excerpt": "Rafael Camara was disappointed after crashing in his debut Qualifying session ahead of the Sao Paulo Grand Prix.",
       "publishedAt": null
-    },
-    {
-      "title": "Lewis Hamilton set for new penalty, will start F1 Brazilian GP from back of grid",
-      "url": "https://www.motorsport.com/f1/news/lewis-hamilton-set-for-new-penalty-will-start-f1-brazilian-gp-from-back-of-grid/10872640/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Lewis Hamilton will have to start Formula 1’s Brazilian Grand Prix from the back of the grid, Ferrari has announced. Hamilton was given his fifth internal combustion engine of the ",
-      "publishedAt": "2026-11-07T17:30:52.000Z"
-    },
-    {
-      "title": "F1 to race in Sao Paulo through to 2035 following new deal",
-      "url": "https://www.formula1.com/en/latest/article/formula-1-to-race-in-sao-paulo-through-to-2035-following-new-five-year-contract-extension.3RBVXeLDp6NMDUQSAIX8TL",
-      "source": "Formula 1",
-      "excerpt": "A new agreement will see Brazil’s renowned Interlagos circuit remain on the Formula 1 calendar through 2035.",
-      "publishedAt": null
-    },
-    {
-      "title": "Toto Wolff explains the emotional Mercedes factory email leaked online",
-      "url": "https://www.motorsport.com/f1/news/toto-wolff-explains-the-emotional-mercedes-factory-email-that-got-leaked-online/10872607/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Securing a Formula 1 world championship triggers a lot of emotions, and, usually, a lot of champagne. But for Mercedes team principal Toto Wolff, Kimi Antonelli's historic title wi",
-      "publishedAt": "2026-11-07T20:32:28.000Z"
     }
   ],
   "quotes": [
