@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-08T18:34:06.826Z",
+    "generatedAt": "2026-11-08T22:34:56.220Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -11,85 +11,65 @@
   },
   "season": {
     "rounds": 23,
-    "completed": 19,
-    "remaining": 4,
-    "nextRound": 20
+    "completed": 20,
+    "remaining": 3,
+    "nextRound": 21
   },
   "nextRace": {
-    "round": 20,
-    "name": "圣保罗",
-    "nameEn": "Brazilian Grand Prix",
-    "circuit": "英特拉格斯赛道",
-    "circuitId": "interlagos",
-    "country": "Brazil",
-    "date": "2026-11-08",
-    "utc": "2026-11-08T17:00:00Z",
+    "round": 21,
+    "name": "拉斯维加斯",
+    "nameEn": "Las Vegas Grand Prix",
+    "circuit": "拉斯维加斯街道赛道",
+    "circuitId": "vegas",
+    "country": "USA",
+    "date": "2026-11-22",
+    "utc": "2026-11-22T04:00:00Z",
     "sessions": [
       {
         "key": "FirstPractice",
         "label": "练习赛一",
-        "date": "11.06",
+        "date": "11.20",
         "weekday": "周五",
-        "time": "23:30",
-        "iso": "2026-11-06T15:30:00Z",
-        "result": {
-          "label": "最快",
-          "name": "诺里斯",
-          "time": "1:11.717"
-        }
+        "time": "08:30",
+        "iso": "2026-11-20T00:30:00Z"
       },
       {
         "key": "SecondPractice",
         "label": "练习赛二",
-        "date": "11.07",
-        "weekday": "周六",
-        "time": "03:00",
-        "iso": "2026-11-06T19:00:00Z",
-        "result": {
-          "label": "最快",
-          "name": "安东内利",
-          "time": "1:10.763"
-        }
+        "date": "11.20",
+        "weekday": "周五",
+        "time": "12:00",
+        "iso": "2026-11-20T04:00:00Z"
       },
       {
         "key": "ThirdPractice",
         "label": "练习赛三",
-        "date": "11.07",
+        "date": "11.21",
         "weekday": "周六",
-        "time": "22:30",
-        "iso": "2026-11-07T14:30:00Z",
-        "result": {
-          "label": "最快",
-          "name": "维斯塔潘",
-          "time": "1:11.622"
-        }
+        "time": "08:30",
+        "iso": "2026-11-21T00:30:00Z"
       },
       {
         "key": "Qualifying",
         "label": "排位赛",
-        "date": "11.08",
-        "weekday": "周日",
-        "time": "02:00",
-        "iso": "2026-11-07T18:00:00Z",
-        "result": {
-          "label": "杆位",
-          "name": "诺里斯",
-          "time": ""
-        }
+        "date": "11.21",
+        "weekday": "周六",
+        "time": "12:00",
+        "iso": "2026-11-21T04:00:00Z"
       },
       {
         "key": "race",
         "label": "正赛",
-        "date": "11.09",
-        "weekday": "周一",
-        "time": "01:00",
-        "iso": "2026-11-08T17:00:00Z"
+        "date": "11.22",
+        "weekday": "周日",
+        "time": "12:00",
+        "iso": "2026-11-22T04:00:00Z"
       }
     ],
     "track": {
-      "length": 4.309,
-      "laps": 71,
-      "turns": 15,
+      "length": 6.201,
+      "laps": 50,
+      "turns": 17,
       "altitude": null,
       "record": null
     }
@@ -670,9 +650,25 @@
       "gp": "圣保罗",
       "en": "Brazilian Grand Prix",
       "date": "11.08",
-      "winner": null,
-      "team": null,
-      "podium": [],
+      "winner": "诺里斯",
+      "team": "迈凯伦",
+      "podium": [
+        {
+          "name": "诺里斯",
+          "team": "迈凯伦",
+          "time": "1:35:23.504"
+        },
+        {
+          "name": "维斯塔潘",
+          "team": "红牛",
+          "time": "+14.602"
+        },
+        {
+          "name": "哈贾尔",
+          "team": "红牛",
+          "time": "+24.485"
+        }
+      ],
       "note": "",
       "circuitId": "interlagos",
       "circuit": "英特拉格斯赛道",
@@ -723,68 +719,42 @@
     }
   ],
   "lastRace": {
-    "round": 19,
-    "gp": "墨西哥城",
-    "nameEn": "Mexico City Grand Prix",
-    "date": "11.01",
-    "circuitId": "rodriguez",
-    "circuit": "罗德里格斯兄弟赛道",
+    "round": 20,
+    "gp": "圣保罗",
+    "nameEn": "Brazilian Grand Prix",
+    "date": "11.08",
+    "circuitId": "interlagos",
+    "circuit": "英特拉格斯赛道",
     "winner": {
-      "name": "维斯塔潘",
-      "team": "红牛",
-      "color": "#3671c6",
-      "grid": 5,
+      "name": "诺里斯",
+      "team": "迈凯伦",
+      "color": "#ff8000",
+      "grid": null,
       "fromPole": false
     },
     "runnerUp": {
-      "name": "汉密尔顿",
-      "team": "法拉利"
+      "name": "维斯塔潘",
+      "team": "红牛"
     },
-    "gapToSecond": 0.799,
-    "fastestLap": {
-      "name": "汉密尔顿",
-      "team": "法拉利",
-      "lap": 50,
-      "time": "1:19.268"
-    },
+    "gapToSecond": 14.602,
+    "fastestLap": null,
     "dnf": [
-      {
-        "name": "林德布拉德",
-        "team": "Racing Bulls",
-        "reason": "Retired"
-      },
-      {
-        "name": "贝尔曼",
-        "team": "哈斯",
-        "reason": "Retired"
-      },
-      {
-        "name": "博塔斯",
-        "team": "凯迪拉克",
-        "reason": "Retired"
-      },
       {
         "name": "斯特罗尔",
         "team": "阿斯顿·马丁",
         "reason": "Retired"
       },
       {
-        "name": "阿隆索",
-        "team": "阿斯顿·马丁",
-        "reason": "Retired"
+        "name": "博塔斯",
+        "team": "凯迪拉克",
+        "reason": "Did not start"
       }
     ],
-    "biggestGain": {
-      "name": "劳森",
-      "team": "Racing Bulls",
-      "from": 22,
-      "to": 7,
-      "delta": 15
-    },
+    "biggestGain": null,
     "pole": {
-      "name": "汉密尔顿",
-      "team": "法拉利",
-      "time": "1:16.514"
+      "name": "诺里斯",
+      "team": "迈凯伦",
+      "time": ""
     },
     "sprint": null
   },
@@ -795,7 +765,7 @@
         "name": "安东内利",
         "team": "梅赛德斯",
         "color": "#27f4d2",
-        "points": 380,
+        "points": 390,
         "wins": 9
       },
       {
@@ -803,31 +773,31 @@
         "name": "维斯塔潘",
         "team": "红牛",
         "color": "#3671c6",
-        "points": 261,
+        "points": 279,
         "wins": 3
       },
       {
         "pos": 3,
-        "name": "汉密尔顿",
-        "team": "法拉利",
-        "color": "#e8002d",
-        "points": 259,
-        "wins": 1
-      },
-      {
-        "pos": 4,
         "name": "拉塞尔",
         "team": "梅赛德斯",
         "color": "#27f4d2",
-        "points": 250,
+        "points": 262,
         "wins": 3
+      },
+      {
+        "pos": 4,
+        "name": "汉密尔顿",
+        "team": "法拉利",
+        "color": "#e8002d",
+        "points": 261,
+        "wins": 1
       },
       {
         "pos": 5,
         "name": "勒克莱尔",
         "team": "法拉利",
         "color": "#e8002d",
-        "points": 245,
+        "points": 251,
         "wins": 1
       },
       {
@@ -835,15 +805,15 @@
         "name": "诺里斯",
         "team": "迈凯伦",
         "color": "#ff8000",
-        "points": 221,
-        "wins": 2
+        "points": 246,
+        "wins": 3
       },
       {
         "pos": 7,
         "name": "皮亚斯特里",
         "team": "迈凯伦",
         "color": "#ff8000",
-        "points": 144,
+        "points": 152,
         "wins": 0
       },
       {
@@ -851,7 +821,7 @@
         "name": "哈贾尔",
         "team": "红牛",
         "color": "#3671c6",
-        "points": 107,
+        "points": 122,
         "wins": 0
       },
       {
@@ -859,7 +829,7 @@
         "name": "劳森",
         "team": "Racing Bulls",
         "color": "#6692ff",
-        "points": 83,
+        "points": 87,
         "wins": 0
       },
       {
@@ -907,7 +877,7 @@
         "name": "霍肯伯格",
         "team": "奥迪",
         "color": "#f50537",
-        "points": 13,
+        "points": 14,
         "wins": 0
       },
       {
@@ -996,31 +966,31 @@
         "pos": 1,
         "name": "梅赛德斯",
         "color": "#27f4d2",
-        "points": 630
+        "points": 652
       },
       {
         "pos": 2,
         "name": "法拉利",
         "color": "#e8002d",
-        "points": 504
+        "points": 512
       },
       {
         "pos": 3,
         "name": "红牛",
         "color": "#3671c6",
-        "points": 382
+        "points": 415
       },
       {
         "pos": 4,
         "name": "迈凯伦",
         "color": "#ff8000",
-        "points": 365
+        "points": 398
       },
       {
         "pos": 5,
         "name": "Racing Bulls",
         "color": "#6692ff",
-        "points": 108
+        "points": 112
       },
       {
         "pos": 6,
@@ -1038,7 +1008,7 @@
         "pos": 8,
         "name": "奥迪",
         "color": "#f50537",
-        "points": 27
+        "points": 28
       },
       {
         "pos": 9,
@@ -1067,88 +1037,88 @@
   },
   "news": [
     {
-      "title": "Charles Leclerc turns heads with $125,000 watch at F1 Brazilian GP",
-      "url": "https://www.motorsport.com/f1/news/charles-leclerc-turns-heads-with-125000-watch-at-f1-brazilian-gp/10873032/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Ferrari Formula 1 driver Charles Leclerc arrived at Interlagos ahead of the Brazilian Grand Prix wearing a six-figure watch on his wrist. According to watch-spotting account Watche",
-      "publishedAt": "2026-11-08T18:12:58.000Z"
-    },
-    {
-      "title": "LIVE COVERAGE: Norris leading in Sao Paulo as rain arrives",
-      "url": "https://www.formula1.com/en/latest/article/live-coverage-formula-1-msc-cruises-grande-premio-de-sao-paulo-2026.1yG2rNPUND8MpWa1F0mFES",
+      "title": "Wolff already thinking about 2027 despite constructors' win",
+      "url": "https://www.formula1.com/en/latest/article/wolff-already-thinking-about-2027-despite-constructors-championship-win-in-brazil.21aGFbwHKbhjkcmpeYVrZV",
       "source": "Formula 1",
-      "excerpt": "Live coverage of the Formula 1 MSC Cruises Grande Premio de Sao Paulo 2026 in Brazil.",
+      "excerpt": "Mercedes Team Principal Toto Wolff says he is already thinking about 2027 despite winning the Constructors' Championship in Brazil.",
       "publishedAt": null
     },
     {
-      "title": "Gabriel Bortoleto's partner Isabella Bernardini shows off custom Audi dress at Brazil GP",
-      "url": "https://www.motorsport.com/f1/news/gabriel-bortoletos-partner-isabella-bernardini-shows-off-custom-audi-dress-at-brazil-gp/10872947/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Charles Leclerc penalised for Liam Lawson clash; Kimi Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
+      "url": "https://www.motorsport.com/f1/news/charles-leclerc-penalised-for-liam-lawson-clash-kimi-antonelli-and-oliver-bearman-also-punished-aft/10873163/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Gabriel Bortoleto's partner Isabella Bernardini arrived at Interlagos ahead of the Brazilian Grand Prix in a one-off dress made from Audi's special adidas range for the race. The d",
-      "publishedAt": "2026-11-08T14:28:32.000Z"
+      "excerpt": "Charles Leclerc was handed a five-second penalty after the Formula 1 Brazilian Grand Prix for his clash with Liam Lawson, dropping the Ferrari driver down to eighth place in the fi",
+      "publishedAt": "2026-11-08T21:54:53.000Z"
     },
     {
-      "title": "‘I’ll try to win, somehow’ – Can Lewis Hamilton and Max Verstappen fight back for F1 Brazilian GP victory?",
-      "url": "https://www.motorsport.com/f1/news/ill-try-to-win-somehow-can-lewis-hamilton-and-max-verstappen-fight-back-for-f1-brazilian-gp-victory/10872909/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "With Lewis Hamilton and Max Verstappen 20th and 21st on the grid of the Brazilian Grand Prix, Sunday’s Formula 1 race promises to be fascinating – regardless of weather conditions.",
-      "publishedAt": "2026-11-08T13:28:55.000Z"
-    },
-    {
-      "title": "How F1 fans can avoid emotional betting in Brazil",
-      "url": "https://www.formula1.com/en/latest/article/how-f1-fans-can-avoid-emotional-betting-during-the-sao-paulo-grand-prix.5pWFgryIkSrF37ZBxPQrPQ",
+      "title": "Leclerc and Hamilton lament ‘horrendous’ Sao Paulo GP",
+      "url": "https://www.formula1.com/en/latest/article/a-complete-disaster-leclerc-and-hamilton-lament-horrendous-ferrari-performance-in-sao-paulo.sdZmqEEwBaoAC8OmBxvYh",
       "source": "Formula 1",
-      "excerpt": "Safer gambling is important, so we’ve flagged some key areas where you should keep a cool head when betting during Sunday's race.",
+      "excerpt": "Charles Leclerc and Lewis Hamilton only scored eight points between them at the Sao Paulo Grand Prix, marking a disappointing race for Ferrari.",
       "publishedAt": null
     },
     {
-      "title": "McLaren’s 2027-spec front wing is making its F1 car more predictable",
-      "url": "https://www.motorsport.com/f1/news/mclarens-2027-spec-front-wing-is-making-its-f1-car-more-predictable/10872891/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Max Verstappen \"needs to understand what happened\" after \"night and day\" F1 comeback in Brazilian GP",
+      "url": "https://www.motorsport.com/f1/news/max-verstappen-needs-to-understand-what-happened-after-night-and-day-f1-comeback-in-brazil/10873146/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "McLaren team principal Andrea Stella says the 2027-spec front wing concept introduced on the MCL40 at Formula 1’s Brazilian Grand Prix has improved the car’s driveability and predi",
-      "publishedAt": "2026-11-08T12:07:45.000Z"
+      "excerpt": "For the third year in a row, Max Verstappen has produced an impressive comeback drive in Brazil. While he won from 17th on the grid in 2024 and drove from the pitlane to the podium",
+      "publishedAt": "2026-11-08T21:53:41.000Z"
+    },
+    {
+      "title": "Leclerc and Antonelli hit with post-race penalties in Brazil",
+      "url": "https://www.formula1.com/en/latest/article/leclerc-hit-with-post-race-penalty-for-sao-paulo-collision-with-lawson.scK3PbeAxR70InNjz1ph3",
+      "source": "Formula 1",
+      "excerpt": "Charles Leclerc has lost his finishing position of P7 in Sao Paulo after receiving a penalty from the stewards.",
+      "publishedAt": null
+    },
+    {
+      "title": "Kimi Antonelli: \"Weird\" spin and car instability cost F1 Brazilian GP win",
+      "url": "https://www.motorsport.com/f1/news/kimi-antonelli-weird-spin-and-car-instability-cost-f1-brazilian-gp-win/10873125/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Kimi Antonelli vowed to put aside his Brazilian Grand Prix anger to celebrate Mercedes winning the Formula 1 constructors' title, as he rued the balance issues and the spin that to",
+      "publishedAt": "2026-11-08T20:56:10.000Z"
     }
   ],
   "quotes": [
     {
       "platform": "虎扑",
-      "date": "11.07",
-      "text": "维斯塔潘对雨战保持谨慎：风险很大，但我不会感到压力。",
-      "url": "https://bbs.hupu.com/635606846.html"
+      "date": "11.20",
+      "text": "拉塞尔担心拉斯维加斯的低温会让梅赛德斯失去优势。",
+      "url": "https://bbs.hupu.com/635841867.html"
     },
     {
       "platform": "虎扑",
-      "date": "11.07",
-      "text": "阿隆索：巴西对我有特殊情感，英特拉格斯总能带来不一样的比赛。",
-      "url": "https://bbs.hupu.com/635616491.html"
+      "date": "11.21",
+      "text": "角田更换动力单元从维修区起步，红牛的安排又被吐槽了。",
+      "url": "https://bbs.hupu.com/635902358.html"
     },
     {
-      "platform": "B站",
-      "date": "11.06",
-      "text": "圣保罗的雨夜总能改写比赛，2024 年维斯塔潘从第 17 位发车夺冠就是例子。",
-      "url": "https://www.bilibili.com/video/BV1XCDuBkE2g/"
+      "platform": "虎扑",
+      "date": "11.22",
+      "text": "汉密尔顿在拉斯维加斯的表现又引发讨论，超车和失误都被放大。",
+      "url": "https://bbs.hupu.com/635905703.html"
     }
   ],
   "highlights": [
     {
-      "year": "2021",
-      "text": "汉密尔顿从第 10 位发车夺冠，冲刺周末上演经典逆转。",
-      "url": "https://en.wikipedia.org/wiki/2021_Brazilian_Grand_Prix"
+      "year": "2024",
+      "text": "拉塞尔夺冠，梅赛德斯包揽前二。",
+      "url": "https://en.wikipedia.org/wiki/2024_Las_Vegas_Grand_Prix"
     },
     {
-      "year": "2012",
-      "text": "维特尔在雨中以第 6 名完赛，拿下个人第三座世界冠军。",
-      "url": "https://en.wikipedia.org/wiki/2012_Brazilian_Grand_Prix"
+      "year": "2023",
+      "text": "首届拉斯维加斯大奖赛，维斯塔潘夺冠。",
+      "url": "https://en.wikipedia.org/wiki/2023_Las_Vegas_Grand_Prix"
     },
     {
-      "year": "2008",
-      "text": "汉密尔顿最后一圈超越格洛克，夺得首个世界冠军。",
-      "url": "https://en.wikipedia.org/wiki/2008_Brazilian_Grand_Prix"
+      "year": "2023",
+      "text": "勒克莱尔最后一圈超越佩雷兹，抢下亚军。",
+      "url": "https://en.wikipedia.org/wiki/2023_Las_Vegas_Grand_Prix"
     },
     {
-      "year": "2003",
-      "text": "费斯切拉在混乱雨战中获胜，赛果因计时错误赛后改判。",
-      "url": "https://en.wikipedia.org/wiki/2003_Brazilian_Grand_Prix"
+      "year": "2023",
+      "text": "夜赛低温，轮胎升温成为策略焦点。",
+      "url": "https://en.wikipedia.org/wiki/2023_Las_Vegas_Grand_Prix"
     }
   ]
 }
