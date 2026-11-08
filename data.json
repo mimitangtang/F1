@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-08T00:03:58.533Z",
+    "generatedAt": "2026-11-08T06:24:14.968Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -70,7 +70,12 @@
         "date": "11.08",
         "weekday": "周日",
         "time": "02:00",
-        "iso": "2026-11-07T18:00:00Z"
+        "iso": "2026-11-07T18:00:00Z",
+        "result": {
+          "label": "杆位",
+          "name": "诺里斯",
+          "time": ""
+        }
       },
       {
         "key": "race",
@@ -974,6 +979,14 @@
         "name": "佩雷兹",
         "team": "凯迪拉克",
         "color": "#c8a24b",
+        "points": 0,
+        "wins": 0
+      },
+      {
+        "pos": 25,
+        "name": "Rafael Camara",
+        "team": "哈斯",
+        "color": "#b6babd",
         "points": 0,
         "wins": 0
       }
