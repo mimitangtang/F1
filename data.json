@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-08T22:34:56.220Z",
+    "generatedAt": "2026-11-09T02:12:06.510Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -729,15 +729,20 @@
       "name": "诺里斯",
       "team": "迈凯伦",
       "color": "#ff8000",
-      "grid": null,
-      "fromPole": false
+      "grid": 1,
+      "fromPole": true
     },
     "runnerUp": {
       "name": "维斯塔潘",
       "team": "红牛"
     },
     "gapToSecond": 14.602,
-    "fastestLap": null,
+    "fastestLap": {
+      "name": "安东内利",
+      "team": "梅赛德斯",
+      "lap": 55,
+      "time": "1:12.689"
+    },
     "dnf": [
       {
         "name": "斯特罗尔",
@@ -750,7 +755,13 @@
         "reason": "Did not start"
       }
     ],
-    "biggestGain": null,
+    "biggestGain": {
+      "name": "维斯塔潘",
+      "team": "红牛",
+      "from": 21,
+      "to": 2,
+      "delta": 19
+    },
     "pole": {
       "name": "诺里斯",
       "team": "迈凯伦",
@@ -797,7 +808,7 @@
         "name": "勒克莱尔",
         "team": "法拉利",
         "color": "#e8002d",
-        "points": 251,
+        "points": 249,
         "wins": 1
       },
       {
@@ -829,7 +840,7 @@
         "name": "劳森",
         "team": "Racing Bulls",
         "color": "#6692ff",
-        "points": 87,
+        "points": 89,
         "wins": 0
       },
       {
@@ -972,7 +983,7 @@
         "pos": 2,
         "name": "法拉利",
         "color": "#e8002d",
-        "points": 512
+        "points": 510
       },
       {
         "pos": 3,
@@ -990,7 +1001,7 @@
         "pos": 5,
         "name": "Racing Bulls",
         "color": "#6692ff",
-        "points": 112
+        "points": 114
       },
       {
         "pos": 6,
@@ -1037,46 +1048,46 @@
   },
   "news": [
     {
-      "title": "Wolff already thinking about 2027 despite constructors' win",
-      "url": "https://www.formula1.com/en/latest/article/wolff-already-thinking-about-2027-despite-constructors-championship-win-in-brazil.21aGFbwHKbhjkcmpeYVrZV",
+      "title": "All the key moments from the 2026 Sao Paulo Grand Prix",
+      "url": "https://www.formula1.com/en/latest/article/sao-paulo-lowdown-all-the-key-moments-as-mercedes-secures-constructors-title-and-norris-wins-in-the-rain.2VjsvSp3rejjziq7VbVVOr",
       "source": "Formula 1",
-      "excerpt": "Mercedes Team Principal Toto Wolff says he is already thinking about 2027 despite winning the Constructors' Championship in Brazil.",
+      "excerpt": "Lando Norris claimed victory in a wet thriller at the Sao Paulo Grand Prix, while Mercedes did enough to secure the 2026 Constructors' Championship last weekend.",
       "publishedAt": null
     },
     {
-      "title": "Charles Leclerc penalised for Liam Lawson clash; Kimi Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
-      "url": "https://www.motorsport.com/f1/news/charles-leclerc-penalised-for-liam-lawson-clash-kimi-antonelli-and-oliver-bearman-also-punished-aft/10873163/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Red Bull boss hails Max Verstappen's Brazil podium: \"He's beating the sim on a regular basis\"",
+      "url": "https://www.motorsport.com/f1/news/red-bull-boss-hails-max-verstappens-brazil-podium-hes-beating-the-sim-on-a-regular-basis/10873193/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Charles Leclerc was handed a five-second penalty after the Formula 1 Brazilian Grand Prix for his clash with Liam Lawson, dropping the Ferrari driver down to eighth place in the fi",
-      "publishedAt": "2026-11-08T21:54:53.000Z"
+      "excerpt": "Red Bull team principal Laurent Mekies said no simulation could have predicted Max Verstappen's charge from 21st to second in the Brazilian Grand Prix at Interlagos. The Dutchman s",
+      "publishedAt": "2026-11-08T23:11:39.000Z"
     },
     {
-      "title": "Leclerc and Hamilton lament ‘horrendous’ Sao Paulo GP",
-      "url": "https://www.formula1.com/en/latest/article/a-complete-disaster-leclerc-and-hamilton-lament-horrendous-ferrari-performance-in-sao-paulo.sdZmqEEwBaoAC8OmBxvYh",
+      "title": "How Lawson stated his case with a brilliant Brazilian weekend",
+      "url": "https://www.formula1.com/en/latest/article/how-lawson-stated-his-case-with-a-brilliant-brazilian-weekend.6pFeRcXLYj8qdZZt23LdhV",
       "source": "Formula 1",
-      "excerpt": "Charles Leclerc and Lewis Hamilton only scored eight points between them at the Sao Paulo Grand Prix, marking a disappointing race for Ferrari.",
+      "excerpt": "Lawson, who does not have a confirmed seat with Racing Bulls next season, finished P7 in Sao Paulo after starting on the second row.",
       "publishedAt": null
     },
     {
-      "title": "Max Verstappen \"needs to understand what happened\" after \"night and day\" F1 comeback in Brazilian GP",
-      "url": "https://www.motorsport.com/f1/news/max-verstappen-needs-to-understand-what-happened-after-night-and-day-f1-comeback-in-brazil/10873146/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Winners and losers from F1's chaotic Brazilian Grand Prix",
+      "url": "https://www.motorsport.com/f1/news/winners-and-losers-from-f1s-chaotic-brazilian-grand-prix/10873189/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "For the third year in a row, Max Verstappen has produced an impressive comeback drive in Brazil. While he won from 17th on the grid in 2024 and drove from the pitlane to the podium",
-      "publishedAt": "2026-11-08T21:53:41.000Z"
+      "excerpt": "Are you not entertained? While Lando Norris took a well-deserved third win of the campaign, Mercedes collectively slipped up and Max Verstappen produced yet another Brazilian Grand",
+      "publishedAt": "2026-11-08T22:59:54.000Z"
     },
     {
-      "title": "Leclerc and Antonelli hit with post-race penalties in Brazil",
-      "url": "https://www.formula1.com/en/latest/article/leclerc-hit-with-post-race-penalty-for-sao-paulo-collision-with-lawson.scK3PbeAxR70InNjz1ph3",
+      "title": "Antonelli ‘grateful’ for team glory amid Brazil frustration",
+      "url": "https://www.formula1.com/en/latest/article/they-helped-me-achieve-this-dream-antonelli-grateful-for-mercedes-glory-amid-brazil-frustration.3ZVoYyfjzeFZKrW0bUfXUn",
       "source": "Formula 1",
-      "excerpt": "Charles Leclerc has lost his finishing position of P7 in Sao Paulo after receiving a penalty from the stewards.",
+      "excerpt": "Kimi Antonelli was keen to prioritise Mercedes’ triumph in the Constructors’ Championship over his Sao Paulo Grand Prix performance.",
       "publishedAt": null
     },
     {
-      "title": "Kimi Antonelli: \"Weird\" spin and car instability cost F1 Brazilian GP win",
-      "url": "https://www.motorsport.com/f1/news/kimi-antonelli-weird-spin-and-car-instability-cost-f1-brazilian-gp-win/10873125/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Max Verstappen gives emotional farewell gift to long-serving Red Bull mechanic",
+      "url": "https://www.motorsport.com/f1/news/max-verstappen-gives-emotional-farewell-gift-to-long-serving-red-bull-mechanic/10873184/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Kimi Antonelli vowed to put aside his Brazilian Grand Prix anger to celebrate Mercedes winning the Formula 1 constructors' title, as he rued the balance issues and the spin that to",
-      "publishedAt": "2026-11-08T20:56:10.000Z"
+      "excerpt": "Four-time Formula 1 champion Max Verstappen has given his race helmet to long-serving Red Bull mechanic Ole Schack, who took part in his final race for the Milton Keynes outfit at ",
+      "publishedAt": "2026-11-08T22:36:27.000Z"
     }
   ],
   "quotes": [
