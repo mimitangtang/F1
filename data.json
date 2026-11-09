@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-09T02:12:06.510Z",
+    "generatedAt": "2026-11-09T09:58:37.797Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1048,6 +1048,34 @@
   },
   "news": [
     {
+      "title": "Vasseur explains Ferrari’s tyre struggles in Brazil",
+      "url": "https://www.formula1.com/en/latest/article/if-youre-not-in-the-right-spot-youre-nowhere-vasseur-explains-ferraris-brazil-tyre-struggles.4BJ7k41PfxDI31jhSg9RU",
+      "source": "Formula 1",
+      "excerpt": "Team Principal Fred Vasseur has outlined Ferrari's difficulties with getting their tyres into the right window during the Sao Paulo Grand Prix.",
+      "publishedAt": null
+    },
+    {
+      "title": "Who slept worst last night: Fernando Alonso",
+      "url": "https://www.motorsport.com/f1/news/who-slept-worst-last-night-fernando-alonso/10873272/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "When Fernando Alonso became Formula 1 world champion in 2005, he was just 24 years old, replacing Emerson Fittipaldi as the youngest champion in the sport's history. At last, Micha",
+      "publishedAt": "2026-11-09T09:33:04.000Z"
+    },
+    {
+      "title": "The 110 seconds that almost won Verstappen the Sao Paulo GP",
+      "url": "https://www.formula1.com/en/latest/article/the-110-seconds-that-almost-won-verstappen-the-sao-paulo-grand-prix.1ekcYv2HICNUBqf0ZhUylV",
+      "source": "Formula 1",
+      "excerpt": "Michael Lamonato looks at how Max Verstappen's wet-weather skill carried him from 21st on the grid into contention at Interlagos – and what stopped him turning a rapid opening into",
+      "publishedAt": null
+    },
+    {
+      "title": "Oscar Piastri splits from Mark Webber management",
+      "url": "https://www.motorsport.com/f1/news/oscar-piastri-wont-have-mark-webber-as-his-manager-anymore/10873253/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Oscar Piastri and Mark Webber have mutually agreed to terminate their management agreement, the pair have announced. Webber and his wife Ann – who ran Mark’s career herself back in",
+      "publishedAt": "2026-11-09T08:39:26.000Z"
+    },
+    {
       "title": "All the key moments from the 2026 Sao Paulo Grand Prix",
       "url": "https://www.formula1.com/en/latest/article/sao-paulo-lowdown-all-the-key-moments-as-mercedes-secures-constructors-title-and-norris-wins-in-the-rain.2VjsvSp3rejjziq7VbVVOr",
       "source": "Formula 1",
@@ -1060,34 +1088,6 @@
       "source": "Motorsport",
       "excerpt": "Red Bull team principal Laurent Mekies said no simulation could have predicted Max Verstappen's charge from 21st to second in the Brazilian Grand Prix at Interlagos. The Dutchman s",
       "publishedAt": "2026-11-08T23:11:39.000Z"
-    },
-    {
-      "title": "How Lawson stated his case with a brilliant Brazilian weekend",
-      "url": "https://www.formula1.com/en/latest/article/how-lawson-stated-his-case-with-a-brilliant-brazilian-weekend.6pFeRcXLYj8qdZZt23LdhV",
-      "source": "Formula 1",
-      "excerpt": "Lawson, who does not have a confirmed seat with Racing Bulls next season, finished P7 in Sao Paulo after starting on the second row.",
-      "publishedAt": null
-    },
-    {
-      "title": "Winners and losers from F1's chaotic Brazilian Grand Prix",
-      "url": "https://www.motorsport.com/f1/news/winners-and-losers-from-f1s-chaotic-brazilian-grand-prix/10873189/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Are you not entertained? While Lando Norris took a well-deserved third win of the campaign, Mercedes collectively slipped up and Max Verstappen produced yet another Brazilian Grand",
-      "publishedAt": "2026-11-08T22:59:54.000Z"
-    },
-    {
-      "title": "Antonelli ‘grateful’ for team glory amid Brazil frustration",
-      "url": "https://www.formula1.com/en/latest/article/they-helped-me-achieve-this-dream-antonelli-grateful-for-mercedes-glory-amid-brazil-frustration.3ZVoYyfjzeFZKrW0bUfXUn",
-      "source": "Formula 1",
-      "excerpt": "Kimi Antonelli was keen to prioritise Mercedes’ triumph in the Constructors’ Championship over his Sao Paulo Grand Prix performance.",
-      "publishedAt": null
-    },
-    {
-      "title": "Max Verstappen gives emotional farewell gift to long-serving Red Bull mechanic",
-      "url": "https://www.motorsport.com/f1/news/max-verstappen-gives-emotional-farewell-gift-to-long-serving-red-bull-mechanic/10873184/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Four-time Formula 1 champion Max Verstappen has given his race helmet to long-serving Red Bull mechanic Ole Schack, who took part in his final race for the Milton Keynes outfit at ",
-      "publishedAt": "2026-11-08T22:36:27.000Z"
     }
   ],
   "quotes": [
