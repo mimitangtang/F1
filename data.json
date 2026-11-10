@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-10T02:48:43.266Z",
+    "generatedAt": "2026-11-10T10:35:09.376Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1055,38 +1055,38 @@
       "publishedAt": "2026-11-09T23:57:29.000Z"
     },
     {
-      "title": "Apple TV confirms free F1 Las Vegas Grand Prix coverage: How to watch in the US",
-      "url": "https://www.motorsport.com/f1/news/apple-tv-confirms-free-f1-las-vegas-grand-prix-coverage-how-to-watch-in-the-us/10873443/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "P10 in Sao Paulo GP 'the maximum possible' – Hulkenberg",
+      "url": "https://www.formula1.com/en/latest/article/the-maximum-possible-hulkenberg-on-audis-fight-for-points-in-sao-paulo-grand-prix.1KO1iL7LzQm3Cfl0CGspws",
+      "source": "Formula 1",
+      "excerpt": "Nico Hulkenberg believes that P10 and the final point on offer was \"the maximum possible\" in the Sao Paulo Grand Prix, the Audi driver having recovered from a 10-second penalty.",
+      "publishedAt": null
+    },
+    {
+      "title": "Honda struggling to explain Lance Stroll’s 13th DNF of the season",
+      "url": "https://www.motorsport.com/f1/news/honda-struggling-to-explain-lance-strolls-13th-dnf-of-the-season/10873412/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Formula 1 fans in the United States will be able to watch the Las Vegas Grand Prix for free after Apple TV confirmed the whole race weekend will be available to stream with no subs",
-      "publishedAt": "2026-11-09T17:56:51.000Z"
+      "excerpt": "Honda says it needs to find the root cause of Lance Stroll’s multiple battery issues after yet another retirement for the Aston Martin Formula 1 driver in the Brazilian Grand Prix.",
+      "publishedAt": "2026-11-10T10:25:06.000Z"
+    },
+    {
+      "title": "5 betting lessons learnt after Norris wins in Brazil",
+      "url": "https://www.formula1.com/en/latest/article/5-key-betting-lessons-learnt-after-lando-norris-wins-the-sao-paulo-grand-prix-in-brazil.5yqAHXsmHN6KYWGDkNYvUt",
+      "source": "Formula 1",
+      "excerpt": "The battle for race wins remains wide open heading into the season-closing triple header.",
+      "publishedAt": null
+    },
+    {
+      "title": "Laurent Mekies: Liam Lawson’s fate has nothing to do with me",
+      "url": "https://www.motorsport.com/f1/news/laurent-mekies-liam-lawsons-fate-has-nothing-to-do-with-me/10873368/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Red Bull team principal Laurent Mekies says it’s up to Racing Bulls whether to retain Liam Lawson or promote Nikola Tsolov to a race seat in the 2027 Formula 1 season. Rookie Arvid",
+      "publishedAt": "2026-11-10T08:28:03.000Z"
     },
     {
       "title": "The best images from Mercedes' title celebrations",
       "url": "https://www.formula1.com/en/latest/article/gallery-the-best-images-from-mercedes-title-celebrations-2026.1GRUyTDIodPm4vvlVEydw5",
       "source": "Formula 1",
       "excerpt": "Mercedes sealed the Teams' Championship in Sao Paulo on Sunday after a double points finish from George Russell and Kimi Antonelli.",
-      "publishedAt": null
-    },
-    {
-      "title": "5 Winners and 5 Losers from Sao Paulo",
-      "url": "https://www.formula1.com/en/latest/article/5-winners-and-5-losers-from-sao-paulo.3fmqE8g482DzZTO98sG7Bf",
-      "source": "Formula 1",
-      "excerpt": "Lawrence Barretto selects his winners and losers at the Autodromo Jose Carlos Pace.",
-      "publishedAt": null
-    },
-    {
-      "title": "Lewis Hamilton to share flight with Mercedes after former team's F1 title triumph",
-      "url": "https://www.motorsport.com/f1/news/lewis-hamilton-to-share-flight-with-mercedes-after-former-teams-f1-title-triumph/10873483/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Seven-time Formula 1 champion Lewis Hamilton's trip back from Interlagos could have been an awkward one after Mercedes team principal Toto Wolff revealed that the Ferrari driver wo",
-      "publishedAt": "2026-11-09T23:30:48.000Z"
-    },
-    {
-      "title": "Rivals congratulate Mercedes on Constructors' Championship",
-      "url": "https://www.formula1.com/en/latest/article/rivals-congratulate-mercedes-on-2026-constructors-championship-after-sao-paulo-gp.5mQ3BkVs5HLP8LE8PduoWY",
-      "source": "Formula 1",
-      "excerpt": "Mercedes' wait for another Constructors' Championship ended last weekend, as the German manufacturer achieved the feat at the Sao Paulo Grand Prix.",
       "publishedAt": null
     }
   ],
