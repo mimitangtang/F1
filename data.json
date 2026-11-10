@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-09T20:24:15.661Z",
+    "generatedAt": "2026-11-10T02:48:43.266Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1048,6 +1048,13 @@
   },
   "news": [
     {
+      "title": "F1 Las Vegas Grand Prix announces pre-race music line-up",
+      "url": "https://www.motorsport.com/f1/news/f1-las-vegas-grand-prix-announces-pre-race-music-line-up/10873488/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "American DJ Steve Aoki will return to the Las Vegas Grand Prix grid this year for a performance before the race on 21 November. He will be joined by fellow DJ MORTEN and singer Jor",
+      "publishedAt": "2026-11-09T23:57:29.000Z"
+    },
+    {
       "title": "Apple TV confirms free F1 Las Vegas Grand Prix coverage: How to watch in the US",
       "url": "https://www.motorsport.com/f1/news/apple-tv-confirms-free-f1-las-vegas-grand-prix-coverage-how-to-watch-in-the-us/10873443/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
@@ -1062,13 +1069,6 @@
       "publishedAt": null
     },
     {
-      "title": "George Russell teases imminent karting announcement as F1 fans spot major clue",
-      "url": "https://www.motorsport.com/f1/news/george-russell-teases-imminent-karting-announcement-as-f1-fans-spot-major-clue/10873459/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "George Russell has teased an imminent announcement linked to karting on 12 November. The Mercedes driver posted a video to Instagram on Monday with the caption \"Stay tuned\". He tal",
-      "publishedAt": "2026-11-09T18:31:47.000Z"
-    },
-    {
       "title": "5 Winners and 5 Losers from Sao Paulo",
       "url": "https://www.formula1.com/en/latest/article/5-winners-and-5-losers-from-sao-paulo.3fmqE8g482DzZTO98sG7Bf",
       "source": "Formula 1",
@@ -1076,18 +1076,18 @@
       "publishedAt": null
     },
     {
+      "title": "Lewis Hamilton to share flight with Mercedes after former team's F1 title triumph",
+      "url": "https://www.motorsport.com/f1/news/lewis-hamilton-to-share-flight-with-mercedes-after-former-teams-f1-title-triumph/10873483/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Seven-time Formula 1 champion Lewis Hamilton's trip back from Interlagos could have been an awkward one after Mercedes team principal Toto Wolff revealed that the Ferrari driver wo",
+      "publishedAt": "2026-11-09T23:30:48.000Z"
+    },
+    {
       "title": "Rivals congratulate Mercedes on Constructors' Championship",
       "url": "https://www.formula1.com/en/latest/article/rivals-congratulate-mercedes-on-2026-constructors-championship-after-sao-paulo-gp.5mQ3BkVs5HLP8LE8PduoWY",
       "source": "Formula 1",
       "excerpt": "Mercedes' wait for another Constructors' Championship ended last weekend, as the German manufacturer achieved the feat at the Sao Paulo Grand Prix.",
       "publishedAt": null
-    },
-    {
-      "title": "What's behind Oscar Piastri's split with Mark Webber – and what it means for his F1 career",
-      "url": "https://www.motorsport.com/f1/news/what-the-split-with-mark-webber-says-about-the-next-phase-of-oscar-piastris-f1-career/10873385/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "On the Monday after the Formula 1 Brazilian Grand Prix, Oscar Piastri and Mark Webber announced in a joint statement that the latter and Ann Neal would no longer manage the 25-year",
-      "publishedAt": "2026-11-09T15:51:41.000Z"
     }
   ],
   "quotes": [
