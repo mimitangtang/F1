@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-12T17:12:25.815Z",
+    "generatedAt": "2026-11-12T22:47:23.621Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1048,6 +1048,20 @@
   },
   "news": [
     {
+      "title": "Why the F1 driver market might produce one last twist",
+      "url": "https://www.formula1.com/en/latest/article/analysis-why-the-f1-driver-market-might-produce-one-last-twist-for-2027.6t7AwtqfHWkDqSgQZ3ElQ3",
+      "source": "Formula 1",
+      "excerpt": "Following Racing Bulls’ confirmation of their unchanged driver line-up, Lawrence Barretto dissects everything that’s still left to play for on the 2027 grid.",
+      "publishedAt": null
+    },
+    {
+      "title": "Guenther Steiner suggests Max Verstappen could be better suited to lead Ferrari",
+      "url": "https://www.motorsport.com/f1/news/guenther-steiner-suggests-max-verstappen-could-be-better-suited-to-lead-ferrari/10874192/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Former Haas Formula 1 team principal Guenther Steiner has questioned whether Lewis Hamilton is the driver to turn Ferrari's fortunes around, suggesting Max Verstappen might be bett",
+      "publishedAt": "2026-11-12T21:00:04.000Z"
+    },
+    {
       "title": "Trivia: False Start",
       "url": "https://www.formula1.com/en/latest/article/trivia-false-start.403Q768qyuqJKKSGfQE9C1",
       "source": "Formula 1",
@@ -1055,11 +1069,11 @@
       "publishedAt": null
     },
     {
-      "title": "Laurent Mekies: Brazil was Isack Hadjar’s “best race” for Red Bull",
-      "url": "https://www.motorsport.com/f1/news/laurent-mekies-brazil-was-isack-hadjars-best-race-for-red-bull/10874059/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Guether Steiner warns Oscar Piastri's McLaren future could be at risk after 2027",
+      "url": "https://www.motorsport.com/f1/news/guether-steiner-warns-oscar-piastris-mclaren-future-could-be-at-risk-after-2027/10874189/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "The 2026 São Paulo Grand Prix was a monumental weekend for Red Bull Racing. While Max Verstappen stole the headlines with a logic-defying charge from 21st to finish second, his tea",
-      "publishedAt": "2026-11-12T16:41:01.000Z"
+      "excerpt": "Former Haas Formula 1 team principal Guenther Steiner has warned that Oscar Piastri could find his McLaren future under threat if he has another season like 2026. Piastri, who foug",
+      "publishedAt": "2026-11-12T17:44:49.000Z"
     },
     {
       "title": "Tsolov to serve as Red Bull and Racing Bulls reserve driver",
@@ -1069,25 +1083,11 @@
       "publishedAt": null
     },
     {
-      "title": "F1 Academy champion Alisha Palmowski reveals key lesson from Max Verstappen",
-      "url": "https://www.motorsport.com/f1/news/f1-academy-champion-alisha-palmowski-reveals-key-lesson-from-max-verstappen/10874174/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Toto Wolff reflects on Mercedes’ non-title years: ‘We weren’t complete losers’",
+      "url": "https://www.motorsport.com/f1/news/toto-wolff-reflects-on-mercedes-non-title-years-we-werent-complete-losers/10873281/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Alisha Palmowski says the biggest lesson of her F1 Academy title year came from simply watching four-time Formula 1 champion Max Verstappen at work. The Briton, who races for Campo",
-      "publishedAt": "2026-11-12T16:35:22.000Z"
-    },
-    {
-      "title": "Russell launches new karting academy for young racers",
-      "url": "https://www.formula1.com/en/latest/article/karting-is-where-it-all-started-for-me-russell-launches-new-academy-to-develop-young-racers.5kVDwrQLjkeQ8bYLZ5sqQ2",
-      "source": "Formula 1",
-      "excerpt": "Mercedes driver George Russell has founded a karting academy to support and develop the next generation of young racers.",
-      "publishedAt": null
-    },
-    {
-      "title": "Tsolov named Red Bull, Racing Bulls reserve driver after missing out on 2027 F1 race seat",
-      "url": "https://www.motorsport.com/f1/news/tsolov-named-red-bull-racing-bulls-reserve-driver-after-missing-out-on-2027-f1-race-seat/10874147/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Nikola Tsolov has been named as reserve driver for both Red Bull and Racing Bulls for the 2027 Formula 1 season having missed out on a full-time drive. The 19-year-old Bulgarian ha",
-      "publishedAt": "2026-11-12T15:19:49.000Z"
+      "excerpt": "Mercedes team principal Toto Wolff says the squad wasn’t “complete losers” in its four years without a Formula 1 world title. The Silver Arrows claimed their ninth constructors’ ch",
+      "publishedAt": "2026-11-12T17:25:35.000Z"
     }
   ],
   "quotes": [
