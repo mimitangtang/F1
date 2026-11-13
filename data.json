@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-12T22:47:23.621Z",
+    "generatedAt": "2026-11-13T11:18:33.064Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1048,6 +1048,34 @@
   },
   "news": [
     {
+      "title": "F1 ACADEMY Champion Palmowski graduates to Formula Regional",
+      "url": "https://www.formula1.com/en/latest/article/f1-academy-champion-alisha-palmowski-graduates-to-formula-regional-with-fully-funded-seat.39A1mu7n4LQ3ljJdTyFlhW",
+      "source": "Formula 1",
+      "excerpt": "F1 ACADEMY Champion Alisha Palmowski will make the step up to the Formula Regional European Championship (FREC), with F1 ACADEMY and Red Bull Racing announcing she will receive a f",
+      "publishedAt": null
+    },
+    {
+      "title": "The Kimi Antonelli you don't know: Inside the Mercedes garage with F1's new world champion",
+      "url": "https://www.motorsport.com/f1/news/the-kimi-antonelli-you-dont-know-inside-the-mercedes-garage-with-f1s-new-world-champion-/10874164/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Mercedes mechanics have learned to watch their backs. Not because of the dangers of a pitstop, but because of Kimi Antonelli. Formula 1's newly crowned world champion has a rather ",
+      "publishedAt": "2026-11-13T10:05:51.000Z"
+    },
+    {
+      "title": "Mercedes' incredible history of Formula 1 success",
+      "url": "https://www.formula1.com/en/latest/article/mercedes-incredible-success-through-formula-1-history.7yLliKc36ZI9pd7xzNYFwq",
+      "source": "Formula 1",
+      "excerpt": "As Mercedes claim their ninth F1 Constructors' title in 2026, discover the Silver Arrows' incredible history in Formula 1.",
+      "publishedAt": null
+    },
+    {
+      "title": "F1 driver contracts: How long is each driver tied down for?",
+      "url": "https://www.motorsport.com/f1/news/f1-driver-contracts-how-long-is-each-driver-tied-down-for/10850679/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "The details in a Formula 1 driver contract is highly-guarded information, but often the length of the deal is released to the wider world. Here is how long each F1 driver contract ",
+      "publishedAt": "2026-11-13T09:32:20.000Z"
+    },
+    {
       "title": "Why the F1 driver market might produce one last twist",
       "url": "https://www.formula1.com/en/latest/article/analysis-why-the-f1-driver-market-might-produce-one-last-twist-for-2027.6t7AwtqfHWkDqSgQZ3ElQ3",
       "source": "Formula 1",
@@ -1060,34 +1088,6 @@
       "source": "Motorsport",
       "excerpt": "Former Haas Formula 1 team principal Guenther Steiner has questioned whether Lewis Hamilton is the driver to turn Ferrari's fortunes around, suggesting Max Verstappen might be bett",
       "publishedAt": "2026-11-12T21:00:04.000Z"
-    },
-    {
-      "title": "Trivia: False Start",
-      "url": "https://www.formula1.com/en/latest/article/trivia-false-start.403Q768qyuqJKKSGfQE9C1",
-      "source": "Formula 1",
-      "excerpt": "",
-      "publishedAt": null
-    },
-    {
-      "title": "Guether Steiner warns Oscar Piastri's McLaren future could be at risk after 2027",
-      "url": "https://www.motorsport.com/f1/news/guether-steiner-warns-oscar-piastris-mclaren-future-could-be-at-risk-after-2027/10874189/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Former Haas Formula 1 team principal Guenther Steiner has warned that Oscar Piastri could find his McLaren future under threat if he has another season like 2026. Piastri, who foug",
-      "publishedAt": "2026-11-12T17:44:49.000Z"
-    },
-    {
-      "title": "Tsolov to serve as Red Bull and Racing Bulls reserve driver",
-      "url": "https://www.formula1.com/en/latest/article/tsolov-to-join-red-bull-and-racing-bulls-as-reserve-driver-for-2027.390fvkyiS2t5fnyVjvxqFq",
-      "source": "Formula 1",
-      "excerpt": "Formula 2 racer Nikola Tsolov will step up to a role as Red Bull and Racing Bulls’ reserve driver next season.",
-      "publishedAt": null
-    },
-    {
-      "title": "Toto Wolff reflects on Mercedes’ non-title years: ‘We weren’t complete losers’",
-      "url": "https://www.motorsport.com/f1/news/toto-wolff-reflects-on-mercedes-non-title-years-we-werent-complete-losers/10873281/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Mercedes team principal Toto Wolff says the squad wasn’t “complete losers” in its four years without a Formula 1 world title. The Silver Arrows claimed their ninth constructors’ ch",
-      "publishedAt": "2026-11-12T17:25:35.000Z"
     }
   ],
   "quotes": [
