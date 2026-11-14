@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-13T23:59:56.059Z",
+    "generatedAt": "2026-11-14T12:22:29.094Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1048,11 +1048,25 @@
   },
   "news": [
     {
-      "title": "Las Vegas GP reveals neon sign-inspired trophy design",
-      "url": "https://www.motorsport.com/f1/news/las-vegas-gp-reveals-neon-sign-inspired-trophy-design/10874361/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Mercedes and Audi unveil adidas collections for F1 Las Vegas Grand Prix",
+      "url": "https://www.motorsport.com/f1/news/mercedes-and-audi-unveil-adidas-collections-for-f1-las-vegas-grand-prix/10874493/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "The Las Vegas Grand Prix has unveiled a new trophy design for next weekend’s Formula 1 round, inspired by the city and its neon lights. The 3.6kg, 56cm-tall winners’ trophy took si",
-      "publishedAt": "2026-11-13T16:09:45.000Z"
+      "excerpt": "Mercedes and Audi have unveiled special adidas fan collections for the upcoming Formula 1 Las Vegas Grand Prix. Mercedes' range is called \"Neon Lights\", while Audi's is named \"Afte",
+      "publishedAt": "2026-11-14T11:32:50.000Z"
+    },
+    {
+      "title": "Our writers on Antonelli’s title success and what it means",
+      "url": "https://www.formula1.com/en/latest/article/our-writers-on-antonellis-title-success-and-what-it-means.2FAfHA49byUlrrTfVgWKWc",
+      "source": "Formula 1",
+      "excerpt": "After Kimi Antonelli was crowned the 2026 Formula 1 Drivers' World Champion, we asked our writers to give us their take on his achievement.",
+      "publishedAt": null
+    },
+    {
+      "title": "Mercedes technical director warns F1 teams won’t “lie down” over 2027 downforce cuts",
+      "url": "https://www.motorsport.com/f1/news/mercedes-tech-boss-warns-f1-teams-wont-lie-down-over-massive-2027-downforce-cuts/10874433/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Formula 1's transition to the new 2026 engine and chassis regulations completely reshuffled the competitive order, but the rulebook is far from finalised. As teams prepare for thei",
+      "publishedAt": "2026-11-14T12:14:36.000Z"
     },
     {
       "title": "Lawson's top-six hopes after new Racing Bulls deal",
@@ -1062,13 +1076,6 @@
       "publishedAt": null
     },
     {
-      "title": "James Allison reveals the \"very adventurous\" trick behind Kimi Antonelli's F1 title",
-      "url": "https://www.motorsport.com/f1/news/james-allison-reveals-the-very-adventurous-trick-behind-kimi-antonellis-f1-title/10874402/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Mercedes technical director James Allison has explained how Kimi Antonelli's bold use of the tools on his steering wheel helped him become Formula 1's youngest world champion. The ",
-      "publishedAt": "2026-11-13T21:56:05.000Z"
-    },
-    {
       "title": "Piastri on his tough 2026 and why it could make him stronger",
       "url": "https://www.formula1.com/en/latest/article/exclusive-piastri-on-taming-the-mcl40-redefining-success-and-why-a-tough-2026-could-make-him-stronger.qz9mVgFRNxNey7waRfq83",
       "source": "Formula 1",
@@ -1076,18 +1083,11 @@
       "publishedAt": null
     },
     {
-      "title": "Guenther Steiner suggests Mark Webber became too involved in Oscar Piastri’s career",
-      "url": "https://www.motorsport.com/f1/news/guenther-steiner-suggests-mark-webber-became-too-involved-in-oscar-piastris-career/10874383/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Max Verstappen signs ambassador deal with Dutch technical group VDK",
+      "url": "https://www.motorsport.com/f1/news/max-verstappen-signs-ambassador-deal-with-dutch-technical-group-vdk/10874486/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Former Haas Formula 1 team principal Guenther Steiner believes Mark Webber may have become too involved in Oscar Piastri’s career in the second half of 2025, before the McLaren dri",
-      "publishedAt": "2026-11-13T17:20:10.000Z"
-    },
-    {
-      "title": "Antonelli names his biggest threat for 2027 title defence",
-      "url": "https://www.formula1.com/en/latest/article/antonelli-identifies-which-driver-poses-the-biggest-threat-to-his-title-defence-in-2027.6qjcpNnf8IerbXck8NpB05",
-      "source": "Formula 1",
-      "excerpt": "Kimi Antonelli has outlined his expectations for the competitive picture in 2027 – his first season as reigning World Champion.",
-      "publishedAt": null
+      "excerpt": "Four-time Formula 1 champion Max Verstappen has become the new ambassador of the VDK Group, a Dutch group of installation and technical companies that is expanding across Europe. T",
+      "publishedAt": "2026-11-14T11:03:24.000Z"
     }
   ],
   "quotes": [
