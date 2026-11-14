@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-14T12:22:29.094Z",
+    "generatedAt": "2026-11-14T18:21:22.815Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1055,6 +1055,20 @@
       "publishedAt": "2026-11-14T11:32:50.000Z"
     },
     {
+      "title": "Button explains what will ‘keep Alonso going’ at Aston Martin",
+      "url": "https://www.formula1.com/en/latest/article/exclusive-button-explains-what-will-keep-alonso-going-as-spaniard-prepares-for-another-year-with-aston-martin.7bxjUs5DZSH18UP0SEqFWD",
+      "source": "Formula 1",
+      "excerpt": "2009 F1 World Champion, and Aston Martin Ambassador, Jenson Button details what Fernando Alonso's re-signing means for the team.",
+      "publishedAt": null
+    },
+    {
+      "title": "Oscar Piastri: You've got to \"manhandle\" McLaren's F1 car to find its potential",
+      "url": "https://www.motorsport.com/f1/news/oscar-piastri-youve-got-to-manhandle-mclarens-f1-car-to-find-its-potential/10874559/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Oscar Piastri says McLaren's 2026 Formula 1 car has to be \"manhandled\" to be quick, describing the MCL40 as a car that punishes drivers the moment they are not at the limit. The Au",
+      "publishedAt": "2026-11-14T17:39:40.000Z"
+    },
+    {
       "title": "Our writers on Antonelli’s title success and what it means",
       "url": "https://www.formula1.com/en/latest/article/our-writers-on-antonellis-title-success-and-what-it-means.2FAfHA49byUlrrTfVgWKWc",
       "source": "Formula 1",
@@ -1062,11 +1076,11 @@
       "publishedAt": null
     },
     {
-      "title": "Mercedes technical director warns F1 teams won’t “lie down” over 2027 downforce cuts",
-      "url": "https://www.motorsport.com/f1/news/mercedes-tech-boss-warns-f1-teams-wont-lie-down-over-massive-2027-downforce-cuts/10874433/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "‘Lewis suspected a conspiracy’ – Nico Rosberg explains how Lewis Hamilton F1 rivalry went awry at Mercedes",
+      "url": "https://www.motorsport.com/f1/news/lewis-suspected-a-conspiracy-nico-rosberg-explains-how-hamilton-f1-rivalry-went-awry-at-mercedes/10874271/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Formula 1's transition to the new 2026 engine and chassis regulations completely reshuffled the competitive order, but the rulebook is far from finalised. As teams prepare for thei",
-      "publishedAt": "2026-11-14T12:14:36.000Z"
+      "excerpt": "When Lewis Hamilton joined Nico Rosberg at Mercedes for the 2013 Formula 1 season, it was a feel-good story: two long-time friends becoming team-mates. However, their amicable rela",
+      "publishedAt": "2026-11-14T16:30:03.000Z"
     },
     {
       "title": "Lawson's top-six hopes after new Racing Bulls deal",
@@ -1074,20 +1088,6 @@
       "source": "Formula 1",
       "excerpt": "Liam Lawson's future at Racing Bulls has been decided, but how far is he from breaking into the top-six betting markets?",
       "publishedAt": null
-    },
-    {
-      "title": "Piastri on his tough 2026 and why it could make him stronger",
-      "url": "https://www.formula1.com/en/latest/article/exclusive-piastri-on-taming-the-mcl40-redefining-success-and-why-a-tough-2026-could-make-him-stronger.qz9mVgFRNxNey7waRfq83",
-      "source": "Formula 1",
-      "excerpt": "McLaren's Oscar Piastri opens up about his difficulties in 2026 and why he hopes he can be better for them.",
-      "publishedAt": null
-    },
-    {
-      "title": "Max Verstappen signs ambassador deal with Dutch technical group VDK",
-      "url": "https://www.motorsport.com/f1/news/max-verstappen-signs-ambassador-deal-with-dutch-technical-group-vdk/10874486/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Four-time Formula 1 champion Max Verstappen has become the new ambassador of the VDK Group, a Dutch group of installation and technical companies that is expanding across Europe. T",
-      "publishedAt": "2026-11-14T11:03:24.000Z"
     }
   ],
   "quotes": [
