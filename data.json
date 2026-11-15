@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-15T09:39:13.634Z",
+    "generatedAt": "2026-11-15T16:41:20.408Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1048,6 +1048,20 @@
   },
   "news": [
     {
+      "title": "TREMAYNE: It’s 10 years since Ron Dennis left F1 – I miss him",
+      "url": "https://www.formula1.com/en/latest/article/its-10-years-since-ron-dennis-left-f1-i-miss-him.1HKS8KLe46myFMW6qOzsdY",
+      "source": "Formula 1",
+      "excerpt": "F1 Hall of Fame journalist David Tremayne remembers one of the titans of the paddock, a decade after he walked away from the sport in which he'd been so successful.",
+      "publishedAt": null
+    },
+    {
+      "title": "Christian Horner blames Red Bull leadership structure for missing F1’s future stars",
+      "url": "https://www.motorsport.com/f1/news/i-never-had-responsibility-horner-blames-fractured-red-bull-leadership-for-missing-f1s-future-stars/10874624/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "For years, Red Bull Racing's dual-leadership structure between team principal Christian Horner and motorsport advisor Dr. Helmut Marko was praised as a ruthless but highly effectiv",
+      "publishedAt": "2026-11-15T16:01:16.000Z"
+    },
+    {
       "title": "Button explains what will ‘keep Alonso going’ at Aston Martin",
       "url": "https://www.formula1.com/en/latest/article/exclusive-button-explains-what-will-keep-alonso-going-as-spaniard-prepares-for-another-year-with-aston-martin.7bxjUs5DZSH18UP0SEqFWD",
       "source": "Formula 1",
@@ -1055,11 +1069,11 @@
       "publishedAt": null
     },
     {
-      "title": "Mercedes technical director details the psychological toll of F1 underperformance",
-      "url": "https://www.motorsport.com/f1/news/mercedes-technical-director-details-the-brutal-psychological-toll-of-f1-underperformance/10874429/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Mercedes pitwall admits floundering Ferraris relieved title pressure in São Paulo",
+      "url": "https://www.motorsport.com/f1/news/mercedes-pit-wall-admits-floundering-ferraris-relieved-all-title-pressure-in-sao-paulo/10874440/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "In Formula 1, PR-trained executives routinely frame losing seasons as \"learning opportunities\" and promise that the team will quickly bounce back. But Mercedes technical director J",
-      "publishedAt": "2026-11-15T09:33:19.000Z"
+      "excerpt": "When the rain falls at Interlagos, chaos usually follows. For Mercedes, the 2026 São Paulo Grand Prix was a turbulent affair. The Brackley-based squad arrived in Brazil needing to ",
+      "publishedAt": "2026-11-15T13:00:02.000Z"
     },
     {
       "title": "Our writers on Antonelli’s title success and what it means",
@@ -1069,25 +1083,11 @@
       "publishedAt": null
     },
     {
-      "title": "James Allison admits flawed “Update 18” made the Mercedes W17 a “handful”",
-      "url": "https://www.motorsport.com/f1/news/james-allison-admits-flawed-update-18-made-the-mercedes-w17-a-handful/10874437/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "How Istanbul is revamping its F1 circuit to clinch long-term future",
+      "url": "https://www.motorsport.com/f1/news/inside-turkeys-revamp-for-the-return-of-a-modern-f1-classic/10874598/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Mercedes stormed out of the gates in 2026, quickly establishing a dominant lead that ultimately secured both the drivers' and constructors' championships. But as the season nears i",
-      "publishedAt": "2026-11-14T23:12:53.000Z"
-    },
-    {
-      "title": "Lawson's top-six hopes after new Racing Bulls deal",
-      "url": "https://www.formula1.com/en/latest/article/the-extra-gear-liam-lawsons-top-six-hopes-examined-after-securing-new-racing-bulls-deal.4FuO5PyKE8vCtfqm1OyxrJ",
-      "source": "Formula 1",
-      "excerpt": "Liam Lawson's future at Racing Bulls has been decided, but how far is he from breaking into the top-six betting markets?",
-      "publishedAt": null
-    },
-    {
-      "title": "Oscar Piastri: You've got to \"manhandle\" McLaren's F1 car to find its potential",
-      "url": "https://www.motorsport.com/f1/news/oscar-piastri-youve-got-to-manhandle-mclarens-f1-car-to-find-its-potential/10874559/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Oscar Piastri says McLaren's 2026 Formula 1 car has to be \"manhandled\" to be quick, describing the MCL40 as a car that punishes drivers the moment they are not at the limit. The Au",
-      "publishedAt": "2026-11-14T17:39:40.000Z"
+      "excerpt": "Finding the right balance is often a challenge in modern Formula 1. That applies to the technical regulations: striking a balance between satisfying drivers and purists on the one ",
+      "publishedAt": "2026-11-15T09:39:16.000Z"
     }
   ],
   "quotes": [
