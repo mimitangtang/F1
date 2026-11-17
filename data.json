@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-16T18:43:22.531Z",
+    "generatedAt": "2026-11-17T02:11:14.169Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1055,10 +1055,24 @@
       "publishedAt": null
     },
     {
+      "title": "Williams, Aston Martin among new F1 liveries for Las Vegas GP as Acura \"replaces\" Honda",
+      "url": "https://www.motorsport.com/f1/news/williams-aston-martin-among-new-f1-liveries-for-las-vegas-gp-as-acura-replaces-honda/10874925/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Williams and Aston Martin are among the F1 teams to have revamped their car liveries for this weekend's Las Vegas Grand Prix. F1 heads to Las Vegas for its third of three US races,",
+      "publishedAt": "2026-11-16T18:45:08.000Z"
+    },
+    {
       "title": "Williams unveil special livery for Las Vegas Grand Prix",
       "url": "https://www.formula1.com/en/latest/article/williams-unveil-special-one-off-livery-for-las-vegas-grand-prix.01klQqq0PYu7wjugCtr98K",
       "source": "Formula 1",
       "excerpt": "The Williams FW48 will sport a unique livery across the Las Vegas Grand Prix weekend.",
+      "publishedAt": null
+    },
+    {
+      "title": "What time is the 2026 Las Vegas GP and how can I watch it?",
+      "url": "https://www.formula1.com/en/latest/article/what-time-is-the-formula-1-2026-las-vegas-grand-prix-and-how-can-i-watch-it.5klYngWOQMjROxZ3nEp5Pr",
+      "source": "Formula 1",
+      "excerpt": "Here are all the timings – along with all the additional information you need – for the 21st Grand Prix weekend of the 2026 season from Las Vegas.",
       "publishedAt": null
     },
     {
@@ -1069,24 +1083,10 @@
       "publishedAt": "2026-11-16T17:30:42.000Z"
     },
     {
-      "title": "What time is the 2026 Las Vegas GP and how can I watch it?",
-      "url": "https://www.formula1.com/en/latest/article/what-time-is-the-formula-1-2026-las-vegas-grand-prix-and-how-can-i-watch-it.5klYngWOQMjROxZ3nEp5Pr",
-      "source": "Formula 1",
-      "excerpt": "Here are all the timings – along with all the additional information you need – for the 21st Grand Prix weekend of the 2026 season from Las Vegas.",
-      "publishedAt": null
-    },
-    {
       "title": "Las Vegas Grand Prix betting guide and latest odds",
       "url": "https://www.formula1.com/en/latest/article/las-vegas-grand-prix-race-betting-guide-and-what-the-markets-expect-to-happen.5sEja0aYqYkyfdSZ9sTibF",
       "source": "Formula 1",
       "excerpt": "Our experts bring you all the important betting information you need before making your predictions for Vegas.",
-      "publishedAt": null
-    },
-    {
-      "title": "5 storylines we're excited about ahead of the Las Vegas GP",
-      "url": "https://www.formula1.com/en/latest/article/its-race-week-5-storylines-were-excited-about-ahead-of-the-2026-las-vegas-grand-prix.3fjavheTbHD8fjZI0i7BWd",
-      "source": "Formula 1",
-      "excerpt": "Chris Medland runs through the biggest talking points as F1 heads to Las Vegas for Round 21 of the 2026 season.",
       "publishedAt": null
     }
   ],
