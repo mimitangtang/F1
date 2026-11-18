@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-17T19:28:05.451Z",
+    "generatedAt": "2026-11-18T01:45:54.730Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1055,6 +1055,13 @@
       "publishedAt": null
     },
     {
+      "title": "Oscar Piastri set for grid penalty at F1 Las Vegas GP",
+      "url": "https://www.motorsport.com/f1/news/oscar-piastri-set-for-grid-penalty-at-f1-las-vegas-gp/10875180/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "McLaren driver Oscar Piastri is set for a 10-place grid drop at F1's Las Vegas GP for exceeding his engine allowance for the season. Piastri was already on the limit of four intern",
+      "publishedAt": "2026-11-18T00:21:42.000Z"
+    },
+    {
       "title": "The 5 drivers to back in Qualifying in Las Vegas",
       "url": "https://www.formula1.com/en/latest/article/the-5-drivers-who-are-most-likely-to-qualify-fastest-in-las-vegas.4bdBCuhbBNlUkHaoVfsopF",
       "source": "Formula 1",
@@ -1062,18 +1069,18 @@
       "publishedAt": null
     },
     {
-      "title": "Williams, Aston Martin among new F1 liveries for Las Vegas GP as Acura \"replaces\" Honda",
-      "url": "https://www.motorsport.com/f1/news/williams-aston-martin-among-new-f1-liveries-for-las-vegas-gp-as-acura-replaces-honda/10874925/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Toto Wolff explains why George Russell won't get Mercedes’ new turbo in Las Vegas",
+      "url": "https://www.motorsport.com/f1/news/toto-wolff-explains-why-george-russell-is-being-denied-mercedes-new-turbo-in-las-vegas/10875150/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Williams and Aston Martin are among the F1 teams to have revamped their car liveries for this weekend's Las Vegas Grand Prix. F1 heads to Las Vegas for its third of three US races,",
-      "publishedAt": "2026-11-16T18:45:08.000Z"
+      "excerpt": "Having officially wrapped up both the 2026 constructors' and drivers' world championships in Brazil, Mercedes arrives at the Las Vegas Grand Prix with a dual mandate: test developm",
+      "publishedAt": "2026-11-17T23:30:27.000Z"
     },
     {
-      "title": "“He’s beaten Alpine on his own” - Racing Bulls on why it kept Liam Lawson",
-      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Toto Wolff reveals heartwarming memory of a teenage Kimi Antonelli living at his house",
+      "url": "https://www.motorsport.com/f1/news/toto-wolff-reveals-heartwarming-memory-of-a-teenage-kimi-antonelli-living-at-his-house/10874978/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a w",
-      "publishedAt": "2026-11-17T17:02:37.000Z"
+      "excerpt": "The Formula 1 paddock is notoriously cutthroat, but Mercedes team principal Toto Wolff operates his driver management pipeline with a distinctly paternal approach. After guiding Ki",
+      "publishedAt": "2026-11-18T01:00:03.000Z"
     },
     {
       "title": "Audi announce Felbermayr for third F1 ACADEMY season in 2027",
@@ -1081,13 +1088,6 @@
       "source": "Formula 1",
       "excerpt": "Audi have confirmed that Emma Felbermayr will contest a third F1 ACADEMY season next year, with the Austrian driver remaining part of the Audi Driver Development Programme.",
       "publishedAt": null
-    },
-    {
-      "title": "Toto Wolff is not afraid of losing Kimi Antonelli to Ferrari",
-      "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpi",
-      "publishedAt": "2026-11-17T11:45:10.000Z"
     }
   ],
   "quotes": [
