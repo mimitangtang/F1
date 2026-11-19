@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-19T17:28:59.110Z",
+    "generatedAt": "2026-11-19T23:41:36.398Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1048,10 +1048,24 @@
   },
   "news": [
     {
+      "title": "Lewis Hamilton backs V8 return, hits out at 2026 engines “dying” on straights",
+      "url": "https://www.motorsport.com/f1/news/lewis-hamilton-backs-v8-return-hits-out-at-engines-dying-on-straights/10875488/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Lewis Hamilton has raced through every season of Formula 1's V6 turbo-hybrid era, and he is not shy about what the latest rules are getting wrong. Speaking on Las Vegas Grand Prix ",
+      "publishedAt": "2026-11-19T22:50:25.000Z"
+    },
+    {
       "title": "All the stories that got the Las Vegas paddock talking",
       "url": "https://www.formula1.com/en/latest/article/all-the-stories-that-got-the-las-vegas-paddock-talking.4DclxlWGaLDwKgzLpfAvuz",
       "source": "Formula 1",
       "excerpt": "Lawrence Barretto delves into the key talking points from Wednesday at the Las Vegas Grand Prix.",
+      "publishedAt": null
+    },
+    {
+      "title": "The F1 Fantasy Strategist on Las Vegas and Qatar",
+      "url": "https://www.formula1.com/en/latest/article/f1-fantasy-strategist-preview-the-williams-mini-league-and-what-you-need-to-know-for-las-vegas-and-qatar.6hHYy6ckLb4oqMNCVPbRul",
+      "source": "Formula 1",
+      "excerpt": "The cold, walled straights of the Las Vegas Strip and the fast, flowing corners of Lusail ask opposite questions on consecutive weekends. So, who deserves a place in your line-up?",
       "publishedAt": null
     },
     {
@@ -1062,20 +1076,6 @@
       "publishedAt": "2026-11-19T13:06:36.000Z"
     },
     {
-      "title": "Lando Norris: “A hell of a lot of money” riding on McLaren’s fight for third",
-      "url": "https://www.motorsport.com/f1/news/lando-norris-a-hell-of-a-lot-of-money-riding-on-mclarens-fight-for-third/10875499/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "With Mercedes having already sealed the 2026 constructors' championship and Ferrari sitting clear in second, McLaren's remaining focus across Las Vegas, Qatar, and Abu Dhabi comes ",
-      "publishedAt": "2026-11-19T11:50:02.000Z"
-    },
-    {
-      "title": "The F1 Fantasy Strategist on Las Vegas and Qatar",
-      "url": "https://www.formula1.com/en/latest/article/f1-fantasy-strategist-preview-the-williams-mini-league-and-what-you-need-to-know-for-las-vegas-and-qatar.6hHYy6ckLb4oqMNCVPbRul",
-      "source": "Formula 1",
-      "excerpt": "The cold, walled straights of the Las Vegas Strip and the fast, flowing corners of Lusail ask opposite questions on consecutive weekends. So, who deserves a place in your line-up?",
-      "publishedAt": null
-    },
-    {
       "title": "What could shake up the Las Vegas betting markets?",
       "url": "https://www.formula1.com/en/latest/article/what-could-turn-the-race-on-its-head-during-the-las-vegas-grand-prix.23xD9tDM6jLn41uH4otMbZ",
       "source": "Formula 1",
@@ -1083,11 +1083,11 @@
       "publishedAt": null
     },
     {
-      "title": "Facts, stats and trivia ahead of the 2026 Las Vegas GP",
-      "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-las-vegas-grand-prix.6ynxQ4e9Z7F1o2Uijhh1FK",
-      "source": "Formula 1",
-      "excerpt": "As F1 prepares for the Las Vegas Grand Prix, Need to Know is your all-in-one guide with statistics, driving pointers, strategy tips and more.",
-      "publishedAt": null
+      "title": "Lando Norris: “A hell of a lot of money” riding on McLaren’s fight for third",
+      "url": "https://www.motorsport.com/f1/news/lando-norris-a-hell-of-a-lot-of-money-riding-on-mclarens-fight-for-third/10875499/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "With Mercedes having already sealed the 2026 constructors' championship and Ferrari sitting clear in second, McLaren's remaining focus across Las Vegas, Qatar, and Abu Dhabi comes ",
+      "publishedAt": "2026-11-19T11:50:02.000Z"
     }
   ],
   "quotes": [
