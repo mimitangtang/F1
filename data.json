@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-20T04:43:25.823Z",
+    "generatedAt": "2026-11-20T13:42:24.586Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -39,7 +39,12 @@
         "date": "11.20",
         "weekday": "周五",
         "time": "12:00",
-        "iso": "2026-11-20T04:00:00Z"
+        "iso": "2026-11-20T04:00:00Z",
+        "result": {
+          "label": "最快",
+          "name": "拉塞尔",
+          "time": "1:47.272"
+        }
       },
       {
         "key": "ThirdPractice",
@@ -1048,45 +1053,45 @@
   },
   "news": [
     {
-      "title": "LIVE COVERAGE: Second practice for the Las Vegas GP",
-      "url": "https://www.formula1.com/en/latest/article/live-coverage-second-practice-in-las-vegas-2026.4jTMaRKyeJ2CONkCrsDQV1",
+      "title": "Thursday rains in Las Vegas leave teams playing catch-up",
+      "url": "https://www.formula1.com/en/latest/article/thursday-rains-in-las-vegas-leave-teams-playing-catch-up.4nppHnXLw7lc6WTCZ53Cae",
       "source": "Formula 1",
-      "excerpt": "Live coverage of Thursday's second practice session for the 2026 Las Vegas Grand Prix.",
+      "excerpt": "F1.com considers who looks to be the favourites after the first day on track at the Las Vegas Grand Prix.",
       "publishedAt": null
     },
     {
-      "title": "Zak Brown confirms “agreement in principle” on F1’s V8 return after deleted FIA posts",
-      "url": "https://www.motorsport.com/f1/news/zak-brown-confirms-agreement-in-principle-on-f1s-v8-return-after-deleted-fia-posts/10875816/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Max Verstappen: “I really thought that we would not win a race this year”",
+      "url": "https://www.motorsport.com/f1/news/max-verstappen-i-really-thought-that-we-would-not-win-a-race-this-year/10875990/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Confusion hung over the Las Vegas Grand Prix paddock all week after official FIA social media channels briefly published—and abruptly deleted—graphics declaring an agreement in pri",
-      "publishedAt": "2026-11-20T04:37:14.000Z"
+      "excerpt": "Heading into the Las Vegas Grand Prix on a run of eight consecutive podiums, Max Verstappen looks every bit the force who dominated Formula 1 earlier this decade. Back in March, ho",
+      "publishedAt": "2026-11-20T12:43:44.000Z"
     },
     {
-      "title": "Mercedes’ first female junior Fluxa Cross on her F1 ACADEMY debut",
-      "url": "https://www.formula1.com/en/latest/article/im-part-of-a-family-mercedes-first-female-junior-fluxa-cross-on-her-f1-academy-debut-and-silver-arrows-support.4u3ANQLRWs1389wP4d2fKj",
-      "source": "Formula 1",
-      "excerpt": "Mercedes junior Luna Fluxa Cross reflects on how she is feeling ahead of her F1 ACADEMY debut in Las Vegas.",
-      "publishedAt": null
-    },
-    {
-      "title": "What to watch out for in the F1 ACADEMY season finale",
-      "url": "https://www.formula1.com/en/latest/article/the-storylines-to-watch-out-for-in-the-f1-academy-las-vegas-season-finale.3wJwYYPqRmcQUJbip6BT46",
-      "source": "Formula 1",
-      "excerpt": "The bright lights of the Las Vegas Strip play host to the final round of what has been an intense campaign. While some drivers will be looking ahead to their next challenge, others",
-      "publishedAt": null
-    },
-    {
-      "title": "F1 Las Vegas GP: Rain ruins FP1 running",
-      "url": "https://www.motorsport.com/f1/news/f1-las-vegas-gp-rain-washes-out-fp1/10875778/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Fernando Alonso returns to Dakar: Why his first rally-raid experience was a shock to the system",
+      "url": "https://www.motorsport.com/dakar/news/fernando-alonso-returns-to-dakar-why-his-first-rally-raid-experience-was-a-shock-to-the-system/10875881/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "\"If we're on a track like Vegas and it rains, honestly, I think we're in trouble,\" Racing Bulls driver Liam Lawson predicted after sampling this year's rain tyres in Brazil. His co",
-      "publishedAt": "2026-11-20T01:46:06.000Z"
+      "excerpt": "While Fernando Alonso reiterated in Las Vegas that, in his view, Formula 1 has thrown away 16 years of pure racing before the return of V8 engines in 2030, the Spaniard continues t",
+      "publishedAt": "2026-11-20T12:15:03.000Z"
     },
     {
-      "title": "Wet conditions limit running in FP1 at Las Vegas Grand Prix",
-      "url": "https://www.formula1.com/en/latest/article/fp1-wet-conditions-limit-running-in-first-practice-at-las-vegas-grand-prix.7H085JgIW1k8jM3ysejVqJ",
+      "title": "What the teams said – Thursday in Las Vegas",
+      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-thursday-in-las-vegas-2026.4jnMZFzCSpX9y63f0rmnQW",
       "source": "Formula 1",
-      "excerpt": "Rain at the Las Vegas Grand Prix led to a quiet first practice session on Thursday.",
+      "excerpt": "The drivers and teams report back from the first two practice sessions at the 2026 Las Vegas Grand Prix weekend.",
+      "publishedAt": null
+    },
+    {
+      "title": "\"It was scary at 100km/h\" - F1 drivers shocked by Las Vegas 'ice rink'",
+      "url": "https://www.motorsport.com/f1/news/it-was-scary-at-100km-h-f1-drivers-shocked-by-las-vegas-ice-rink/10875954/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "With rain affecting Thursday's Las Vegas Grand Prix running on the low-grip street circuit around the Strip, the biggest takeaway was not who was fastest, but the impressive fact t",
+      "publishedAt": "2026-11-20T10:08:40.000Z"
+    },
+    {
+      "title": "Winner of the F1® X Heineken® 2027 Season Ticket revealed",
+      "url": "https://www.formula1.com/en/latest/article/winner-of-the-f1-heineken-2027-season-ticket-revealed.2U39RF3ALLzSqmSRRGRVQ7",
+      "source": "Formula 1",
+      "excerpt": "",
       "publishedAt": null
     }
   ],
