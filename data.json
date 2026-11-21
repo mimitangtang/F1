@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-20T21:36:37.079Z",
+    "generatedAt": "2026-11-21T02:54:07.544Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -52,7 +52,12 @@
         "date": "11.21",
         "weekday": "周六",
         "time": "08:30",
-        "iso": "2026-11-21T00:30:00Z"
+        "iso": "2026-11-21T00:30:00Z",
+        "result": {
+          "label": "最快",
+          "name": "拉塞尔",
+          "time": "1:34.041"
+        }
       },
       {
         "key": "Qualifying",
@@ -1053,10 +1058,24 @@
   },
   "news": [
     {
-      "title": "Best Qualifying bets before the Las Vegas GP",
-      "url": "https://www.formula1.com/en/latest/article/best-qualifying-bets-available-before-the-las-vegas-grand-prix.4Qbussswr7sBnmo1wEl7QR",
+      "title": "Russell goes fastest during final practice in Las Vegas",
+      "url": "https://www.formula1.com/en/latest/article/fp3-russell-goes-fastest-from-antonelli-and-norris-during-final-practice-in-las-vegas.3qwe57vQf1Qjrm2tdp7Vfy",
       "source": "Formula 1",
-      "excerpt": "Our expert betting writers share their top picks for Qualifying at the Las Vegas Strip Circuit.",
+      "excerpt": "Mercedes' George Russell set the quickest time during an action-packed third and final practice session at the Las Vegas Grand Prix.",
+      "publishedAt": null
+    },
+    {
+      "title": "F1 Las Vegas GP: George Russell tops final practice after Max Verstappen collision",
+      "url": "https://www.motorsport.com/f1/news/f1-las-vegas-gp-george-russell-tops-final-practice-after-max-verstappen-collision/10876181/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "George Russell collided with Max Verstappen in a tense third practice session at the Las Vegas Grand Prix as the Mercedes Formula 1 driver topped the timesheets. After both of Thur",
+      "publishedAt": "2026-11-21T01:44:36.000Z"
+    },
+    {
+      "title": "AS IT HAPPENED: Final practice for the Las Vegas GP",
+      "url": "https://www.formula1.com/en/latest/article/live-coverage-third-practice-in-las-vegas-2026.50OIQwa2hcjUWGKsiu3h5L",
+      "source": "Formula 1",
+      "excerpt": "Live coverage of Friday's third practice session for the 2026 Las Vegas Grand Prix.",
       "publishedAt": null
     },
     {
@@ -1067,10 +1086,10 @@
       "publishedAt": "2026-11-20T12:43:44.000Z"
     },
     {
-      "title": "Thursday rain in Las Vegas leave teams playing catch-up",
-      "url": "https://www.formula1.com/en/latest/article/thursday-rains-in-las-vegas-leave-teams-playing-catch-up.4nppHnXLw7lc6WTCZ53Cae",
+      "title": "Best Qualifying bets before the Las Vegas GP",
+      "url": "https://www.formula1.com/en/latest/article/best-qualifying-bets-available-before-the-las-vegas-grand-prix.4Qbussswr7sBnmo1wEl7QR",
       "source": "Formula 1",
-      "excerpt": "F1.com considers who looks to be the favourites after the first day on track at the Las Vegas Grand Prix.",
+      "excerpt": "Our expert betting writers share their top picks for Qualifying at the Las Vegas Strip Circuit.",
       "publishedAt": null
     },
     {
@@ -1079,20 +1098,6 @@
       "source": "Motorsport",
       "excerpt": "While Fernando Alonso reiterated in Las Vegas that, in his view, Formula 1 has thrown away 16 years of pure racing before the return of V8 engines in 2030, the Spaniard continues t",
       "publishedAt": "2026-11-20T12:15:03.000Z"
-    },
-    {
-      "title": "FIA confirms unanimous agreement on 2030 PU framework",
-      "url": "https://www.formula1.com/en/latest/article/fia-confirms-unanimous-agreement-on-framework-for-2030-power-units.AZ7EFvWPyGPH0xG1JS8Ud",
-      "source": "Formula 1",
-      "excerpt": "Key parties including the FIA and F1 teams have committed to the 2030 power unit technical framework.",
-      "publishedAt": null
-    },
-    {
-      "title": "Formula 1 set for V8 turbo return in 2030",
-      "url": "https://www.motorsport.com/f1/news/f1-set-for-v8-turbo-move-by-2030-season/10875113/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Formula 1 has moved closer to a return to V8 engines from the 2030 season as the FIA announced that a unanimous agreement has been reached between the governing body, F1 management",
-      "publishedAt": "2026-11-20T18:55:35.000Z"
     }
   ],
   "quotes": [
