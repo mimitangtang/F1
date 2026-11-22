@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-22T10:28:08.179Z",
+    "generatedAt": "2026-11-22T17:57:27.997Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -11,8 +11,8 @@
   },
   "season": {
     "rounds": 23,
-    "completed": 20,
-    "remaining": 3,
+    "completed": 21,
+    "remaining": 2,
     "nextRound": 22
   },
   "nextRace": {
@@ -680,9 +680,25 @@
       "gp": "拉斯维加斯",
       "en": "Las Vegas Grand Prix",
       "date": "11.22",
-      "winner": null,
-      "team": null,
-      "podium": [],
+      "winner": "维斯塔潘",
+      "team": "红牛",
+      "podium": [
+        {
+          "name": "维斯塔潘",
+          "team": "红牛",
+          "time": "1:27:39.624"
+        },
+        {
+          "name": "诺里斯",
+          "team": "迈凯伦",
+          "time": "+0.639"
+        },
+        {
+          "name": "皮亚斯特里",
+          "team": "迈凯伦",
+          "time": "+1.529"
+        }
+      ],
       "note": "",
       "circuitId": "vegas",
       "circuit": "拉斯维加斯街道赛道",
@@ -719,53 +735,58 @@
     }
   ],
   "lastRace": {
-    "round": 20,
-    "gp": "圣保罗",
-    "nameEn": "Brazilian Grand Prix",
-    "date": "11.08",
-    "circuitId": "interlagos",
-    "circuit": "英特拉格斯赛道",
+    "round": 21,
+    "gp": "拉斯维加斯",
+    "nameEn": "Las Vegas Grand Prix",
+    "date": "11.22",
+    "circuitId": "vegas",
+    "circuit": "拉斯维加斯街道赛道",
     "winner": {
-      "name": "诺里斯",
-      "team": "迈凯伦",
-      "color": "#ff8000",
+      "name": "维斯塔潘",
+      "team": "红牛",
+      "color": "#3671c6",
       "grid": 1,
       "fromPole": true
     },
     "runnerUp": {
-      "name": "维斯塔潘",
-      "team": "红牛"
+      "name": "诺里斯",
+      "team": "迈凯伦"
     },
-    "gapToSecond": 14.602,
+    "gapToSecond": 0.639,
     "fastestLap": {
-      "name": "安东内利",
-      "team": "梅赛德斯",
-      "lap": 55,
-      "time": "1:12.689"
+      "name": "劳森",
+      "team": "Racing Bulls",
+      "lap": 50,
+      "time": "1:35.591"
     },
     "dnf": [
       {
-        "name": "斯特罗尔",
-        "team": "阿斯顿·马丁",
+        "name": "林德布拉德",
+        "team": "Racing Bulls",
         "reason": "Retired"
       },
       {
-        "name": "博塔斯",
+        "name": "佩雷兹",
         "team": "凯迪拉克",
+        "reason": "Retired"
+      },
+      {
+        "name": "阿尔本",
+        "team": "威廉姆斯",
         "reason": "Did not start"
       }
     ],
     "biggestGain": {
-      "name": "维斯塔潘",
-      "team": "红牛",
-      "from": 21,
-      "to": 2,
-      "delta": 19
+      "name": "皮亚斯特里",
+      "team": "迈凯伦",
+      "from": 17,
+      "to": 3,
+      "delta": 14
     },
     "pole": {
-      "name": "诺里斯",
-      "team": "迈凯伦",
-      "time": "1:27.470"
+      "name": "安东内利",
+      "team": "梅赛德斯",
+      "time": "1:33.893"
     },
     "sprint": null
   },
@@ -776,7 +797,7 @@
         "name": "安东内利",
         "team": "梅赛德斯",
         "color": "#27f4d2",
-        "points": 390,
+        "points": 402,
         "wins": 9
       },
       {
@@ -784,47 +805,47 @@
         "name": "维斯塔潘",
         "team": "红牛",
         "color": "#3671c6",
-        "points": 279,
-        "wins": 3
+        "points": 304,
+        "wins": 4
       },
       {
         "pos": 3,
-        "name": "拉塞尔",
-        "team": "梅赛德斯",
-        "color": "#27f4d2",
-        "points": 262,
-        "wins": 3
-      },
-      {
-        "pos": 4,
         "name": "汉密尔顿",
         "team": "法拉利",
         "color": "#e8002d",
-        "points": 261,
+        "points": 267,
         "wins": 1
+      },
+      {
+        "pos": 4,
+        "name": "拉塞尔",
+        "team": "梅赛德斯",
+        "color": "#27f4d2",
+        "points": 264,
+        "wins": 3
       },
       {
         "pos": 5,
-        "name": "勒克莱尔",
-        "team": "法拉利",
-        "color": "#e8002d",
-        "points": 249,
-        "wins": 1
-      },
-      {
-        "pos": 6,
         "name": "诺里斯",
         "team": "迈凯伦",
         "color": "#ff8000",
-        "points": 246,
+        "points": 264,
         "wins": 3
+      },
+      {
+        "pos": 6,
+        "name": "勒克莱尔",
+        "team": "法拉利",
+        "color": "#e8002d",
+        "points": 250,
+        "wins": 1
       },
       {
         "pos": 7,
         "name": "皮亚斯特里",
         "team": "迈凯伦",
         "color": "#ff8000",
-        "points": 152,
+        "points": 167,
         "wins": 0
       },
       {
@@ -848,7 +869,7 @@
         "name": "加斯利",
         "team": "Alpine",
         "color": "#ff87bc",
-        "points": 42,
+        "points": 52,
         "wins": 0
       },
       {
@@ -864,7 +885,7 @@
         "name": "科拉平托",
         "team": "Alpine",
         "color": "#ff87bc",
-        "points": 27,
+        "points": 35,
         "wins": 0
       },
       {
@@ -893,6 +914,14 @@
       },
       {
         "pos": 16,
+        "name": "塞恩斯",
+        "team": "威廉姆斯",
+        "color": "#64c4ff",
+        "points": 11,
+        "wins": 0
+      },
+      {
+        "pos": 17,
         "name": "奥康",
         "team": "哈斯",
         "color": "#b6babd",
@@ -900,18 +929,10 @@
         "wins": 0
       },
       {
-        "pos": 17,
+        "pos": 18,
         "name": "阿隆索",
         "team": "阿斯顿·马丁",
         "color": "#229971",
-        "points": 7,
-        "wins": 0
-      },
-      {
-        "pos": 18,
-        "name": "塞恩斯",
-        "team": "威廉姆斯",
-        "color": "#64c4ff",
         "points": 7,
         "wins": 0
       },
@@ -977,25 +998,25 @@
         "pos": 1,
         "name": "梅赛德斯",
         "color": "#27f4d2",
-        "points": 652
+        "points": 666
       },
       {
         "pos": 2,
         "name": "法拉利",
         "color": "#e8002d",
-        "points": 510
+        "points": 517
       },
       {
         "pos": 3,
         "name": "红牛",
         "color": "#3671c6",
-        "points": 415
+        "points": 440
       },
       {
         "pos": 4,
         "name": "迈凯伦",
         "color": "#ff8000",
-        "points": 398
+        "points": 431
       },
       {
         "pos": 5,
@@ -1007,7 +1028,7 @@
         "pos": 6,
         "name": "Alpine",
         "color": "#ff87bc",
-        "points": 69
+        "points": 87
       },
       {
         "pos": 7,
@@ -1025,7 +1046,7 @@
         "pos": 9,
         "name": "威廉姆斯",
         "color": "#64c4ff",
-        "points": 12
+        "points": 16
       },
       {
         "pos": 10,
@@ -1048,46 +1069,46 @@
   },
   "news": [
     {
-      "title": "Perez hit with five-place penalty in Qatar for Camara clash",
-      "url": "https://www.formula1.com/en/latest/article/perez-hit-with-five-place-penalty-in-qatar-after-camara-clash-during-las-vegas-grand-prix.30GG7oJuJ1As0MrkavmStN",
+      "title": "5 betting lessons after Verstappen wins in Las Vegas",
+      "url": "https://www.formula1.com/en/latest/article/5-key-betting-lessons-after-max-verstappen-wins-the-las-vegas-grand-prix.5B4tZcliWQwS63az2nHNab",
       "source": "Formula 1",
-      "excerpt": "Cadillac's Sergio Perez has been handed a grid penalty for next weekend's Qatar Grand Prix following his collision with the Haas of Rafael Camara in Las Vegas.",
+      "excerpt": "It was Verstappen’s third Vegas win in four years, but what did the 2026 edition of this iconic race teach F1 betting fans ahead of the final two races.",
       "publishedAt": null
     },
     {
-      "title": "Hadjar 'clueless' on reason for front wing failure in Vegas",
-      "url": "https://www.formula1.com/en/latest/article/hadjar-clueless-on-reason-for-front-wing-failure-as-post-race-penalty-demotes-him-a-place-in-las-vegas-gp.2tF9g5VLiq5P6MtIpiaZ1J",
+      "title": "The one aspect of Max Verstappen \"outsmarting\" Mercedes that left Red Bull speechless",
+      "url": "https://www.motorsport.com/f1/news/the-one-aspect-of-max-verstappen-outsmarting-mercedes-that-left-red-bull-speechless/10876912/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Max Verstappen claimed his fourth victory in the last six Formula 1 Grands Prix. This time, the Dutchman won at what is known as an energy-poor circuit, which is noteworthy given t",
+      "publishedAt": "2026-11-22T11:58:03.000Z"
+    },
+    {
+      "title": "Wolff explains how Mercedes challenge fell apart in Vegas",
+      "url": "https://www.formula1.com/en/latest/article/wolff-explains-how-the-mercedes-challenge-fell-apart-in-the-closing-laps-in-las-vegas.4Zf0W1yuHxigFi72cspCj",
       "source": "Formula 1",
-      "excerpt": "Isack Hadjar admits \"I'm waiting for the team to tell me what happened\" after his front wing broke during the Las Vegas Grand Prix, denying the Red Bull driver a chance of a podium",
+      "excerpt": "George Russell and Kimi Antonelli were both in contention for victory in Las Vegas, until it all came undone in the final laps of the event.",
       "publishedAt": null
     },
     {
-      "title": "Max Verstappen continues George Russell fallout, labels 2026 F1 season a \"complete disaster\"",
-      "url": "https://www.motorsport.com/f1/news/max-verstappen-calls-george-russells-2026-f1-season-a-complete-disaster-after-vegas-clash/10876885/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Lewis Hamilton: ‘Charles Leclerc’s frame of mind cost us a lot of points today’",
+      "url": "https://www.motorsport.com/f1/news/lewis-hamilton-charles-leclercs-frame-of-mind-cost-us-a-lot-of-points-today/10876902/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "While the clash between Max Verstappen and George Russell during the third free practice session for the Formula 1 Las Vegas Grand Prix appeared to have been settled with a warning",
-      "publishedAt": "2026-11-22T10:13:23.000Z"
+      "excerpt": "Lewis Hamilton subtly implied Charles Leclerc’s “frame of mind” was to blame for their collision in Formula 1’s Las Vegas Grand Prix. Hamilton and Leclerc were sixth and seventh on",
+      "publishedAt": "2026-11-22T11:26:45.000Z"
     },
     {
-      "title": "Isack Hadjar gets penalty after backing up George Russell in Las Vegas GP",
-      "url": "https://www.motorsport.com/f1/news/isack-hadjar-gets-penalty-after-backing-up-george-russell-in-las-vegas-gp/10876855/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Isack Hadjar has received a 10-second penalty for driving unnecessarily slowly in Formula 1’s Las Vegas Grand Prix – the result of his actions under the safety car. The race was ne",
-      "publishedAt": "2026-11-22T08:59:53.000Z"
-    },
-    {
-      "title": "Verstappen responds to Russell comments as rivalry reignites",
-      "url": "https://www.formula1.com/en/latest/article/so-far-below-my-level-verstappen-responds-to-russell-comments-in-las-vegas-as-rivalry-reignites.4li166pkqaJAmwAXx5CZnr",
+      "title": "Racing Bulls drivers assess 'massive lost opportunity' in Vegas",
+      "url": "https://www.formula1.com/en/latest/article/massive-lost-opportunity-racing-bulls-drivers-reflect-on-no-points-in-las-vegas-gp.1iWZ2ywDpgkLb1FyxW9mcX",
       "source": "Formula 1",
-      "excerpt": "Max Verstappen has shared his reaction to comments made by George Russell after an on-track incident between them earlier in the Las Vegas Grand Prix weekend.",
+      "excerpt": "Arvid Lindblad admits that Racing Bulls failing to score a single point in the Las Vegas Grand Prix was \"a massive lost opportunity\", with the Formula 1 rookie spinning out of the ",
       "publishedAt": null
     },
     {
-      "title": "Fred Vasseur furious with latest \"unprofessional\" Ferrari clash: \"It's the same speech as Mexico\"",
-      "url": "https://www.motorsport.com/f1/news/fred-vasseur-furious-with-latest-unprofessional-ferrari-spat-its-the-same-speech-as-mexico/10876841/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Winners and losers from F1's chaotically extraordinary Las Vegas GP",
+      "url": "https://www.motorsport.com/f1/news/winners-and-losers-from-f1s-chaotically-extraordinary-las-vegas/10876889/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Ferrari team boss Fred Vasseur says Charles Leclerc's contact with Lewis Hamilton in the Las Vegas Grand Prix was \"unacceptable\" and showed \"lack of respect for the team\", with the",
-      "publishedAt": "2026-11-22T08:38:22.000Z"
+      "excerpt": "A pack of cars covered by seconds, the top three trading first position as part of 35 lead changes, and drivers trying to figure out the best positioning to be ahead at the finish ",
+      "publishedAt": "2026-11-22T10:34:15.000Z"
     }
   ],
   "quotes": [
