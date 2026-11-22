@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-21T22:31:55.433Z",
+    "generatedAt": "2026-11-22T10:28:08.179Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -13,78 +13,63 @@
     "rounds": 23,
     "completed": 20,
     "remaining": 3,
-    "nextRound": 21
+    "nextRound": 22
   },
   "nextRace": {
-    "round": 21,
-    "name": "拉斯维加斯",
-    "nameEn": "Las Vegas Grand Prix",
-    "circuit": "拉斯维加斯街道赛道",
-    "circuitId": "vegas",
-    "country": "USA",
-    "date": "2026-11-22",
-    "utc": "2026-11-22T04:00:00Z",
+    "round": 22,
+    "name": "卡塔尔",
+    "nameEn": "Qatar Grand Prix",
+    "circuit": "卢赛尔国际赛车场",
+    "circuitId": "losail",
+    "country": "Qatar",
+    "date": "2026-11-29",
+    "utc": "2026-11-29T16:00:00Z",
     "sessions": [
       {
         "key": "FirstPractice",
         "label": "练习赛一",
-        "date": "11.20",
+        "date": "11.27",
         "weekday": "周五",
-        "time": "08:30",
-        "iso": "2026-11-20T00:30:00Z"
+        "time": "21:30",
+        "iso": "2026-11-27T13:30:00Z"
       },
       {
         "key": "SecondPractice",
         "label": "练习赛二",
-        "date": "11.20",
-        "weekday": "周五",
-        "time": "12:00",
-        "iso": "2026-11-20T04:00:00Z",
-        "result": {
-          "label": "最快",
-          "name": "拉塞尔",
-          "time": "1:47.272"
-        }
+        "date": "11.28",
+        "weekday": "周六",
+        "time": "01:00",
+        "iso": "2026-11-27T17:00:00Z"
       },
       {
         "key": "ThirdPractice",
         "label": "练习赛三",
-        "date": "11.21",
+        "date": "11.28",
         "weekday": "周六",
-        "time": "08:30",
-        "iso": "2026-11-21T00:30:00Z",
-        "result": {
-          "label": "最快",
-          "name": "拉塞尔",
-          "time": "1:34.041"
-        }
+        "time": "22:30",
+        "iso": "2026-11-28T14:30:00Z"
       },
       {
         "key": "Qualifying",
         "label": "排位赛",
-        "date": "11.21",
-        "weekday": "周六",
-        "time": "12:00",
-        "iso": "2026-11-21T04:00:00Z",
-        "result": {
-          "label": "杆位",
-          "name": "安东内利",
-          "time": "1:33.893"
-        }
+        "date": "11.29",
+        "weekday": "周日",
+        "time": "02:00",
+        "iso": "2026-11-28T18:00:00Z"
       },
       {
         "key": "race",
         "label": "正赛",
-        "date": "11.22",
-        "weekday": "周日",
-        "time": "12:00",
-        "iso": "2026-11-22T04:00:00Z"
+        "date": "11.30",
+        "weekday": "周一",
+        "time": "00:00",
+        "iso": "2026-11-29T16:00:00Z"
       }
     ],
     "track": {
-      "length": 6.201,
-      "laps": 50,
-      "turns": 17,
+      "length": 5.419,
+      "laps": 57,
+      "turns": 16,
       "altitude": null,
       "record": null
     }
@@ -1063,88 +1048,88 @@
   },
   "news": [
     {
-      "title": "Our final Las Vegas Grand Prix betting predictions",
-      "url": "https://www.formula1.com/en/latest/article/our-final-las-vegas-grand-prix-betting-predictions-before-lights-out-on-the-strip.4jYqIilNqAOjx4y3poORZX",
+      "title": "Perez hit with five-place penalty in Qatar for Camara clash",
+      "url": "https://www.formula1.com/en/latest/article/perez-hit-with-five-place-penalty-in-qatar-after-camara-clash-during-las-vegas-grand-prix.30GG7oJuJ1As0MrkavmStN",
       "source": "Formula 1",
-      "excerpt": "Our expert betting writers bring you their final predictions and latest odds before the Las Vegas Grand Prix.",
+      "excerpt": "Cadillac's Sergio Perez has been handed a grid penalty for next weekend's Qatar Grand Prix following his collision with the Haas of Rafael Camara in Las Vegas.",
       "publishedAt": null
     },
     {
-      "title": "Oscar Piastri questions \"strange\" pace deficit to other Mercedes-powered cars in Las Vegas",
-      "url": "https://www.motorsport.com/f1/news/piastri-questions-strange-pace-deficit-to-other-mercedes-powered-cars-in-las-vegas/10876516/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Oscar Piastri stopped short of echoing the verdict of team-mate Lando Norris that McLaren's straightline speed in Las Vegas was \"just shocking\". But he did acknowledge that the mar",
-      "publishedAt": "2026-11-21T19:00:03.000Z"
-    },
-    {
-      "title": "How F1 fans can avoid emotional betting in Las Vegas",
-      "url": "https://www.formula1.com/en/latest/article/how-f1-fans-can-avoid-emotional-betting-during-the-las-vegas-grand-prix.24NadP7NoIqRfhaeuykCuI",
+      "title": "Hadjar 'clueless' on reason for front wing failure in Vegas",
+      "url": "https://www.formula1.com/en/latest/article/hadjar-clueless-on-reason-for-front-wing-failure-as-post-race-penalty-demotes-him-a-place-in-las-vegas-gp.2tF9g5VLiq5P6MtIpiaZ1J",
       "source": "Formula 1",
-      "excerpt": "Safer gambling is important, so we’ve flagged some key areas where you should keep a cool head when betting during this weekend's race.",
+      "excerpt": "Isack Hadjar admits \"I'm waiting for the team to tell me what happened\" after his front wing broke during the Las Vegas Grand Prix, denying the Red Bull driver a chance of a podium",
       "publishedAt": null
     },
     {
-      "title": "Max Verstappen takes Las Vegas pole despite “weird issues” since Brazil",
-      "url": "https://www.motorsport.com/f1/news/max-verstappen-takes-las-vegas-pole-despite-weird-issues-since-brazil/10876373/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Max Verstappen continues George Russell fallout, labels 2026 F1 season a \"complete disaster\"",
+      "url": "https://www.motorsport.com/f1/news/max-verstappen-calls-george-russells-2026-f1-season-a-complete-disaster-after-vegas-clash/10876885/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Max Verstappen will lead the field to the green light for Saturday night’s Las Vegas Grand Prix, yet the four-time world champion spent Friday evening fighting his own car as much ",
-      "publishedAt": "2026-11-21T18:21:40.000Z"
+      "excerpt": "While the clash between Max Verstappen and George Russell during the third free practice session for the Formula 1 Las Vegas Grand Prix appeared to have been settled with a warning",
+      "publishedAt": "2026-11-22T10:13:23.000Z"
     },
     {
-      "title": "Our Las Vegas GP Bet Builder selections made",
-      "url": "https://www.formula1.com/en/latest/article/our-las-vegas-grand-prix-bet-builder-selections-as-max-verstappen-to-start-on-pole.5kZr0wohlPjcax9jtd9RLX",
+      "title": "Isack Hadjar gets penalty after backing up George Russell in Las Vegas GP",
+      "url": "https://www.motorsport.com/f1/news/isack-hadjar-gets-penalty-after-backing-up-george-russell-in-las-vegas-gp/10876855/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Isack Hadjar has received a 10-second penalty for driving unnecessarily slowly in Formula 1’s Las Vegas Grand Prix – the result of his actions under the safety car. The race was ne",
+      "publishedAt": "2026-11-22T08:59:53.000Z"
+    },
+    {
+      "title": "Verstappen responds to Russell comments as rivalry reignites",
+      "url": "https://www.formula1.com/en/latest/article/so-far-below-my-level-verstappen-responds-to-russell-comments-in-las-vegas-as-rivalry-reignites.4li166pkqaJAmwAXx5CZnr",
       "source": "Formula 1",
-      "excerpt": "We have picked a four-leg Bet Builder for Las Vegas, including winner and a podium finish selection.",
+      "excerpt": "Max Verstappen has shared his reaction to comments made by George Russell after an on-track incident between them earlier in the Las Vegas Grand Prix weekend.",
       "publishedAt": null
     },
     {
-      "title": "Why Mercedes' tow plan for George Russell fell apart in Las Vegas",
-      "url": "https://www.motorsport.com/f1/news/why-mercedes-tow-plan-for-george-russell-fell-apart-in-las-vegas/10876341/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Fred Vasseur furious with latest \"unprofessional\" Ferrari clash: \"It's the same speech as Mexico\"",
+      "url": "https://www.motorsport.com/f1/news/fred-vasseur-furious-with-latest-unprofessional-ferrari-spat-its-the-same-speech-as-mexico/10876841/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Qualifying for the Las Vegas Grand Prix was decided as much by slipstreams as it was by actual car and driver performance, and this was very clear when looking at Mercedes. Kimi An",
-      "publishedAt": "2026-11-21T18:15:21.000Z"
+      "excerpt": "Ferrari team boss Fred Vasseur says Charles Leclerc's contact with Lewis Hamilton in the Las Vegas Grand Prix was \"unacceptable\" and showed \"lack of respect for the team\", with the",
+      "publishedAt": "2026-11-22T08:38:22.000Z"
     }
   ],
   "quotes": [
     {
       "platform": "虎扑",
-      "date": "11.20",
-      "text": "拉塞尔担心拉斯维加斯的低温会让梅赛德斯失去优势。",
-      "url": "https://bbs.hupu.com/635841867.html"
+      "date": "11.30",
+      "text": "维斯塔潘夺冠，迈凯伦的安全车决策又被拿出来讨论。",
+      "url": "https://bbs.hupu.com/636044524.html"
     },
     {
       "platform": "虎扑",
-      "date": "11.21",
-      "text": "角田更换动力单元从维修区起步，红牛的安排又被吐槽了。",
-      "url": "https://bbs.hupu.com/635902358.html"
+      "date": "11.30",
+      "text": "皮亚斯特里冲线后在 TR 里只说：无言以对。",
+      "url": "https://bbs.hupu.com/636046761.html"
     },
     {
       "platform": "虎扑",
-      "date": "11.22",
-      "text": "汉密尔顿在拉斯维加斯的表现又引发讨论，超车和失误都被放大。",
-      "url": "https://bbs.hupu.com/635905703.html"
+      "date": "11.30",
+      "text": "很久没在收官战看到多车手争冠了，今年终于又等到了。",
+      "url": "https://bbs.hupu.com/636046841.html"
     }
   ],
   "highlights": [
     {
+      "year": "2021",
+      "text": "首届卡塔尔大奖赛，汉密尔顿夺冠。",
+      "url": "https://en.wikipedia.org/wiki/2021_Qatar_Grand_Prix"
+    },
+    {
+      "year": "2023",
+      "text": "维斯塔潘在冲刺赛锁定第三个世界冠军。",
+      "url": "https://en.wikipedia.org/wiki/2023_Qatar_Grand_Prix"
+    },
+    {
       "year": "2024",
-      "text": "拉塞尔夺冠，梅赛德斯包揽前二。",
-      "url": "https://en.wikipedia.org/wiki/2024_Las_Vegas_Grand_Prix"
+      "text": "维斯塔潘夺冠，迈凯伦在卢赛尔锁定车队总冠军。",
+      "url": "https://en.wikipedia.org/wiki/2024_Qatar_Grand_Prix"
     },
     {
-      "year": "2023",
-      "text": "首届拉斯维加斯大奖赛，维斯塔潘夺冠。",
-      "url": "https://en.wikipedia.org/wiki/2023_Las_Vegas_Grand_Prix"
-    },
-    {
-      "year": "2023",
-      "text": "勒克莱尔最后一圈超越佩雷兹，抢下亚军。",
-      "url": "https://en.wikipedia.org/wiki/2023_Las_Vegas_Grand_Prix"
-    },
-    {
-      "year": "2023",
-      "text": "夜赛低温，轮胎升温成为策略焦点。",
-      "url": "https://en.wikipedia.org/wiki/2023_Las_Vegas_Grand_Prix"
+      "year": "2021",
+      "text": "卢赛尔首秀，高速弯对轮胎提出考验。",
+      "url": "https://en.wikipedia.org/wiki/2021_Qatar_Grand_Prix"
     }
   ]
 }
