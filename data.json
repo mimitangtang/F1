@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-24T01:19:46.101Z",
+    "generatedAt": "2026-11-24T11:12:22.240Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1069,17 +1069,24 @@
   },
   "news": [
     {
-      "title": "Qatar Grand Prix betting guide and latest odds",
-      "url": "https://www.formula1.com/en/latest/article/qatar-grand-prix-race-betting-guide-and-what-the-markets-predict-will-happen.5A5FEXzRhph6ATX2PvVmmq",
+      "title": "The 5 drivers most likely to win in Qatar",
+      "url": "https://www.formula1.com/en/latest/article/the-5-drivers-most-likely-to-win-the-qatar-grand-prix-according-to-the-betting-markets.3BzTGI3GGJZHfB5FxGTeN8",
       "source": "Formula 1",
-      "excerpt": "Our experts bring you all the important betting information you need before making your predictions for Lusail.",
+      "excerpt": "We look at the betting odds and analyse the chances of the five drivers most likely to win at the Lusail International Circuit.",
       "publishedAt": null
     },
     {
-      "title": "The timeline of Verstappen and Russell’s long rivalry",
-      "url": "https://www.formula1.com/en/latest/article/timeline-how-the-verstappen-vs-russell-rivalry-has-unfolded-over-several-years.4Y4Vmh0tOMo60qq4D2uXPN",
+      "title": "Isack Hadjar frustrated – What really happened on Red Bull's team radio in Las Vegas",
+      "url": "https://www.motorsport.com/f1/news/isack-hadjar-frustrated-what-really-happened-on-red-bulls-team-radio-in-las-vegas/10877375/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Isack Hadjar started Formula 1’s Las Vegas Grand Prix from fourth on the grid, and by lap four he had already found himself running second, right behind Red Bull team-mate Max Vers",
+      "publishedAt": "2026-11-24T10:04:17.000Z"
+    },
+    {
+      "title": "Who is Tom Hart? Meet Max Verstappen’s new race engineer",
+      "url": "https://www.formula1.com/en/latest/article/who-is-tom-hart-meet-the-man-set-to-replace-gp-as-max-verstappens-race-engineer-at-red-bull.4U1Zq3JUB2gujP5OoTMW1Z",
       "source": "Formula 1",
-      "excerpt": "F1.com charts how tensions first flared – and have since been reignited – between Max Verstappen and George Russell.",
+      "excerpt": "Tom Hart has been stepping into the role of Max Verstappen's race engineer during the closing stages of the 2026 season, ahead of Gianpiero Lambiase's departure to McLaren.",
       "publishedAt": null
     },
     {
@@ -1090,10 +1097,10 @@
       "publishedAt": "2026-11-23T20:00:03.000Z"
     },
     {
-      "title": "Sainz hails ‘amazing’ Las Vegas GP after ‘incredible’ P8",
-      "url": "https://www.formula1.com/en/latest/article/sainz-hails-amazing-las-vegas-grand-prix-after-incredible-p8-finish.4FBiwflePJER6l3k6aIFqU",
+      "title": "The timeline of Verstappen and Russell’s long rivalry",
+      "url": "https://www.formula1.com/en/latest/article/timeline-how-the-verstappen-vs-russell-rivalry-has-unfolded-over-several-years.4Y4Vmh0tOMo60qq4D2uXPN",
       "source": "Formula 1",
-      "excerpt": "Carlos Sainz managed to bring his Williams home in eighth place in Las Vegas, scoring for the first time since Baku with a drive the Spaniard called “amazing” after the race.",
+      "excerpt": "F1.com charts how tensions first flared – and have since been reignited – between Max Verstappen and George Russell.",
       "publishedAt": null
     },
     {
@@ -1102,13 +1109,6 @@
       "source": "Motorsport",
       "excerpt": "Isack Hadjar left the 2026 Las Vegas Grand Prix empty-handed after a Lap 26 front wing failure and a post-race 10-second safety car penalty relegated him to 15th, yet Red Bull team",
       "publishedAt": "2026-11-23T19:30:02.000Z"
-    },
-    {
-      "title": "5 Winners and 5 Losers from Las Vegas",
-      "url": "https://www.formula1.com/en/latest/article/5-winners-and-5-losers-from-las-vegas.6HVn4aszKitqrWNRTWkksX",
-      "source": "Formula 1",
-      "excerpt": "Lawrence Barretto picks out his winners and losers from an eventful 2026 Las Vegas Grand Prix.",
-      "publishedAt": null
     }
   ],
   "quotes": [
