@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-25T04:22:51.595Z",
+    "generatedAt": "2026-11-25T14:43:04.374Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1069,6 +1069,27 @@
   },
   "news": [
     {
+      "title": "EXPLAINED: Why there's a 27-lap tyre limit for the Qatar GP",
+      "url": "https://www.formula1.com/en/latest/article/explained-why-theres-a-27-lap-limit-on-tyres-for-the-qatar-grand-prix.4oeu38BqJh1h7llxUeILBe",
+      "source": "Formula 1",
+      "excerpt": "The penultimate race weekend of the 2026 season comes from Qatar, and much like last year, Pirelli have mandated a lap limit on each tyre set for the Lusail International Circuit, ",
+      "publishedAt": null
+    },
+    {
+      "title": "How to stream the 2026 Qatar Grand Prix on F1 TV Premium",
+      "url": "https://www.formula1.com/en/latest/article/how-to-stream-the-formula-1-2026-qatar-grand-prix-on-f1-tv-premium.4CMqa6NvWBGhwyaOXXgsxI",
+      "source": "Formula 1",
+      "excerpt": "Here is all the information you need to follow the Qatar Grand Prix weekend live on F1 TV.",
+      "publishedAt": null
+    },
+    {
+      "title": "What tyres will the teams have for the Qatar Grand Prix?",
+      "url": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-qatar-grand-prix.7JllCRweDY5sW1N9LzdkLm",
+      "source": "Formula 1",
+      "excerpt": "Pirelli have confirmed the tyre compounds that will be in use for the Qatar Grand Prix weekend, with a maximum of 27 laps permitted on each set.",
+      "publishedAt": null
+    },
+    {
       "title": "What time is the 2026 Qatar GP and how can I watch it?",
       "url": "https://www.formula1.com/en/latest/article/what-time-is-the-formula-1-2026-qatar-grand-prix-and-how-can-i-watch-it.XirX9Qy8hRZnH3O1Qhcch",
       "source": "Formula 1",
@@ -1076,39 +1097,18 @@
       "publishedAt": null
     },
     {
-      "title": "The 5 drivers most likely to qualify fastest in Qatar",
-      "url": "https://www.formula1.com/en/latest/article/the-5-drivers-who-are-most-likely-to-qualify-fastest-in-qatar.5F3SjC6NtGm5aD4FOJGwlZ",
+      "title": "From Monza mayhem to Suzuka showdowns – 10 dramatic F1 rivalry flashpoints",
+      "url": "https://www.formula1.com/en/latest/article/from-monza-mayhem-to-suzuka-showdowns-10-dramatic-rivalry-flashpoints-in-f1-history.3tetZNSgL2jM1F3THX3k1M",
       "source": "Formula 1",
-      "excerpt": "We have looked at the betting markets for Qualifying at the Lusail International Circuit and assessed the chances of the leading contenders for pole position.",
+      "excerpt": "Max Verstappen and George Russell traded blows on and off track in Las Vegas last weekend – but that is merely the latest episode in a long history of driver rivalries in Formula 1",
       "publishedAt": null
     },
     {
-      "title": "Lando Norris expects 2030 F1 racing to surpass Las Vegas GP spectacle",
-      "url": "https://www.motorsport.com/f1/news/lando-norris-admits-some-of-the-overtakes-werent-overtakes-in-vegas-thriller-and-explains-why-2030-/10877443/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Zak Brown rules out McLaren engine programme for F1 2030",
+      "url": "https://www.motorsport.com/f1/news/zak-brown-rules-out-mclaren-engine-programme-for-f1-2030/10877436/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Formula 1’s Las Vegas Grand Prix delivered a headline statistic built for highlight reels: 352 overtakes and 35 lead changes across 50 laps, shattering the championship’s all-time ",
-      "publishedAt": "2026-11-24T23:30:01.000Z"
-    },
-    {
-      "title": "Was Russell ‘playing mind games with himself’ in Las Vegas?",
-      "url": "https://www.formula1.com/en/latest/article/was-russell-playing-mind-games-with-himself-before-verstappens-victory-in-las-vegas.3ZYU5SCNPd2f2JQIKr7LlM",
-      "source": "Formula 1",
-      "excerpt": "George Russell and Max Verstappen were the talk of the town after last weekend’s Las Vegas Grand Prix, with the pair’s long-standing rivalry being renewed via a sequence of on- and",
-      "publishedAt": null
-    },
-    {
-      "title": "Unaired Las Vegas radio reveals Red Bull considered giving up Max Verstappen's lead",
-      "url": "https://www.motorsport.com/f1/news/unaired-radio-reveals-red-bull-told-max-verstappen-to-consider-giving-antonelli-the-lead-before-las/10877450/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "In almost any other Formula 1 race, suggesting a race leader deliberately surrender first place with one lap left would sound unthinkable. At the 2026 Las Vegas Grand Prix, Red Bul",
-      "publishedAt": "2026-11-24T21:08:35.000Z"
-    },
-    {
-      "title": "The RB22 tweaks that helped Verstappen take victory in Las Vegas",
-      "url": "https://www.formula1.com/en/latest/article/the-rb22-tweaks-that-helped-verstappen-take-victory-in-las-vegas.67NV2uD7vnuxKuW9SHi685",
-      "source": "Formula 1",
-      "excerpt": "Red Bull made tweaks to their RB22 for the Las Vegas Grand Prix, with a new front wing endplate to complement recent tweaks to the sidepod, as Mark Hughes explains, with technical ",
-      "publishedAt": null
+      "excerpt": "Zak Brown has ruled out a factory engine programme for the 2030 Formula 1 campaign as McLaren is “very happy” with its Mercedes partnership. The British marque has been a Mercedes ",
+      "publishedAt": "2026-11-25T13:15:47.000Z"
     }
   ],
   "quotes": [
