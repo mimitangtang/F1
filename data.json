@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-25T14:43:04.374Z",
+    "generatedAt": "2026-11-25T23:24:05.958Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1069,46 +1069,46 @@
   },
   "news": [
     {
-      "title": "EXPLAINED: Why there's a 27-lap tyre limit for the Qatar GP",
-      "url": "https://www.formula1.com/en/latest/article/explained-why-theres-a-27-lap-limit-on-tyres-for-the-qatar-grand-prix.4oeu38BqJh1h7llxUeILBe",
-      "source": "Formula 1",
-      "excerpt": "The penultimate race weekend of the 2026 season comes from Qatar, and much like last year, Pirelli have mandated a lap limit on each tyre set for the Lusail International Circuit, ",
-      "publishedAt": null
-    },
-    {
-      "title": "How to stream the 2026 Qatar Grand Prix on F1 TV Premium",
-      "url": "https://www.formula1.com/en/latest/article/how-to-stream-the-formula-1-2026-qatar-grand-prix-on-f1-tv-premium.4CMqa6NvWBGhwyaOXXgsxI",
-      "source": "Formula 1",
-      "excerpt": "Here is all the information you need to follow the Qatar Grand Prix weekend live on F1 TV.",
-      "publishedAt": null
-    },
-    {
-      "title": "What tyres will the teams have for the Qatar Grand Prix?",
-      "url": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-qatar-grand-prix.7JllCRweDY5sW1N9LzdkLm",
-      "source": "Formula 1",
-      "excerpt": "Pirelli have confirmed the tyre compounds that will be in use for the Qatar Grand Prix weekend, with a maximum of 27 laps permitted on each set.",
-      "publishedAt": null
-    },
-    {
-      "title": "What time is the 2026 Qatar GP and how can I watch it?",
-      "url": "https://www.formula1.com/en/latest/article/what-time-is-the-formula-1-2026-qatar-grand-prix-and-how-can-i-watch-it.XirX9Qy8hRZnH3O1Qhcch",
-      "source": "Formula 1",
-      "excerpt": "Here are all the timings – along with all the additional information you need – for the 22nd Grand Prix weekend of the 2026 season from Qatar.",
-      "publishedAt": null
-    },
-    {
-      "title": "From Monza mayhem to Suzuka showdowns – 10 dramatic F1 rivalry flashpoints",
-      "url": "https://www.formula1.com/en/latest/article/from-monza-mayhem-to-suzuka-showdowns-10-dramatic-rivalry-flashpoints-in-f1-history.3tetZNSgL2jM1F3THX3k1M",
-      "source": "Formula 1",
-      "excerpt": "Max Verstappen and George Russell traded blows on and off track in Las Vegas last weekend – but that is merely the latest episode in a long history of driver rivalries in Formula 1",
-      "publishedAt": null
-    },
-    {
-      "title": "Zak Brown rules out McLaren engine programme for F1 2030",
-      "url": "https://www.motorsport.com/f1/news/zak-brown-rules-out-mclaren-engine-programme-for-f1-2030/10877436/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Max Verstappen admits he would “rather stay at home” ahead of Qatar and Abu Dhabi",
+      "url": "https://www.motorsport.com/f1/news/verstappen-admits-he-would-rather-stay-at-home-ahead-of-qatar-and-abu-dhabi-despite-f1-safety-guara/10877645/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Zak Brown has ruled out a factory engine programme for the 2030 Formula 1 campaign as McLaren is “very happy” with its Mercedes partnership. The British marque has been a Mercedes ",
-      "publishedAt": "2026-11-25T13:15:47.000Z"
+      "excerpt": "Formula 1’s paddock is touching down in Doha for the penultimate round of the 2026 championship, yet Max Verstappen is not pretending the trip sits easily with him. Speaking to Dut",
+      "publishedAt": "2026-11-25T21:25:17.000Z"
+    },
+    {
+      "title": "5 storylines we're excited about ahead of the Qatar GP",
+      "url": "https://www.formula1.com/en/latest/article/its-race-week-5-storylines-were-excited-about-ahead-of-the-2026-qatar-grand-prix.1bXINUYO8R8X3K7DjINr1A",
+      "source": "Formula 1",
+      "excerpt": "Chris Medland runs through the biggest talking points as F1 heads to Qatar for Round 22 of the 2026 season.",
+      "publishedAt": null
+    },
+    {
+      "title": "Five things to look out for at F1’s Qatar GP",
+      "url": "https://www.motorsport.com/f1/news/five-things-to-look-out-for-at-f1s-qatar-gp/10877727/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "The 2026 Formula 1 season is nearing its conclusion, with the Qatar Grand Prix taking place this weekend ahead of the Abu Dhabi finale next week. Both titles have already been deci",
+      "publishedAt": "2026-11-25T17:13:20.000Z"
+    },
+    {
+      "title": "FIA confirm Williams’ minor overspend breach of 2025 Cost Cap",
+      "url": "https://www.formula1.com/en/latest/article/fia-confirm-williams-minor-overspend-breach-in-2025-cost-cap-review.12rGorQ1pzc6aH0LX2WdLZ",
+      "source": "Formula 1",
+      "excerpt": "The FIA have completed their review of the F1 teams' and power unit manufacturers' compliance with the 2025 Financial Regulations.",
+      "publishedAt": null
+    },
+    {
+      "title": "FIA filings reveal the Red Bull aero update behind Max Verstappen’s Las Vegas GP win",
+      "url": "https://www.motorsport.com/f1/news/fia-filings-reveal-the-lone-rb22-aero-update-behind-max-verstappens-las-vegas-gp-win/10877619/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Max Verstappen’s Las Vegas Grand Prix victory played out like a high-speed chess match on battery deployment, yet the race-winning foundation rested on a much quieter aerodynamic f",
+      "publishedAt": "2026-11-25T20:31:23.000Z"
+    },
+    {
+      "title": "QUIZ: 10 tricky questions on F1 driver bust-ups",
+      "url": "https://www.formula1.com/en/latest/article/quiz-10-tricky-questions-on-f1-driver-bust-ups.L5pATOFep8eOxnoTZTjjf",
+      "source": "Formula 1",
+      "excerpt": "George Russell and Max Verstappen exchanged words off track and battled on track in Las Vegas – and F1 history has seen plenty of flashpoints between rivals.",
+      "publishedAt": null
     }
   ],
   "quotes": [
