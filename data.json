@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-25T23:24:05.958Z",
+    "generatedAt": "2026-11-26T05:13:56.954Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1069,13 +1069,6 @@
   },
   "news": [
     {
-      "title": "Max Verstappen admits he would “rather stay at home” ahead of Qatar and Abu Dhabi",
-      "url": "https://www.motorsport.com/f1/news/verstappen-admits-he-would-rather-stay-at-home-ahead-of-qatar-and-abu-dhabi-despite-f1-safety-guara/10877645/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Formula 1’s paddock is touching down in Doha for the penultimate round of the 2026 championship, yet Max Verstappen is not pretending the trip sits easily with him. Speaking to Dut",
-      "publishedAt": "2026-11-25T21:25:17.000Z"
-    },
-    {
       "title": "5 storylines we're excited about ahead of the Qatar GP",
       "url": "https://www.formula1.com/en/latest/article/its-race-week-5-storylines-were-excited-about-ahead-of-the-2026-qatar-grand-prix.1bXINUYO8R8X3K7DjINr1A",
       "source": "Formula 1",
@@ -1083,11 +1076,11 @@
       "publishedAt": null
     },
     {
-      "title": "Five things to look out for at F1’s Qatar GP",
-      "url": "https://www.motorsport.com/f1/news/five-things-to-look-out-for-at-f1s-qatar-gp/10877727/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Max Verstappen admits he would “rather stay at home” ahead of Qatar and Abu Dhabi",
+      "url": "https://www.motorsport.com/f1/news/verstappen-admits-he-would-rather-stay-at-home-ahead-of-qatar-and-abu-dhabi-despite-f1-safety-guara/10877645/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "The 2026 Formula 1 season is nearing its conclusion, with the Qatar Grand Prix taking place this weekend ahead of the Abu Dhabi finale next week. Both titles have already been deci",
-      "publishedAt": "2026-11-25T17:13:20.000Z"
+      "excerpt": "Formula 1’s paddock is touching down in Doha for the penultimate round of the 2026 championship, yet Max Verstappen is not pretending the trip sits easily with him. Speaking to Dut",
+      "publishedAt": "2026-11-25T21:25:17.000Z"
     },
     {
       "title": "FIA confirm Williams’ minor overspend breach of 2025 Cost Cap",
@@ -1097,11 +1090,18 @@
       "publishedAt": null
     },
     {
-      "title": "FIA filings reveal the Red Bull aero update behind Max Verstappen’s Las Vegas GP win",
-      "url": "https://www.motorsport.com/f1/news/fia-filings-reveal-the-lone-rb22-aero-update-behind-max-verstappens-las-vegas-gp-win/10877619/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Fred Vasseur backs FIA ruling after Charles Leclerc's Las Vegas clash with Lewis Hamilton",
+      "url": "https://www.motorsport.com/f1/news/fred-vasseur-refuses-to-shield-leclerc-over-hamilton-collision-the-decision-of-the-fia-was-quite-cl/10877483/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Max Verstappen’s Las Vegas Grand Prix victory played out like a high-speed chess match on battery deployment, yet the race-winning foundation rested on a much quieter aerodynamic f",
-      "publishedAt": "2026-11-25T20:31:23.000Z"
+      "excerpt": "Formula 1 team bosses usually rush to soften the blow when stewards penalise one of their drivers. After Charles Leclerc clipped Lewis Hamilton into a spin at Turn 7 during the 202",
+      "publishedAt": "2026-11-26T01:30:02.000Z"
+    },
+    {
+      "title": "Nico Rosberg rules George Russell out of 2027 F1 title fight: “Dug himself into a mental hole”",
+      "url": "https://www.motorsport.com/f1/news/nico-rosberg-rules-george-russell-out-of-2027-f1-title-fight-he-dug-himself-into-a-mental-hole/10877719/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "George Russell entered the 2026 Formula 1 campaign looking every bit like Mercedes’ undisputed leader. Nine months later, former Silver Arrows world champion Nico Rosberg does not ",
+      "publishedAt": "2026-11-26T00:30:03.000Z"
     },
     {
       "title": "QUIZ: 10 tricky questions on F1 driver bust-ups",
