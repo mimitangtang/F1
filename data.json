@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-27T08:51:53.009Z",
+    "generatedAt": "2026-11-27T18:33:20.016Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -31,7 +31,12 @@
         "date": "11.27",
         "weekday": "周五",
         "time": "21:30",
-        "iso": "2026-11-27T13:30:00Z"
+        "iso": "2026-11-27T13:30:00Z",
+        "result": {
+          "label": "最快",
+          "name": "安东内利",
+          "time": "1:23.217"
+        }
       },
       {
         "key": "SecondPractice",
@@ -1069,46 +1074,46 @@
   },
   "news": [
     {
-      "title": "All the stories that got the Qatar paddock talking",
-      "url": "https://www.formula1.com/en/latest/article/all-the-stories-that-got-the-qatar-paddock-talking.7oePpDkNxzG1j0359UuyOo",
+      "title": "F3 champion Ugochukwu takes pole on F2 debut in Qatar",
+      "url": "https://www.formula1.com/en/latest/article/f2-formula-3-champion-ugochukwu-takes-pole-position-on-series-debut-in-qatar.1JCyMKDD3cZcIEGj2c9Zfp",
       "source": "Formula 1",
-      "excerpt": "F1.com's Mike Seymour looks back on the stories that got the paddock talking ahead of the 2026 Qatar Grand Prix.",
+      "excerpt": "Ugo Ugochukwu put in a stunning performance to take pole position on his Formula 2 debut in Qatar.",
       "publishedAt": null
     },
     {
-      "title": "What could shake up the Qatar betting markets?",
-      "url": "https://www.formula1.com/en/latest/article/what-could-turn-the-race-on-its-head-during-the-qatar-grand-prix.4En8C9V0hDrmUFFiwxjmu1",
+      "title": "F1 Qatar GP: Kimi Antonelli leads Mercedes charge in twice red-flagged FP2",
+      "url": "https://www.motorsport.com/f1/news/f1-qatar-gp-fp2-report/10878345/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Kimi Antonelli has swept Friday's running at F1's Qatar GP in Doha after topping a second practice session that was interrupted by two red flags. The cooler evening conditions for ",
+      "publishedAt": "2026-11-27T18:20:21.000Z"
+    },
+    {
+      "title": "LIVE COVERAGE: Second practice for the Qatar Grand Prix",
+      "url": "https://www.formula1.com/en/latest/article/live-coverage-second-practice-in-qatar-2026.73fYckKHdfedONjDTaSgeH",
       "source": "Formula 1",
-      "excerpt": "After the lights go out in Lusail, clued-up bettors will be poised to make smart betting decisions in real time markets.",
+      "excerpt": "Live coverage of Friday's second practice session at the 2026 Qatar Grand Prix.",
       "publishedAt": null
     },
     {
-      "title": "Max Verstappen without Gianpiero Lambiase at Qatar GP as Tom Hart steps in",
-      "url": "https://www.motorsport.com/f1/news/max-verstappen-without-gianpiero-lambiase-at-qatar-gp-as-tom-hart-steps-in/10878042/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Max Verstappen will be without his regular right-hand man Gianpiero Lambiase this weekend at the Lusail International Circuit. Red Bull had already opted for a rotation system for ",
-      "publishedAt": "2026-11-26T19:55:34.000Z"
-    },
-    {
-      "title": "Mercedes boss Toto Wolff reveals why rival F1 teams never try to hire him",
-      "url": "https://www.motorsport.com/f1/news/mercedes-boss-toto-wolff-reveals-why-rival-f1-teams-never-try-to-hire-him/10874986/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Toto Wolff has just added to his legendary resume by securing Mercedes' return to the top of Formula 1 in 2026, officially tying former McLaren boss Ron Dennis with a record 17 wor",
-      "publishedAt": "2026-11-27T00:30:04.000Z"
-    },
-    {
-      "title": "Toto Wolff responds to Kimi Antonelli salary questions after F1 title success",
-      "url": "https://www.motorsport.com/f1/news/toto-wolff-says-the-world-champion-should-be-rewarded-after-bild-puts-antonellis-pay-at-about-46-mi/10874830/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "When a Formula 1 team elevates a teenager from Formula 2 directly into a top-tier factory seat, the initial contract is rarely structured like a blockbuster superstar deal. But whe",
-      "publishedAt": "2026-11-26T23:00:02.000Z"
-    },
-    {
-      "title": "Russell reacts to Verstappen’s Las Vegas comments",
-      "url": "https://www.formula1.com/en/latest/article/it-was-quite-amusing-russell-shares-his-reaction-to-verstappens-las-vegas-comments.6sv6Xkop4lBcCxge8ZgxXv",
+      "title": "Antonelli leads Russell in Qatar as Mercedes control FP1",
+      "url": "https://www.formula1.com/en/latest/article/fp1-antonelli-leads-russell-in-qatar-as-mercedes-control-opening-practice.3v7t8Oja9vAGkic9TxN7FR",
       "source": "Formula 1",
-      "excerpt": "After tensions between himself and Max Verstappen resurfaced following the Las Vegas Grand Prix, George Russell has given his take on how the situation stands.",
+      "excerpt": "Kimi Antonelli finished fastest in Free Practice 1 ahead of the Qatar Grand Prix, the Mercedes driver beating team mate George Russell and Isack Hadjar's Red Bull.",
       "publishedAt": null
+    },
+    {
+      "title": "AS IT HAPPENED: First practice for the Qatar GP",
+      "url": "https://www.formula1.com/en/latest/article/live-coverage-first-practice-in-qatar-2026.4b9OJ86R4u41lS38JHHCuO",
+      "source": "Formula 1",
+      "excerpt": "Live coverage of Friday's first practice session for the 2026 Qatar Grand Prix.",
+      "publishedAt": null
+    },
+    {
+      "title": "F1 Qatar GP: Kimi Antonelli leads Mercedes 1-2 in tricky FP1",
+      "url": "https://www.motorsport.com/f1/news/f1-qatar-gp-fp1-report-10878251/10878251/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "2026 Formula 1 world champion Kimi Antonelli has comfortably topped first free practice at the Qatar Grand Prix, holding off Mercedes team-mate George Russell as drivers grappled w",
+      "publishedAt": "2026-11-27T14:40:58.000Z"
     }
   ],
   "quotes": [
