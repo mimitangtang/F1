@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-28T01:43:13.891Z",
+    "generatedAt": "2026-11-28T09:34:12.212Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1086,11 +1086,11 @@
       "publishedAt": null
     },
     {
-      "title": "F1 Qatar GP long runs: Kimi Antonelli nearly a second clear of Max Verstappen on Friday",
-      "url": "https://www.motorsport.com/f1/news/f1-qatar-gp-practice-analysis-antonelli-nearly-a-second-clear-of-verstappen-on-long-runs/10878464/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "100% wear in 15 laps – F1’s tyre challenges in Qatar far more extreme than Pirelli expected",
+      "url": "https://www.motorsport.com/f1/news/100-wear-in-15-laps-f1s-tyre-challenges-in-qatar-more-extreme-than-pirelli-expected/10878479/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Kimi Antonelli heads into the penultimate race weekend of the 2026 Formula 1 season in Qatar as the early favourite. The reigning world champion dominated Friday practice at the Lu",
-      "publishedAt": "2026-11-27T22:10:24.000Z"
+      "excerpt": "Every year, the Lusail International Circuit represents the biggest challenge on the Formula 1 calendar for its sole tyre supplier, Pirelli. It is precisely for that reason that a ",
+      "publishedAt": "2026-11-28T08:45:03.000Z"
     },
     {
       "title": "Leclerc searching for answers after tricky Friday in Qatar",
@@ -1100,13 +1100,6 @@
       "publishedAt": null
     },
     {
-      "title": "Charles Leclerc explains Qatar GP practice spin after painfully \"slow\" day for Ferrari",
-      "url": "https://www.motorsport.com/f1/news/charles-leclerc-explains-qatar-spin-after-painfully-slow-day-for-ferrari/10878445/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Charles Leclerc rued a \"very, very difficult\" FP2 for Ferrari at the Formula 1 Qatar Grand Prix, with his early spin the symptom of a general lack of grip in the SF-26. Having alre",
-      "publishedAt": "2026-11-27T20:52:17.000Z"
-    },
-    {
       "title": "What the teams said – Friday in Qatar",
       "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-friday-in-qatar-2026.4NjrvUy3Zc6X6YN4i896S6",
       "source": "Formula 1",
@@ -1114,11 +1107,18 @@
       "publishedAt": null
     },
     {
-      "title": "Max Verstappen feels a “disconnect” as Red Bull looks to solve “massive limitation” in Qatar GP practice",
-      "url": "https://www.motorsport.com/f1/news/max-verstappen-feels-a-disconnect-as-red-bull-looks-to-solve-massive-limitation-in-qatar-gp-practice/10878436/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Verstappen and Red Bull left looking for car balance in Qatar",
+      "url": "https://www.formula1.com/en/latest/article/a-bit-of-a-difficult-day-verstappen-and-red-bull-left-looking-for-car-balance-after-friday-in-qatar.zvqj1nQ6dBT2PSxEzzKWP",
+      "source": "Formula 1",
+      "excerpt": "Max Verstappen admits that he and Red Bull had \"a bit of a difficult day\" during Friday practice ahead of the Qatar Grand Prix.",
+      "publishedAt": null
+    },
+    {
+      "title": "F1 Qatar GP long runs: Kimi Antonelli nearly a second clear of Max Verstappen on Friday",
+      "url": "https://www.motorsport.com/f1/news/f1-qatar-gp-practice-analysis-antonelli-nearly-a-second-clear-of-verstappen-on-long-runs/10878464/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "A week after Max Verstappen's victory in Las Vegas, a completely different challenge awaits this weekend. While the street circuit along the Strip was characterised by long straigh",
-      "publishedAt": "2026-11-27T20:13:38.000Z"
+      "excerpt": "Kimi Antonelli heads into the penultimate race weekend of the 2026 Formula 1 season in Qatar as the early favourite. The reigning world champion dominated Friday practice at the Lu",
+      "publishedAt": "2026-11-27T22:10:24.000Z"
     }
   ],
   "quotes": [
