@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-27T18:33:20.016Z",
+    "generatedAt": "2026-11-28T01:43:13.891Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -44,7 +44,12 @@
         "date": "11.28",
         "weekday": "周六",
         "time": "01:00",
-        "iso": "2026-11-27T17:00:00Z"
+        "iso": "2026-11-27T17:00:00Z",
+        "result": {
+          "label": "最快",
+          "name": "安东内利",
+          "time": "1:23.077"
+        }
       },
       {
         "key": "ThirdPractice",
@@ -1074,46 +1079,46 @@
   },
   "news": [
     {
-      "title": "F3 champion Ugochukwu takes pole on F2 debut in Qatar",
-      "url": "https://www.formula1.com/en/latest/article/f2-formula-3-champion-ugochukwu-takes-pole-position-on-series-debut-in-qatar.1JCyMKDD3cZcIEGj2c9Zfp",
+      "title": "Are Mercedes the team to beat in Qatar?",
+      "url": "https://www.formula1.com/en/latest/article/are-mercedes-the-team-to-beat-in-qatar.6iRbqa3JJ85o0bWNYQTlTl",
       "source": "Formula 1",
-      "excerpt": "Ugo Ugochukwu put in a stunning performance to take pole position on his Formula 2 debut in Qatar.",
+      "excerpt": "F1.com analyses the state of play after the first day of action at the Qatar Grand Prix.",
       "publishedAt": null
     },
     {
-      "title": "F1 Qatar GP: Kimi Antonelli leads Mercedes charge in twice red-flagged FP2",
-      "url": "https://www.motorsport.com/f1/news/f1-qatar-gp-fp2-report/10878345/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "F1 Qatar GP long runs: Kimi Antonelli nearly a second clear of Max Verstappen on Friday",
+      "url": "https://www.motorsport.com/f1/news/f1-qatar-gp-practice-analysis-antonelli-nearly-a-second-clear-of-verstappen-on-long-runs/10878464/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "Kimi Antonelli has swept Friday's running at F1's Qatar GP in Doha after topping a second practice session that was interrupted by two red flags. The cooler evening conditions for ",
-      "publishedAt": "2026-11-27T18:20:21.000Z"
+      "excerpt": "Kimi Antonelli heads into the penultimate race weekend of the 2026 Formula 1 season in Qatar as the early favourite. The reigning world champion dominated Friday practice at the Lu",
+      "publishedAt": "2026-11-27T22:10:24.000Z"
     },
     {
-      "title": "LIVE COVERAGE: Second practice for the Qatar Grand Prix",
-      "url": "https://www.formula1.com/en/latest/article/live-coverage-second-practice-in-qatar-2026.73fYckKHdfedONjDTaSgeH",
+      "title": "Leclerc searching for answers after tricky Friday in Qatar",
+      "url": "https://www.formula1.com/en/latest/article/it-looks-like-a-very-difficult-weekend-leclerc-searching-for-answers-after-tricky-friday-in-qatar.34CxxcaWerPPLl84sU9cZq",
       "source": "Formula 1",
-      "excerpt": "Live coverage of Friday's second practice session at the 2026 Qatar Grand Prix.",
+      "excerpt": "Charles Leclerc reflected on Ferrari’s lack of pace in Qatar as Diego Ioverno offered reassurance over Lewis Hamilton’s stoppage in second practice.",
       "publishedAt": null
     },
     {
-      "title": "Antonelli leads Russell in Qatar as Mercedes control FP1",
-      "url": "https://www.formula1.com/en/latest/article/fp1-antonelli-leads-russell-in-qatar-as-mercedes-control-opening-practice.3v7t8Oja9vAGkic9TxN7FR",
-      "source": "Formula 1",
-      "excerpt": "Kimi Antonelli finished fastest in Free Practice 1 ahead of the Qatar Grand Prix, the Mercedes driver beating team mate George Russell and Isack Hadjar's Red Bull.",
-      "publishedAt": null
-    },
-    {
-      "title": "AS IT HAPPENED: First practice for the Qatar GP",
-      "url": "https://www.formula1.com/en/latest/article/live-coverage-first-practice-in-qatar-2026.4b9OJ86R4u41lS38JHHCuO",
-      "source": "Formula 1",
-      "excerpt": "Live coverage of Friday's first practice session for the 2026 Qatar Grand Prix.",
-      "publishedAt": null
-    },
-    {
-      "title": "F1 Qatar GP: Kimi Antonelli leads Mercedes 1-2 in tricky FP1",
-      "url": "https://www.motorsport.com/f1/news/f1-qatar-gp-fp1-report-10878251/10878251/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "title": "Charles Leclerc explains Qatar GP practice spin after painfully \"slow\" day for Ferrari",
+      "url": "https://www.motorsport.com/f1/news/charles-leclerc-explains-qatar-spin-after-painfully-slow-day-for-ferrari/10878445/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
       "source": "Motorsport",
-      "excerpt": "2026 Formula 1 world champion Kimi Antonelli has comfortably topped first free practice at the Qatar Grand Prix, holding off Mercedes team-mate George Russell as drivers grappled w",
-      "publishedAt": "2026-11-27T14:40:58.000Z"
+      "excerpt": "Charles Leclerc rued a \"very, very difficult\" FP2 for Ferrari at the Formula 1 Qatar Grand Prix, with his early spin the symptom of a general lack of grip in the SF-26. Having alre",
+      "publishedAt": "2026-11-27T20:52:17.000Z"
+    },
+    {
+      "title": "What the teams said – Friday in Qatar",
+      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-friday-in-qatar-2026.4NjrvUy3Zc6X6YN4i896S6",
+      "source": "Formula 1",
+      "excerpt": "The drivers and teams report back on all the action from Friday practice at the Lusail International Circuit, ahead of the 2026 Qatar Grand Prix.",
+      "publishedAt": null
+    },
+    {
+      "title": "Max Verstappen feels a “disconnect” as Red Bull looks to solve “massive limitation” in Qatar GP practice",
+      "url": "https://www.motorsport.com/f1/news/max-verstappen-feels-a-disconnect-as-red-bull-looks-to-solve-massive-limitation-in-qatar-gp-practice/10878436/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "A week after Max Verstappen's victory in Las Vegas, a completely different challenge awaits this weekend. While the street circuit along the Strip was characterised by long straigh",
+      "publishedAt": "2026-11-27T20:13:38.000Z"
     }
   ],
   "quotes": [
