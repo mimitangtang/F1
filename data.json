@@ -1,7 +1,7 @@
 {
   "meta": {
     "season": 2026,
-    "generatedAt": "2026-11-28T09:34:12.212Z",
+    "generatedAt": "2026-11-28T17:51:22.085Z",
     "sources": [
       "Jolpica F1 API",
       "Formula 1 RSS",
@@ -1079,6 +1079,34 @@
   },
   "news": [
     {
+      "title": "LIVE COVERAGE: All the action from Qualifying in Qatar",
+      "url": "https://www.formula1.com/en/latest/article/live-coverage-qualifying-in-qatar-2026.7bvFDt8DoTdWy7ypbMykjN",
+      "source": "Formula 1",
+      "excerpt": "Live coverage of Saturday's Qualifying session for the 2026 Qatar Grand Prix.",
+      "publishedAt": null
+    },
+    {
+      "title": "F1 Qatar GP: Kimi Antonelli completes practice clean sweep as Mercedes dominates",
+      "url": "https://www.motorsport.com/f1/news/f1-qatar-gp-fp3-report/10878644/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+      "source": "Motorsport",
+      "excerpt": "Kimi Antonelli has handed Mercedes a clean sweep of Qatar GP practice sessions as the Silver Arrows head to qualifying with a huge advantage. Russell went quickest before halfway a",
+      "publishedAt": "2026-11-28T15:39:28.000Z"
+    },
+    {
+      "title": "Antonelli and Mercedes sweep fastest practice times in Qatar",
+      "url": "https://www.formula1.com/en/latest/article/fp3-antonelli-and-mercedes-sweep-fastest-practice-times-in-qatar.1mqTYzM7bK8pChk9n7szdO",
+      "source": "Formula 1",
+      "excerpt": "Kimi Antonelli and Mercedes claimed a clean sweep of fastest times after topping Free Practice 3 ahead of the Qatar Grand Prix, the World Champion beating team mate George Russell ",
+      "publishedAt": null
+    },
+    {
+      "title": "AS IT HAPPENED: All the action from final practice in Qatar",
+      "url": "https://www.formula1.com/en/latest/article/live-coverage-third-practice-in-qatar-2026.tg0SyDKW7zSS95TpZSB3t",
+      "source": "Formula 1",
+      "excerpt": "Live coverage of Saturday's third practice session for the 2026 Qatar Grand Prix.",
+      "publishedAt": null
+    },
+    {
       "title": "Are Mercedes the team to beat in Qatar?",
       "url": "https://www.formula1.com/en/latest/article/are-mercedes-the-team-to-beat-in-qatar.6iRbqa3JJ85o0bWNYQTlTl",
       "source": "Formula 1",
@@ -1086,39 +1114,11 @@
       "publishedAt": null
     },
     {
-      "title": "100% wear in 15 laps – F1’s tyre challenges in Qatar far more extreme than Pirelli expected",
-      "url": "https://www.motorsport.com/f1/news/100-wear-in-15-laps-f1s-tyre-challenges-in-qatar-more-extreme-than-pirelli-expected/10878479/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Every year, the Lusail International Circuit represents the biggest challenge on the Formula 1 calendar for its sole tyre supplier, Pirelli. It is precisely for that reason that a ",
-      "publishedAt": "2026-11-28T08:45:03.000Z"
-    },
-    {
       "title": "Leclerc searching for answers after tricky Friday in Qatar",
       "url": "https://www.formula1.com/en/latest/article/it-looks-like-a-very-difficult-weekend-leclerc-searching-for-answers-after-tricky-friday-in-qatar.34CxxcaWerPPLl84sU9cZq",
       "source": "Formula 1",
       "excerpt": "Charles Leclerc reflected on Ferrari’s lack of pace in Qatar as Diego Ioverno offered reassurance over Lewis Hamilton’s stoppage in second practice.",
       "publishedAt": null
-    },
-    {
-      "title": "What the teams said – Friday in Qatar",
-      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-friday-in-qatar-2026.4NjrvUy3Zc6X6YN4i896S6",
-      "source": "Formula 1",
-      "excerpt": "The drivers and teams report back on all the action from Friday practice at the Lusail International Circuit, ahead of the 2026 Qatar Grand Prix.",
-      "publishedAt": null
-    },
-    {
-      "title": "Verstappen and Red Bull left looking for car balance in Qatar",
-      "url": "https://www.formula1.com/en/latest/article/a-bit-of-a-difficult-day-verstappen-and-red-bull-left-looking-for-car-balance-after-friday-in-qatar.zvqj1nQ6dBT2PSxEzzKWP",
-      "source": "Formula 1",
-      "excerpt": "Max Verstappen admits that he and Red Bull had \"a bit of a difficult day\" during Friday practice ahead of the Qatar Grand Prix.",
-      "publishedAt": null
-    },
-    {
-      "title": "F1 Qatar GP long runs: Kimi Antonelli nearly a second clear of Max Verstappen on Friday",
-      "url": "https://www.motorsport.com/f1/news/f1-qatar-gp-practice-analysis-antonelli-nearly-a-second-clear-of-verstappen-on-long-runs/10878464/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-      "source": "Motorsport",
-      "excerpt": "Kimi Antonelli heads into the penultimate race weekend of the 2026 Formula 1 season in Qatar as the early favourite. The reigning world champion dominated Friday practice at the Lu",
-      "publishedAt": "2026-11-27T22:10:24.000Z"
     }
   ],
   "quotes": [
